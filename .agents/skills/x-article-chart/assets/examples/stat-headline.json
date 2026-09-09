@@ -1,0 +1,12 @@
+{
+  "type": "stat",
+  "theme": "ink",
+  "size": "strip",
+  "title": "Four months, one app, no ad budget",
+  "source": "Source: App Store Connect and Stripe, Feb–Jun 2026",
+  "items": [
+    { "value": "50K", "label": "installs", "note": "18 weeks" },
+    { "value": "$0", "label": "spent on ads", "emphasis": true },
+    { "value": "61%", "label": "came from one channel" }
+  ]
+}

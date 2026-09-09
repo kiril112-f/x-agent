@@ -1,0 +1,5 @@
+Let me tell you what shipped.
+
+The Android build finally works, bro.
+
+The part that blocked the whole project is gone.

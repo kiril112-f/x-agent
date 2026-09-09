@@ -1,0 +1,16 @@
+{
+  "type": "line",
+  "theme": "ink",
+  "size": "wide",
+  "title": "One TikTok did more than four months of posting",
+  "deck": "Daily App Store installs, first 20 weeks after launch.",
+  "source": "Source: App Store Connect, weekly installs, Feb–Jun 2026",
+  "x": ["W1","W2","W3","W4","W5","W6","W7","W8","W9","W10","W11","W12","W13","W14","W15","W16","W17","W18","W19","W20"],
+  "curve": "linear",
+  "format": "{v}",
+  "series": [
+    { "name": "Installs", "color": "alt", "emphasis": true, "fill": true,
+      "data": [120, 180, 140, 260, 210, 340, 300, 420, 380, 510, 470, 690, 1240, 820, 760, 980, 900, 1150, 1020, 2380] }
+  ],
+  "annotations": [ { "x": "W13", "label": "First video that traveled" } ]
+}

@@ -1,0 +1,32 @@
+# Project-scoped MCP configuration for the X Content Engine.
+# Restart Codex after changes. Never store tokens or client secrets in this file.
+
+[mcp_servers.x-docs]
+url = "https://docs.x.com/mcp"
+enabled = true
+required = false
+default_tools_approval_mode = "auto"
+
+# Research-only X access through Apify. The Actor reads public data and cannot
+# post, reply, like, follow, DM, or delete anything on X. APIFY_TOKEN is stored
+# in the Windows user environment, never in this repository.
+[mcp_servers.apify-x]
+url = "https://mcp.apify.com?tools=xquik/x-tweet-scraper"
+bearer_token_env_var = "APIFY_TOKEN"
+startup_timeout_sec = 30
+tool_timeout_sec = 180
+enabled = true
+required = false
+default_tools_approval_mode = "auto"
+
+# no-ai-slop is vendored into this project. Disable the identical user-level
+# copy here so Codex does not show two skills with the same name in this project.
+[[skills.config]]
+path = "C:/Users/User/.codex/skills/no-ai-slop/SKILL.md"
+enabled = false
+
+# Kirill publishes manually after review. Keep the old publishing skill off so
+# it cannot be selected accidentally.
+[[skills.config]]
+path = "C:/Users/User/Desktop/X Agent/.agents/skills/x-publish/SKILL.md"
+enabled = false

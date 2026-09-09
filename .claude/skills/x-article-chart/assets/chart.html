@@ -1,0 +1,730 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>X Article Chart Compositor</title>
+<style>
+@font-face {
+  font-family: 'InterVF';
+  src: url('file:///C:/Windows/Fonts/Inter-VariableFont_opszwght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { background: #000; }
+body { display: flex; align-items: flex-start; justify-content: flex-start; }
+#root { position: relative; overflow: hidden; }
+#root svg { display: block; }
+/* Зерно 2%: убивает бандинг у заливок и даёт ту же печатную фактуру, что у обложек. */
+.grain {
+  position: absolute; inset: -20%;
+  opacity: .022; mix-blend-mode: overlay; pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+</style>
+
+<div id="root"></div>
+
+<script>
+/* Спека приезжает сюда base64-ом из render.ps1. Если файл открыт в браузере
+   напрямую, плейсхолдер не распарсится и нарисуется демо: шаблон всегда можно
+   открыть руками и покрутить. */
+const RAW_SPEC = "__SPEC_B64__";
+
+const DEMO = {
+  type: 'curve', theme: 'paper', size: 'wide',
+  title: 'Deception of linear vs exponential',
+  x: { name: 'Time' },
+  series: [
+    { name: 'Linear', shape: 'linear', color: 'neutral', band: [.18, .74] },
+    { name: 'Exponential', shape: 'exponential', color: 'alt', emphasis: true, arrow: true }
+  ],
+  regions: [
+    { between: ['Exponential', 'Linear'], to: .62, label: 'Disappointment' },
+    { between: ['Exponential', 'Linear'], from: .62, label: 'Chaos' }
+  ],
+  marker: { on: 'Exponential', at: .62, label: 'You are here', from: 'top' }
+};
+
+let SPEC;
+try {
+  SPEC = JSON.parse(new TextDecoder().decode(
+    Uint8Array.from(atob(RAW_SPEC), c => c.charCodeAt(0))));
+} catch (e) { SPEC = DEMO; }
+
+/* ---------------------------------------------------------------- токены --
+   Кегли даны для базы 1600 и масштабируются коэффициентом K = W/1600.
+   Проверено при 600 px показа в статье: tick 28 -> ~10.5 px. Ниже опускать
+   нельзя, подписи перестают читаться с телефона. */
+const SIZES = { wide: [1600, 900], tall: [1600, 1120], strip: [1600, 620], square: [1200, 1200] };
+
+const THEMES = {
+  paper: {
+    bg: '#F6F5F1', ink: '#14151A', muted: '#6C7080',
+    hair: 'rgba(20,21,26,.11)', fog: 'rgba(20,21,26,.055)', grain: false,
+    c: { main: '#2946E8', alt: '#0E9F86', accent: '#DE7207', violet: '#6E32DC',
+         neutral: '#2C2E38', ghost: '#B7BAC4' }
+  },
+  mist: {
+    bg: '#EBEEFC', ink: '#131933', muted: '#5C6488',
+    hair: 'rgba(19,25,51,.11)', fog: 'rgba(19,25,51,.05)', grain: false,
+    c: { main: '#3A34DD', alt: '#0FA3C4', accent: '#DE7207', violet: '#7B2FE0',
+         neutral: '#2A3050', ghost: '#B3B9DA' }
+  },
+  ink: {
+    bg: '#0C0E14', ink: '#F2F3F7', muted: '#878DA1',
+    hair: 'rgba(242,243,247,.13)', fog: 'rgba(242,243,247,.06)', grain: true,
+    c: { main: '#6E8CFF', alt: '#2ED3A7', accent: '#FF8A1F', violet: '#B18BFF',
+         neutral: '#C6CAD6', ghost: '#454A5C' }
+  }
+};
+
+const size = SIZES[SPEC.size] || SIZES.wide;
+const W = +SPEC.width || size[0];
+const H = +SPEC.height || size[1];
+const K = W / 1600;
+const TH = THEMES[SPEC.theme] || THEMES.paper;
+
+/* Кегли для базы 1600. В статье картинка живёт примерно на 600 px ширины,
+   то есть всё делится на 2.67. ONS Data Visualisation Service Manual держит
+   пол в 14 px на экране и 12 px как абсолютный минимум: отсюда tick 34 (12.8 px
+   на 600) и region 42. Всё, что мельче, на телефоне превращается в серую пыль. */
+const F = {
+  title: 58 * K, deck: 40 * K, source: 26 * K, tick: 34 * K, axis: 34 * K,
+  series: 40 * K, region: 42 * K, anno: 56 * K, annoSub: 32 * K,
+  cat: 38 * K, val: 42 * K, statNum: 150 * K, statLbl: 36 * K, statNote: 28 * K
+};
+const PAD_X = 96 * K, PAD_Y = 76 * K;
+const SW = { hero: 8 * K, line: 6 * K, thin: 3 * K, hair: 2 * K };
+
+/* ------------------------------------------------------------ примитивы -- */
+const r = n => Math.round(n * 100) / 100;
+const esc = s => String(s == null ? '' : s).replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+const mc = document.createElement('canvas').getContext('2d');
+const WARN = [];
+const warn = m => WARN.push(m);
+
+function tw(s, px, weight) {
+  mc.font = (weight || 500) + ' ' + px + 'px InterVF, Inter, sans-serif';
+  return mc.measureText(String(s == null ? '' : s)).width;
+}
+function text(x, y, s, o) {
+  o = o || {};
+  const a = ['x="' + r(x) + '"', 'y="' + r(y) + '"',
+    'font-size="' + r(o.size || F.tick) + '"',
+    'font-weight="' + (o.weight || 500) + '"',
+    'fill="' + (o.fill || TH.ink) + '"'];
+  if (o.anchor) a.push('text-anchor="' + o.anchor + '"');
+  if (o.baseline) a.push('dominant-baseline="' + o.baseline + '"');
+  if (o.track) a.push('letter-spacing="' + r(o.track * (o.size || F.tick)) + '"');
+  if (o.opacity != null) a.push('opacity="' + o.opacity + '"');
+  if (o.transform) a.push('transform="' + o.transform + '"');
+  /* Выбивка фоном: подпись поверх кривой иначе читается как перечёркнутая. */
+  if (o.halo) a.push('stroke="' + TH.bg + '" stroke-width="' + r(o.halo) +
+    '" stroke-linejoin="round" paint-order="stroke"');
+  return '<text ' + a.join(' ') + '>' + esc(s) + '</text>';
+}
+const col = name => (TH.c[name] || name || TH.c.main);
+
+/* Emphasis без явного color всегда уходит в accent: правило «ровно один
+   акцент на визуале» выполняется само, а не силой воли автора. */
+/* Пятая категория ломает фирменную четвёрку, поэтому для таких случаев есть
+   готовые проверенные наборы вместо кустарного добора оттенков.
+   Okabe-Ito и Tol Bright различимы при дейтеранопии и протанопии. */
+const PALETTES = {
+  'okabe-ito': ['#0072B2', '#E69F00', '#009E73', '#CC79A7', '#56B4E9', '#D55E00', '#F0E442', '#000000'],
+  'tol-bright': ['#4477AA', '#EE6677', '#228833', '#CCBB44', '#66CCEE', '#AA3377', '#BBBBBB']
+};
+
+function seriesColor(s, i) {
+  if (s.color) return col(s.color);
+  if (s.emphasis) return TH.c.accent;
+  const pal = PALETTES[SPEC.palette];
+  if (pal) return pal[i % pal.length];
+  return [TH.c.main, TH.c.alt, TH.c.violet, TH.c.neutral][i % 4];
+}
+
+const trim = n => String(Math.round(n * 10) / 10);
+function fmtNum(v, fmt) {
+  if (typeof v === 'string') return v;
+  if (fmt && fmt.indexOf('{v}') >= 0) return fmt.replace('{v}', fmtNum(v));
+  const a = Math.abs(v);
+  if (a >= 1e9) return trim(v / 1e9) + 'B';
+  if (a >= 1e6) return trim(v / 1e6) + 'M';
+  if (a >= 1e4) return trim(v / 1e3) + 'K';
+  if (a >= 1000) return v.toLocaleString('en-US');
+  return trim(v);
+}
+
+/* «Красивые» деления оси: 1 / 2 / 2.5 / 5 * 10^n. Иначе подписи вида 3.7K,
+   которые невозможно сравнить в уме. */
+function niceTicks(min, max, count) {
+  const span = (max - min) || 1;
+  const raw = span / Math.max(1, count);
+  const mag = Math.pow(10, Math.floor(Math.log10(raw)));
+  const step = [1, 2, 2.5, 5, 10].map(m => m * mag).find(s => s >= raw) || 10 * mag;
+  const out = [];
+  for (let v = Math.ceil(min / step) * step; v <= max + step * 1e-6; v += step) out.push(+v.toFixed(10));
+  return out;
+}
+
+/* Fritsch-Carlson: монотонная кубика не даёт ложных выбросов между точками и
+   не уходит за пределы данных, в отличие от catmull-rom и basis-сплайна.
+   Для графика с реальными числами это вопрос честности, а не вкуса. */
+function monotoneSampler(xs, ys) {
+  const n = xs.length;
+  if (n < 2) return () => ys[0] || 0;
+  const dx = [], ms = [];
+  for (let i = 0; i < n - 1; i++) { dx[i] = xs[i + 1] - xs[i]; ms[i] = (ys[i + 1] - ys[i]) / dx[i]; }
+  const c1 = [ms[0]];
+  for (let i = 1; i < n - 1; i++) {
+    if (ms[i - 1] * ms[i] <= 0) c1[i] = 0;
+    else {
+      const c = dx[i - 1] + dx[i];
+      c1[i] = 3 * c / ((c + dx[i]) / ms[i - 1] + (c + dx[i - 1]) / ms[i]);
+    }
+  }
+  c1[n - 1] = ms[n - 2];
+  return t => {
+    if (t <= xs[0]) return ys[0];
+    if (t >= xs[n - 1]) return ys[n - 1];
+    let i = 0; while (i < n - 2 && xs[i + 1] < t) i++;
+    const h = dx[i], u = (t - xs[i]) / h, u2 = u * u, u3 = u2 * u;
+    return (2 * u3 - 3 * u2 + 1) * ys[i] + (u3 - 2 * u2 + u) * h * c1[i]
+         + (-2 * u3 + 3 * u2) * ys[i + 1] + (u3 - u2) * h * c1[i + 1];
+  };
+}
+
+/* Именованные формы для концептуальных кривых. Каждая нормирована в 0..1:
+   форма несёт отношение, а не величину. Цифр на таком графике не бывает. */
+const SHAPES = {
+  linear: t => t,
+  exponential: (t, p) => (Math.exp((p || 3.6) * t) - 1) / (Math.exp(p || 3.6) - 1),
+  log: (t, p) => Math.log(1 + (p || 14) * t) / Math.log(1 + (p || 14)),
+  scurve: (t, p) => {
+    const k = p || 10, f = x => 1 / (1 + Math.exp(-k * (x - .5)));
+    return (f(t) - f(0)) / (f(1) - f(0));
+  },
+  decay: (t, p) => {
+    const k = p || 3.2;
+    return (Math.exp(-k * t) - Math.exp(-k)) / (1 - Math.exp(-k));
+  },
+  peak: (t, p) => {
+    const pk = p || .4, b = 1 / pk;
+    return (t * b) * Math.exp(1 - t * b);
+  },
+  plateau: (t, p) => {
+    const pk = p || .35;
+    return t < pk ? SHAPES.scurve(t / pk, 8) : 1 - .12 * (t - pk) / (1 - pk);
+  },
+  flat: () => .5,
+  dip: t => 1 - 3.2 * t * (1 - t)
+};
+
+const N = 260;
+function sampleSeries(s) {
+  const band = s.band || [0, 1];
+  const x0 = s.from == null ? 0 : +s.from;
+  const x1 = s.to == null ? 1 : +s.to;
+  let f;
+  if (Array.isArray(s.points) && s.points.length > 1) {
+    const p = s.points.slice().sort((a, b) => a[0] - b[0]);
+    f = monotoneSampler(p.map(q => q[0]), p.map(q => q[1]));
+  } else {
+    const fn = SHAPES[(s.shape || 'linear').replace(/-/g, '')] || SHAPES.linear;
+    f = t => fn(t, s.k);
+  }
+  const out = [];
+  for (let i = 0; i <= N; i++) {
+    const u = i / N, x = x0 + (x1 - x0) * u;
+    out.push([x, band[0] + (band[1] - band[0]) * Math.max(0, Math.min(1, f(u)))]);
+  }
+  return out;
+}
+
+/* ------------------------------------------------------------- каркас ---- */
+const out = [];
+
+/* Переносим сами: SVG-текст не переносится, и длинный deck молча уезжает
+   за правый край кадра — на превью этого не видно, а в статье видно всем. */
+function wrap(s, px, weight, maxW, maxLines) {
+  const words = String(s == null ? '' : s).split(/\s+/).filter(Boolean);
+  const lines = [];
+  let cur = '';
+  for (let i = 0; i < words.length; i++) {
+    const t = cur ? cur + ' ' + words[i] : words[i];
+    if (cur && tw(t, px, weight) > maxW) {
+      lines.push(cur); cur = words[i];
+      if (lines.length === maxLines) {
+        warn('не влезло в ' + maxLines + ' строк(и), хвост обрезан: "' + s + '"');
+        cur = ''; break;
+      }
+    } else cur = t;
+  }
+  if (cur) lines.push(cur);
+  return lines;
+}
+
+function frame() {
+  out.push('<rect width="' + W + '" height="' + H + '" fill="' + TH.bg + '"/>');
+  const cw = W - 2 * PAD_X;
+  let top = PAD_Y;
+  if (SPEC.title) {
+    const ln = wrap(SPEC.title, F.title, 700, cw, 2);
+    ln.forEach((t, i) => out.push(text(PAD_X, top + F.title * .80 + i * F.title * 1.08, t,
+      { size: F.title, weight: 700, track: -.021 })));
+    top += F.title * (1.02 + (ln.length - 1) * 1.08);
+  }
+  if (SPEC.deck) {
+    top += F.deck * .46;
+    const ln = wrap(SPEC.deck, F.deck, 500, cw, 2);
+    ln.forEach((t, i) => out.push(text(PAD_X, top + F.deck * .78 + i * F.deck * 1.24, t,
+      { size: F.deck, weight: 500, fill: TH.muted })));
+    top += F.deck * (1 + (ln.length - 1) * 1.24);
+  }
+  if (SPEC.title || SPEC.deck) top += 54 * K;
+
+  let bot = H - PAD_Y;
+  const mark = SPEC.mark === undefined ? '@KirillMorozovop' : SPEC.mark;
+  if (SPEC.source || (mark && mark !== 'off')) {
+    const y = H - PAD_Y + F.source * .28;
+    if (SPEC.source) out.push(text(PAD_X, y, SPEC.source, { size: F.source, weight: 500, fill: TH.muted, opacity: .9 }));
+    if (mark && mark !== 'off') {
+      out.push(text(W - PAD_X, y, mark, { size: F.source, weight: 500, fill: TH.muted, anchor: 'end', opacity: .75, track: .05 }));
+    }
+    bot -= F.source * 2.1;
+  }
+  return { x: PAD_X, y: top, w: W - 2 * PAD_X, h: bot - top };
+}
+
+function path(pts) {
+  return pts.map((p, i) => (i ? 'L' : 'M') + r(p[0]) + ' ' + r(p[1])).join(' ');
+}
+function arrowHead(p0, p1, color, scale) {
+  const a = Math.atan2(p1[1] - p0[1], p1[0] - p0[0]);
+  const L = (scale || 1) * 26 * K, Wd = (scale || 1) * 15 * K;
+  const tip = [p1[0] + Math.cos(a) * L * .45, p1[1] + Math.sin(a) * L * .45];
+  const b1 = [tip[0] - Math.cos(a) * L + Math.cos(a + Math.PI / 2) * Wd, tip[1] - Math.sin(a) * L + Math.sin(a + Math.PI / 2) * Wd];
+  const b2 = [tip[0] - Math.cos(a) * L - Math.cos(a + Math.PI / 2) * Wd, tip[1] - Math.sin(a) * L - Math.sin(a + Math.PI / 2) * Wd];
+  return '<path d="' + path([tip, b1, b2]) + 'Z" fill="' + color + '"/>';
+}
+const dot = (x, y, r_, fill, ring) =>
+  (ring ? '<circle cx="' + r(x) + '" cy="' + r(y) + '" r="' + r(r_ + 5 * K) + '" fill="' + TH.bg + '"/>' : '') +
+  '<circle cx="' + r(x) + '" cy="' + r(y) + '" r="' + r(r_) + '" fill="' + fill + '"/>';
+
+/* --------------------------------------------------- расстановка подписей --
+   Подписи концептуального графика живут поверх кривых, поэтому у них общий
+   реестр занятых прямоугольников: вторая подпись отходит по вертикали, а не
+   ложится поверх первой. */
+const BOXES = [];
+function boxOf(cx, base, w, h, anchor) {
+  const x0 = anchor === 'middle' ? cx - w / 2 : anchor === 'end' ? cx - w : cx;
+  return { x0: x0, x1: x0 + w, y0: base - h * .82, y1: base + h * .3 };
+}
+const hits = b => BOXES.some(o => b.x0 < o.x1 && b.x1 > o.x0 && b.y0 < o.y1 && b.y1 > o.y0);
+function reserve(cx, base, w, h, anchor) { BOXES.push(boxOf(cx, base, w, h, anchor)); }
+function place(cx, base, w, h, anchor, tries) {
+  const step = h * 1.12;
+  for (let i = 0; i <= (tries || 4); i++) {
+    for (const sgn of (i ? [-1, 1] : [0])) {
+      const y = base + sgn * i * step;
+      const b = boxOf(cx, y, w, h, anchor);
+      if (!hits(b)) { BOXES.push(b); return y; }
+    }
+  }
+  BOXES.push(boxOf(cx, base, w, h, anchor));
+  return base;
+}
+
+/* ---------------------------------------------------- концептуальные кривые
+   Осей и цифр здесь нет намеренно: график утверждает форму отношения, а не
+   измеренную величину. Как только на нём появляется шкала, он начинает врать. */
+function drawCurve(P) {
+  const sers = (SPEC.series || []).map((s, i) => ({
+    spec: s, i: i, name: s.name || '', color: seriesColor(s, i),
+    pts: sampleSeries(s), emph: !!s.emphasis
+  }));
+  if (!sers.length) { warn('curve без series'); return; }
+
+  const auto = sers.length > 1 ? 'end' : 'none';
+  sers.forEach(s => { s.lab = s.spec.label || (s.name ? auto : 'none'); });
+
+  let gl = 0, gr = 26 * K;
+  sers.forEach(s => {
+    if (s.lab === 'start') gl = Math.max(gl, tw(s.name, F.series, 700) + 30 * K);
+    if (s.lab === 'end') gr = Math.max(gr, tw(s.name, F.series, 700) + 34 * K);
+  });
+
+  const axis = SPEC.axis === true || !!(SPEC.x && SPEC.x.name) || !!(SPEC.y && SPEC.y.name);
+  const bottomRoom = axis && SPEC.x && SPEC.x.name ? F.axis * 2.0 : 0;
+  /* Сверху резервируется место только под подпись направляющей. Выноска
+     маркера умеет укоротиться или перевернуться сама, поэтому держать под неё
+     половину кадра не нужно — иначе кривая живёт в нижней трети. */
+  const topRoom = (SPEC.guide && SPEC.guide.label) ? F.series * 1.7 : F.series * .45;
+
+  const p = { x: P.x + gl, y: P.y + topRoom, w: P.w - gl - gr, h: P.h - topRoom - bottomRoom };
+  const sx = t => p.x + t * p.w;
+  const sy = v => p.y + p.h - v * p.h;
+  const px = s => s.pts.map(q => [sx(q[0]), sy(q[1])]);
+  const byName = n => sers.find(s => s.name === n) || sers[0];
+  const zFill = [], zCurve = [], zLabel = [], zTop = [];
+
+  if (axis) {
+    const ay = p.y + p.h + 10 * K;
+    zFill.push('<g opacity=".55"><path d="' + path([[p.x, ay], [p.x + p.w - 18 * K, ay]]) +
+      '" stroke="' + TH.ink + '" stroke-width="' + r(SW.thin) + '" fill="none"/>' +
+      arrowHead([p.x, ay], [p.x + p.w - 18 * K, ay], TH.ink, .8) + '</g>');
+    if (SPEC.x && SPEC.x.name) {
+      reserve(p.x + p.w, ay + F.axis * 1.5, tw(SPEC.x.name, F.axis, 600), F.axis, 'end');
+      zTop.push(text(p.x + p.w, ay + F.axis * 1.5, SPEC.x.name, { size: F.axis, weight: 600, fill: TH.muted, anchor: 'end' }));
+    }
+    if (SPEC.y && SPEC.y.name)
+      zTop.push(text(p.x - 26 * K, p.y + p.h, SPEC.y.name, { size: F.axis, weight: 600, fill: TH.muted,
+        transform: 'rotate(-90 ' + r(p.x - 26 * K) + ' ' + r(p.y + p.h) + ')' }));
+  }
+
+  /* Направляющая и маркер занимают место первыми: они привязаны к геометрии
+     и двигаться не могут. Всё остальное расступается вокруг них. */
+  if (SPEC.guide) {
+    const G = SPEC.guide, gx = sx(G.at == null ? .5 : G.at);
+    const gj = Math.round((G.at == null ? .5 : G.at) * N);
+    const low = Math.min(p.y + p.h, Math.max.apply(null, sers.map(s => px(s)[gj][1])) + 54 * K);
+    zTop.push('<path d="' + path([[gx, p.y - 4 * K], [gx, low]]) + '" stroke="' + TH.muted +
+      '" stroke-width="' + r(SW.hair) + '" stroke-dasharray="' + r(7 * K) + ' ' + r(9 * K) + '" opacity=".75"/>');
+    if (G.dots !== false) sers.forEach(s => {
+      const q = px(s)[Math.round((G.at == null ? .5 : G.at) * N)];
+      zTop.push(dot(gx, q[1], 9 * K, s.color, true));
+    });
+    if (G.label) {
+      reserve(gx, p.y - 26 * K, tw(G.label, F.series, 700), F.series, 'middle');
+      zTop.push(text(gx, p.y - 26 * K, G.label, { size: F.series, weight: 700, fill: TH.ink, anchor: 'middle', halo: 7 * K }));
+    }
+  }
+
+  if (SPEC.marker) {
+    const M = SPEC.marker, at = M.at == null ? .6 : M.at;
+    const q = px(byName(M.on))[Math.round(at * N)];
+    const rows = String(M.label || '').split('|').map(t => ({ t: t, size: F.anno, weight: 700, fill: TH.ink }));
+    if (M.sub) rows.push({ t: M.sub, size: F.annoSub, weight: 500, fill: TH.muted });
+    const blockH = rows.reduce((a, rw) => a + rw.size * 1.06, 0);
+    const gap = 30 * K;
+    let up = (M.from || 'top') !== 'bottom';
+    const roomUp = q[1] - gap - blockH - p.y, roomDn = (p.y + p.h) - (q[1] + gap + blockH);
+    if (up && roomUp < 24 * K && roomDn > roomUp) up = false;
+    else if (!up && roomDn < 24 * K && roomUp > roomDn) up = true;
+    const len = Math.max(24 * K, Math.min((M.len == null ? 84 : M.len) * K, up ? roomUp : roomDn));
+    const ly = up ? q[1] - gap - len : q[1] + gap + len;
+
+    zTop.push('<path d="' + path([[q[0], up ? q[1] - gap : q[1] + gap], [q[0], ly]]) +
+      '" stroke="' + TH.ink + '" stroke-width="' + r(SW.hair) + '" opacity=".8"/>');
+    zTop.push(arrowHead([q[0], ly], [q[0], up ? q[1] - gap : q[1] + gap], TH.ink, .62));
+    zTop.push(dot(q[0], q[1], 11 * K, TH.ink, true));
+    let y = ly;
+    const emit = rw => {
+      reserve(q[0], y, tw(rw.t, rw.size, rw.weight), rw.size, 'middle');
+      zTop.push(text(q[0], y, rw.t, { size: rw.size, weight: rw.weight, fill: rw.fill, anchor: 'middle', track: -.015, halo: 8 * K }));
+    };
+    if (up) for (let i = rows.length - 1; i >= 0; i--) { emit(rows[i]); y -= rows[i].size * 1.06; }
+    else for (let i = 0; i < rows.length; i++) { y += rows[i].size * 1.0; emit(rows[i]); }
+  }
+
+  (SPEC.regions || []).forEach(rg => {
+    const a = px(byName(rg.between[0])), b = px(byName(rg.between[1]));
+    const i0 = Math.round((rg.from == null ? 0 : rg.from) * N);
+    const i1 = Math.round((rg.to == null ? 1 : rg.to) * N);
+    const top_ = a.slice(i0, i1 + 1), bot_ = b.slice(i0, i1 + 1).reverse();
+    if (top_.length < 2) return;
+    zFill.push('<path d="' + path(top_.concat(bot_)) + 'Z" fill="' + (rg.color ? col(rg.color) : TH.fog) + '"/>');
+    if (!rg.label) return;
+    const lw = tw(rg.label, F.region, 700);
+    let j;
+    if (rg.labelAt != null) j = Math.round(rg.labelAt * N);
+    else {
+      /* Самое широкое место клина, но только там, где подпись целиком влезает
+         по горизонтали. Иначе она уезжает за кадр в погоне за просветом. */
+      let best = -1;
+      for (let k = i0; k <= i1; k++) {
+        if (a[k][0] - lw / 2 < p.x + 8 * K || a[k][0] + lw / 2 > p.x + p.w - 8 * K) continue;
+        const gap = Math.abs(a[k][1] - b[k][1]);
+        if (gap > best) { best = gap; j = k; }
+      }
+      if (j == null) j = Math.round((i0 + i1) / 2);
+    }
+    const gapH = Math.abs(a[j][1] - b[j][1]);
+    const base = gapH < F.region * 1.45
+      ? Math.min(a[j][1], b[j][1]) - F.region * .55          // клин узкий — подпись наружу
+      : (a[j][1] + b[j][1]) / 2 + F.region * .34;
+    const y = place(a[j][0], base, lw, F.region, 'middle', 5);
+    zLabel.push(text(a[j][0], y, rg.label, { size: F.region, weight: 700, halo: 7 * K,
+      fill: rg.textColor ? col(rg.textColor) : TH.muted, anchor: 'middle' }));
+  });
+
+  sers.forEach(s => {
+    const q = px(s);
+    zCurve.push('<path d="' + path(q) + '" fill="none" stroke="' + s.color + '" stroke-width="' +
+      r(s.emph ? SW.hero : SW.line) + '" stroke-linecap="round" stroke-linejoin="round"' +
+      (s.spec.dash ? ' stroke-dasharray="' + r(14 * K) + ' ' + r(12 * K) + '"' : '') + '/>');
+    if (s.spec.arrow) zCurve.push(arrowHead(q[q.length - 6], q[q.length - 1], s.color, s.emph ? 1.05 : .9));
+    if (s.lab === 'end' || s.lab === 'start') {
+      const at0 = s.lab === 'end';
+      const anchor = at0 ? 'start' : 'end';
+      const cx = at0 ? q[q.length - 1][0] + (s.spec.arrow ? 34 * K : 20 * K) : q[0][0] - 22 * K;
+      const base = (at0 ? q[q.length - 1][1] : q[0][1]) + F.series * .34;
+      const y = place(cx, base, tw(s.name, F.series, 700), F.series, anchor, 3);
+      zLabel.push(text(cx, y, s.name, { size: F.series, weight: 700, fill: s.color, anchor: anchor, halo: 7 * K }));
+    }
+  });
+
+  (SPEC.notes || []).forEach(n => {
+    zLabel.push(text(sx(n.x), sy(n.y), n.label,
+      { size: n.size ? n.size * K : F.region, weight: n.weight || 600,
+        fill: n.color ? col(n.color) : TH.muted, anchor: n.align || 'middle' }));
+  });
+
+  out.push.apply(out, zFill.concat(zCurve, zLabel, zTop));
+}
+
+/* -------------------------------------------------------------- столбцы --
+   Значения подписаны прямо на концах, поэтому сетка не рисуется: двойное
+   кодирование одного и того же числа только загрязняет кадр. */
+function drawBars(P) {
+  const data = (SPEC.data || []).slice();
+  if (!data.length) { warn('bars без data'); return; }
+  if (SPEC.sort === 'desc') data.sort((a, b) => b.value - a.value);
+  if (SPEC.sort === 'asc') data.sort((a, b) => a.value - b.value);
+  const anyEmph = data.some(d => d.emphasis);
+  const max = Math.max.apply(null, data.map(d => Math.abs(+d.value))) || 1;
+  const barCol = d => d.color ? col(d.color)
+    : d.emphasis ? TH.c.accent
+    : anyEmph ? TH.c.ghost : TH.c.main;
+  const horiz = (SPEC.orientation || 'h') === 'h';
+  const rad = 8 * K;
+
+  if (horiz) {
+    let gl = 0, gr = 0;
+    data.forEach(d => {
+      gl = Math.max(gl, tw(d.label, F.cat, 600));
+      gr = Math.max(gr, tw(fmtNum(d.value, SPEC.format), F.val, 800));
+    });
+    gl += 30 * K; gr += 26 * K;
+    const x0 = P.x + gl, plotW = P.w - gl - gr;
+    const slot = P.h / data.length;
+    const bh = Math.min(slot * .58, 96 * K);
+    data.forEach((d, i) => {
+      const cy = P.y + slot * (i + .5);
+      const w = Math.max(2 * K, Math.abs(+d.value) / max * plotW);
+      out.push('<rect x="' + r(x0) + '" y="' + r(cy - bh / 2) + '" width="' + r(w) + '" height="' + r(bh) +
+        '" rx="' + r(rad) + '" fill="' + barCol(d) + '"/>');
+      out.push(text(x0 - 22 * K, cy + F.cat * .35, d.label,
+        { size: F.cat, weight: 600, fill: d.emphasis ? TH.ink : TH.muted, anchor: 'end' }));
+      out.push(text(x0 + w + 18 * K, cy + F.val * .34, fmtNum(d.value, SPEC.format),
+        { size: F.val, weight: 800, fill: d.emphasis ? TH.c.accent : TH.ink, track: -.02 }));
+      if (d.note) out.push(text(x0 + w + 18 * K + tw(fmtNum(d.value, SPEC.format), F.val, 800) + 14 * K,
+        cy + F.val * .34, d.note, { size: F.statNote, weight: 500, fill: TH.muted }));
+    });
+  } else {
+    const slot = P.w / data.length;
+    const bw = Math.min(slot * .56, 150 * K);
+    const base = P.y + P.h - F.cat * 1.9;
+    const top = P.y + F.val * 1.5;
+    data.forEach((d, i) => {
+      const cx = P.x + slot * (i + .5);
+      const h = Math.max(2 * K, Math.abs(+d.value) / max * (base - top));
+      out.push('<rect x="' + r(cx - bw / 2) + '" y="' + r(base - h) + '" width="' + r(bw) + '" height="' + r(h) +
+        '" rx="' + r(rad) + '" fill="' + barCol(d) + '"/>');
+      out.push(text(cx, base - h - F.val * .5, fmtNum(d.value, SPEC.format),
+        { size: F.val, weight: 800, fill: d.emphasis ? TH.c.accent : TH.ink, anchor: 'middle', track: -.02 }));
+      out.push(text(cx, base + F.cat * 1.25, d.label,
+        { size: F.cat, weight: 600, fill: d.emphasis ? TH.ink : TH.muted, anchor: 'middle' }));
+    });
+    out.push('<path d="' + path([[P.x, base + 1], [P.x + P.w, base + 1]]) + '" stroke="' + TH.hair +
+      '" stroke-width="' + r(SW.hair) + '"/>');
+  }
+}
+
+/* ------------------------------------------------------ доля от целого ----
+   Одна полоса вместо пирога: доли на прямой длине сравниваются точно,
+   а по углам сектора — нет. */
+function drawSplit(P) {
+  const data = (SPEC.data || []);
+  if (!data.length) { warn('split без data'); return; }
+  const total = data.reduce((s, d) => s + Math.abs(+d.value), 0) || 1;
+  const anyEmph = data.some(d => d.emphasis);
+  const bh = Math.min(P.h * .34, 150 * K);
+  const y = P.y + (P.h - bh) / 2;
+  const rad = 10 * K;
+  let x = P.x;
+  const pal = [TH.c.main, TH.c.violet, TH.c.alt, TH.c.ghost];
+  data.forEach((d, i) => {
+    const w = Math.abs(+d.value) / total * P.w;
+    const c = d.color ? col(d.color) : d.emphasis ? TH.c.accent : anyEmph ? TH.c.ghost : pal[i % 4];
+    out.push('<rect x="' + r(x + (i ? 3 * K : 0)) + '" y="' + r(y) + '" width="' + r(w - (i ? 3 * K : 0)) +
+      '" height="' + r(bh) + '" rx="' + r(rad) + '" fill="' + c + '"/>');
+    const pct = fmtNum(Math.round(Math.abs(+d.value) / total * 1000) / 10, '{v}%');
+    const fits = w > tw(pct, F.val, 800) + 44 * K;
+    if (fits) out.push(text(x + w / 2, y + bh / 2 + F.val * .35, pct,
+      { size: F.val, weight: 800, fill: TH.bg, anchor: 'middle', track: -.02 }));
+    out.push(text(x + w / 2, y - 26 * K, d.label,
+      { size: F.cat, weight: 600, fill: d.emphasis ? TH.ink : TH.muted, anchor: 'middle' }));
+    if (!fits) out.push(text(x + w / 2, y + bh + F.cat * 1.15, pct,
+      { size: F.cat, weight: 800, fill: c, anchor: 'middle' }));
+    x += w;
+  });
+}
+
+/* ------------------------------------------------------- ряд по времени --
+   Сетка только горизонтальная, заголовков осей нет, серии подписаны прямо у
+   последней точки. Легенда — последнее средство, она заставляет глаз прыгать. */
+function drawLine(P) {
+  const xs = SPEC.x || [];
+  const sers = (SPEC.series || []).map((s, i) => ({
+    spec: s, name: s.name || '', color: seriesColor(s, i),
+    data: (s.data || []).map(Number), emph: !!s.emphasis
+  }));
+  if (!sers.length || !sers[0].data.length) { warn('line без данных'); return; }
+
+  const axis = SPEC.axis !== false;
+  const all = sers.reduce((a, s) => a.concat(s.data), []);
+  let lo = Math.min.apply(null, all), hi = Math.max.apply(null, all);
+  if (SPEC.zero !== false && lo > 0) lo = 0;
+  const ticks = axis ? niceTicks(lo, hi, SPEC.yTicks || 4) : [];
+  if (ticks.length) { lo = Math.min(lo, ticks[0]); hi = Math.max(hi, ticks[ticks.length - 1]); }
+
+  let gl = 0, gr = 0;
+  if (axis) ticks.forEach(t => { gl = Math.max(gl, tw(fmtNum(t, SPEC.format), F.tick, 500) + 26 * K); });
+  const wantEnd = (sers.length > 1 || SPEC.label === 'end') && SPEC.label !== 'none';
+  if (wantEnd) sers.forEach(s => { if (s.name) gr = Math.max(gr, tw(s.name, F.series, 700) + 30 * K); });
+  gr = Math.max(gr, 22 * K);   // точка последнего значения не должна упираться в край
+
+  const bottomRoom = axis && xs.length ? F.tick * 2.0 : 0;
+  const topRoom = (SPEC.annotations || []).length ? F.series * 2.1 : F.val * .6;
+  const p = { x: P.x + gl, y: P.y + topRoom, w: P.w - gl - gr, h: P.h - topRoom - bottomRoom };
+  const n = sers[0].data.length;
+  const sx = i => p.x + (n === 1 ? p.w / 2 : i / (n - 1) * p.w);
+  const sy = v => p.y + p.h - (v - lo) / ((hi - lo) || 1) * p.h;
+
+  ticks.forEach(t => {
+    out.push('<path d="' + path([[p.x, sy(t)], [p.x + p.w, sy(t)]]) + '" stroke="' + TH.hair +
+      '" stroke-width="' + r(SW.hair) + '"/>');
+    out.push(text(p.x - 20 * K, sy(t) + F.tick * .34, fmtNum(t, SPEC.format),
+      { size: F.tick, weight: 500, fill: TH.muted, anchor: 'end' }));
+  });
+
+  if (axis && xs.length) {
+    const step = Math.max(1, Math.ceil(xs.length / Math.floor(p.w / (tw('MMMM', F.tick, 500) + 46 * K))));
+    const cand = [];
+    xs.forEach((lb, i) => {
+      if (i % step && i !== xs.length - 1) return;
+      const anchor = i === xs.length - 1 ? 'end' : i === 0 ? 'start' : 'middle';
+      const w = tw(lb, F.tick, 500), x = sx(i);
+      const x0 = anchor === 'end' ? x - w : anchor === 'start' ? x : x - w / 2;
+      cand.push({ lb: lb, x: x, a: anchor, x0: x0, x1: x0 + w });
+    });
+    // последняя подпись важнее предыдущей: она держит правый край шкалы
+    for (let i = cand.length - 1; i > 0; i--) {
+      if (cand[i - 1].x1 + 18 * K > cand[i].x0) cand.splice(i - 1, 1);
+    }
+    cand.forEach(c => out.push(text(c.x, p.y + p.h + F.tick * 1.5, c.lb,
+      { size: F.tick, weight: 500, fill: TH.muted, anchor: c.a })));
+  }
+
+  const mode = SPEC.curve || 'monotone';
+  sers.forEach((s, si) => {
+    let pts;
+    if (mode === 'monotone' && s.data.length > 2) {
+      const f = monotoneSampler(s.data.map((_, i) => i), s.data);
+      pts = [];
+      for (let i = 0; i <= 300; i++) { const t = i / 300 * (n - 1); pts.push([sx(t), sy(f(t))]); }
+    } else if (mode === 'step') {
+      pts = [];
+      s.data.forEach((v, i) => { if (i) pts.push([sx(i), sy(s.data[i - 1])]); pts.push([sx(i), sy(v)]); });
+    } else pts = s.data.map((v, i) => [sx(i), sy(v)]);
+
+    if (s.spec.fill) {
+      const id = 'g' + si;
+      out.push('<defs><linearGradient id="' + id + '" x1="0" y1="0" x2="0" y2="1">' +
+        '<stop offset="0" stop-color="' + s.color + '" stop-opacity=".34"/>' +
+        '<stop offset="1" stop-color="' + s.color + '" stop-opacity="0"/></linearGradient></defs>');
+      out.push('<path d="' + path(pts) + ' L' + r(pts[pts.length - 1][0]) + ' ' + r(p.y + p.h) +
+        ' L' + r(pts[0][0]) + ' ' + r(p.y + p.h) + 'Z" fill="url(#' + id + ')"/>');
+    }
+    out.push('<path d="' + path(pts) + '" fill="none" stroke="' + s.color + '" stroke-width="' +
+      r(s.emph ? SW.hero : SW.line) + '" stroke-linecap="round" stroke-linejoin="round"' +
+      (s.spec.dash ? ' stroke-dasharray="' + r(14 * K) + ' ' + r(12 * K) + '"' : '') + '/>');
+
+    const last = [sx(n - 1), sy(s.data[n - 1])];
+    if (SPEC.lastDot !== false) out.push(dot(last[0], last[1], 10 * K, s.color, true));
+    if (wantEnd && s.name) out.push(text(last[0] + 22 * K, last[1] + F.series * .34, s.name,
+      { size: F.series, weight: 700, fill: s.color, halo: 7 * K }));
+  });
+
+  (SPEC.annotations || []).forEach(a => {
+    const i = typeof a.x === 'number' ? a.x : xs.indexOf(a.x);
+    if (i < 0) { warn('annotation x="' + a.x + '" нет в оси'); return; }
+    const gx = sx(i);
+    out.push('<path d="' + path([[gx, p.y - 8 * K], [gx, p.y + p.h]]) + '" stroke="' + TH.muted +
+      '" stroke-width="' + r(SW.hair) + '" stroke-dasharray="' + r(7 * K) + ' ' + r(9 * K) + '" opacity=".8"/>');
+    out.push(text(gx, p.y - 26 * K, a.label,
+      { size: F.series, weight: 700, fill: TH.ink, anchor: i > n * .72 ? 'end' : i < n * .28 ? 'start' : 'middle' }));
+  });
+}
+
+/* --------------------------------------------------------- крупные числа --
+   До четырёх. Пятое число превращает визуал в таблицу, которую никто не
+   дочитывает: если чисел больше, это bars, а не stat. */
+function drawStat(P) {
+  const items = (SPEC.items || []).slice(0, 4);
+  if (!items.length) { warn('stat без items'); return; }
+  if ((SPEC.items || []).length > 4) warn('stat: показаны первые 4 из ' + SPEC.items.length);
+  const cw = P.w / items.length;
+  let num = F.statNum * (items.length > 2 ? .66 : items.length > 1 ? .82 : 1);
+  items.forEach(it => {
+    while (num > 40 * K && tw(it.value, num, 800) > cw - 56 * K) num -= 2;
+  });
+  // блок центрируется целиком, а не по цифре: иначе подпись с нотой перевешивает
+  const hasNote = items.some(it => it.note);
+  const blockH = num * .78 + F.statLbl * 1.55 + (hasNote ? F.statNote * 1.5 : 0);
+  const top = P.y + (P.h - blockH) / 2;
+  items.forEach((it, i) => {
+    const cx = P.x + cw * i;
+    if (i) out.push('<path d="' + path([[cx, P.y + P.h * .1], [cx, P.y + P.h * .9]]) +
+      '" stroke="' + TH.hair + '" stroke-width="' + r(SW.hair) + '"/>');
+    const c = it.emphasis ? TH.c.accent : it.color ? col(it.color) : TH.ink;
+    out.push(text(cx + 28 * K, top + num * .78, it.value, { size: num, weight: 800, fill: c, track: -.045 }));
+    out.push(text(cx + 28 * K, top + num * .78 + F.statLbl * 1.55, it.label,
+      { size: F.statLbl, weight: 600, fill: TH.muted }));
+    if (it.note) out.push(text(cx + 28 * K, top + num * .78 + F.statLbl * 1.55 + F.statNote * 1.5, it.note,
+      { size: F.statNote, weight: 500, fill: TH.muted, opacity: .75 }));
+  });
+}
+
+/* ----------------------------------------------------------------- сборка */
+const RENDER = { curve: drawCurve, bars: drawBars, line: drawLine, area: drawLine, split: drawSplit, stat: drawStat };
+
+function build() {
+  const type = SPEC.type || 'curve';
+  if (!RENDER[type]) warn('неизвестный type "' + type + '", рисую curve');
+  /* Политика честности живёт в рендерере, а не только в чек-листе: график с
+     реальными числами без источника молча не собирается «просто так». */
+  if (type !== 'curve' && !SPEC.source && SPEC.source !== 'off')
+    warn('нет source: график с числами без источника публиковать нельзя');
+  if (type === 'curve' && /\d/.test(JSON.stringify(SPEC.notes || []) + (SPEC.deck || '')))
+    warn('в концептуальном графике встретились цифры — проверь, что это не выдача формы за измерение');
+
+  const P = frame();
+  (RENDER[type] || drawCurve)(P);
+
+  const root = document.getElementById('root');
+  root.style.width = W + 'px';
+  root.style.height = H + 'px';
+  root.innerHTML =
+    '<svg xmlns="http://www.w3.org/2000/svg" width="' + W + '" height="' + H + '" viewBox="0 0 ' + W + ' ' + H + '" ' +
+    'font-family="InterVF, Inter, sans-serif" shape-rendering="geometricPrecision" ' +
+    'text-rendering="geometricPrecision">' + out.join('') + '</svg>' +
+    (TH.grain ? '<div class="grain"></div>' : '');
+}
+
+document.fonts.ready.then(() => {
+  build();
+  if (WARN.length) console.warn('CHART WARNINGS:\n- ' + WARN.join('\n- '));
+  document.title = WARN.length ? 'ready (' + WARN.length + ' warnings)' : 'ready';
+});
+</script>

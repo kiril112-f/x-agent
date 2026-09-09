@@ -1,0 +1,59 @@
+Generate this at 1536 x 512 pixels (a 3:1 banner), high quality.
+
+INTENT
+A finished cover banner for a written article. A typographic poster: one saturated gradient, one
+short phrase set enormous, and two glass app icons standing inside the line of text. Nothing
+else. Editorial tech branding, print-clean.
+
+BACKGROUND
+One colour field with a clearly visible gradient. A broad glow of electric cobalt blue (#4B6BFF)
+sits behind the centre of the composition; the body of the field is deep saturated cobalt
+(#1B3BEF); the corners sink into a far deeper midnight navy (#080D4A), at least twice as dark as
+the glow. Very fine film grain, barely visible. Colour and light only: no texture, no pattern,
+no scenery, no photograph, no border, no frame, no vignette ring.
+
+TYPOGRAPHY — this is the main subject of the image, not a caption
+The banner carries one phrase, in pure white, all lowercase, broken across two sizes:
+
+  where
+  installs        come from
+
+Set in a heavy display grotesque in the manner of Helvetica Now Display Black: large x-height,
+horizontal terminals, no flare, no rounded corners. Every word is in that same heaviest weight —
+the size changes between words, the weight never does.
+Letter spacing is extremely tight, letters almost touching, kerned the way a printed poster is.
+
+The word "installs" is by far the largest thing in the image. Its lowercase letters stand about
+40 percent of the banner height tall and the word spans roughly 60 percent of the banner width.
+The words "where" and "come from" are about 28 percent of that size, in the same white and the
+same heaviest weight.
+"where" sits above, aligned to the left edge of "installs". "come from" sits to the right of
+"installs", resting on the same baseline.
+The whole phrase is composed as one centred lockup with generous empty margins around it.
+
+Spell it letter by letter, all lowercase: w-h-e-r-e, i-n-s-t-a-l-l-s, c-o-m-e, f-r-o-m.
+
+ICONS
+Two app icons stand inside the line of text, in the gap between "installs" and "come from",
+resting on the same baseline as the letters and slightly overlapping the bottom of the word
+"installs" so they sit in front of it. They are the App Store icon and the TikTok icon, tilted a
+few degrees, gently overlapping each other, each about as tall as the word "installs".
+Each is a squircle tile with iOS-style rounded corners and its own logo mark crisp, opaque and
+centred inside.
+They are made of real glass, not glossy plastic: thick acrylic that is genuinely see-through, so
+the cobalt field reads clearly through the body of each tile and you can see one tile through the
+other where they overlap. Visible internal refraction and caustics, a wet high-gloss surface with
+two crisp specular highlights, faint chromatic dispersion breaking to cyan and magenta along the
+thin edges, softly rounded bevels, a subtle subsurface glow.
+Key light from the upper left at 45 degrees, a warm amber rim (#FF8A1F) catching the lower right
+edges, and a soft shadow under each tile.
+
+CONSTRAINTS
+Two type sizes only. Keep the letters flat: no drop shadow, no outline, no glow, no gradient
+inside the letters, no panel behind them.
+The icons float against the field. No ground plane, no floor, no table, no reflection underneath
+them, no horizon line.
+Nothing else belongs in this frame: no third icon, no background icons, no smoke, no haze, no
+particles, no lens flare, no people, no interface, no watermark, no logo, no badges, no kicker
+label and no second block of text.
+Render no text anywhere except the three words quoted above.

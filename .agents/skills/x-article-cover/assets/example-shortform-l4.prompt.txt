@@ -1,0 +1,57 @@
+Generate this at 1536 x 640 pixels (a 2.4:1 cinematic banner), xhigh quality.
+
+INTENT
+A finished cover banner for a written article, shot like a piece of cinematic product
+photography. Editorial, moody, expensive. Not an illustration, not a stock image, not a render
+that looks like a render.
+
+BACKGROUND
+The light divides the frame. The left third is almost black charcoal (#0A0B0F), deep enough that
+white text sits on it with no panel or box behind it. Moving right, the field warms through
+burnt umber into a hot amber blaze (#FF7A18) that peaks behind the object on the right side.
+Volumetric haze hangs in that light: soft visible shafts and slow drifting smoke catching the
+amber, thicker on the lit side, thinning to nothing on the dark side. No hard edges anywhere in
+the background, no pattern, no scenery, no border, no frame.
+
+SUBJECT
+One object: a modern smartphone standing upright in portrait orientation, held at a slight
+three-quarter angle, its screen switched off and reading as dark polished glass that mirrors the
+amber light. The camera bump and the thin metal edge are clearly visible so it is unmistakably a
+phone. Photoreal, physically based, razor sharp.
+It is lit from behind and to the right, so a bright amber rim traces the whole silhouette of the
+phone while its face stays in shadow. A cooler faint fill from the upper left keeps the dark side
+from going flat. The object occupies about 34 percent of the banner width and sits on the right,
+cropped slightly by the right edge of the frame.
+
+DEPTH — three planes, all of them present
+Far plane: the silhouette of a ring light on a stand behind the phone, dark, unlit, heavily out
+of focus, readable only as a shape through the haze.
+Middle plane: the phone, sharp.
+Foreground plane: a soft, very out-of-focus dark shape crossing the bottom left corner, almost
+black and almost abstract, as if something sat close to the lens. It must not touch the text.
+
+TYPOGRAPHY
+Pure white, clean neo-grotesque sans, medium weight rather than heavy — think Inter SemiBold, not
+a poster black. Left aligned in the dark left portion of the frame, vertically centred, generous
+margin from the left edge.
+A small uppercase line sits above, widely letter-spaced, about a fifth of the headline size,
+reading exactly: "SHORT-FORM TEARDOWN"
+Below it, two lines of headline at the same size as each other, line height slightly under one,
+each capital letter about 15 percent of the banner height tall:
+"Why short-form ads die"
+"in the first 3 seconds"
+The words "first 3 seconds" are set in italic. Everything else is upright. No colour change
+anywhere in the type — the italic is the only emphasis.
+Spell it letter by letter: capital W-h-y, short hyphen form, a-d-s, d-i-e, i-n, t-h-e, f-i-r-s-t,
+the numeral 3, s-e-c-o-n-d-s.
+
+CONSTRAINTS
+Two type sizes only, plus the italic. Keep the letters flat: no drop shadow, no outline, no glow,
+no gradient inside the letters, no panel or scrim behind them — the darkness of the field is what
+makes them readable.
+No ground plane, no floor, no table, no reflection puddle under the phone, no horizon line.
+Nothing else belongs in this frame: no second phone, no app icons, no interface on the screen,
+no people, no hands, no lens flare stars, no light streaks shaped like lines, no watermark,
+no logo, no badges.
+Render no text anywhere except the three lines quoted above, and no text at all on the phone
+screen.

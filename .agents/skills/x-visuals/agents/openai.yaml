@@ -1,0 +1,6 @@
+interface:
+  display_name: "X Visuals"
+  short_description: "Create useful visuals for X posts"
+  default_prompt: "Use $x-visuals to decide whether this post needs a visual and prepare it."
+policy:
+  allow_implicit_invocation: true

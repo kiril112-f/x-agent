@@ -1,0 +1,67 @@
+Generate this at 1536 x 512 pixels (a 3:1 banner), high quality.
+
+INTENT
+A finished cover banner for a written article, in the visual language of premium editorial tech
+branding. Poster-grade, print-clean, not an illustration and not a stock image.
+
+BACKGROUND
+One colour field with a strong, clearly visible gradient. A bright glow of electric cobalt blue
+(#4B6BFF) sits behind the icons; the body of the field is deep saturated cobalt (#1B3BEF); the
+corners sink into a far deeper midnight navy (#080D4A). The corners must read at least twice as
+dark as the glow — this is a deep, dimensional field, not a flat fill. Very fine film grain,
+barely visible. Colour and light only: no texture, no pattern, no scenery, no photograph,
+no border, no frame.
+
+SUBJECT
+A lockup of three app icons in a stepped row, each one slightly overlapping the next: the TikTok
+icon, the YouTube icon and the PayPal icon. Each is a squircle tile with iOS-style rounded
+corners, its own logo mark crisp and centred inside, and its own brand colour clearly visible
+through the material.
+Rendered in real glass, not glossy plastic: thick acrylic that is genuinely see-through. The
+background colour reads clearly through the body of each icon, and where two icons overlap you
+can see one through the other. Visible internal refraction and caustics, a wet high-gloss surface
+carrying two crisp specular highlights, faint chromatic dispersion breaking to cyan and magenta
+along the thin edges, softly rounded bevels, a subtle subsurface glow that picks up the
+background hue. The symbol inside each icon stays crisp, opaque and instantly readable.
+Lit like studio product photography: key light from the upper left at 45 degrees, warm signal
+orange rim light (#FF8A1F) from the lower right, soft contact shadow beneath.
+Shot on an 85mm lens, three-quarter view, tilted about 8 degrees.
+The group occupies roughly 38 percent of the banner width and sits on the right side.
+
+COMPOSITION
+The icons and the headline interlock instead of sitting in separate columns. The nearest icon
+crosses into the text block, passing in front of the very end of the headline, while the icon
+behind it tucks slightly behind the kicker line, so there is real depth between type and object
+rather than two flat stickers on one background. The overlap stays shallow: the last character
+of the headline must remain fully readable, nothing may cover the enclosed white space inside a
+letter, and nothing touches the first two letters of a line.
+
+SUPPORTING LAYER
+Four or five more app icons of the same glass material drift far behind the group, much smaller,
+out of focus and dimmed down into the field, suggesting a crowd of other platforms. They stay
+near the edges and in the depth, never come close to the letters, and never compete with the
+three icons in front.
+
+TYPOGRAPHY
+Pure white, heavy neo-grotesque sans in the manner of Helvetica Now Display Black or Inter Black.
+Tight letter spacing, line height slightly under one, left aligned on the left side,
+vertically centred.
+A small uppercase kicker line sits above the headline, widely letter-spaced, about a quarter of
+the headline size. The kicker reads exactly: "THE UNDER-18 PLAYBOOK"
+Below it comes the headline, which is the single largest element in the whole banner. Its capital
+letters stand about 30 percent of the banner height tall, and the headline fills almost all the
+width available to the left of the icons. Err on the side of too large.
+The headline reads exactly: "$70K Before 18"
+Spell the headline letter by letter: dollar sign, seven, zero, capital K, space, capital B,
+e, f, o, r, e, space, one, eight.
+The characters "$70K" inside the headline are warm signal orange (#FF8A1F); every other
+character stays pure white.
+
+CONSTRAINTS
+Use only two type sizes. Keep the letters flat: no drop shadow, no outline, no glow, no gradient
+inside the letters. Leave at least a third of the banner as open background.
+Everything floats against the field. There is no ground plane, no floor, no table, no reflection
+underneath anything, no horizon line and no pool of light on a surface.
+Nothing else belongs in this frame: no interface, no people, no lens flare, no circuit patterns,
+no watermark, no extra badges or stickers.
+Render no text anywhere except the two lines quoted above.

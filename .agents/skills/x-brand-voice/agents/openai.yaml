@@ -1,0 +1,6 @@
+interface:
+  display_name: "X Brand Voice"
+  short_description: "Apply and learn Kirill's X voice"
+  default_prompt: "Use $x-brand-voice to rewrite this without losing my personal voice."
+policy:
+  allow_implicit_invocation: true

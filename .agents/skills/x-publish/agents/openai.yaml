@@ -1,0 +1,6 @@
+interface:
+  display_name: "X Publish (Disabled)"
+  short_description: "Deprecated; Kirill publishes X posts manually"
+  default_prompt: "Do not use $x-publish; return a manual publishing handoff instead."
+policy:
+  allow_implicit_invocation: false

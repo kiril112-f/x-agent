@@ -1,0 +1,52 @@
+=== ПРОМПТ 1 — первая иконка, задаёт материал для всей библиотеки ===
+Generate this at 1024 x 1024 pixels, xhigh quality, on a fully transparent background
+(PNG with alpha).
+
+INTENT
+A single app-icon asset to be cut out and placed into a designed banner. One object, nothing else.
+
+SUBJECT
+One app icon: the App Store icon. A squircle tile with iOS-style rounded corners, its logo mark
+crisp, opaque, centred and correct. The tile is centred in the frame with generous empty margin
+on every side and tilted about 8 degrees to the right.
+It is made of real glass, not glossy plastic: thick acrylic that is genuinely see-through, so
+whatever sits behind it would read clearly through the body of the tile. Visible internal
+refraction and caustics, a wet high-gloss surface carrying two crisp specular highlights, faint
+chromatic dispersion breaking to cyan and magenta along the thin bevelled edges, softly rounded
+bevels about a tenth of the tile's width, a subtle subsurface glow.
+Lighting: a single key light from the upper left at 45 degrees, and a warm amber rim light
+(#FF8A1F) grazing the lower right edge. No shadow cast onto anything, since there is no floor.
+
+CONSTRAINTS
+Fully transparent background — no colour, no gradient, no card, no backdrop, no checkerboard.
+One tile only. No text, no numbers, no watermark, no second icon, no props, no particles,
+no ground plane, no reflection, no horizon.
+
+
+=== ПРОМПТ 2 — каждая следующая иконка ===
+Прикрепить первую готовую иконку как Image 1, затем:
+
+Image 1 is the approved icon from this series.
+
+Generate a new single app icon at 1024 x 1024 pixels, xhigh quality, on a fully transparent
+background (PNG with alpha).
+
+Match Image 1 exactly: the same glass material and thickness, the same transparency, the same
+bevel size, the same two specular highlights, the same warm amber rim light on the lower right,
+the same key light from the upper left, the same 8 degree tilt, the same size within the frame
+and the same empty margin.
+Change only which icon it is. The new icon is: <НАЗВАНИЕ>. Its logo mark stays crisp, opaque,
+centred and correct.
+
+Keep everything else identical. Fully transparent background, one tile only, no text,
+no watermark, no second icon, no ground plane, no reflection.
+
+
+=== БИБЛИОТЕКА ===
+Один раз сгенерить и переиспользовать во всех обложках. Так серия держится
+конструктивно, а не уговорами модели.
+
+  App Store · Google Play · TikTok · YouTube · Instagram · OpenAI
+  Telegram · Discord · PayPal · Stripe · Notion · Figma
+
+Складывать в assets/icons/ как icon-<name>.png

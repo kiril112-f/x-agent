@@ -1,0 +1,252 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>X Article Cover Compositor</title>
+<style>
+@font-face {
+  font-family: 'InterVF';
+  src: url('file:///C:/Windows/Fonts/Inter-VariableFont_opszwght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+:root {
+  --field-g: #4B6BFF;
+  --field-c: #1B3BEF;
+  --field-e: #080D4A;
+  --accent:  #FF8A1F;
+  --glow-x:  50%;
+  --pad-x:   90px;
+  --pad-y:   60px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { background: #000; }
+body { display: flex; align-items: flex-start; justify-content: flex-start; }
+
+#cover {
+  position: relative;
+  overflow: hidden;
+  font-family: 'InterVF', Inter, 'Inter Variable', Montserrat, 'Arial Black', sans-serif;
+  font-kerning: normal;
+  font-feature-settings: 'kern' 1, 'liga' 1;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+}
+
+/* ---- поле: три остановки, углы минимум вдвое темнее свечения ---- */
+.field {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 82% 150% at var(--glow-x) 46%,
+              var(--field-g) 0%, var(--field-c) 40%, var(--field-e) 100%);
+}
+.grain {
+  position: absolute; inset: -20%;
+  opacity: .028;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ---- сцена ---- */
+.stage {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  padding: var(--pad-y) var(--pad-x);
+}
+.stage.l2 { justify-content: flex-start; gap: 70px; }
+.stage.l3 { justify-content: flex-start; gap: 70px; flex-direction: row-reverse; }
+.stage.l4 { justify-content: flex-start; gap: 70px; }
+
+.text { flex: 0 1 auto; min-width: 0; }
+.stage.l2 .text, .stage.l3 .text, .stage.l4 .text { flex: 1 1 auto; }
+
+.kicker {
+  font-weight: 900;
+  letter-spacing: .10em;
+  text-transform: uppercase;
+  color: #fff;
+  white-space: nowrap;
+  margin-bottom: .5em;
+}
+
+/* ---- заголовок ----
+   Вес одинаковый у всех слов — меняется только кегль. Именно это отличает
+   постер от презентации: у референсов "the" и "playbook" такие же Black,
+   как "organic". Трекинг жёстче, чем кажется правильным: буквы почти касаются. */
+.hero {
+  font-weight: 900;
+  letter-spacing: -.045em;
+  color: #fff;
+  width: max-content;
+}
+/* каждая строка несёт собственный интерлиньяж: иначе строка из мелких слов
+   тащит на себе стойку от гигантского кегля и локап разъезжается по вертикали */
+.hero .line     { line-height: .92; white-space: pre; }
+.hero .line.sm  { font-size: .28em; letter-spacing: -.03em; margin-bottom: .1em; }
+.hero .sm { font-size: .28em; letter-spacing: -.03em; }
+.hero .a  { color: var(--accent); }
+
+/* иконка внутри строки: стоит на базовой линии и слегка тонет под неё,
+   как у organic playbook */
+.hero img.slot {
+  height: .82em;
+  vertical-align: baseline;
+  margin: 0 .10em -.07em;
+  position: relative;
+  z-index: 2;
+}
+.hero img.slot + img.slot { margin-left: -.14em; }
+
+/* ---- объект отдельной колонкой (только l2/l3/l4) ---- */
+.obj { position: relative; z-index: 2; flex: 0 0 auto; }
+.obj img { display: block; width: 100%; height: auto; }
+.obj::before {
+  content: ''; position: absolute;
+  left: 50%; top: 52%; transform: translate(-50%, -50%);
+  width: 118%; aspect-ratio: 1;
+  background: radial-gradient(circle, rgba(255,255,255,.20) 0%, rgba(255,255,255,0) 62%);
+  pointer-events: none;
+}
+
+.mark {
+  position: absolute;
+  left: var(--pad-x); bottom: 44px;
+  font-weight: 500; letter-spacing: .06em;
+  color: rgba(255,255,255,.55);
+}
+.mark.off { display: none; }
+</style>
+
+<div id="cover">
+  <div class="field"></div>
+  <div class="grain"></div>
+  <div class="stage">
+    <div class="text">
+      <div class="kicker"></div>
+      <div class="hero"></div>
+    </div>
+    <div class="obj"><img alt=""></div>
+  </div>
+  <div class="mark"></div>
+</div>
+
+<script>
+const q = new URLSearchParams(location.search);
+const g = (k, d) => q.get(k) ?? d;
+
+const FIELDS = {          // [свечение, основа, углы]
+  cobalt:   ['#4B6BFF', '#1B3BEF', '#080D4A'],
+  graphite: ['#2A2C3A', '#16171F', '#050508'],
+  violet:   ['#8B4BFF', '#6B2BF0', '#1A0546'],
+  teal:     ['#12B8A2', '#0B8E7E', '#01302A'],
+};
+
+const layout = g('layout', 'l1').toLowerCase();
+const inline = layout === 'l1';                       // l1 = иконки внутри строки
+
+// 1536x512 — ровно 3:1, обе стороны кратны 16: тот же размер, что gpt-image-2.5 отдаёт нативно
+const W = +g('w', 1536);
+const H = +g('h', layout === 'l4' ? 640 : 512);
+const K = W / 1500;                                   // типографика масштабируется от базы 1500
+
+const cover = document.getElementById('cover');
+cover.style.width  = W + 'px';
+cover.style.height = H + 'px';
+
+const [fg, fc, fe] = FIELDS[g('field', 'cobalt')] || FIELDS.cobalt;
+const root = document.documentElement.style;
+root.setProperty('--field-g', g('fieldg', fg));
+root.setProperty('--field-c', g('fieldc', fc));
+root.setProperty('--field-e', g('fielde', fe));
+root.setProperty('--accent',  g('accent', '#FF8A1F'));
+root.setProperty('--pad-x', 90 * K + 'px');
+root.setProperty('--pad-y', 60 * K + 'px');
+root.setProperty('--glow-x', g('glowx', inline ? '50%' : layout === 'l3' ? '22%' : '76%'));
+
+const stage = document.querySelector('.stage');
+stage.className = 'stage ' + layout;
+
+const objs = (g('obj', '') || '').split(',').map(s => s.trim()).filter(Boolean);
+
+/* Разметка заголовка:
+     |        перенос строки
+     ~...~    мелкая шкала (0.28 от кегля, тот же вес)
+     *...*    акцентный цвет
+     @        слот под иконку, по одной на каждый @   */
+const esc = s => s.replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+let slot = 0;
+function inlineMarkup(s) {
+  return esc(s)
+    .replace(/~([^~]+)~/g, '<span class="sm">$1</span>')
+    .replace(/\*([^*]+)\*/g, '<span class="a">$1</span>')
+    .replace(/@/g, () => {
+      const src = objs[slot++];
+      return src ? `<img class="slot" src="${src}" alt="">` : '';
+    });
+}
+function markup(s) {
+  return s.split('|').map(line => {
+    const only = line.trim().match(/^~(.+)~$/);       // строка целиком мелкая
+    return only
+      ? `<div class="line sm">${inlineMarkup(only[1])}</div>`
+      : `<div class="line">${inlineMarkup(line)}</div>`;
+  }).join('');
+}
+
+const kickerEl = document.querySelector('.kicker');
+const heroEl   = document.querySelector('.hero');
+const kicker   = g('kicker', '');
+kickerEl.innerHTML = esc(kicker);
+kickerEl.style.display  = kicker ? 'block' : 'none';
+kickerEl.style.fontSize = 46 * K + 'px';
+heroEl.innerHTML = markup(g('hero', 'headline'));
+
+const markEl = document.querySelector('.mark');
+const handle = g('mark', '@KirillMorozovop');
+markEl.textContent = handle;
+markEl.className = 'mark' + (handle === 'off' ? ' off' : '');
+markEl.style.fontSize = 22 * K + 'px';
+markEl.style.bottom   = 44 * K + 'px';
+if (handle !== 'off') stage.style.paddingBottom = 118 * K + 'px';
+
+/* объект отдельной колонкой — только когда иконки не внутри строки */
+const objWrap = document.querySelector('.obj');
+const colSrc  = inline ? '' : objs[slot] || objs[0];
+if (colSrc) {
+  objWrap.querySelector('img').src = colSrc;
+  objWrap.style.width = (+g('objw', layout === 'l4' ? 42 : 32) / 100 * W) + 'px';
+  objWrap.style.transform = `translateY(${(+g('objy', 0)) * K}px)`;
+  objWrap.style.marginLeft = (+g('objx', -60)) * K + 'px';
+} else {
+  objWrap.style.display = 'none';
+}
+
+/* автоподбор кегля: жмём, пока локап не влезет по ширине и высоте */
+function fit() {
+  const cs = getComputedStyle(stage);
+  const maxH = H - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom)
+             - (kicker ? kickerEl.offsetHeight + 0.5 * 46 * K : 0);
+
+  let maxW = W - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+  if (colSrc) maxW -= objWrap.offsetWidth + (parseFloat(cs.gap) || 0)
+                    + (parseFloat(objWrap.style.marginLeft) || 0);
+
+  let size = +g('hero_px', 0) * K;
+  if (!size) {
+    size = layout === 'l4' ? 130 * K : 250 * K;
+    heroEl.style.fontSize = size + 'px';
+    let guard = 0;
+    while ((heroEl.scrollWidth > maxW || heroEl.offsetHeight > maxH) && size > 40 && guard++ < 600) {
+      size -= 2;
+      heroEl.style.fontSize = size + 'px';
+    }
+    if (size < 110 * K) console.warn('hero сжат до ' + Math.round(size / K) + 'px при каноне 1500 — текст обложки слишком длинный');
+  }
+  heroEl.style.fontSize = size + 'px';
+}
+
+// картинки в строке влияют на ширину — подбирать кегль только после их загрузки
+Promise.all([
+  document.fonts.ready,
+  ...[...document.images].map(img => img.complete
+    ? Promise.resolve()
+    : new Promise(r => { img.onload = img.onerror = r; })),
+]).then(() => { fit(); document.title = 'ready'; });
+</script>

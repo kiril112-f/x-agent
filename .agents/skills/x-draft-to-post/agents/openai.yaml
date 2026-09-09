@@ -1,0 +1,11 @@
+interface:
+  display_name: "X Draft to Post"
+  short_description: "Turn rough ideas into researched X posts"
+  default_prompt: "Use $x-draft-to-post to turn my rough draft into a publishable English X post."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "notion"
+      description: "Maintain the existing post lifecycle records"
+policy:
+  allow_implicit_invocation: true

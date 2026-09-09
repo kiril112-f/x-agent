@@ -1,0 +1,57 @@
+{
+  "type": "curve",
+  "theme": "paper",
+  "size": "wide",
+  "title": "Why the first 90 days of posting feel like nothing",
+  "deck": "Effort accrues linearly. Distribution compounds. The gap is where people quit.",
+  "source": "Illustrative — shape of the relationship, not measured data",
+  "series": [
+    {
+      "name": "What you expect",
+      "shape": "linear",
+      "color": "neutral",
+      "band": [
+        0.13,
+        0.36
+      ],
+      "label": "none"
+    },
+    {
+      "name": "What actually happens",
+      "shape": "exponential",
+      "color": "alt",
+      "emphasis": true,
+      "arrow": true,
+      "label": "none",
+      "k": 3.2
+    }
+  ],
+  "regions": [
+    {
+      "between": [
+        "What you expect",
+        "What actually happens"
+      ],
+      "to": 0.63,
+      "label": "Quitting zone"
+    },
+    {
+      "between": [
+        "What actually happens",
+        "What you expect"
+      ],
+      "from": 0.63,
+      "label": "Everything at once"
+    }
+  ],
+  "marker": {
+    "on": "What actually happens",
+    "at": 0.63,
+    "label": "Day 90",
+    "sub": "the curves finally cross",
+    "from": "top"
+  },
+  "x": {
+    "name": "Time posting"
+  }
+}

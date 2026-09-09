@@ -1,0 +1,13 @@
+{
+  "type": "curve",
+  "theme": "mist",
+  "size": "wide",
+  "title": "What scaling a winning ad actually does",
+  "source": "Illustrative — shape of the relationship, not measured data",
+  "series": [
+    { "name": "Engagement", "shape": "peak", "k": 0.34, "band": [0.46, 0.94], "label": "start", "color": "main" },
+    { "name": "Conversion rate", "shape": "peak", "k": 0.38, "band": [0.2, 0.62], "label": "start", "color": "violet" },
+    { "name": "Ad spend", "shape": "plateau", "k": 0.55, "band": [0.14, 0.78], "label": "start", "color": "alt" }
+  ],
+  "guide": { "at": 0.36, "label": "Ad fatigue", "dots": true }
+}

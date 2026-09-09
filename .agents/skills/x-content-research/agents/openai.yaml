@@ -1,0 +1,16 @@
+interface:
+  display_name: "X Content Research"
+  short_description: "Mine X ideas and verify claims with Apify"
+  default_prompt: "Use $x-content-research to mine focused X ideas with Apify and return only the strongest sourced angles."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "apify-x"
+      description: "Research public X posts through the Xquik Apify Actor"
+      transport: "streamable_http"
+      url: "https://mcp.apify.com?tools=xquik/x-tweet-scraper"
+    - type: "mcp"
+      value: "notion"
+      description: "Store selected competitors, formats and idea cards in the existing Notion databases"
+policy:
+  allow_implicit_invocation: true

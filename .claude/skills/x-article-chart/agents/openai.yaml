@@ -1,0 +1,6 @@
+interface:
+  display_name: "X Article Chart"
+  short_description: "Chart or stat visual for an X Article in Kirill's house style"
+  default_prompt: "Use $x-article-chart to build the chart for this number."
+policy:
+  allow_implicit_invocation: true

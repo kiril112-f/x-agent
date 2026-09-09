@@ -1,0 +1,18 @@
+{
+  "type": "bars",
+  "theme": "paper",
+  "size": "wide",
+  "title": "Where the installs actually came from",
+  "deck": "Share of first 50,000 installs by attributed source.",
+  "source": "Source: App Store Connect attribution, Feb–Jun 2026",
+  "orientation": "h",
+  "sort": "desc",
+  "format": "{v}%",
+  "data": [
+    { "label": "TikTok", "value": 61, "emphasis": true },
+    { "label": "App Store search", "value": 19 },
+    { "label": "YouTube Shorts", "value": 11 },
+    { "label": "Direct / word of mouth", "value": 6 },
+    { "label": "Paid", "value": 3 }
+  ]
+}
