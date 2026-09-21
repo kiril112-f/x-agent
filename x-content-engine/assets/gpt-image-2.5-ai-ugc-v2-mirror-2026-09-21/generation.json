@@ -1,0 +1,15 @@
+{
+  "model": "gpt-image-2-5-sunburst-text-to-image",
+  "aspect_ratio": "9:16",
+  "credits_consumed": 16.0,
+  "result_url": "https://tempfile.aiquickdraw.com/gpt-image-2-5/image_1790023703445_jm8lcv.png",
+  "resolution_requested": "4K",
+  "taskId": "0e9081fcc68fc4b0c68aaf3c13c4cfb7",
+  "generated_at_utc": "2026-09-21T20:47:42.5435308Z",
+  "output_path": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\gpt-image-2.5-ai-ugc-v2-mirror-2026-09-21\\ugc-mirror-sunburst-9x16-4k.png",
+  "actual_width": 2160,
+  "actual_height": 3840,
+  "actual_format": "PNG",
+  "postprocessed": false,
+  "version": "v2_before_figure_emphasis"
+}
