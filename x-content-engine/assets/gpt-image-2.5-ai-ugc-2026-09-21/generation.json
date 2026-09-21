@@ -1,0 +1,14 @@
+{
+  "model": "gpt-image-2-5-sunburst-text-to-image",
+  "aspect_ratio": "3:4",
+  "credits_consumed": 16.0,
+  "result_url": "https://tempfile.aiquickdraw.com/gpt-image-2-5/1790022359655-id9h61gqzwr.png",
+  "resolution_requested": "4K",
+  "taskId": "b675317c1026d784131a70218b7ace15",
+  "generated_at_utc": "2026-09-21T20:25:25.4916603Z",
+  "output_path": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\gpt-image-2.5-ai-ugc-2026-09-21\\ugc-kitchen-sunburst-4k.png",
+  "actual_width": 2480,
+  "actual_height": 3312,
+  "actual_format": "PNG",
+  "postprocessed": false
+}
