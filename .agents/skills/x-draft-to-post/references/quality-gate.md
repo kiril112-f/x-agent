@@ -8,7 +8,10 @@
 - The hook overpromises the body.
 - It uses a banned phrase from `brand-voice.md` or a close canned variant.
 - It copies distinctive wording from a reference creator.
-- It relies on another person's idea but omits attribution or adds no original contribution.
+- It relies on another person's idea but loses the source link or adds no original contribution. A separately supplied link can provide attribution; an inline name/@handle is not required.
+- It assumes a reference must be a tweet or automatically turns it into a quote-post.
+- It adds the reference author's name/@handle or an origin-of-idea preface merely because Kirill supplied that reference.
+- Its Notion post page contains editing reports, open-question sections or research packs instead of the compact layout in `notion-schema.md`.
 - It invents a scene, dialogue, sequence, relationship or causal result for storytelling.
 - It inserts people/resources as name-dropping without helping the reader.
 - A multi-beat post is one dense paragraph or loses blank-line separators in the final handoff.

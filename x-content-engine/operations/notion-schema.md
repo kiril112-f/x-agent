@@ -84,7 +84,7 @@ Source page: `Личный бренд`
 - Database ID: `689a9a10-d5d5-47cb-9d03-b04e6cfef5a1`
 - Data source ID: `af065d54-c401-4b85-b355-07fca5a7fc50`
 
-Назначение: одна карточка на один реальный post lifecycle. Исследование, user draft, AI revision и manual-publish analytics остаются в этой карточке.
+Назначение: одна карточка на один реальный post lifecycle. В странице — исходный черновик и актуальный чистовик; основные сведения и фактический статус — в properties.
 
 Основные properties:
 
@@ -97,7 +97,15 @@ Source page: `Личный бренд`
 - `Что доработал ИИ` — Хук, Структура, Сокращение, Тон и подача, Конкретика и цифры, Концовка и CTA.
 - `Ссылка на пост`, `Дата публикации`, `Просмотры`, `Реакции`, `Оценка результата`, `Что понял после публикации` — заполняются после ручной публикации.
 
-Полный raw draft, context/resource pack, research brief, evidence ledger, story spine, attribution plan, compression note, final copy и `before → after → why` хранить в page body. Final copy сохранять с точными blank lines из `post-formatting.md`. Если AI удалил повторы/background, поставить `Что доработал ИИ = Сокращение`. Properties остаются коротким index.
+Page body по умолчанию:
+
+1. `Черновик` — исходный текст Кирилла, если он предоставлен. Не выдумывать черновик при наличии только идеи или референса.
+2. `Чистовик` — одна актуальная готовая версия с точными blank lines из `post-formatting.md`.
+3. Только при необходимости — ссылки на референс/первоисточники и готовые медиа для публикации, отдельно от чистовика. Для статьи допустимы нужные обложка и графики.
+
+Не добавлять «Что изменил», «Что доработал ИИ» как раздел body, `before → after → why`, «Открытые вопросы», context/resource pack, research brief, evidence ledger, story spine, attribution plan, compression note, оценки качества или отчёт о работе агента. Пустые секции и повторяющиеся версии не создавать. Исследования и редакционные проверки остаются внутренними; устойчивые пользовательские правки сохранять локально в knowledge-файлах.
+
+Обязательные и применимые properties заполнять кратко, без дублирования body. Существующее `Что доработал ИИ` может содержать только точные option values, если это нужно workflow; пояснительный отчёт не добавлять. Реальный вопрос, без которого нельзя честно закончить текст, задать в чате, не создавать под него блок в Notion. Дополнительные разборы в странице — только по явной просьбе Кирилла.
 
 ## Routing
 
@@ -114,8 +122,8 @@ Source page: `Личный бренд`
 
 1. Kirill supplies or accepts an idea.
 2. Create one post-lifecycle record with status `Ресерч` or `Черновик`.
-3. Append context/resource pack, people/entities, resource map, story spine, research and raw draft to the same page body.
-4. After AI editing, append final version and change status to `Улучшено ИИ`; set exact `Что доработал ИИ` values.
+3. Сохранить исходный черновик, если он есть. Исследование вести внутренне; нужные ссылки оставить отдельно от текста.
+4. После редактуры сохранить актуальный чистовик в той же странице и поставить `Улучшено ИИ`; обновлять чистовик вместо накопления дублей и отчётов о правках. Исходный черновик сохранить.
 5. Kirill reviews. Set `Готово к публикации` only after his approval.
 6. Kirill publishes manually.
 7. Add URL/date/metrics and one factual learning, then set `Опубликовано`.

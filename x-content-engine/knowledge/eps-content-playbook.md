@@ -75,7 +75,7 @@ Do not optimize for the shortest possible text. Necessary nuance, attribution, c
 - AI formats and improves; Kirill remains author/editor.
 - Slightly raw, clear writing is better than polished synthetic prose.
 - Keep strong human sentences. Do not rewrite every line for uniformity.
-- Record meaningful Kirill edits as `before → after → why` and update voice only from repeated/explicit feedback.
+- Record durable Kirill feedback locally in `knowledge/voice-feedback.md`, not in Notion post pages; update voice only from repeated/explicit feedback.
 - DMs and real one-to-one interactions stay human/manual.
 
 ## Research and swipe-file
@@ -84,7 +84,7 @@ Do not optimize for the shortest possible text. Necessary nuance, attribution, c
 - Build a swipe-file of hooks, structures and proof formats, not copied wording.
 - Reverse-engineer accounts with repeatable performance, not a single viral outlier.
 - Scrape narrowly, rank by relevance/performance, and return only the strongest ideas.
-- Mention/credit the original person or resource when their work materially shapes the post.
+- Keep reference/source links separately for manual embedding; do not add the reference author's name, @handle or an origin-of-idea preface by default. Follow `context-storytelling.md` for attribution.
 - A source post proves what its author said, not every external claim inside it.
 
 ## Content types

@@ -116,4 +116,4 @@ Use `$no-ai-slop` for minimum effective editing. This file overrides its generic
 
 ## Learning loop
 
-For every meaningful user edit, record `before → after → why` in Notion. Update this profile only after a repeated pattern or an explicit instruction; never universalize one correction.
+Record durable user feedback locally in `voice-feedback.md`; do not add editing logs or `before → after → why` to Notion post pages. Update this profile only after a repeated pattern or an explicit instruction; never universalize one correction.

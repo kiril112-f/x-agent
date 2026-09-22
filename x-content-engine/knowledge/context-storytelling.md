@@ -15,10 +15,18 @@
 7. `Resource map` — 1–5 лучших источников с URL и одной строкой `why useful`.
 8. `Counterpoint or exception` — где основная идея не работает или остаётся спорной.
 9. `Original contribution` — что Кирилл добавляет сверх пересказа источника.
-10. `Attribution plan` — кого/что упомянуть в тексте, кого оставить в source note, какой пост цитировать.
+10. `Attribution plan` — какие ссылки нужны для проверки фактов и ручного встраивания; автор референса не становится обязательным упоминанием в тексте.
 11. `Story spine` — краткая последовательность будущего текста.
 
-Не показывать весь pack читателю и не забивать им финальный пост. Он нужен агенту и сохраняется в Notion post page body. В ответе пользователю можно показать concise source note.
+Pack — внутренняя рабочая заметка агента. Не переносить его в ответ или Notion-страницу поста по умолчанию. При необходимости сохранять исследование локально; пользователю оставлять только нужные ссылки.
+
+## Референс и готовый текст
+
+- Референс может быть постом, статьёй, видео, скриншотом, документом или идеей. Определять его роль по запросу: тема, факт, визуал, структура или подача.
+- Формат результата выбирать по мысли Кирилла и задаче. Даже ссылка на твит не означает просьбу написать quote-post.
+- Не добавлять имя/@handle автора референса или вступления «увидел у», «взял идею у», «inspired by», «as @… pointed out» только из-за происхождения материала.
+- Существующую ссылку на референс оставлять отдельно от копируемого текста: Кирилл встроит её вручную. Не выдумывать URL для материала без ссылки.
+- Сохранять проверяемость фактов через первоисточники. Не присваивать чужой опыт и не копировать уникальные формулировки. Имя героя кейса или автора прямой цитаты может быть необходимо по смыслу; это не повод тегать автора референса.
 
 ## Minimum context check for personal posts
 
@@ -29,7 +37,7 @@
 - что известно точно, а что является мнением;
 - есть ли named tool/person/resource, который действительно помогает понять историю.
 
-Если external anchor не нужен, записать `Personal observation — no external source required`. Не добавлять человека или resource только ради видимости research.
+Если external anchor не нужен, отметить это только внутренне. Не добавлять человека или resource только ради видимости research.
 
 ## Storytelling structures
 
@@ -63,11 +71,10 @@ Storytelling is causal clarity, not cinematic decoration. A story may occupy thr
 
 ## Mentioning people
 
-- Credit the original person when their idea, quote, framework, case or data is central.
-- Preserve exact `@handle` and source URL in the context pack.
-- Mention/tag a person in the final copy only when the post materially discusses their work; Kirill decides the actual tag during manual publishing.
+- Preserve source identity and URL internally for fact-checking; provide the relevant link separately for Kirill to embed manually.
+- Do not name or tag the reference author merely to explain where the idea came from. Name a person only when essential to the subject, such as the actual case protagonist or speaker of a direct quote, or when Kirill explicitly asks.
 - Do not mass-tag, flatter for reach, imply a relationship, or describe someone as a friend/client/collaborator without evidence.
-- If a person is only background context, keep them in the source note instead of forcing their name into the post.
+- If a person is only background context, keep them in internal research instead of adding a name or attribution paragraph to the post or Notion page.
 
 ## Mentioning resources
 

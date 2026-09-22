@@ -1,5 +1,12 @@
 # Voice feedback log
 
+## 2026-09-22 — references and compact Notion post pages
+
+- A reference can be any material; even a tweet does not automatically request a quote-post.
+- Do not add the reference author's name/@handle or explain where Kirill got the idea. Supply the source link separately for Kirill to embed manually.
+- Keep Notion post pages focused on Kirill's original draft and the current final copy, with only necessary links/media and concise properties.
+- Do not add change reports, open questions, resource packs or editorial commentary to the page. Keep research and checks internal; ask essential blocking questions in chat.
+
 ## 2026-08-31 — saved phrases are examples, not requirements
 
 Feedback:
