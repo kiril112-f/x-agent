@@ -1,0 +1,53 @@
+THE BUILD
+
+Build a polished, playable Mob Control-style game for the browser. Capture the satisfying core loop: aim a cannon, multiply a blue crowd through numbered gates, overwhelm the red defenders, and capture the enemy base.
+
+Use TypeScript and Three.js. Deliver a complete local project with a single command to run it. Use original procedural geometry and materials. Everything shown on screen must work.
+
+CAMERA & WORLD
+
+Design for a portrait viewport. Use a fixed elevated camera that shows the cannon, both gate lanes, the enemy waves, and the distant base in one readable composition.
+
+Create an ivory arena with softly beveled edges, restrained shadows, cyan friendly units, and coral enemy units. Keep the background quiet. Use bright, legible numbers above the gates.
+
+AIM & FIRE
+
+Drag horizontally to move the cannon. Support touch and mouse with identical behavior. Clamp movement to the arena, smooth the input, and fire continuously while the pointer is held.
+
+Give every shot a short barrel recoil, a subtle muzzle flash, and a tiny dust puff. Make the stream of units feel dense and responsive. The cannon must follow the player without noticeable lag.
+
+MULTIPLIER GATES
+
+Place x2 and x3 gates across two lanes. A unit crossing a gate creates the exact number of additional units required by that multiplier. Spawn them in a spreading formation so the crowd visibly blooms.
+
+Track gate crossings per unit. Never multiply the same unit twice at the same gate. Use a brief emissive pulse, a number pop, and staggered spawn timing to make each crossing satisfying.
+
+CROWD SIMULATION
+
+Use instanced meshes and object pooling for the crowd. Give units simple rounded bodies, readable silhouettes, and a lightweight procedural running cycle. Keep the movement varied but deterministic.
+
+Use a spatial hash for neighbor queries. Apply gentle separation, forward movement, and boundary avoidance. Prevent overlap without making the crowd jitter. Avoid all-pairs collision checks.
+
+COMBAT & CAPTURE
+
+Spawn red defenders in clear waves from the far end. When opposing units meet, resolve their collision once, remove the defeated units, and show a compact burst of matching particles.
+
+Surviving blue units damage the base on contact. Show its remaining strength above the structure. On capture, collapse the base in a short, satisfying sequence and celebrate with restrained confetti.
+
+LEVEL & FEEDBACK
+
+Build one complete level with a gentle opening, a moving gate in the middle, and a final enemy wave. Make the effect of choosing the better multiplier obvious through the size of the resulting crowd.
+
+Add a minimal HUD, a first-run drag hint, a visible win state, a clear lose state, and an instant restart. Every button must respond. Keep all controls comfortable on a phone.
+
+POLISH & PERFORMANCE
+
+Use soft lighting, ambient occlusion where affordable, and restrained bloom on gate activation. Add tiny camera impulses on major impacts. Preserve readability when the arena fills with units.
+
+Target 60 fps on a typical modern phone. Cap particles, recycle inactive objects, and bound crowd growth. Reduce effects before reducing input responsiveness. Handle viewport changes and interrupted pointer input.
+
+TEST & DELIVER
+
+Run the game and inspect the result. Test dragging, each gate multiplier, repeated collisions, winning, losing, and restarting. Verify that restarting clears all units, particles, timers, and input state.
+
+Fix console errors and visible defects before finishing. Include a concise README with the run command and any known limits. Report only checks you actually performed. Deliver the working game, not a static mockup.
