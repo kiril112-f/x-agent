@@ -1,4 +1,4 @@
-# Brand voice — working profile v0.3
+# Brand voice — working profile v0.4
 
 ## Voice constants
 
@@ -15,7 +15,7 @@
 - Casual: 6/10.
 - Provocative: 7–8/10, aimed at ideas and methods, never identity or personal humiliation.
 - Humorous: 5–6/10; no comedy-show cadence.
-- Profanity: occasional, usually masked with `*`; never added merely for edge.
+- Profanity: occasional, usually masked with `*`; allowed in a hook when it sharpens the attitude and fits the subject, without making it mandatory.
 - Personal openness: about 60%, focused on work, achievements, useful failures and relevant self-development.
 
 ## Vocabulary examples, not catchphrases
@@ -72,11 +72,11 @@ Preferred over the shorthand above: it does real work and signals that the write
 ### Placement rules
 
 - Budget: roughly one or two shorthand tokens per post, zero is a normal and often better outcome. Two in the same sentence reads like a teenager cosplaying X.
-- Never in the hook. A first line must land clean — an abbreviation there dilutes the claim and costs clickability.
+- Shorthand is allowed in the hook when it makes the line sharper and remains immediately readable. A strong first line takes priority over the former blanket restriction.
 - Never load-bearing. The audience is B2-readable easy American English, so any sentence carrying the mechanism, number or lesson must stay fully legible with the shorthand stripped out.
 - Never in a definition, technical explanation or an integrated promo mention.
 - Preserve shorthand that is already in Kirill's draft. Add one on your own only when the sentence's rhythm genuinely asks for it.
-- Do not stack shorthand with an emoji and profanity in the same line.
+- Choose shorthand, profanity, selective CAPS or an emoji according to the subject; do not stack all of them by default.
 
 ### Do not use
 
@@ -91,6 +91,12 @@ New shorthand appears constantly. Adopting a fresh one is allowed when Kirill al
 ## Hooks
 
 Every post needs a first line that earns attention through a true number, concrete outcome, sharp observation, tension or useful promise. Clickability is required; empty clickbait is not. Pay off the hook in the body.
+
+Kirill's explicit correction on 2026-09-22: make the default hook bolder, more specific and more direct. Avoid soft, defensive openings such as "Your model may support..." when a concrete configuration, number or action can carry the hook instead. Put the strongest relevant number or outcome in the first line. Do not manufacture a statistic merely to satisfy a numerical hook.
+
+Selective CAPS, context-fitting slang, a swear word or an emoji may strengthen a hook. Pick what the subject earns; using none or one is often enough. Do not force all these devices into every post. Preserve material conditions in the body and distinguish a requested setting from a measured result.
+
+For practical tool guides, explain an unfamiliar core term in one short sentence when possible. Cover both Windows and Mac when both are applicable, unless Kirill explicitly limits the platform.
 
 ## CTAs
 
@@ -108,7 +114,7 @@ Every post needs a first line that earns attention through a true number, concre
 - corporate/LLM filler such as `delve`, `game-changer`, `unlock the power`, `in today's fast-paced world`, `let's dive in`.
 - generic founder motivation without a mechanism, example or real stake.
 - hashtags by default.
-- emoji bullet lists and decorative emoji.
+- emoji bullet lists and decorative emoji clutter; a purposeful emoji in a hook is allowed.
 
 ## no-ai-slop override
 

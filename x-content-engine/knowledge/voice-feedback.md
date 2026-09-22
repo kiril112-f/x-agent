@@ -1,5 +1,13 @@
 # Voice feedback log
 
+## 2026-09-22 — stronger hooks and practical guides
+
+- Direct correction: hooks have been too cautious and bland; Kirill reports rewriting them repeatedly. Lead with a concrete number, result, action or tension instead of a vague "may support" opening.
+- Kirill wants the opening to stop the scroll and accepts a provocative register. Slang, profanity, selective CAPS and emojis are available tools, chosen by context rather than all used together.
+- This explicitly supersedes the earlier blanket ban on shorthand in hooks. Keep the line understandable and preserve material factual conditions in the body; do not turn a configuration example into a claim of tested performance.
+- For the Codex post, explain context in one sentence, include both Windows and Mac, and use `model_auto_compact_token_limit = 900000` in the example. The threshold is specific to this request, not a universal default for future guides.
+- General guide preference: cover both applicable desktop platforms unless the request limits the platform.
+
 ## 2026-09-22 — references and compact Notion post pages
 
 - A reference can be any material; even a tweet does not automatically request a quote-post.
