@@ -68,7 +68,10 @@ function Syntax({ text }: { text: string }) {
   );
 }
 
-export const Terminal: React.FC<{ modelName: string }> = ({ modelName }) => {
+export const Terminal: React.FC<{
+  modelName: string;
+  terminalName: string;
+}> = ({ modelName, terminalName }) => {
   const frame = useCurrentFrame() % FRAMES;
   // One document height per cycle. Frame 1920 is identical to frame 0.
   const scroll = interpolate(frame, [0, FRAMES], [0, CYCLE]);
@@ -165,7 +168,7 @@ export const Terminal: React.FC<{ modelName: string }> = ({ modelName }) => {
           >
             <span style={{ color: MINT, fontSize: 32 }}>›_</span>
             <span style={{ fontWeight: 500, color: "#f1f3ef" }}>
-              OpenAI Codex
+              {terminalName}
             </span>
             <span
               style={{
