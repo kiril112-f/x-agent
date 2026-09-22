@@ -68,7 +68,7 @@ function Syntax({ text }: { text: string }) {
   );
 }
 
-export const Terminal: React.FC = () => {
+export const Terminal: React.FC<{ modelName: string }> = ({ modelName }) => {
   const frame = useCurrentFrame() % FRAMES;
   // One document height per cycle. Frame 1920 is identical to frame 0.
   const scroll = interpolate(frame, [0, FRAMES], [0, CYCLE]);
@@ -190,7 +190,7 @@ export const Terminal: React.FC = () => {
             }}
           >
             <span style={{ color: DIM, width: 184 }}>model</span>
-            <span style={{ color: MINT, fontWeight: 500 }}>ChatGPT-6 Sol</span>
+            <span style={{ color: MINT, fontWeight: 500 }}>{modelName}</span>
             <span
               style={{
                 color: "#e5e9df",

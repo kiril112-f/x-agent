@@ -8,6 +8,16 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="MobControlTerminal"
         component={Terminal}
+        defaultProps={{ modelName: "ChatGPT-6 Sol" }}
+        durationInFrames={FRAMES}
+        fps={FPS}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="MobControlOpus"
+        component={Terminal}
+        defaultProps={{ modelName: "Claude Opus 5.5" }}
         durationInFrames={FRAMES}
         fps={FPS}
         width={1080}
