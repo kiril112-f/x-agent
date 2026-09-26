@@ -1,0 +1,137 @@
+{
+  "name": "X Agent / mob-control-terminal",
+  "root": "C:\\Users\\User\\Desktop\\X Agent\\mob-control-terminal",
+  "architecture": "Самостоятельная Remotion/React композиция 32 сек, 60fps, 1080×1920; Terminal получает статический src/prompt.json. Две композиции: MobControlTerminal и MobControlOpus. Не runtime X Agent и не AI provider.",
+  "instructions": [
+    "../AGENTS.md (наследуется; контентные правила лишь если задача действительно про контент X)"
+  ],
+  "skillDirectory": ".agents/skills (локальных skills сейчас нет; создавать отдельный router для Remotion)",
+  "instructionTarget": "AGENTS.md (новый локальный, со ссылкой на root при необходимости)",
+  "commands": [
+    "npm run lint",
+    "npm run build",
+    "npm run render"
+  ],
+  "restrictions": [
+    "Не заменять Remotion/FFmpeg рендеринг облачным агентом.",
+    "Сохранить duration/fps/size, fonts/assets и композиции; label модели на экране не является AI-вызовом.",
+    "Пилот не рендерит/не публикует реальные материалы автоматически."
+  ],
+  "dependencies": [
+    "Remotion 4.0.527, React 19, TypeScript; local fonts and prompt.json"
+  ],
+  "tasks": [
+    {
+      "id": "mob.composition",
+      "name": "Remotion-композиция",
+      "module": "src/Terminal.tsx",
+      "function": "Terminal / FPS / FRAMES",
+      "trigger": "Remotion studio/render",
+      "input": "static prompt sections + frame",
+      "output": "Deterministic visual frame",
+      "current": "React + useCurrentFrame/interpolate; no AI call",
+      "execution": "Локальный Node/Chromium",
+      "pcRequired": true,
+      "externalWrites": "Только локальные build/artifacts.",
+      "existing": true,
+      "sparkTechnical": "Текущий аккаунт: Spark недоступен. Публичный API запуска именно пользовательского Spark не найден; custom MCP отдельно ограничен US/English и требует write review. Для исполнения кадра не требуется; cloud render bridge не реализован.",
+      "adapter": "Не нужен",
+      "mode": "Локальный",
+      "benefit": "Нулевой выигрыш для точного тайминга/верстки.",
+      "complexity": "Перенос файлов и renderer добавляет расходы без пользы.",
+      "requirements": "32s/60fps/1080×1920, deterministic frames",
+      "decision": "A",
+      "verification": "npm run lint/build; representative stills/timecodes without modifying input; ещё не запускалось.",
+      "evidence": [
+        "src/Terminal.tsx:22",
+        "src/Root.tsx:8"
+      ],
+      "effectiveDecision": "A",
+      "sparkAvailability": "unavailable_observed",
+      "futureCandidate": false,
+      "pilotStatus": "Не требуется для сохранения текущего пути"
+    },
+    {
+      "id": "mob.render",
+      "name": "Рендеринг и экспорт MP4",
+      "module": "package.json",
+      "function": "scripts.render",
+      "trigger": "npm run render",
+      "input": "MobControlTerminal composition + assets",
+      "output": "out/mob-control-terminal-32s.mp4",
+      "current": "remotion render, h264 crf16 yuv420p concurrency4",
+      "execution": "Локальный Remotion/FFmpeg",
+      "pcRequired": true,
+      "externalWrites": "Нет; локальный MP4",
+      "existing": true,
+      "sparkTechnical": "Текущий аккаунт: Spark недоступен. Публичный API запуска именно пользовательского Spark не найден; custom MCP отдельно ограничен US/English и требует write review. Spark не заменяет renderer; API/remote compute не настроены.",
+      "adapter": "Не нужен",
+      "mode": "CLI",
+      "benefit": "Точный экспорт уже выполняет специализированный renderer.",
+      "complexity": "Remote rendering потребовал бы отдельного сервиса, не Spark.",
+      "requirements": "Codec/frame count/loop continuity",
+      "decision": "A",
+      "verification": "npm run lint; ffprobe готового fixture render; живой render не запускался.",
+      "evidence": [
+        "package.json:29",
+        "src/Terminal.tsx:75"
+      ],
+      "effectiveDecision": "A",
+      "sparkAvailability": "unavailable_observed",
+      "futureCandidate": false,
+      "pilotStatus": "Не требуется для сохранения текущего пути"
+    },
+    {
+      "id": "mob.research",
+      "name": "Подготовительное исследование для будущего сценария (новая возможность)",
+      "module": "src/prompt.json",
+      "function": "Нет AI workflow; static input",
+      "trigger": "Новый явный creative/research brief",
+      "input": "Public topic/reference",
+      "output": "Reviewable source-backed prompt sections",
+      "current": "Пишется пользователем/локальным агентом",
+      "execution": "Локальная сессия; Spark отдельно только после доступа",
+      "pcRequired": "Локальный импорт/рендер требуют ПК",
+      "externalWrites": "Нет",
+      "existing": false,
+      "sparkTechnical": "Текущий аккаунт: Spark недоступен. Публичный API запуска именно пользовательского Spark не найден; custom MCP отдельно ограничен US/English и требует write review. Возможный вспомогательный public research после проверки аккаунта, не текущая интеграция.",
+      "adapter": "Ручной review и импорт текста в отдельную ветку; не передавать render управление.",
+      "mode": "Интерактивная подготовка Сейчас не запускается: Spark недоступен; текущий путь сохранён.",
+      "benefit": "Только для нового сложного сценария; текущий короткий статический ролик не требует.",
+      "complexity": "Низкая для brief, не оправдана для текущего ролика.",
+      "requirements": "Проверенные факты и length/timing budget",
+      "decision": "B",
+      "verification": "Сравнить rough script с existing authored version; no auto overwrite prompt.json.",
+      "evidence": [
+        "src/Terminal.tsx:9",
+        "package.json:4"
+      ],
+      "effectiveDecision": "D",
+      "sparkAvailability": "unavailable_observed",
+      "futureCandidate": true,
+      "pilotStatus": "Для этой задачи преимущество не измерено; доступ Spark наблюдался после самостоятельного включения VPN пользователем"
+    }
+  ],
+  "checkedAt": "2026-09-27",
+  "auditMethod": "Read-only source/instruction audit; model defaults from code, credentials/private DB/media not inspected; no repo edits, no paid inference or external writes.",
+  "sparkAvailability": "Недоступен в проверенном аккаунте (отчёт основного агента: Pro, нет Spark UI, официальный /corp/spark/tasks редиректит /app).",
+  "sparkSources": [
+    {
+      "title": "Spark official help",
+      "url": "https://support.google.com/gemini/answer/17094507?hl=en"
+    },
+    {
+      "title": "Custom MCP restrictions",
+      "url": "https://support.google.com/gemini/answer/17209137?hl=en"
+    },
+    {
+      "title": "Spark schedules",
+      "url": "https://support.google.com/gemini/answer/17094710?hl=en"
+    },
+    {
+      "title": "Account/capability audit",
+      "path": "outputs/spark-capabilities.md"
+    }
+  ],
+  "workingTreePolicy": "Проверить git status перед изменением; не включать чужую работу. Исходная инвентаризация веток хранится в отдельном отчёте аудита."
+}

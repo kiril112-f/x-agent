@@ -1,0 +1,3 @@
+interface:
+  display_name: "Gemini Spark — X Agent"
+  short_description: "Выбор исполнителя с учётом архитектуры проекта"

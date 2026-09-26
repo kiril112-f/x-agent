@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "task": "x-source-brief",
+  "public_only": true,
+  "max_words": 900,
+  "timeout_minutes": 60,
+  "sources": [
+    "https://support.google.com/gemini/answer/17094507?hl=en",
+    "https://support.google.com/gemini/answer/17209137?hl=en",
+    "https://support.google.com/gemini/answer/17094710?hl=en",
+    "https://support.google.com/gemini/answer/16821166?hl=en",
+    "https://ai.google.dev/gemini-api/docs/deep-research",
+    "https://ai.google.dev/gemini-api/docs/antigravity-agent",
+    "https://ai.google.dev/gemini-api/docs/billing"
+  ],
+  "prompt": "Prepare a source brief for an indie-builder X article: When cloud AI agents help, and when deterministic automation or a model API is better. Verify 8 questions as of 27 September 2026: (1) Spark availability for a Pro user in Latvia; (2) whether Apps Pro includes unlimited/free Gemini API; (3) whether a documented public API starts consumer Spark tasks; (4) custom MCP region/language and write approvals; (5) schedules limits, exact timing and missed-run guarantees; (6) cloud browser/local browser/Windows data when PC is off; (7) Deep Research app versus background Interactions API and existing-job reuse; (8) Managed Agents/Antigravity as a separate preview API with its own cost, not Spark. Use only primary sources, distinguish confirmed facts, inferences and unknowns. Return 8 claim/evidence/source/verdict rows, 3 practical routing recommendations, 2 counterpoints and unresolved access/cost questions. No publish, send, account changes, paid-resource setup or private sources. Seed URLs: https://support.google.com/gemini/answer/17094507?hl=en ; https://support.google.com/gemini/answer/17209137?hl=en ; https://support.google.com/gemini/answer/17094710?hl=en ; https://support.google.com/gemini/answer/16821166?hl=en ; https://ai.google.dev/gemini-api/docs/deep-research ; https://ai.google.dev/gemini-api/docs/antigravity-agent ; https://ai.google.dev/gemini-api/docs/billing . Maximum 900 words."
+}
