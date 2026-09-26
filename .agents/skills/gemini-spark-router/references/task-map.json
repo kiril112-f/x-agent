@@ -72,7 +72,7 @@
         ".agents/skills/x-content-research/SKILL.md:8"
       ],
       "effectiveDecision": "A",
-      "sparkAvailability": "unavailable_observed",
+      "sparkAvailability": "conditional_access_observed_after_user_vpn",
       "futureCandidate": true,
       "pilotStatus": "Для этой задачи преимущество не измерено; доступ Spark наблюдался после самостоятельного включения VPN пользователем"
     },
@@ -101,7 +101,7 @@
         ".agents/skills/x-content-research/SKILL.md:14"
       ],
       "effectiveDecision": "A",
-      "sparkAvailability": "unavailable_observed",
+      "sparkAvailability": "conditional_access_observed_after_user_vpn",
       "futureCandidate": true,
       "pilotStatus": "Реальный source brief: existing + Deep Research app + Spark app; затем один узкий source ledger follow-up. Оба raw cloud brief и ledger отклонены по качеству. Сохранить x-content-research; адаптер только для явно выбранных будущих сравнений.",
       "priorDecision": "C"
@@ -131,7 +131,7 @@
         ".agents/skills/x-content-research/SKILL.md:24"
       ],
       "effectiveDecision": "A",
-      "sparkAvailability": "unavailable_observed",
+      "sparkAvailability": "conditional_access_observed_after_user_vpn",
       "futureCandidate": true,
       "pilotStatus": "Для этой задачи преимущество не измерено; доступ Spark наблюдался после самостоятельного включения VPN пользователем"
     },
@@ -160,7 +160,7 @@
         "x-content-engine/knowledge/proof-and-claims.md:22"
       ],
       "effectiveDecision": "A",
-      "sparkAvailability": "unavailable_observed",
+      "sparkAvailability": "conditional_access_observed_after_user_vpn",
       "futureCandidate": true,
       "pilotStatus": "Реальный source brief: existing + Deep Research app + Spark app; затем один узкий source ledger follow-up. Оба raw cloud brief и ledger отклонены по качеству. Сохранить x-content-research; адаптер только для явно выбранных будущих сравнений.",
       "priorDecision": "C"
@@ -190,7 +190,7 @@
         "x-content-engine/knowledge/context-storytelling.md:5"
       ],
       "effectiveDecision": "A",
-      "sparkAvailability": "unavailable_observed",
+      "sparkAvailability": "conditional_access_observed_after_user_vpn",
       "futureCandidate": true,
       "pilotStatus": "Реальный source brief: existing + Deep Research app + Spark app; затем один узкий source ledger follow-up. Оба raw cloud brief и ledger отклонены по качеству. Сохранить x-content-research; адаптер только для явно выбранных будущих сравнений.",
       "priorDecision": "C"
@@ -220,7 +220,7 @@
         "x-content-engine/knowledge/content-strategy.md:5"
       ],
       "effectiveDecision": "A",
-      "sparkAvailability": "unavailable_observed",
+      "sparkAvailability": "conditional_access_observed_after_user_vpn",
       "futureCandidate": true,
       "pilotStatus": "Для этой задачи преимущество не измерено; доступ Spark наблюдался после самостоятельного включения VPN пользователем"
     },
@@ -249,7 +249,7 @@
         ".agents/skills/x-draft-to-post/SKILL.md:6"
       ],
       "effectiveDecision": "A",
-      "sparkAvailability": "unavailable_observed",
+      "sparkAvailability": "conditional_access_observed_after_user_vpn",
       "futureCandidate": true,
       "pilotStatus": "Для этой задачи преимущество не измерено; доступ Spark наблюдался после самостоятельного включения VPN пользователем"
     },
@@ -278,7 +278,7 @@
         ".agents/skills/x-draft-to-post/SKILL.md:3"
       ],
       "effectiveDecision": "A",
-      "sparkAvailability": "unavailable_observed",
+      "sparkAvailability": "conditional_access_observed_after_user_vpn",
       "futureCandidate": false,
       "pilotStatus": "Не требуется для сохранения текущего пути"
     },
@@ -307,7 +307,7 @@
         ".agents/skills/x-draft-to-post/SKILL.md:3"
       ],
       "effectiveDecision": "A",
-      "sparkAvailability": "unavailable_observed",
+      "sparkAvailability": "conditional_access_observed_after_user_vpn",
       "futureCandidate": false,
       "pilotStatus": "Не требуется для сохранения текущего пути"
     },
@@ -336,7 +336,7 @@
         ".agents/skills/x-viral-article/SKILL.md:6"
       ],
       "effectiveDecision": "A",
-      "sparkAvailability": "unavailable_observed",
+      "sparkAvailability": "conditional_access_observed_after_user_vpn",
       "futureCandidate": true,
       "pilotStatus": "Для этой задачи преимущество не измерено; доступ Spark наблюдался после самостоятельного включения VPN пользователем"
     },
@@ -365,7 +365,7 @@
         ".agents/skills/x-brand-voice/SKILL.md:10"
       ],
       "effectiveDecision": "A",
-      "sparkAvailability": "unavailable_observed",
+      "sparkAvailability": "conditional_access_observed_after_user_vpn",
       "futureCandidate": false,
       "pilotStatus": "Не требуется для сохранения текущего пути"
     },
@@ -394,7 +394,7 @@
         ".agents/skills/x-draft-to-post/references/quality-gate.md:3"
       ],
       "effectiveDecision": "A",
-      "sparkAvailability": "unavailable_observed",
+      "sparkAvailability": "conditional_access_observed_after_user_vpn",
       "futureCandidate": false,
       "pilotStatus": "Не требуется для сохранения текущего пути"
     },
@@ -423,7 +423,7 @@
         ".agents/skills/x-article-cover/SKILL.md:21"
       ],
       "effectiveDecision": "A",
-      "sparkAvailability": "unavailable_observed",
+      "sparkAvailability": "conditional_access_observed_after_user_vpn",
       "futureCandidate": false,
       "pilotStatus": "Не требуется для сохранения текущего пути"
     },
@@ -452,7 +452,7 @@
         ".agents/skills/x-article-chart/SKILL.md:16"
       ],
       "effectiveDecision": "A",
-      "sparkAvailability": "unavailable_observed",
+      "sparkAvailability": "conditional_access_observed_after_user_vpn",
       "futureCandidate": false,
       "pilotStatus": "Не требуется для сохранения текущего пути"
     },
@@ -481,7 +481,7 @@
         ".agents/skills/x-article-chart/SKILL.md:47"
       ],
       "effectiveDecision": "A",
-      "sparkAvailability": "unavailable_observed",
+      "sparkAvailability": "conditional_access_observed_after_user_vpn",
       "futureCandidate": false,
       "pilotStatus": "Не требуется для сохранения текущего пути"
     },
@@ -510,7 +510,7 @@
         "x-content-engine/operations/notion-schema.md:110"
       ],
       "effectiveDecision": "A",
-      "sparkAvailability": "unavailable_observed",
+      "sparkAvailability": "conditional_access_observed_after_user_vpn",
       "futureCandidate": false,
       "pilotStatus": "Не требуется для сохранения текущего пути"
     },
@@ -539,7 +539,7 @@
         "x-content-engine/operations/algorithm-review-loop.md:32"
       ],
       "effectiveDecision": "A",
-      "sparkAvailability": "unavailable_observed",
+      "sparkAvailability": "conditional_access_observed_after_user_vpn",
       "futureCandidate": true,
       "pilotStatus": "Для этой задачи преимущество не измерено; доступ Spark наблюдался после самостоятельного включения VPN пользователем"
     },
@@ -568,7 +568,7 @@
         "x-content-engine/operations/algorithm-review-loop.md:5"
       ],
       "effectiveDecision": "A",
-      "sparkAvailability": "unavailable_observed",
+      "sparkAvailability": "conditional_access_observed_after_user_vpn",
       "futureCandidate": true,
       "pilotStatus": "Для этой задачи преимущество не измерено; доступ Spark наблюдался после самостоятельного включения VPN пользователем"
     }

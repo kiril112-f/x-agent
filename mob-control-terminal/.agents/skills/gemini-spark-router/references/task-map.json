@@ -47,7 +47,7 @@
         "src/Root.tsx:8"
       ],
       "effectiveDecision": "A",
-      "sparkAvailability": "unavailable_observed",
+      "sparkAvailability": "conditional_access_observed_after_user_vpn",
       "futureCandidate": false,
       "pilotStatus": "Не требуется для сохранения текущего пути"
     },
@@ -77,7 +77,7 @@
         "src/Terminal.tsx:75"
       ],
       "effectiveDecision": "A",
-      "sparkAvailability": "unavailable_observed",
+      "sparkAvailability": "conditional_access_observed_after_user_vpn",
       "futureCandidate": false,
       "pilotStatus": "Не требуется для сохранения текущего пути"
     },
@@ -107,7 +107,7 @@
         "package.json:4"
       ],
       "effectiveDecision": "D",
-      "sparkAvailability": "unavailable_observed",
+      "sparkAvailability": "conditional_access_observed_after_user_vpn",
       "futureCandidate": true,
       "pilotStatus": "Для этой задачи преимущество не измерено; доступ Spark наблюдался после самостоятельного включения VPN пользователем"
     }
