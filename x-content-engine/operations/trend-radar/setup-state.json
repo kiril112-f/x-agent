@@ -1,0 +1,53 @@
+{
+  "updatedAt": "2026-09-28T17:50:00+03:00",
+  "phase": "live-first-scheduled-runs",
+  "userApproved": {
+    "dailyDigestMoscow": "12:00",
+    "importantAlerts": true,
+    "outputs": ["trends", "recommendations", "predictions", "ideas-with-hooks"],
+    "fullPostDrafts": false,
+    "approval": ["Notion", "Telegram"],
+    "newApprovalDatabase": true,
+    "sparkPrimaryApiBackup": true,
+    "autonomousSetup": true,
+    "recurringSparkSchedulesAndServerHeartbeat": "approved in chat on 2026-09-28"
+  },
+  "notion": {
+    "parentPageId": "4a01f86f-7cf8-4692-a2b9-54b98f8a43c5",
+    "queueDatabaseId": "0652352d-5603-4a51-8d8d-bdf72e8045f1",
+    "queueDataSourceId": "95617799-ae8f-49b9-a19b-756faab941b4",
+    "reportsParentPageId": "3e779173-9297-81b8-a8a3-e3bd03cfdd95",
+    "ideasDataSourceId": "44591e3f-443a-4670-af2c-9ce78f73fd60",
+    "serverIntegrationReadsAllTargets": true
+  },
+  "spark": {
+    "accountLabel": "AI Universe",
+    "vpnRequired": "US VPN (UrbanVPN) is needed to open Spark from Latvia",
+    "activated": true,
+    "pilotScheduledWriteVerified": true,
+    "inputDocId": "1QBw8djrdL84s5zcCacdcae-2UBH5Be2ryaukfRTh-So",
+    "outputDocId": "1-TrJvQbAWSn0QeSkEaxWulZuWU8UrRtIXGFwsIhCAKw",
+    "readerOAuth": "drive.file for the Spark owner, completed 2026-09-28",
+    "schedules": ["Радар X · анализ 11:15 МСК", "Радар X · анализ 15:15 МСК", "Радар X · анализ 19:15 МСК"],
+    "scheduleTimeZoneVerified": false,
+    "accountCalendarTimeZone": "America/New_York"
+  },
+  "apiBackup": {
+    "enabled": true,
+    "searchGrounding": "429 on all configured keys (free tier) on 2026-09-28; backup is source-only until a billed key is added"
+  },
+  "runtime": {
+    "worktree": "C:/Users/User/Desktop/tg-notes-x-radar",
+    "branch": "codex/x-trend-radar",
+    "productionBranch": "fix/category-page",
+    "deployedCommit": "02dad82",
+    "hostProject": "tg-notes",
+    "productionUrl": "https://tg-notes-two.vercel.app",
+    "supabaseProjectRef": "agvpcgmjknfuoehhuleh",
+    "bot": "@xkirilchiksworkichbot",
+    "botDeliveryVerified": true,
+    "radarEnabled": true,
+    "heartbeat": "pg_cron x-radar-heartbeat every 5 minutes, first tick 2026-09-28 17:45 MSK returned 200",
+    "firstRealRun": "2026-09-28 19:00 MSK scan; first digest 2026-09-29 12:00 MSK"
+  }
+}
