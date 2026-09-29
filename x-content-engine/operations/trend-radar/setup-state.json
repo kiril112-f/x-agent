@@ -1,12 +1,20 @@
 {
-  "updatedAt": "2026-09-28T17:50:00+03:00",
-  "phase": "live-first-scheduled-runs",
+  "updatedAt": "2026-09-29T21:54:58.131Z",
+  "phase": "release-monitor-and-sync-verified-analytics-degraded",
   "userApproved": {
     "dailyDigestMoscow": "12:00",
     "importantAlerts": true,
-    "outputs": ["trends", "recommendations", "predictions", "ideas-with-hooks"],
+    "outputs": [
+      "trends",
+      "recommendations",
+      "predictions",
+      "ideas-with-hooks"
+    ],
     "fullPostDrafts": false,
-    "approval": ["Notion", "Telegram"],
+    "approval": [
+      "Notion",
+      "Telegram"
+    ],
     "newApprovalDatabase": true,
     "sparkPrimaryApiBackup": true,
     "autonomousSetup": true,
@@ -18,7 +26,9 @@
     "queueDataSourceId": "95617799-ae8f-49b9-a19b-756faab941b4",
     "reportsParentPageId": "3e779173-9297-81b8-a8a3-e3bd03cfdd95",
     "ideasDataSourceId": "44591e3f-443a-4670-af2c-9ce78f73fd60",
-    "serverIntegrationReadsAllTargets": true
+    "serverIntegrationReadsAllTargets": true,
+    "postsDataSourceId": "af065d54-c401-4b85-b355-07fca5a7fc50",
+    "accessFixedByOwner": "2026-09-29"
   },
   "spark": {
     "accountLabel": "AI Universe",
@@ -28,19 +38,44 @@
     "inputDocId": "1QBw8djrdL84s5zcCacdcae-2UBH5Be2ryaukfRTh-So",
     "outputDocId": "1-TrJvQbAWSn0QeSkEaxWulZuWU8UrRtIXGFwsIhCAKw",
     "readerOAuth": "drive.file for the Spark owner, completed 2026-09-28",
-    "schedules": ["Радар X · анализ 11:15 МСК", "Радар X · анализ 15:15 МСК", "Радар X · анализ 19:15 МСК"],
+    "schedules": [
+      "Радар X · анализ 11:15 МСК",
+      "Радар X · анализ 15:15 МСК",
+      "Радар X · анализ 19:15 МСК"
+    ],
     "scheduleTimeZoneVerified": false,
-    "accountCalendarTimeZone": "America/New_York"
+    "accountCalendarTimeZone": "America/New_York",
+    "feedSkillInstalled": true,
+    "analysisSkillInstalled": true,
+    "feedScheduledTest": {
+      "at": "2026-09-29T21:31:00Z",
+      "task": "https://gemini.google.com/spark/chat/38fd921196df2027",
+      "result": "started unattended; local Chrome unavailable; Doc unchanged"
+    },
+    "feedSchedules": "paused after real failure",
+    "serverDstCompatibility": "Riga and Moscow windows share a single run key from October 25",
+    "latestAnalysisCheck": {
+      "task": "https://gemini.google.com/spark/chat/467ade0a29fe7931",
+      "inputRunId": "390f09d7-8944-4b91-9d40-73c89fcca728",
+      "inputPosts": 2,
+      "inputOfficialSources": 35,
+      "result": "read input; Google Docs write failed out of capacity; old output runId correctly ignored"
+    }
   },
   "apiBackup": {
     "enabled": true,
-    "searchGrounding": "429 on all configured keys (free tier) on 2026-09-28; backup is source-only until a billed key is added"
+    "searchGrounding": "429 on all configured keys (free tier) on 2026-09-28; backup is source-only until a billed key is added",
+    "latestCheck": {
+      "at": "2026-09-29T21:34:00Z",
+      "result": "503 after bounded rotation of existing keys",
+      "elapsedMs": 32599
+    }
   },
   "runtime": {
     "worktree": "C:/Users/User/Desktop/tg-notes-x-radar",
     "branch": "codex/x-trend-radar",
     "productionBranch": "fix/category-page",
-    "deployedCommit": "02dad82",
+    "deployedCommit": "c7524c0",
     "hostProject": "tg-notes",
     "productionUrl": "https://tg-notes-two.vercel.app",
     "supabaseProjectRef": "agvpcgmjknfuoehhuleh",
@@ -48,6 +83,61 @@
     "botDeliveryVerified": true,
     "radarEnabled": true,
     "heartbeat": "pg_cron x-radar-heartbeat every 5 minutes, first tick 2026-09-28 17:45 MSK returned 200",
-    "firstRealRun": "2026-09-28 19:00 MSK scan; first digest 2026-09-29 12:00 MSK"
+    "firstRealRun": "2026-09-28 19:00 MSK scan; first digest 2026-09-29 12:00 MSK",
+    "repositoryHead": "dda7a49",
+    "timeZone": "Europe/Riga",
+    "digest": "12:00 Riga; 13:00 Moscow in winter",
+    "officialMonitor": {
+      "enabled": true,
+      "channels": 15,
+      "everyMinutes": 30,
+      "liveHealth": "15/15 parsed from Vercel",
+      "baseline": "silent; historical replays marked TEST",
+      "paidCallsPerPoll": 0
+    },
+    "localFeed": {
+      "automationId": "x-radar",
+      "timesComputerLocal": [
+        "10:30",
+        "14:30",
+        "18:30"
+      ],
+      "computerTimeZone": "Russian Standard Time (UTC+3)",
+      "requires": [
+        "awake PC",
+        "Codex running",
+        "Chrome AI Universe with X signed in"
+      ],
+      "uploader": "C:/Users/User/Desktop/tg-notes-x-radar/scripts/radar-feed-upload.mjs",
+      "transportVerified": true,
+      "firstUnattendedRunVerified": false
+    },
+    "postsSync": {
+      "firstUsablePosts": 32,
+      "created": 20,
+      "linked": 6,
+      "relinked": 1,
+      "updated": 1,
+      "repeatCreates": 0,
+      "repeatChanges": 0,
+      "duplicateUrls": 0
+    },
+    "followingSync": {
+      "lastOkUtc": "2026-09-29T07:29:03.214Z",
+      "duplicateProfileUrls": 0
+    },
+    "linkedin": "deferred, disabled",
+    "historicalReplay": {
+      "gptMessageId": 10,
+      "elevenMessageId": 11,
+      "repeatMessageIdsUnchanged": true,
+      "ownerDecisionTest": "pending real owner tap; no new decision fabricated"
+    },
+    "testsPassed": 809,
+    "feedFaultTests": {
+      "emptyAccepted": 0,
+      "staleAccepted": 0,
+      "restoredAccepted": 2
+    }
   }
 }
