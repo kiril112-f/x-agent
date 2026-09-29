@@ -1,6 +1,6 @@
 # Карта задач — X Agent
 
-Проверено 26–27 сентября 2026. A/А = оставить; B/Б = помощник; C/В = сравнительный пилот; G/Г = отдельный Google API; D/Д = недоступно/не подтверждено. Доступ Spark наблюдался после включения VPN пользователем; B/C не означают production-переключение. existing=false — предлагаемое расширение. Полные свойства и статус пилота: task-map.json.
+Проверено 26–27 сентября 2026; строки «Формирование пакета источников» и «Обновление знаний об алгоритме X» обновлены 29.09 по живым запускам Spark. A/А = оставить; B/Б = помощник; C/В = сравнительный пилот; G/Г = отдельный Google API; D/Д = недоступно/не подтверждено. Доступ Spark наблюдался после включения VPN пользователем; B/C не означают production-переключение. existing=false — предлагаемое расширение. Полные свойства и статус пилота: task-map.json.
 
 | Задача | Модуль / функция | Решение | Основание |
 |---|---|---|---|
@@ -8,7 +8,7 @@
 | Исследование темы | .agents/skills/x-content-research/SKILL.md · Research steps 1–9 | А — текущий путь | Многошаговый поиск первичных источников и противоречий потенциально экономит ручные переходы; измерить against x-content-research. |
 | Исследование конкурентов | .agents/skills/x-content-research/SKILL.md · Notion routing / creator workflow | В — сравнительный пилот | Многошаговый поиск первичных источников и противоречий потенциально экономит ручные переходы; измерить against x-content-research. |
 | Проверка фактов, цифр и цитат | x-content-engine/knowledge/proof-and-claims.md · External claims verification | А — текущий путь | Многошаговый поиск первичных источников и противоречий потенциально экономит ручные переходы; измерить against x-content-research. |
-| Формирование пакета источников | x-content-engine/knowledge/context-storytelling.md · Pre-draft context/resource pack | А — текущий путь | Многошаговый поиск первичных источников и противоречий потенциально экономит ручные переходы; измерить against x-content-research. |
+| Формирование пакета источников | x-content-engine/knowledge/context-storytelling.md · Pre-draft context/resource pack | Б — помощник | Spark-навык x-source-pack (28.09): 19 из 20 цитат дословно, без вердиктов; источники сверять с текущими официальными страницами. x-content-research остаётся основным. |
 | Идеи и контентная стратегия | x-content-engine/knowledge/content-strategy.md · Pillars / creation model | Б — помощник | Подготовительная подборка свежих кейсов, не автоматический контент-план публикаций. |
 | Редактура исходного черновика | .agents/skills/x-draft-to-post/SKILL.md · draft-to-post / no-fluff + voice | В — сравнительный пилот | Проверить качество редактуры независимо; победа Spark не предполагается. |
 | Короткие посты | .agents/skills/x-draft-to-post/SKILL.md · x-draft-to-post | А — текущий путь | Существующие skills содержат проектный voice/quality/privacy; перенос без измерений повышает риск потери правил. |
@@ -21,4 +21,4 @@
 | Инфографика | .agents/skills/x-article-chart/SKILL.md · Five chart forms / illustrative curve | А — текущий путь | Существующие skills содержат проектный voice/quality/privacy; перенос без измерений повышает риск потери правил. |
 | Сохранение результатов в существующих Notion базах | x-content-engine/operations/notion-schema.md · Routing / Notion lifecycle | А — текущий путь | Существующие skills содержат проектный voice/quality/privacy; перенос без измерений повышает риск потери правил. |
 | Анализ результатов опубликованного контента | x-content-engine/operations/algorithm-review-loop.md · After manual publication | Б — помощник | Второй аналитический взгляд возможен для серии; My Life это не заменяет, но постоянный Spark job не нужен. |
-| Обновление знаний об алгоритме X | x-content-engine/operations/algorithm-review-loop.md · Check default branch+HEAD → compare SHA | В — сравнительный пилот | Многошаговый поиск первичных источников и противоречий потенциально экономит ручные переходы; измерить against x-content-research. |
+| Обновление знаний об алгоритме X | x-content-engine/operations/algorithm-review-loop.md · Check default branch+HEAD → compare SHA | Д — не использовать Spark | Пилот 28–29.09 провален: неверные числа diff и пропущенные изменения весов; браузер требует подтверждения на каждый запуск. Расписание на паузе, навык отключён; аудит локальный. |

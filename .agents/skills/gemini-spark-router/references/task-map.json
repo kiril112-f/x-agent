@@ -184,15 +184,15 @@
       "benefit": "Многошаговый поиск первичных источников и противоречий потенциально экономит ручные переходы; измерить against x-content-research.",
       "complexity": "Низкая для публичного read-only brief; высокая при MCP/Notion и расписании, которые не нужны первому пилоту.",
       "requirements": "1–5 лучших resources, facts vs interpretation; pack внутренний, не в Notion post body.",
-      "decision": "A",
+      "decision": "B",
       "verification": "3 одинаковых публичных briefs baseline vs Spark, citation audit, недоступный URL, prompt injection, пустой ответ, время и ручные шаги; никаких публикаций и записей.",
       "evidence": [
         "x-content-engine/knowledge/context-storytelling.md:5"
       ],
-      "effectiveDecision": "A",
+      "effectiveDecision": "B",
       "sparkAvailability": "conditional_access_observed_after_user_vpn",
       "futureCandidate": true,
-      "pilotStatus": "Реальный source brief: existing + Deep Research app + Spark app; затем один узкий source ledger follow-up. Оба raw cloud brief и ledger отклонены по качеству. Сохранить x-content-research; адаптер только для явно выбранных будущих сравнений.",
+      "pilotStatus": "28.09: Spark-навык x-source-pack (первичные источники и дословные цитаты без вердиктов): 19 из 20 цитат совпали дословно, но подборка может опираться на устаревшие страницы. Вспомогательный первый этап по явному запросу; каждую цитату и актуальность страницы сверить с текущим официальным источником. x-content-research остаётся основным путём.",
       "priorDecision": "C"
     },
     {
@@ -562,15 +562,15 @@
       "benefit": "Многошаговый поиск первичных источников и противоречий потенциально экономит ручные переходы; измерить against x-content-research.",
       "complexity": "Низкая для публичного read-only brief; высокая при MCP/Notion и расписании, которые не нужны первому пилоту.",
       "requirements": "Defaults/overrides/hypotheses разделить; не считать repo code доказательством live production; no invented ranking weights.",
-      "decision": "C",
+      "decision": "D",
       "verification": "3 одинаковых публичных briefs baseline vs Spark, citation audit, недоступный URL, prompt injection, пустой ответ, время и ручные шаги; никаких публикаций и записей.",
       "evidence": [
         "x-content-engine/operations/algorithm-review-loop.md:5"
       ],
       "effectiveDecision": "A",
       "sparkAvailability": "conditional_access_observed_after_user_vpn",
-      "futureCandidate": true,
-      "pilotStatus": "Для этой задачи преимущество не измерено; доступ Spark наблюдался после самостоятельного включения VPN пользователем"
+      "futureCandidate": false,
+      "pilotStatus": "28–29.09: Spark-навык x-algorithm-audit по расписанию дал материально неверный аудит (80 файлов вместо 229, пропущены visibility-filtering и удаления параметров весов в home-mixer/params/param.rs); корректирующий запуск v2 упал на запросе доступа к браузеру. Расписание «X Algorithm Audit — еженедельно» на паузе, навык отключён. Текущий локальный путь сохранён; повтор только новым сравнительным пилотом."
     }
   ],
   "checkedAt": "2026-09-27",
