@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T22:04:51.908Z",
+  "updatedAt": "2026-09-29T22:11:09.242Z",
   "phase": "release-monitor-and-sync-verified-analytics-degraded",
   "userApproved": {
     "dailyDigestMoscow": "12:00",
@@ -75,7 +75,7 @@
     "worktree": "C:/Users/User/Desktop/tg-notes-x-radar",
     "branch": "codex/x-trend-radar",
     "productionBranch": "fix/category-page",
-    "deployedCommit": "c7524c0",
+    "deployedCommit": "ef73dcb",
     "hostProject": "tg-notes",
     "productionUrl": "https://tg-notes-two.vercel.app",
     "supabaseProjectRef": "agvpcgmjknfuoehhuleh",
@@ -84,7 +84,7 @@
     "radarEnabled": true,
     "heartbeat": "pg_cron x-radar-heartbeat every 5 minutes, first tick 2026-09-28 17:45 MSK returned 200",
     "firstRealRun": "2026-09-28 19:00 MSK scan; first digest 2026-09-29 12:00 MSK",
-    "repositoryHead": "ada2c02",
+    "repositoryHead": "ef73dcb",
     "timeZone": "Europe/Riga",
     "digest": "12:00 Riga; 13:00 Moscow in winter",
     "officialMonitor": {
@@ -93,7 +93,8 @@
       "everyMinutes": 30,
       "liveHealth": "15/15 parsed from Vercel",
       "baseline": "silent; historical replays marked TEST",
-      "paidCallsPerPoll": 0
+      "paidCallsPerPoll": 0,
+      "elevenDiscovery": "2026-09-29T22:06:21Z: eleven-v4 was first of 8 discovered blog links, without supplying the replay URL"
     },
     "localFeed": {
       "automationId": "x-radar",
@@ -133,7 +134,7 @@
       "repeatMessageIdsUnchanged": true,
       "ownerDecisionTest": "pending real owner tap; no new decision fabricated"
     },
-    "testsPassed": 809,
+    "testsPassed": 811,
     "feedFaultTests": {
       "emptyAccepted": 0,
       "staleAccepted": 0,
