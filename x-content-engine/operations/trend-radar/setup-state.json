@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T21:54:58.131Z",
+  "updatedAt": "2026-09-29T22:04:51.908Z",
   "phase": "release-monitor-and-sync-verified-analytics-degraded",
   "userApproved": {
     "dailyDigestMoscow": "12:00",
@@ -84,7 +84,7 @@
     "radarEnabled": true,
     "heartbeat": "pg_cron x-radar-heartbeat every 5 minutes, first tick 2026-09-28 17:45 MSK returned 200",
     "firstRealRun": "2026-09-28 19:00 MSK scan; first digest 2026-09-29 12:00 MSK",
-    "repositoryHead": "dda7a49",
+    "repositoryHead": "ada2c02",
     "timeZone": "Europe/Riga",
     "digest": "12:00 Riga; 13:00 Moscow in winter",
     "officialMonitor": {
@@ -138,6 +138,14 @@
       "emptyAccepted": 0,
       "staleAccepted": 0,
       "restoredAccepted": 2
+    },
+    "failurePath": {
+      "runId": "390f09d7-8944-4b91-9d40-73c89fcca728",
+      "status": "failed",
+      "error": "radar_backup_attempt_limit",
+      "telegramMessageId": 12,
+      "confirmedAt": "2026-09-29T22:02:02Z",
+      "pipelineFreed": true
     }
   }
 }
