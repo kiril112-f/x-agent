@@ -100,6 +100,8 @@ Selective CAPS, context-fitting slang, a swear word or an emoji may strengthen a
 
 For practical tool guides, explain an unfamiliar core term in one short sentence when possible. Cover both Windows and Mac when both are applicable, unless Kirill explicitly limits the platform.
 
+For this reference-led case format, Kirill further clarified on 2026-10-03: use announcement/reaction energy, not a quiet tutorial. A short emotional judgment is allowed when the next line immediately supplies the concrete reason. Lead with the surprising capability or change, then one proof line. Keep tools to a compact supporting block and use an actionable prompt when it earns the space. Do not end with procedural QA, "check the result," or generic teaching advice. Preserve confidence and conversational rhythm without claiming breaking news, personal tests or guaranteed results. See `third-party-case-playbook.md` for references and examples.
+
 ## CTAs
 
 - Do not force a question or `thoughts?` ending.
