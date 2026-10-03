@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-03",
+  "requestedExecutor": "chatgpt-dots",
+  "status": "prepared_not_installed",
+  "dotId": null,
+  "scheduledTaskIds": [],
+  "manualPilotVerified": false,
+  "scheduledPilotVerified": false,
+  "sparkPausedForMigration": false,
+  "blocker": "This Codex session exposes local automations and Pages but no personal-Dot management tool; native desktop control is disabled. Owner requested using the current desktop account, not a separate browser login."
+}

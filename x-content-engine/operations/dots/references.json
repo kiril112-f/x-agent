@@ -1,0 +1,23 @@
+{
+  "schemaVersion":1,
+  "ownerX":"https://x.com/KirillMorozovop",
+  "referencePost":"https://x.com/simonecanciello/status/2105317517665194490",
+  "server":"https://tg-notes-two.vercel.app",
+  "localWorktree":"C:/Users/User/Desktop/tg-notes-x-radar",
+  "googleDocs":{
+    "radarInput":"1QBw8djrdL84s5zcCacdcae-2UBH5Be2ryaukfRTh-So",
+    "radarOutput":"1-TrJvQbAWSn0QeSkEaxWulZuWU8UrRtIXGFwsIhCAKw",
+    "feed":"17G1aQt2v6qWrKlaqTRSacEAnhjG1oh0ZooLVCRyFYyU",
+    "linkedinInput":"10Xlx8v0zXuXP9wSB9nja7Ubg_DV4hcxz4aPtwZcElUA",
+    "linkedinOutput":"1XghwXyaQnO98OZHQyRk3CuA3SFt4Duhz4MKQrQmRAwQ"
+  },
+  "notion":{
+    "postsDataSource":"af065d54-c401-4b85-b355-07fca5a7fc50",
+    "ideasDataSource":"44591e3f-443a-4670-af2c-9ce78f73fd60",
+    "competitorsDataSource":"29fdf280-8dcf-41ea-8726-6e95c64b8bc2",
+    "approvalQueueDataSource":"95617799-ae8f-49b9-a19b-756faab941b4",
+    "reportsParent":"3e779173-9297-81b8-a8a3-e3bd03cfdd95"
+  },
+  "telegramBot":"@xkirilchiksworkichbot",
+  "credentialPolicy":"Credentials remain in existing ignored files/server configuration. Never export tokens, cookies, OAuth refresh tokens or .env files in this pack. IDs alone confer no access."
+}

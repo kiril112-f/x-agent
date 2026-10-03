@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T22:11:09.242Z",
+  "updatedAt": "2026-10-03T13:23:12.994028Z",
   "phase": "release-monitor-and-sync-verified-analytics-degraded",
   "userApproved": {
     "dailyDigestMoscow": "12:00",
@@ -75,7 +75,7 @@
     "worktree": "C:/Users/User/Desktop/tg-notes-x-radar",
     "branch": "codex/x-trend-radar",
     "productionBranch": "fix/category-page",
-    "deployedCommit": "ef73dcb",
+    "deployedCommit": "e47554b",
     "hostProject": "tg-notes",
     "productionUrl": "https://tg-notes-two.vercel.app",
     "supabaseProjectRef": "agvpcgmjknfuoehhuleh",
@@ -84,14 +84,14 @@
     "radarEnabled": true,
     "heartbeat": "pg_cron x-radar-heartbeat every 5 minutes, first tick 2026-09-28 17:45 MSK returned 200",
     "firstRealRun": "2026-09-28 19:00 MSK scan; first digest 2026-09-29 12:00 MSK",
-    "repositoryHead": "ef73dcb",
+    "repositoryHead": "e47554b",
     "timeZone": "Europe/Riga",
     "digest": "12:00 Riga; 13:00 Moscow in winter",
     "officialMonitor": {
       "enabled": true,
-      "channels": 15,
+      "channels": 16,
       "everyMinutes": 30,
-      "liveHealth": "15/15 parsed from Vercel",
+      "liveHealth": "15 previously verified; new Higgsfield channel present in production, first parser check pending",
       "baseline": "silent; historical replays marked TEST",
       "paidCallsPerPoll": 0,
       "elevenDiscovery": "2026-09-29T22:06:21Z: eleven-v4 was first of 8 discovered blog links, without supplying the replay URL"
@@ -111,7 +111,12 @@
       ],
       "uploader": "C:/Users/User/Desktop/tg-notes-x-radar/scripts/radar-feed-upload.mjs",
       "transportVerified": true,
-      "firstUnattendedRunVerified": false
+      "firstUnattendedRunVerified": true,
+      "firstUnattendedRunAt": "2026-09-30T07:34:01.404Z",
+      "latestVerified": "2026-10-03T13:20:57.977Z",
+      "latestVerifiedCount": 8,
+      "latestServerAcceptedCount": 8,
+      "mode": "latest run was owner-requested, not a Dot schedule"
     },
     "postsSync": {
       "firstUsablePosts": 32,
@@ -121,20 +126,21 @@
       "updated": 1,
       "repeatCreates": 0,
       "repeatChanges": 0,
-      "duplicateUrls": 0
+      "duplicateUrls": 0,
+      "lastOkUtc": "2026-10-03T11:30:15.796Z"
     },
     "followingSync": {
-      "lastOkUtc": "2026-09-29T07:29:03.214Z",
+      "lastOkUtc": "2026-10-02T07:30:18.619Z",
       "duplicateProfileUrls": 0
     },
-    "linkedin": "deferred, disabled",
+    "linkedin": "auto-crosspost requested; disabled, configured=false, connected=false as of 2026-10-03",
     "historicalReplay": {
       "gptMessageId": 10,
       "elevenMessageId": 11,
       "repeatMessageIdsUnchanged": true,
-      "ownerDecisionTest": "pending real owner tap; no new decision fabricated"
+      "ownerDecisionTest": "Eleven replay rejected by owner; verified 2026-09-30T07:41:25Z. GPT replay remains pending."
     },
-    "testsPassed": 811,
+    "testsPassed": 885,
     "feedFaultTests": {
       "emptyAccepted": 0,
       "staleAccepted": 0,
@@ -147,6 +153,16 @@
       "telegramMessageId": 12,
       "confirmedAt": "2026-09-29T22:02:02Z",
       "pipelineFreed": true
-    }
+    },
+    "editorialBriefVersion": "2026-10-03"
+  },
+  "requestedMigration": {
+    "executor": "chatgpt-dots",
+    "requestedAt": "2026-10-03",
+    "status": "prepared_not_installed",
+    "localPackage": "x-content-engine/operations/dots",
+    "dotId": null,
+    "scheduledTaskIds": [],
+    "reason": "No personal-Dot management tool or native desktop control in this session; owner wants current desktop account."
   }
 }

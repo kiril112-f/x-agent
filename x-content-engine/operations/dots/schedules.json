@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "installationStatus": "prepared_not_installed",
+  "timezone": "Europe/Moscow",
+  "tasks": [
+    {"key":"x-feed","title":"X · личная лента и примеры","localTimes":["10:30","14:30","18:30"],"maxMinutes":20,"promptFile":"prompts/feed.md","activation":"after browser, transport and no-duplicate pilot"},
+    {"key":"x-analysis","title":"X · конкретные идеи и прогнозы","localTimes":["11:15","15:15","19:15"],"promptFile":"prompts/analysis.md","activation":"after exact-run output and Notion/Telegram pilot; pause equivalent Spark schedules"},
+    {"key":"x-sync-supervisor","title":"X · публикации, подписки и LinkedIn","localTimes":["09:45","12:45","15:45","18:45","21:45"],"promptFile":"prompts/sync.md","activation":"read-only supervision first; LinkedIn adaptation only after connection and pilot"}
+  ],
+  "notificationPolicy":"Only new useful results, meaningful new failure, recovery or required owner action; deduplicate repeated failures.",
+  "existingServer":{"officialMinutes":30,"heartbeatMinutes":5,"postsHours":3,"followingHours":72,"timezone":"Europe/Riga","apifyBudgetChange":false},
+  "dstNote":"The server currently prepares the same analysis slot in Riga/Moscow windows, deduplicated by run key. Feed and Dot schedules above are explicitly Moscow. Noon server digest remains Riga; 13:00 Moscow after Riga winter shift."
+}
