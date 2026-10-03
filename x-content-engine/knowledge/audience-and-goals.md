@@ -15,6 +15,8 @@ Desired outcomes:
 
 ## Audience
 
+Kirill's explicit priority on 2026-10-03: broad AI/tech readers by default, with founders and operators targeted according to the topic. A broad post needs an accessible opening; a founder post can use precise domain vocabulary. Personal project results belong in build in public. The modes and current voice live in [brand-voice.md](brand-voice.md).
+
 - mobile startup founders;
 - indie hackers and builders;
 - designers;
@@ -31,3 +33,5 @@ Prioritize globally relevant English-language content and tech-active markets, e
 Kirill documents how products get built, distributed and improved while sharing practical lessons from social media, AI tooling and disciplined execution.
 
 This positioning is provisional. Update it when real audience and analytics data show a clearer wedge.
+
+Current editorial goal (2026-10-03): increase impressions and substantive interaction through useful, emotional, opinionated posts. Treat bland but accurate summaries as unfinished. Measure reach separately from meaningful replies and longer-term relationships; none of these goals authorizes invented proof or unrelated outrage topics.

@@ -1,5 +1,17 @@
 # Voice feedback log
 
+## 2026-10-03 — founder vocabulary, stronger social voice and audience modes
+
+Direct request: the current output feels too childish, bland and overqualified. Add the semantic families in the attached vocabulary (alpha, execution, GTM, unit economics, sauce, high agency and related terms), chosen by context rather than copied into every post. The priority is impressions and interaction through emotional, valuable social writing. Keep the meaning true; research should not dominate the public copy.
+
+Follow-up answers: primarily broad AI/tech, with founders targeted when the topic fits. Default manner is an opinionated practitioner with specifics and irony. Build in public applies when the material contains Kirill's real work or project numbers. Conversational language is primary; profanity is acceptable occasionally, not as a default persona.
+
+Implementation: v0.6 adds three audience modes, an open founder lexicon and a whole-post attention/payoff pass. Removes mechanical slang caps and the obsolete skill-level ban on shorthand in hooks. Allows precise `leverage` despite the generic no-ai-slop word ban. Research remains backstage; material factual conditions remain in the copy. No fictional experiences, fake scarcity or certainty upgrades.
+
+Evidence: 64 public posts collected on 2026-10-03, plus a separate Chrome For You audit. Mixed human/AI authorship is unknown: do not classify authorship from prose or treat every published line as an approved voice constant. Findings and limits: [audit](../research/sources/voice-audit-2026-10-03.md).
+
+This supersedes historical blanket shorthand restrictions below. The new lexicon is permission to use accurate terms, not permission to imitate the source author's religion, persona or personal claims.
+
 ## 2026-09-22 — stronger hooks and practical guides
 
 - Direct correction: hooks have been too cautious and bland; Kirill reports rewriting them repeatedly. Lead with a concrete number, result, action or tension instead of a vague "may support" opening.

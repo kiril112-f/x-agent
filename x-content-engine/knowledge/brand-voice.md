@@ -1,21 +1,36 @@
-# Brand voice — working profile v0.5
+# Brand voice — working profile v0.6
+
+Updated 2026-10-03 from Kirill's explicit brief, follow-up answers and an audit of 64 published posts. Published posts contain mixed human/AI writing: they are evidence to inspect, not an automatic style target. The user's latest preferences take priority. Audit and sampling limits: [voice audit](../research/sources/voice-audit-2026-10-03.md).
 
 ## Voice constants
 
 - Direct and low-fluff.
 - Youthful, internet-native and founder-like.
 - Ambitious without inventing scale.
-- Easy American English, roughly B2-readable, with accurate technical nouns where useful.
+- Clear American English with simple sentence structure and precise technical vocabulary. Do not simplify a founder's idea into beginner advice.
 - Lightly raw rather than corporately polished.
 - Friendly and close to the reader, with occasional meme language and playful aggression.
 - Specific numbers, mechanisms, examples and named tools beat abstract advice.
+- An opinionated practitioner talking to peers: concrete, curious, occasionally irreverent. Emotion should continue into the body, not disappear after a loud first line.
+
+## Audience and modes
+
+Default audience is broad AI/tech, with founders and builders included. Choose the mode from the subject; do not force every post into SaaS economics.
+
+| Mode | Lead with | Language and payoff |
+| --- | --- | --- |
+| Broad AI/tech — default | A surprising capability, recognizable frustration, visible result or consequential change | A readable reaction followed quickly by something concrete. Explain unfamiliar terms only when needed; show what the change lets the reader do or changes for them. |
+| Founder/operator | A distribution problem, commercial tradeoff, bottleneck or useful market observation | Use accurate terms such as GTM, payback, retention and attribution without turning the post into a glossary. Give a decision, mechanism or useful disagreement. |
+| Build in public | Kirill's actual artifact, result, mistake or decision | Specific first-person stakes and what happened. Numbers require his own evidence. A small real result is enough; do not inflate his stage or invent a victory. |
+
+Build in public follows the material, especially personal project metrics. It is not a mandatory format for news or someone else's case. A guide is appropriate when the task is instructional; do not default every observation to a tutorial.
 
 ## Tone ranges
 
 - Casual: 6/10.
 - Provocative: 7–8/10, aimed at ideas and methods, never identity or personal humiliation.
 - Humorous: 5–6/10; no comedy-show cadence.
-- Profanity: occasional, usually masked with `*`; allowed in a hook when it sharpens the attitude and fits the subject, without making it mandatory.
+- Profanity: occasional and earned. `shit`, `bullshit` or a stronger word can fit a real reaction; clean conversational language is the default. Preserve the draft's masking preference rather than automatically censoring or adding profanity. Allowed in a hook.
 - Personal openness: about 60%, focused on work, achievements, useful failures and relevant self-development.
 
 ## Vocabulary examples, not catchphrases
@@ -39,6 +54,8 @@ Do not repeatedly close posts with `Bro`, `cooking`, `business, baby` or another
 
 Prefer fresh, context-specific conversational language over recycling this list. New phrasing is welcome when it sounds like something Kirill could naturally say, fits the subject, and passes `$no-ai-slop`. Do not manufacture slang merely to make a draft look youthful.
 
+Founder vocabulary is a separate layer from catchphrases. Use the families in [founder-language.md](founder-language.md), derived from Kirill's attached examples, and extend them with context-appropriate terms. A needed `CAC`, `GTM` or `payback` does not count against a slang budget. Complexity must add precision, recognition or attitude, not decoration.
+
 Lowercase openings, fragments and imperfect spoken rhythm are allowed when readable. Correct obvious grammar that would distract an English-speaking founder audience.
 
 ## Internet shorthand and abbreviations
@@ -61,7 +78,7 @@ These are voice words *and* factual claims. Use `dozens` only for a real 12+, `h
 
 `lowkey` / `highkey`, `wild`, `insane`, `brutal`, `rough`, `banger`, `mid`, `cooked` (as in ruined) alongside the existing `cooking` (as in performing), `underrated`, `no shot`, `actually`, `genuinely`, `straight up`.
 
-At most one per post. These carry attitude, not information — they may colour a claim, never replace one.
+Use these when they carry a recognizable reaction. Usually one is enough, but natural source cadence takes priority over token counting. They colour a claim and need a concrete object; generic excitement alone is not a post.
 
 ### Builder-native jargon
 
@@ -71,10 +88,10 @@ Preferred over the shorthand above: it does real work and signals that the write
 
 ### Placement rules
 
-- Budget: roughly one or two shorthand tokens per post, zero is a normal and often better outcome. Two in the same sentence reads like a teenager cosplaying X.
+- No mandatory slang quota or hard token cap. A short post will often need only one or two shorthand tokens; zero is fine. Read the sentence aloud and remove anything that feels pasted on. Two useful domain terms in one sentence are normal.
 - Shorthand is allowed in the hook when it makes the line sharper and remains immediately readable. A strong first line takes priority over the former blanket restriction.
-- Never load-bearing. The audience is B2-readable easy American English, so any sentence carrying the mechanism, number or lesson must stay fully legible with the shorthand stripped out.
-- Never in a definition, technical explanation or an integrated promo mention.
+- Do not make obscure shorthand carry the mechanism, number or lesson. The sentence should remain clear; established domain terms can carry precise meaning and do not need to be removed for a beginner reading level.
+- Keep definitions and technical instructions unambiguous. Informal transitions are fine when they do not obscure the instruction or a commercial condition.
 - Preserve shorthand that is already in Kirill's draft. Add one on your own only when the sentence's rhythm genuinely asks for it.
 - Choose shorthand, profanity, selective CAPS or an emoji according to the subject; do not stack all of them by default.
 
@@ -91,6 +108,28 @@ New shorthand appears constantly. Adopting a fresh one is allowed when Kirill al
 ## Hooks
 
 Every post needs a first line that earns attention through a true number, concrete outcome, sharp observation, tension or useful promise. Clickability is required; empty clickbait is not. Pay off the hook in the body.
+
+## Attention, emotion and factual confidence
+
+The current editorial priority is more impressions and substantive interaction from the intended audience. A merely accurate summary is unfinished if it gives the reader no reason to care. Choose the subject's natural emotion: surprise, recognition, frustration, ambition, amusement or a useful disagreement. Do not manufacture outrage.
+
+Bold packaging, curiosity gaps, compressed context, selective emphasis and clearly figurative exaggeration are allowed. A prediction or judgment can be forceful without pretending to be measured fact. The wording must leave the reader with the correct material impression: do not hide a condition that reverses the claim, manufacture scarcity, turn an estimate into MRR, or present another person's result as Kirill's.
+
+Research is backstage. Check load-bearing numbers, product capabilities and quotes; do not attach a research report to every opinion. Preserve only caveats that change what the reader would believe or do, and place them beside the affected claim. Remove ceremonial hedging, generic QA endings and repeated reminders to verify. A punchy opinion needs a reason, not a literature review.
+
+An incomplete description is fine when omitted details are immaterial. A misleading description is not an acceptable shortcut to a sharper hook. Intensify the consequence, choice or analogy when evidence is limited; do not intensify factual certainty.
+
+## How to develop a post
+
+1. Find the author's point and select the audience mode. Name the concrete thing the reader will care about before drafting.
+2. Find the tension inside the material: wasted effort, a new capability, a costly assumption, an unexpected result or a decision with a tradeoff. The default stance is practical and opinionated, with irony when earned.
+3. Draft the opening and its payoff together. Show a concrete result, example or mechanism early; do not make the whole body a delayed reveal. For an important hook, compare a direct version with an emotional version internally rather than handing over a bland first attempt.
+4. Add founder terms or slang where they express the thought better. In a broad tech post, keep the entry point accessible and put any necessary specialist detail after it.
+5. Keep the body in the same speaking register. Remove school-essay transitions, generic three-step advice and mandatory lessons. Useful value may be a precise observation, a good decision rule or an honest result; it need not be a checklist.
+6. End on the strongest concrete consequence, choice, unresolved real question or earned human reaction. Do not append `test it yourself`, `let's see how it performs`, `thoughts?` or a generic motivation line out of habit.
+7. Review the whole post for both payoff and voice. If deleting slang leaves no insight, improve the substance. If deleting caveats changes the meaning, restore the relevant condition. Stop polishing once it sounds like a person with a point.
+
+These are editorial decisions, not a fixed paragraph template or a claim about X ranking weights. Compare results across similar publication ages and formats; do not infer a reach cause from one successful post.
 
 Kirill's explicit correction on 2026-09-22: make the default hook bolder, more specific and more direct. Avoid soft, defensive openings such as "Your model may support..." when a concrete configuration, number or action can carry the hook instead. Lead with the strongest relevant outcome, observation or tension; use a number when the number is the point. Do not manufacture a statistic merely to satisfy a numerical hook.
 
@@ -123,6 +162,8 @@ For this reference-led case format, Kirill further clarified on 2026-10-03: use 
 ## no-ai-slop override
 
 Use `$no-ai-slop` for minimum effective editing. This file overrides its generic bans when a phrase already present in Kirill's draft (`Let me tell you`, `Guess what`, fragments, mild profanity) is genuinely part of the message. Preserve it only if it adds cadence or character; delete it when it merely delays the point. The override does not authorize the agent to inject those phrases by default.
+
+The generic ban on `leverage` does not apply to a precise founder concept such as operating leverage or a high-leverage distribution asset. Keep it when the mechanism is clear; remove corporate filler such as `leverage innovative solutions`. Similarly, simple grammar does not require deleting useful domain vocabulary. This exception applies to Kirill's public content, not to unrelated assistant prose.
 
 ## Learning loop
 
