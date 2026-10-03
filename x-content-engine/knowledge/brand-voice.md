@@ -1,4 +1,4 @@
-# Brand voice — working profile v0.7
+# Brand voice — working profile v0.8
 
 Updated 2026-10-03 from Kirill's explicit brief, follow-up answers and an audit of 64 published posts. Published posts contain mixed human/AI writing: they are evidence to inspect, not an automatic style target. The user's latest preferences take priority. Audit and sampling limits: [voice audit](../research/sources/voice-audit-2026-10-03.md).
 
@@ -59,6 +59,12 @@ Prefer fresh, context-specific conversational language over recycling this list.
 Founder vocabulary is a separate layer from catchphrases. Use the families in [founder-language.md](founder-language.md), derived from Kirill's attached examples, and extend them with context-appropriate terms. A needed `CAC`, `GTM` or `payback` does not count against a slang budget. Complexity must add precision, recognition or attitude, not decoration.
 
 Lowercase openings, fragments and imperfect spoken rhythm are allowed when readable. Correct obvious grammar that would distract an English-speaking founder audience.
+
+### Occasional informal casing and punctuation
+
+Kirill's explicit preference on 2026-10-03: occasionally begin a short line or reaction in lowercase, or leave off its final period, when that makes the writing feel conversational. Apply this locally; ordinary capitalization and punctuation remain the base. A casual hook or aside can sit beside normally punctuated explanatory paragraphs. Do not convert the whole post to lowercase or strip all periods, and do not force an irregularity into every post or follow a fixed quota.
+
+Preserve intentional choices during cleanup. Keep sentence boundaries clear inside longer paragraphs, retain useful question marks and internal punctuation, and preserve product names, acronyms, code, links and numbers. Do not add random typos or grammatical errors to simulate a person. Paragraph spacing and the overall format stay unchanged.
 
 ## Internet shorthand and abbreviations
 
