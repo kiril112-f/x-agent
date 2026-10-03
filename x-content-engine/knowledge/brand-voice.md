@@ -1,4 +1,4 @@
-# Brand voice — working profile v0.4
+# Brand voice — working profile v0.5
 
 ## Voice constants
 
@@ -92,7 +92,9 @@ New shorthand appears constantly. Adopting a fresh one is allowed when Kirill al
 
 Every post needs a first line that earns attention through a true number, concrete outcome, sharp observation, tension or useful promise. Clickability is required; empty clickbait is not. Pay off the hook in the body.
 
-Kirill's explicit correction on 2026-09-22: make the default hook bolder, more specific and more direct. Avoid soft, defensive openings such as "Your model may support..." when a concrete configuration, number or action can carry the hook instead. Put the strongest relevant number or outcome in the first line. Do not manufacture a statistic merely to satisfy a numerical hook.
+Kirill's explicit correction on 2026-09-22: make the default hook bolder, more specific and more direct. Avoid soft, defensive openings such as "Your model may support..." when a concrete configuration, number or action can carry the hook instead. Lead with the strongest relevant outcome, observation or tension; use a number when the number is the point. Do not manufacture a statistic merely to satisfy a numerical hook.
+
+Kirill's explicit correction on 2026-10-03: for reference-led case posts, lead with the meaningful change or provocative implication (for example, what AI changes about being an influencer), not automatically with a screenshot's follower count. Use a verified number in one supporting sentence when useful. Supplied screenshots and videos normally provide visual proof and appearance; they do not define the thesis. Do not narrate attachments with lines such as "The screenshots below show both" or "Watch the comparison." Let media show the evidence while the copy develops the idea and reader payoff. Borrow the reference's hook function and intensity without copying its distinctive wording or turning an unsupported sweeping claim into fact.
 
 Selective CAPS, context-fitting slang, a swear word or an emoji may strengthen a hook. Pick what the subject earns; using none or one is often enough. Do not force all these devices into every post. Preserve material conditions in the body and distinguish a requested setting from a measured result.
 
