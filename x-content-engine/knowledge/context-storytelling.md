@@ -59,6 +59,8 @@ Actor → constraint → decision → result → mechanism → what Kirill/audie
 
 Claim → evidence → mechanism → example → application or limitation.
 
+Для коротких и средних разборов чужих кейсов применять [third-party-case-playbook.md](third-party-case-playbook.md): резкий конкретный хук → ранний пруф → механизм → применимые шаги. Это редакционная структура по референсам Кирилла, не доказательство алгоритмического boost.
+
 ### Personal lesson
 
 Real scene → conflict → choice → consequence → narrow lesson.
