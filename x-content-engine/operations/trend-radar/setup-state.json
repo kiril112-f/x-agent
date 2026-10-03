@@ -91,7 +91,7 @@
       "enabled": true,
       "channels": 16,
       "everyMinutes": 30,
-      "liveHealth": "15 previously verified; new Higgsfield channel present in production, first parser check pending",
+      "liveHealth": "16/16 parsed from Vercel on 2026-10-03; Higgsfield 40 entries; silent baseline, zero deliveries",
       "baseline": "silent; historical replays marked TEST",
       "paidCallsPerPoll": 0,
       "elevenDiscovery": "2026-09-29T22:06:21Z: eleven-v4 was first of 8 discovered blog links, without supplying the replay URL"
