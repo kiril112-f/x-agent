@@ -1,5 +1,11 @@
 # Voice feedback log
 
+## 2026-10-03 — выполнить полноценный 20-минутный просмотр Chrome
+
+Кирилл указал, что первого просмотра было недостаточно, и потребовал минимум 20 минут дальнейшего изучения ленты. Выполнен отдельный проход 16:01:55–16:22:25 МСК, 20 минут 30 секунд: 110 уникальных карточек, 99 новых относительно первого прохода, 25 подробных разборов с полными текстами и доступными медиа/ответами. Никаких публикаций, реакций, подписок и сообщений в X.
+
+В v0.7 добавлены редакционные выводы: оценивать текст вместе с медиа/вложенным материалом; искать конкретный авторский вклад в знакомую тему; допускать юмор и демонстрационную пользу без обязательного гайда; связывать founder-термины и вопросы с реальным решением. Это гипотезы для применения и проверки, не доказанные причины охватов. Источники и 25 разборов: [дополнительный аудит](../research/sources/voice-audit-2026-10-03-extended.md).
+
 ## 2026-10-03 — founder vocabulary, stronger social voice and audience modes
 
 Direct request: the current output feels too childish, bland and overqualified. Add the semantic families in the attached vocabulary (alpha, execution, GTM, unit economics, sauce, high agency and related terms), chosen by context rather than copied into every post. The priority is impressions and interaction through emotional, valuable social writing. Keep the meaning true; research should not dominate the public copy.

@@ -1,6 +1,8 @@
-# Brand voice — working profile v0.6
+# Brand voice — working profile v0.7
 
 Updated 2026-10-03 from Kirill's explicit brief, follow-up answers and an audit of 64 published posts. Published posts contain mixed human/AI writing: they are evidence to inspect, not an automatic style target. The user's latest preferences take priority. Audit and sampling limits: [voice audit](../research/sources/voice-audit-2026-10-03.md).
+
+The [additional 20-minute Chrome audit](../research/sources/voice-audit-2026-10-03-extended.md) informs the editorial hypotheses below: 110 feed cards, 25 detailed readings, with media and visible replies inspected. These observations are not causal ranking rules.
 
 ## Voice constants
 
@@ -130,6 +132,18 @@ An incomplete description is fine when omitted details are immaterial. A mislead
 7. Review the whole post for both payoff and voice. If deleting slang leaves no insight, improve the substance. If deleting caveats changes the meaning, restore the relevant condition. Stop polishing once it sounds like a person with a point.
 
 These are editorial decisions, not a fixed paragraph template or a claim about X ranking weights. Compare results across similar publication ages and formats; do not infer a reach cause from one successful post.
+
+## Judge the whole publication
+
+Read the copy together with its actual demo, screenshot, link card or quoted material. The useful object may be visible there. A short caption can supply a specific reaction, frame, joke or judgment without repeating the full mechanism in prose. Preserve Kirill's chosen format; having a reference still does not automatically mean making a quote-post.
+
+Before expanding a draft, ask what the author is bringing: a small build, a visible comparison, a discovered failure, a decision, a useful resource or an original observation. Prefer that specific contribution over another general account of a product release. If Kirill has not done the experiment, use an honest reference-led observation; never manufacture a personal test to strengthen the angle.
+
+Reader value can be practical utility, an explanation, a memorable comparison, recognizable tech humour, curiosity paid off by a real demonstration, or a useful point of disagreement. Do not append a business lesson or checklist to an already satisfying demo or joke. Random unrelated memes still do not fit the account.
+
+Clear sarcasm and playful exaggeration are allowed in an opinion or labelled concept. Keep the reader able to distinguish the joke from a measured result or actual release. Founder vocabulary works best inside a decision: price versus usage, trial versus paid customer, cash now versus future payments, or an actual reason to churn.
+
+When a question belongs, make the answer useful to the situation: choosing between approaches under a constraint, testing an assumption, or deciding what to build next. Do not bolt a question onto a completed point. During reference research, look at what people discuss, not just the reply count: technical questions, use attempts, recommendations, congratulations and factual disputes are different outcomes.
 
 Kirill's explicit correction on 2026-09-22: make the default hook bolder, more specific and more direct. Avoid soft, defensive openings such as "Your model may support..." when a concrete configuration, number or action can carry the hook instead. Lead with the strongest relevant outcome, observation or tension; use a number when the number is the point. Do not manufacture a statistic merely to satisfy a numerical hook.
 
