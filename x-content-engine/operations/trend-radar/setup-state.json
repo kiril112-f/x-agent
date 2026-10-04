@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-03T13:23:12.994028Z",
-  "phase": "release-monitor-and-sync-verified-analytics-degraded",
+  "updatedAt": "2026-10-03T16:05:40.791734+00:00",
+  "phase": "spark-active-linkedin-oauth-pending",
   "userApproved": {
     "dailyDigestMoscow": "12:00",
     "importantAlerts": true,
@@ -60,6 +60,24 @@
       "inputPosts": 2,
       "inputOfficialSources": 35,
       "result": "read input; Google Docs write failed out of capacity; old output runId correctly ignored"
+    },
+    "analysisSkillVersion": "2026-10-03 concrete ideas + editorial QA",
+    "linkedinSkillInstalled": true,
+    "linkedinScheduleTimesUI": [
+      "02:45",
+      "05:45",
+      "08:45",
+      "11:45",
+      "14:45",
+      "17:45",
+      "20:45",
+      "23:45"
+    ],
+    "linkedinScheduleActualFieldsVerified": true,
+    "linkedinScheduledRunVerified": false,
+    "feedRetest20261003": {
+      "result": "browser consent required; personal X session unavailable, remote panel preparing; no successful personal-feed read",
+      "feedUnchanged": true
     }
   },
   "apiBackup": {
@@ -75,7 +93,7 @@
     "worktree": "C:/Users/User/Desktop/tg-notes-x-radar",
     "branch": "codex/x-trend-radar",
     "productionBranch": "fix/category-page",
-    "deployedCommit": "e47554b",
+    "deployedCommit": "a2c9eea",
     "hostProject": "tg-notes",
     "productionUrl": "https://tg-notes-two.vercel.app",
     "supabaseProjectRef": "agvpcgmjknfuoehhuleh",
@@ -84,7 +102,7 @@
     "radarEnabled": true,
     "heartbeat": "pg_cron x-radar-heartbeat every 5 minutes, first tick 2026-09-28 17:45 MSK returned 200",
     "firstRealRun": "2026-09-28 19:00 MSK scan; first digest 2026-09-29 12:00 MSK",
-    "repositoryHead": "e47554b",
+    "repositoryHead": "a2c9eea",
     "timeZone": "Europe/Riga",
     "digest": "12:00 Riga; 13:00 Moscow in winter",
     "officialMonitor": {
@@ -127,20 +145,20 @@
       "repeatCreates": 0,
       "repeatChanges": 0,
       "duplicateUrls": 0,
-      "lastOkUtc": "2026-10-03T11:30:15.796Z"
+      "lastOkUtc": "2026-10-03T14:35:40.307Z"
     },
     "followingSync": {
       "lastOkUtc": "2026-10-02T07:30:18.619Z",
       "duplicateProfileUrls": 0
     },
-    "linkedin": "auto-crosspost requested; disabled, configured=false, connected=false as of 2026-10-03",
+    "linkedin": "Spark adapter configured; API app created; client secret and OAuth pending; no publication",
     "historicalReplay": {
       "gptMessageId": 10,
       "elevenMessageId": 11,
       "repeatMessageIdsUnchanged": true,
       "ownerDecisionTest": "Eleven replay rejected by owner; verified 2026-09-30T07:41:25Z. GPT replay remains pending."
     },
-    "testsPassed": 885,
+    "testsPassed": 916,
     "feedFaultTests": {
       "emptyAccepted": 0,
       "staleAccepted": 0,
@@ -154,15 +172,43 @@
       "confirmedAt": "2026-09-29T22:02:02Z",
       "pipelineFreed": true
     },
-    "editorialBriefVersion": "2026-10-03"
+    "editorialBriefVersion": "2026-10-03",
+    "linkedinSetup": {
+      "companyId": "145259423",
+      "appId": "264956194",
+      "products": [
+        "Share on LinkedIn",
+        "Sign In with LinkedIn using OpenID Connect"
+      ],
+      "callback": "https://tg-notes-two.vercel.app/linkedin/callback",
+      "clientSecretPresent": false,
+      "connected": false,
+      "autoPublish": false,
+      "ownerRequestedAutoPublish": true,
+      "pilotRequestId": "87e709b365aab94151ac249027f3f11eaf7f49871a7617b911805c2960072e32",
+      "pilotPostId": "2104635121198608809",
+      "pilotValidated": true
+    },
+    "editorialTest20261003": {
+      "runId": "71cfb04c-70d4-4e18-ae60-3770febc434d",
+      "firstAttempt": "schema passed; editorial failed; first report reached Telegram before hold",
+      "correctedIdeas": 2,
+      "withdrawnIdeas": 1,
+      "notionReportId": "3ee79173-9297-816a-b8d8-d9987fd7d3cb",
+      "telegramMessageId": 41,
+      "repeatAlreadyReviewed": true,
+      "ownerDecisions": "pending"
+    }
   },
   "requestedMigration": {
     "executor": "chatgpt-dots",
     "requestedAt": "2026-10-03",
-    "status": "prepared_not_installed",
+    "status": "deferred_by_owner",
     "localPackage": "x-content-engine/operations/dots",
     "dotId": null,
     "scheduledTaskIds": [],
-    "reason": "No personal-Dot management tool or native desktop control in this session; owner wants current desktop account."
+    "reason": "No personal-Dot management tool or native desktop control in this session; owner wants current desktop account.",
+    "activeExecutor": "gemini-spark",
+    "ownerDecision": "2026-10-03: continue Spark because Dots unavailable in current interface"
   }
 }

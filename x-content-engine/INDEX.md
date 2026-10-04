@@ -9,6 +9,7 @@
 - `knowledge/brand-voice.md` — рабочий voice profile и запреты.
 - `knowledge/eps-content-playbook.md` — приоритетная content methodology из EP's X Signal, включая no-fluff compression.
 - `knowledge/content-strategy.md` — темы, форматы и предварительный mix.
+- `knowledge/x-algorithm-playbook.md` — проверенная механика X, редакционные выводы и короткая проверка distribution fit.
 - `knowledge/privacy-and-approval.md` — личные границы и разрешения.
 - `knowledge/proof-and-claims.md` — цифры, которые можно или нельзя использовать.
 - `knowledge/reference-creators.md` — что изучать у референсов без копирования.
@@ -16,15 +17,20 @@
 - `knowledge/voice-feedback.md` — датированный журнал явных правок Кирилла, влияющих на voice.
 - `knowledge/context-storytelling.md` — pre-draft resource pack, attribution и честные storytelling structures.
 - `knowledge/post-formatting.md` — обязательные paragraph breaks, whitespace и copy-safe output для X.
+- `research/sources/x-article-virality-corpus-2026-09-12.md` — замеры и структура 19 статей (18 референсов двух когорт плюс своя неудачная статья), источник правил `$x-viral-article`.
 
 ## Рабочие процессы
 
-- `$x-draft-to-post` — черновик или тезис в готовый пост.
+- `operations/algorithm-review-loop.md` — перепроверка версии алгоритма и обучение на результатах ручных публикаций, без фонового мониторинга.
+
+- `$x-draft-to-post` — черновик или тезис в готовый пост (короткий формат, треды, реплаи).
+- `$x-viral-article` — X Article от идеи или рукописного черновика до готового длинного текста: виральные паттерны корпуса плюс brand voice, шесть скелетов, визуальный план и рерайт-пайплайн.
 - `$x-content-research` — свежий ресерч и evidence ledger.
 - `$x-brand-voice` — применение и обновление голоса.
 - `$x-visuals` — решение о визуале и работа с Zubbix Studio.
 - `$x-article-cover` — обложка X Article в фирменном стиле: поле, стеклянный объект, крупная типографика.
 - `$x-article-chart` — график, статистика или инфографика внутри статьи: пять форм, фирменное поле, рендер в PNG.
+- Статья всегда вызывает обложку и графики из себя: слот-карта в `.agents/skills/x-viral-article/references/visual-integration.md`.
 - Публикация выполняется Кириллом вручную. Агент заканчивает работу готовым review-пакетом и записью в Notion.
 - `$no-ai-slop` — финальная минимальная редактура без потери характера.
 

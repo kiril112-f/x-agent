@@ -51,6 +51,12 @@ Use storytelling to expose cause and effect: what someone expected, what they di
 
 Before final delivery, run the no-fluff compression contract from `eps-content-playbook.md`. Research depth must not leak into the post as unnecessary background or secondary scenarios.
 
+## Проверка распределения в X
+
+Перед выбором упаковки использовать `x-algorithm-playbook.md`. Уточнить конкретного читателя, payoff и причину естественного взаимодействия; сохранить исходный тезис Кирилла. Устойчивые pillars дают редакционную связность, но не являются доказанным «бонусом за нишу». Частота 4–5 постов — рабочий ориентир по ресурсам, не требование алгоритма.
+
+Результаты проверять по `../operations/algorithm-review-loop.md`: сравнимые snapshots, нормализованные метрики, одна гипотеза на серию и реальные целевые outcomes. Article-корпус показывает примеры, но не устанавливает причинность и не обещает повторение просмотров.
+
 ## Crossposting
 
 LinkedIn duplication is a future workflow. Do not copy-paste blindly: preserve the thesis but adapt opening, paragraph length and context to LinkedIn.

@@ -169,3 +169,56 @@ One-shot вариант той же обложки, для разведки — 
 Промпт разобранного приёма Content Rewards лежит в [assets/example-shortform-l4.prompt.txt](../assets/example-shortform-l4.prompt.txt): свет делит кадр, объёмная дымка, три плана глубины, акцент курсивом.
 
 **Это не дом-стиль.** Проверено — рядом с candy-glass серией смотрится чужеродно. Держим как заготовку на случай статьи про физический продукт, где стеклянная иконка не подходит.
+
+## Перекрытие: промты
+
+### R1-O — one-shot разведка композиции (не для публикации)
+
+```
+Wide 3:1 editorial cover, warm near-black background with a soft orange glow behind the centre.
+Gigantic lowercase display type in a heavy grotesque (Helvetica Now Display Black), pure white, two lines,
+"organic" over "installs", tight tracking, the type nearly touching the left and right frame edges.
+Two rounded screen-recording cards stand in front of the type, side by side in the centre, overlapping
+the bottom of the first line and the top of the second line by about a fifth of the cap height,
+a thin white arrow between them. Cards have a hairline white border and a soft shadow.
+Straight-on, no tilt, no perspective, nothing else in the frame.
+```
+
+Держит композицию, но врёт в буквах под объектом. Финал всегда собирает композитор (`assets/example-occlusion.prompt.txt`).
+
+### Plate assets — плашки для перекрытия
+
+Общие правила: один объект в кадре; фронтально, без перспективы и наклона; ровный рассеянный свет;
+светлый нейтральный фон; никакого текста, цифр, логотипов и водяных знаков; квадрат 1:1 с запасом по краям.
+
+**Вертикальная карточка скринкаста** — `assets/plates/plate-ugc-screen.png`:
+
+```
+A single vertical smartphone screen-recording card, flat front-facing product shot: hands holding a phone
+filming a person, white rounded player overlay with a progress bar and a round play button, soft neutral
+shadowless lighting, plain light grey background, no text, no letters, no numbers, no logos, no watermark,
+zero perspective, straight-on, centered, square 1:1 with generous margins.
+```
+
+**Горизонтальная панель аналитики** — `assets/plates/plate-app-panel.png`:
+
+```
+A single horizontal app analytics panel, flat front-facing UI card: cobalt blue bar chart with a rising line,
+two small pill chips, a thin divider, white surface with softly rounded corners, even diffuse lighting,
+plain light grey background, no text, no letters, no numbers, no logos, zero perspective, straight-on,
+centered, square 1:1 with generous margins.
+```
+
+После генерации кадрируем строго по объекту — модель отдаёт его по центру светлого квадрата:
+`magick in.jpg -fuzz 4% -trim +repage out.png` или вручную `magick in.jpg -crop WxH+X+Y +repage out.png`.
+Затем кладём в `assets/plates/` и передаём в `-Plate`.
+
+### Как модель ломает перекрытие (проверено на тестах)
+
+| Симптом | Что было | Вывод |
+| --- | --- | --- |
+| потеря буквы | `installs` → `instals` под карточкой | перекрытие только композитором |
+| дубль фразы | `cold dms` → `cold dms cold dms`, когда объект делит строку | не просить модель «разрезать» слово |
+| обрез по краям | строка уезжает за кадр вопреки промту | кегль и края — задача вёрстки |
+| грязная кромка | тёплый янтарный ореол по краю карточки | фон и свет задаёт поле, а не модель |
+| стоковая 3D-иконка | «стеклянная плитка» закрыла буквы целиком | плашка ≠ иконка: нужна плоская карточка |

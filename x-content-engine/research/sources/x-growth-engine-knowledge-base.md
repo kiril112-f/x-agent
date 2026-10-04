@@ -1,4 +1,6 @@
 # X (Twitter) GROWTH & CONTENT ENGINE — AGENT KNOWLEDGE BASE
+
+> Historical mixed-vintage reference, reviewed 2026-09-20. This file mixes 2023 weights, later observations and unsourced growth hypotheses. Its internal priority rules and `[CODE]` labels are not operational authority. Do not apply its weight ladder, bookmark/reply multipliers, link penalties, posting windows or automated interaction advice without fresh verification. Use `x-content-engine/knowledge/x-algorithm-playbook.md` and its commit-pinned audit for current technical guidance. The original body below is retained as source material.
 **Version:** 2026.08 · **Scope:** English-language organic growth on X · **Consumer:** autonomous content agent
 
 ---

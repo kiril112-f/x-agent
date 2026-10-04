@@ -88,3 +88,33 @@ Return the strongest 3–10 ideas, not a dump of every scraped row.
 - Actor timeout: keep delivered rows and mark coverage incomplete.
 - Schema change: inspect the current Actor details before changing the workflow.
 - Never send X cookies, passwords or session tokens to an Actor.
+
+## 6. Article corpus mining
+
+Use this when the task is to learn or re-measure long-form X Article structure, not to research a claim. This is the workflow behind `x-content-engine/research/sources/x-article-virality-corpus-2026-09-12.md` and the rules in `$x-viral-article`.
+
+Input:
+
+```json
+{
+  "mode": "article",
+  "articleTweetIds": ["2097073557868056925", "2086788813301661865"],
+  "outputVariant": "rich",
+  "outputPreset": "nested",
+  "fieldStyle": "camelCase",
+  "maxItems": 40
+}
+```
+
+Rules that cost a run to learn:
+
+- `mode: "article"` with `articleTweetIds` returns the Article payload; normal `profileTweets`/`search` modes return only the tweet shell without the body.
+- Use `outputPreset: "nested"` here. The flat preset recommended elsewhere drops the `article` object.
+- Read the body from `article.bodyText`. The nested `article.contents` array is **not projectable** through `fields` — requesting it returns only the id fields.
+- Images appear in `bodyText` as blank gaps, so count visual slots from the gap positions and section boundaries, not from image URLs.
+- Read the dataset one item at a time (`offset` + `limit: 1`, `fields: "sourceTweetId,article.bodyText"`). A full article is 2,500–5,500 words and several at once will be truncated.
+- Record per article: title, author, followers, views, likes, replies, quotes, opener type, section count, visible scaffolding, the one reusable object, visual count, closer type, word count.
+
+Budget note: one article equals one delivered row, so a 20-article corpus is cheap in rows but heavy in reading time. Ask before going past ~25 articles in a single pass.
+
+Always include Kirill's own comparable article in the same run. The delta between his numbers and the corpus is the useful part, not the corpus alone.

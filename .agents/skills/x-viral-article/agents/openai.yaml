@@ -1,0 +1,6 @@
+interface:
+  display_name: "X Viral Article"
+  short_description: "Long-form X Articles built on corpus-tested virality patterns in Kirill's voice"
+  default_prompt: "Use $x-viral-article to plan and write this X Article, then wire the cover and charts."
+policy:
+  allow_implicit_invocation: true

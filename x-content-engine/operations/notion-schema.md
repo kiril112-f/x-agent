@@ -113,6 +113,8 @@ Page body по умолчанию:
 
 ## Routing
 
+`Distribution hypothesis` из `algorithm-review-loop.md` оставлять внутренней заметкой. После публикации записывать реальные доступные метрики и краткий вывод в существующие properties. Подробный `Results review` в body — только по отдельному запросу на аналитику. Не добавлять properties и не записывать редакционные рейтинги как прогноз охвата.
+
 ### Apify discovery
 
 1. Scrape narrowly.

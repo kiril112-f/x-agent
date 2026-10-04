@@ -56,3 +56,29 @@ Avoid imitating pseudo-profound aphorisms, identity poetry or binary contrasts t
 - Dan for idea architecture.
 
 Kirill's real accepted posts and edits always outrank these references.
+
+## Article references (2026-09)
+
+Measured corpus: `research/sources/x-article-virality-corpus-2026-09-12.md`. Patterns extracted into `.agents/skills/x-viral-article/references/viral-patterns.md`. Study the structure, never the phrasing.
+
+Mass cohort (large followings, universal desire):
+
+- thedankoe — one-day life fix, multiple-interests piece: numbered lessons at identity level.
+- Tim_Denning — age-and-advice format: confession opener, claim-shaped subheads.
+- alexeixbt — neuroplasticity: mechanism explainer with a named biological driver.
+- ErnestoSOFTWARE — 10 apps / $800k: channel playbook with a keep/kill verdict per channel.
+- sairahul1, VibeMarketer_ — one-person company/media systems: roles plus full copy-paste prompts.
+- PaulSolt — Codex/Xcode skills: tool pack with credits to the authors.
+
+Niche cohort (best views-per-follower, closest to Kirill's position):
+
+- adamtwtz — GLP-1 app, 107k views at 1.9k followers: shortest case autopsy in the corpus.
+- aleksascales — six-figure MRR organically, 332x views-per-follower.
+- PerezHatesAI — UGC slideshows, 257x: shows the result before explaining anything.
+- aureliuscajigas — paid ads to $240k/yr: rate cards and losses stated openly.
+- lucaspatiri_, EXM7777 — UGC/video pipelines: one reusable artifact carries the article.
+- wickedguro — Postiz $2M ARR: TL;DR plus a verifiable proof link, then step-by-step replication.
+- 0xfJuan, leonabboud — distribution and marketing mechanisms explained in layers.
+
+What transfers: structure, proof placement, the single reusable object, visual cadence, closer discipline.
+What does not transfer: aphorisms, guru register, enemy framing in banned constructions, other people's numbers as if they were ours.

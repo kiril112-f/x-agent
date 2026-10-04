@@ -1,0 +1,10 @@
+# R1-O — one-shot recon of the occlusion lockup. Composition study only: never publish the model's output,
+# it drops and duplicates letters under the object. Final covers are composed by assets/cover.html.
+
+Wide 3:1 editorial cover, warm near-black background with a soft orange glow behind the centre.
+Gigantic lowercase display type in a heavy grotesque (Helvetica Now Display Black), pure white, two lines,
+"organic" over "installs", tight tracking, the type nearly touching the left and right frame edges.
+Two rounded screen-recording cards stand in front of the type, side by side in the centre, overlapping
+the bottom of the first line and the top of the second line by about a fifth of the cap height,
+a thin white arrow between them. Cards have a hairline white border and a soft shadow.
+Straight-on, no tilt, no perspective, nothing else in the frame.

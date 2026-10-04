@@ -6,6 +6,8 @@
 - It invents personal experience, numbers, quotes, opinions or results.
 - A precise external claim lacks a source or honest uncertainty label.
 - The hook overpromises the body.
+- It treats historical weights, raw engagement ratios, or a guessed algorithm score as current ranking evidence.
+- It adds ragebait, forced engagement requests, delayed payoff, or repetitive padding solely to target ranking signals.
 - It uses a banned phrase from `brand-voice.md` or a close canned variant.
 - It copies distinctive wording from a reference creator.
 - It relies on another person's idea but loses the source link or adds no original contribution. A separately supplied link can provide attribution; an inline name/@handle is not required.
@@ -39,3 +41,5 @@
 Target at least 19/22 with no hard failure. A score is an internal editing aid, not a user-facing claim of objective quality.
 
 Run `python x-content-engine/scripts/lint_x_post.py <draft-file>` for mechanical checks when a final draft is stored in a file.
+
+Also run the qualitative preflight in `x-content-engine/knowledge/x-algorithm-playbook.md`. Reader relevance and earned interaction are editing checks, not predicted reach. Keep the existing scoring rubric; do not add numerical ranking forecasts.

@@ -1,0 +1,17 @@
+# Plate assets for the occlusion layout (l5). The model makes the object only — the compositor does the layout.
+# Rules: one object in frame, front-facing, no perspective, no tilt, even diffuse light, plain light grey
+# background, no text / letters / numbers / logos / watermarks, square 1:1 with generous margins.
+# After generating, crop tightly to the object (magick in.jpg -fuzz 4% -trim +repage out.png) and drop it
+# into assets/plates/.
+
+## plate-ugc-screen.png
+A single vertical smartphone screen-recording card, flat front-facing product shot: hands holding a phone
+filming a person, white rounded player overlay with a progress bar and a round play button, soft neutral
+shadowless lighting, plain light grey background, no text, no letters, no numbers, no logos, no watermark,
+zero perspective, straight-on, centered, square 1:1 with generous margins.
+
+## plate-app-panel.png
+A single horizontal app analytics panel, flat front-facing UI card: cobalt blue bar chart with a rising line,
+two small pill chips, a thin divider, white surface with softly rounded corners, even diffuse lighting,
+plain light grey background, no text, no letters, no numbers, no logos, zero perspective, straight-on,
+centered, square 1:1 with generous margins.

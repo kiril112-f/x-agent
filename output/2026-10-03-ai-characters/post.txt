@@ -1,0 +1,19 @@
+your next favorite influencer might not even exist.
+
+you can invent a person in ChatGPT and put them into a real video. the dancing, gestures, expressions: borrowed from a human.
+
+Jean Phil and Brigitte Macaron already have 420K+ followers combined on TikTok.
+
+a bizarre face makes you stop. the same haircut and outfit make you recognize them in the next clip.
+
+the workflow:
+
+→ use ChatGPT to create a character sheet with a consistent face, haircut, and outfit
+→ upload your character sheet and reference footage to Seedance 2.5 Edit in Higgsfield
+→ swap in your character, then check that the face stays consistent and the motion looks natural
+
+start with your own clip and this prompt:
+
+“Change the on-screen performer to my reference character. Match their actions and expressions, and retain the scene, shot framing, and camera movement.”
+
+save this for your first AI character.

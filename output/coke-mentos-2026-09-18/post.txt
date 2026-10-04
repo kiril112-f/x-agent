@@ -1,0 +1,17 @@
+This Coke-and-Mentos AI post has 41M+ views.
+
+I'd test a "make your own" button under it.
+
+For an AI video app, the funnel could be:
+→ Watch the clip.
+→ Open the exact template.
+→ Generate your own version.
+→ Subscribe to make more.
+
+Keep the template selected through signup so users can generate immediately.
+
+The attached tracker shows estimated revenue of $90K for Halo AI, $1M for EPIK, $3M for Remini and $2M for Wink. The period isn't shown, and these figures don't prove this funnel works.
+
+I'd track paying users per 1,000 views, then whether they renew. Generation costs and retries go into the math.
+
+Video + prompts: @techhalla. Full prompts in the first reply.

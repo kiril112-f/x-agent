@@ -9,8 +9,10 @@ description: Исследует свежие X/news/product claims для буд
 
 ## Процесс
 
+Для claims об алгоритме X сначала открыть `x-content-engine/knowledge/x-algorithm-playbook.md`, затем выполнить проверку по `x-content-engine/operations/algorithm-review-loop.md`. Источник механики — актуальный `xai-org/x-algorithm` с permalink на commit, формулой и условиями. Различать опубликованные defaults, production overrides и редакционные гипотезы. Такой запрос идёт прямо к GitHub; Apify нужен только при необходимости исследовать публичные X-посты.
+
 1. Сформулируй 1–3 проверяемых вопроса.
-2. Выбери один workflow из [references/apify-xquik.md](references/apify-xquik.md) и поставь минимальный достаточный `maxItems`.
+2. Если нужны публичные X-данные, выбери один workflow из [references/apify-xquik.md](references/apify-xquik.md) и поставь минимальный достаточный `maxItems`. Для внешних технических источников используй документацию и исходный код напрямую.
 3. Следуй иерархии из [references/source-policy.md](references/source-policy.md).
 4. Для каждой цифры, цитаты, даты, valuation и product claim найди источник-владельца вне X, когда X-автор не является первичным источником.
 5. Отдели факт события от мнения автора X-поста.
