@@ -9,4 +9,4 @@
 - Seven titles: title-options.md
 - Saved preview screenshot: x-preview-final.png
 
-All body images checked in their intended sequence. Four original TikTok screenshots are combined in one collage; remaining original images retained. No publishing or scheduling performed.
+2026-10-07 revision: The US Audience Playbook for Creators Abroad. Warm-up screenshot removed at Kirill's request and used as a writing note. Ten body images remain in their intended sequence, including the four-screen collage. Photo cover from experiments-2026-10-07/01-photo.png is installed; the gradient, monochrome engraving, and editorial engraving are additional review alternatives. No publishing or scheduling performed.

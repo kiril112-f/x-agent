@@ -1,4 +1,4 @@
-# How to Reach US Viewers Without Living in the US
+# The US Audience Playbook for Creators Abroad
 
 If you're trying to reach US viewers from abroad, you've probably run into conflicting advice about SIM cards, VPNs, and phone settings.
 
@@ -98,9 +98,7 @@ My usual TikTok routine is to leave the account for about a day, spend the next 
 
 Those are my timings. Treat the schedule as a starting point for your own routine.
 
-![Warm-up reference supplied with the draft](media/1598F7C5-7158-4BAC-8939-AF89A6FD8A19.png)
-
-The reference above follows a similar routine. Watching relevant content helps shape the feed you see; it doesn't guarantee who sees your uploads.
+Start with normal browsing, narrow your searches to the niche, then keep a short daily research session once you start posting. Watching relevant content helps shape the feed you see; it doesn't guarantee who sees your uploads.
 
 Search in the language your audience uses. For a fitness account, “how to gain abs,” “high protein meals,” or “gym tips for beginners” will give you more useful material than endlessly refreshing a random feed.
 

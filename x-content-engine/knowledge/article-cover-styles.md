@@ -25,6 +25,8 @@ Reference 04 is the luminous color variant. Reference 05 is a separate banknote/
 
 ## Production
 
+Kirill's 2026-10-07 direction: create several genuinely distinct cover styles and refine them after visual review. Use the built-in image model instead of the previously preferred Nano Banana path. In the centered photographic direction, put dimensional app icons behind the headline with partial occlusion. Include the house full-frame type/cobalt-gradient/3D direction among alternatives. Avoid generic cyberpunk scenery. Article titles should name the subject and scope like an editorial guide, not read as short-post clickbait. Working Article title: The US Audience Playbook for Creators Abroad.
+
 Kirill's direct correction on 2026-10-06: for this Article, typography must be genuinely huge, centered, and heavy. A small left-aligned headline over an empty phone metaphor was rejected; a small numerical block over a neon desk was rejected too. Use the actual supplied reference's scale, not merely its color family. For practical US-targeting content, prefer a relevant real device/photo background to a cyberpunk city or abstract connection. The approved direction is still under review; do not describe a rejected version as accepted.
 
 - Finalize the article and cover copy before generating.

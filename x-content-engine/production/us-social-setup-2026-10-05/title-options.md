@@ -1,5 +1,7 @@
 # Top 7 title options
 
+2026-10-07 update: earlier options below are superseded by **The US Audience Playbook for Creators Abroad**, following Kirill's request for a title that reads like an Article rather than post clickbait. Alternatives in the same editorial register: **A Creator's Guide to Building a US Audience Abroad**; **US Audience Setup: Devices, Connections, and Content**.
+
 1. **How to Reach US Viewers Without Living in the US** — recommended; one clear outcome across all three platforms.
 2. **Your Videos Are in English. Your Audience Isn't American.** — problem-led, conversational.
 3. **The iPhone Setup for Reaching US Viewers From Abroad** — specific device and outcome.

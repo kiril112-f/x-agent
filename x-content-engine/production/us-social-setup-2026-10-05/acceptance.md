@@ -1,5 +1,7 @@
 # Delivery check — 2026-10-07
 
+Latest revision: title changed to The US Audience Playbook for Creators Abroad. The user clarified that the warm-up image is a writing note; removed from the published-version copy and X draft, leaving 10 body illustrations. Its useful content is prose. Four new cover styles and two refinement passes are in the experiments-2026-10-07 cover folder. Earlier checks below describe the prior delivery where not superseded by this paragraph.
+
 - X draft: https://x.com/compose/articles/edit/2107366695111139329
 - Title: How to Reach US Viewers Without Living in the US (recommended working choice; seven alternatives provided).
 - The saved preview starts with the requested If sentence and includes the complete closing paragraph.

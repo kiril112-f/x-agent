@@ -1,0 +1,49 @@
+{
+  "firstPass": [
+    {
+      "key": "photo",
+      "args": {
+        "referenced_image_paths": [
+          "C:/Users/User/Desktop/X Agent/x-content-engine/assets/covers/us-social-setup/icons/tiktok-app-store.jpg",
+          "C:/Users/User/Desktop/X Agent/x-content-engine/assets/covers/us-social-setup/icons/instagram-app-store.jpg",
+          "C:/Users/User/Desktop/X Agent/x-content-engine/assets/covers/us-social-setup/icons/youtube-app-store.jpg"
+        ],
+        "transparent_background": false,
+        "prompt": "Create ONE polished panoramic 5:2 X ARTICLE COVER, 2500x1000 composition. Reference images 1–3 are original TikTok, Instagram, YouTube logos: preserve these exact familiar marks. Actual theme: reaching American social-media viewers while living abroad. BACKGROUND: tasteful editorial photograph of lower Manhattan and Brooklyn Bridge across the East River, hazy warm daylight, muted beige/steel blue, deliberately softly defocused, a charcoal photographic exposure so giant white letters pop. Absolutely no cyberpunk, purple neon, generic computer desk, no conspicuous US flag. TYPE IS THE MAIN SUBJECT: giant centered very heavy Helvetica Now Display Black / Inter 900 white text 'US traffic' spanning 86 percent of width, cap ink at least 32 percent of total image height. Below centered text 'from abroad' in SAME heaviest weight, about 45 percent of headline size, very readable. Main text centered horizontally and vertically as one massive compact lockup; no box behind it, no fine-print, no other words. DEPTH: Three large thick optical-glass app icon tiles carrying the supplied authentic marks are positioned BEHIND the top half of headline letters in a tight centered cluster. The white headline is in the foreground and hides the lower 20 percent of icon tiles; icons peek above the top of the big type with small angled perspective, realistic thick glass bevels and soft cast shadows on the photograph. Keep all logo symbols recognizable above the letters. No small row of icons floating disconnected from the headline. Reference look: viral editorial article typography fills the image, background secondary, icons embedded in type scene. Text exactly US traffic / from abroad. No numbers, no fake analytics, no author tag."
+      }
+    },
+    {
+      "key": "gradient",
+      "args": {
+        "referenced_image_paths": [
+          "C:/Users/User/Desktop/X Agent/.agents/skills/x-article-cover/assets/references/ref-occlusion-ai-ugc.png",
+          "C:/Users/User/Desktop/X Agent/x-content-engine/assets/covers/us-social-setup/icons/tiktok-app-store.jpg",
+          "C:/Users/User/Desktop/X Agent/x-content-engine/assets/covers/us-social-setup/icons/instagram-app-store.jpg",
+          "C:/Users/User/Desktop/X Agent/x-content-engine/assets/covers/us-social-setup/icons/youtube-app-store.jpg"
+        ],
+        "transparent_background": false,
+        "prompt": "ONE finished 5:2 panoramic X article cover, 2500x1000. Image1 is COMPOSITION reference only: huge two-line type that fills the whole frame with objects overlapping the middle band. Images2–4 are exact genuine TikTok Instagram YouTube logo references. Topic: reaching US audiences from abroad. Design an arresting TYPOGRAPHIC POSTER: saturated electric cobalt field with clear luminous periwinkle center and deep midnight blue corners, no scene, no horizon, no landscape, no neon technology clutter. Two lines of gigantic lowercase pure WHITE ultra-heavy Inter Black weight900 type, tight tracking: line1 'US traffic', line2 'playbook'. These lines occupy almost the entire canvas width and height with only 5% outer margins. Spelling must be perfect, NO duplicate words. Thick transparent glass TikTok, Instagram and YouTube squircle tiles form ONE physically coherent horizontal cluster over the gap between the two lines, carefully occluding the BOTTOM 12–18 percent of first-line letter forms and TOP 12–18 percent of second-line letter forms; each letter must remain recognizable. Tiles are substantial 3D objects, translucent body reveals blue field, crisp familiar original logos, beveled edges, very restrained warm amber rim light. Main logo centers in the gap between lines, tiles only cross letter tips. Keep first and final letters clear. Text is flat white, no bevel/shadow/glow/outline on letters. Objects are 3D. Nothing else. Do not reduce typography to make room for icons, enlarge type instead. No small subtitle, no label, no panels, no border. The reference is the type/object layering principle, not its people/screens."
+      }
+    },
+    {
+      "key": "engraving",
+      "args": {
+        "referenced_image_paths": [
+          "C:/Users/User/Desktop/X Agent/x-content-engine/assets/cover-references/2026-10-05/06-dan-koe-boat.png"
+        ],
+        "transparent_background": false,
+        "prompt": "Create a new original panoramic 5:2 editorial X Article cover in the BLACK-AND-WHITE narrative engraving visual language of the attached reference, without copying its boat or vortex scene. Dense fine stippling, crosshatching, black ink on white, very rich hand-engraved texture, striking scale contrast. Article theme: a creator reaches US audiences from another country. ORIGINAL SCENE: in left foreground a tiny solitary traveler on a rocky shoreline holds a small glowing rectangular phone; across an immense dark Atlantic sea is a distant but unmistakable New York skyline and small Statue of Liberty silhouette on the right horizon. A single narrow bright path of reflected light crosses the water toward the city, suggesting connection across distance. Epic dimensional landscape, wide perspective, dramatic black ocean and luminous cloud opening, confident empty dark shapes to balance engraving texture. Do not show an actual digital interface or invent any numbers. Full-bleed panoramic artwork, no borders. NO TEXT, NO logos, NO letters, no chart, no wireframe, no cyberpunk, no neon, absolutely monochrome black and white. Make the scene immediately legible at small thumbnail size; traveler, sea crossing, American skyline are one idea. This is a finished ART-LED cover where the native Article title beneath supplies the words."
+      }
+    },
+    {
+      "key": "banknote",
+      "args": {
+        "referenced_image_paths": [
+          "C:/Users/User/Desktop/X Agent/x-content-engine/assets/cover-references/2026-10-05/05-editorial-banknote.png"
+        ],
+        "transparent_background": false,
+        "prompt": "Create ONE premium 5:2 horizontal X Article cover, warm paper and rust-red copperplate engraving, inspired by the attached editorial banknote reference composition but ORIGINAL scene and words. Topic US audience distribution from abroad, not money or wealth. Background aged warm ivory paper very subtle texture. Upper 42 percent is typographic, massive dark chocolate condensed woodtype serif headline across almost full width reading exactly 'THE US AUDIENCE PLAYBOOK', on TWO balanced centered lines: 'THE US AUDIENCE' then 'PLAYBOOK'. Bold ink, clear print texture, no small tagline. Lower 58 percent: beautiful detailed rust-red engraving of a lone creator at a simple desk on the left shoreline, working with one smartphone on a stand, with long fine parallel lines following an undersea cable across an ocean to an unmistakable Manhattan cityscape on the right. Phone is a small concrete element inside the engraving, not an empty giant mockup. The connecting lines should suggest distribution without becoming a chart; no arrows, no nodes, no explanatory labels. Full composition spanning left to right like an antique newspaper illustration. Fine banknote linework, strong shadows, restrained two-ink palette only. No coins, no currency, no fake numbers, no social platform logos, no neon, no gradients, no extra words. Title must dominate at thumbnail size and all spelling must be exact."
+      }
+    }
+  ]
+}
