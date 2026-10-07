@@ -1,0 +1,90 @@
+{
+  "status": "directions_for_user_selection",
+  "article": "x-content-engine/production/us-social-setup-2026-10-05/article.md",
+  "article_title": "The US Audience Playbook for Creators Abroad",
+  "literal_thesis": "Prepare the device, connection, account, and niche research before publishing for US viewers from abroad; verify viewer geography after posting.",
+  "reader": "Creators and app operators outside the US preparing a US-focused social account, primarily TikTok.",
+  "tension": "The creator's physical location differs from the intended audience; contradictory setup advice delays the first upload.",
+  "visual_anchor": "Two independent, real audience-geography crops; the article photograph contains United States 97.5%.",
+  "cover_copy": ["US traffic", "from abroad"],
+  "copy_status": "Retain as baseline; alternative copy only where a selected concept needs it. Article headline remains unchanged.",
+  "canvas": [2000, 800],
+  "crop_basis": "5:2 existing Article cover and original reference corpus; check actual X crop at final upload.",
+  "style_selection": null,
+  "recommendation": "02-type-proof",
+  "proof_manifest": "proof-manifest.json",
+  "constraints": [
+    "Use both rounded real screenshot crops; maintain source data.",
+    "Do not imply the two panels are a before/after sequence or both the author's accounts.",
+    "Separate exact typography and analytics source pixels from generated art.",
+    "Huge centered type; both lines visually connected; meaningful object overlap without hiding key letter counters.",
+    "Background must explain US audience/distribution or remain quiet; no unrelated cyberpunk.",
+    "Inspect each substantial candidate against chosen originals at equal size and 340 px.",
+    "After the user's style choice, produce several composition variants in that direction using built-in image generation for artwork.",
+    "No live X cover replacement or article publishing during concept selection."
+  ],
+  "directions": [
+    {
+      "id": "01-photo-proof", "name": "Current photographic direction + evidence",
+      "baseline": "../experiments-2026-10-07/01-photo.png",
+      "reference_ids": [11, 19],
+      "visual_sentence": "Large US traffic lettering sits over a soft US waterfront, with two real analytics cards crossing the foreground.",
+      "mapping": "The destination sets geographic context; the cards show the audience geography discussed in the guide.",
+      "composition": "Keep centered weight/scale. Quiet the waterfront and reduce the oversized logo group so both proof cards have room. Cards overlap lower letter edges. No arrow between them.",
+      "font": "Inter Variable, weight 900",
+      "palette": "Warm neutral photograph, white lettering, blue analytics bars",
+      "tradeoff": "Closest to the user's liked existing version; the skyline can compete with dense proof cards."
+    },
+    {
+      "id": "02-type-proof", "name": "Giant type + dimensional proof cards",
+      "reference_ids": [11, 6],
+      "visual_sentence": "Two tangible analytics cards interrupt giant US traffic lettering on one deep teal field.",
+      "mapping": "The most concrete result visible in the article becomes the central foreground object.",
+      "composition": "Adapt 11's large type/card interlock and 06's material/light coherence. Compact centered lockup, shallow card angles, soft local shadows, 97.5% card primary. A recognizable TikTok glass mark may sit behind type only if the hierarchy remains clean.",
+      "font": "Inter Variable, weight 900",
+      "palette": "Deep teal with controlled gradient, white type, original screenshot colors",
+      "tradeoff": "Strongest fit for giant lettering plus actual screenshots; verify percentage readability in the thumbnail before choosing card sizes."
+    },
+    {
+      "id": "03-minimal-proof", "name": "Light product editorial",
+      "reference_ids": [25],
+      "visual_sentence": "A large black US audience headline and two real geography panels share a quiet ivory surface.",
+      "mapping": "A practical setup guide presented through its analytics evidence.",
+      "composition": "Generous clean field, large black type, shallow overlapping rounded cards; the leading card crosses the lower edge of the headline. Original screenshot replaces all made-up metrics.",
+      "font": "Inter Variable, weight 850 or 900",
+      "palette": "Ivory, black, source UI blue",
+      "tradeoff": "Best space for reading screenshots; less dramatic than the poster direction."
+    },
+    {
+      "id": "04-warm-editorial", "name": "Cream and rust engraved distribution",
+      "reference_ids": [17],
+      "visual_sentence": "An operator at a desk sends a continuous cable toward a distant US city; the real analytics cards lie on the foreground desk.",
+      "mapping": "Work originates abroad while distribution reaches a different market; a symbolic cable represents the prepared connection.",
+      "composition": "A sparse rust engraving along the lower field, large central serif copy over cream paper, real proof photographs in front with natural contact shadows. Do not colorize or engrave the screenshot contents.",
+      "font": "Georgia Bold with a closely spaced Georgia Italic support line",
+      "palette": "Cream paper, rust ink, unaltered proof card colors",
+      "tradeoff": "Distinct editorial character, but illustration and two proof cards require strict simplification."
+    },
+    {
+      "id": "05-monochrome", "name": "Dan Koe family: across the distance",
+      "reference_ids": [15, 16],
+      "visual_sentence": "A lone figure stretches a taut line across a wide expanse toward an illuminated distant city.",
+      "mapping": "The account operator is separated from the intended audience and deliberately builds a route to it.",
+      "composition": "Strong dark/light silhouette, one clear action, quiet sky for restrained US traffic type. Place both rounded source cards in a single foreground cluster, not scattered badges. Keep source pixels in color.",
+      "font": "Optional Inter Variable, weight 900",
+      "palette": "Black and white engraved art plus unaltered screenshots",
+      "tradeoff": "Atmospheric and distinctive; mandatory screenshots make this a hybrid rather than a pure no-text engraving."
+    },
+    {
+      "id": "06-borderless-desk", "name": "Original concept: the audience map",
+      "reference_ids": [12],
+      "reference_use": "Tactile paper, foreground layers, material depth only; no source banknotes, revenue claim, or copied scene.",
+      "visual_sentence": "Two real analytics prints overlap a folded Atlantic map and enormous US audience typography on a creator's desk.",
+      "mapping": "The creator stays at the desk while the intended audience is across the map; geography is the focal idea.",
+      "composition": "Top-down tabletop, quiet folded-map texture with a clear US shore, oversized black type printed underneath, source cards as tangible paper prints with rounded edges, one restrained coral route accent. No fake passport, travel ticket, or numeric labels.",
+      "font": "Inter Variable, weight 900",
+      "palette": "Warm white, graphite, coral, original UI blue",
+      "tradeoff": "More specific to abroad-to-US than a generic skyline; the map must remain background and not turn into a travel advertisement."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "purpose": "Two independent real analytics cards for cover concepts; not a before/after series.",
+  "transforms": "Rectangular crop and antialiased rounded alpha corners only. No reshoot, regeneration, perspective correction, number editing, or color correction.",
+  "assets": [
+    {
+      "id": "locations-66",
+      "box": [
+        26,
+        61,
+        850,
+        557
+      ],
+      "radius": 30,
+      "origin": "User attachment, 2026-10-07. Ownership and original web URL not supplied.",
+      "keep": "Locations; United States 66.4%; Other 14.6%; United Kingdom 5.8%",
+      "remove": "Saudi Arabia and all subsequent rows",
+      "label": "01 / Supplied screenshot",
+      "source": "x-content-engine/assets/covers/us-social-setup/review-2026-10-07/assets/locations-66-original.webp",
+      "source_size": [
+        889,
+        1658
+      ],
+      "source_sha256": "8f782203dba49e37ddc9f7a4b0244498b6a8852575a6ddf96c37681dcec3bf32",
+      "output": "assets/locations-66-rounded.png",
+      "output_size": [
+        824,
+        496
+      ],
+      "output_sha256": "11af0d54d0ac45e7dd81402cb6c5cbf2423025ca83e54c0bf78a22b699eb9c7c",
+      "pixel_check": "RGB matches exact source crop; only corner alpha edited"
+    },
+    {
+      "id": "viewer-insights-97",
+      "box": [
+        430,
+        1490,
+        2535,
+        2672
+      ],
+      "radius": 78,
+      "origin": "Original photograph supplied in the article Notion draft; closing body image.",
+      "keep": "Viewer insights and tabs; United States 97.5%; Other 0.6%",
+      "remove": "Chart above; Guyana and all subsequent rows",
+      "label": "02 / Article photo",
+      "source": "x-content-engine/production/us-social-setup-2026-10-05/media/camphoto_1144747756-2.jpg",
+      "source_size": [
+        3024,
+        4032
+      ],
+      "source_sha256": "faafc6b7b3a200d0ce30865f70733c2132bf56b05fdb95fb22f46591d1df1cc6",
+      "output": "assets/viewer-insights-97-rounded.png",
+      "output_size": [
+        2105,
+        1182
+      ],
+      "output_sha256": "947e71bd693dc72c5119dbee15cfcd10acfec0131b42291bb3c47fd31375ae4a",
+      "pixel_check": "RGB matches exact source crop; only corner alpha edited"
+    }
+  ]
+}
