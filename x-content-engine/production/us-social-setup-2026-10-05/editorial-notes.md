@@ -1,5 +1,13 @@
 # Internal editorial record
 
+## Scoped follow-up — 2026-10-07
+
+Kirill chose the pre-upload promise as the headline direction; new candidates are proposals, current X/Notion title remains unchanged until choice. Edited only the introduction and warm-up prose, then formatted procedural steps as two ordered lists and two bullet lists, with selective bold and a reusable block. Full normalized text match verified in X; all ten body images retained, geography photo stays at the end.
+
+Future cover requirement (pending user materials/instructions): use a crop of the real TikTok US-audience statistics as required proof. The supplied original geography photo shows 97.5% United States, not an invented or rounded performance claim. User explicitly asked to wait before any further cover work. No cover generation, cropping, replacement, or associated skill edits performed in this follow-up.
+
+The second paragraph remains the author's experience; no complete configuration is moved there. Information unfolds in the existing order. Platform sections and final diagnostics were not reorganized.
+
 Reader: creator, indie builder, or marketer operating outside the US and preparing short-form accounts for a US audience.
 Payoff: configure a dedicated iPhone, connect and verify a US proxy, create the account, research the niche, and interpret first uploads.
 Mode: B, practical tool/setup playbook; uses the Tool Pack progression, adapted to the author's procedural guide. No tool-author tags; the user's attribution rules override the blueprint.

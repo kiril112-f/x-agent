@@ -1,14 +1,14 @@
 # The US Audience Playbook for Creators Abroad
 
-If you're trying to reach US viewers from abroad, you've probably run into conflicting advice about SIM cards, VPNs, and phone settings.
+If you're trying to reach US viewers from abroad, it's easy to spend more time comparing SIM cards, VPNs, and phone settings than making your first video. The guides don't even agree on what you need.
 
-I've grown medical content to roughly 1.7 million followers and earned from TikTok while living outside the US.
+I've grown medical content to roughly **1.7 million followers** and earned from TikTok while living outside the US.
 
-Here's how I set up the phone, connect the proxy, and get a new account ready to post. You can follow the whole process without hunting for a US SIM card.
+This is the process I follow before the first upload, from setting up the phone to getting the account ready. I'll explain the choices as we go, including how I do it without a US SIM card.
 
 ![Author's original photo](media/IMG_4666.jpg)
 
-I'll use TikTok as the main example, then cover what changes for Instagram and YouTube.
+We'll start with TikTok, then cover what changes for Instagram and YouTube.
 
 Use this setup at your own risk.
 
@@ -22,7 +22,11 @@ You don't need an expensive new phone. Buy a used model that can run a currently
 
 ![Original device photo](media/730895729222269935f59393f520f736.jpg)
 
-For this workflow, remove the physical SIM and disable any active eSIM. Back up anything you need, then factory-reset the dedicated phone and set it up as a new device. Restoring your personal backup brings the old setup right back.
+Prepare the dedicated phone before installing the social apps:
+
+1. **Remove the physical SIM** and disable any active eSIM.
+2. **Back up what you need**, then factory-reset the phone.
+3. **Set it up as a new device.** Restoring your personal backup brings the old setup right back.
 
 I use Wi-Fi with Airplane Mode on. Turn Wi-Fi back on after enabling it, and check Bluetooth separately if you want it off.
 
@@ -68,7 +72,14 @@ ISP proxies use IPs registered with internet service providers, but they can sti
 
 A dedicated VPN can also fit. I skip free shared VPNs for this workflow because I have less control over the exit IP and who else uses it. Paying for a product, by itself, doesn't prove the IP is good.
 
-Before buying, check the US location, whether the IP is dedicated and static, the traffic allowance, and SOCKS5 support. Those details matter more than a “premium” badge.
+Before buying, check:
+
+- **US location** for the exit IP.
+- **Dedicated and static:** whether the IP is yours and stays the same.
+- **Traffic allowance:** how much watching and uploading the plan covers.
+- **SOCKS5 support** for the Happ setup below.
+
+Those details matter more than a “premium” badge.
 
 ### Happ connects the proxy to the phone
 
@@ -76,7 +87,12 @@ Install **[Happ – Proxy Utility](https://apps.apple.com/us/app/happ-proxy-util
 
 ![Happ App Store listing](media/IMG_0025.png)
 
-In Happ, open **+ → Manual Input → SOCKS**. Enter the server address, SOCKS5 port, username, and password from your provider's dashboard, then save and connect.
+In Happ:
+
+1. Open **+ → Manual Input → SOCKS**.
+2. Enter the **server address** and **SOCKS5 port** from your provider's dashboard.
+3. Add the **username and password** from that same connection.
+4. **Save and connect.**
 
 Use the port shown for SOCKS5. HTTP and SOCKS5 credentials can look almost identical while using different ports, so copying the wrong line can leave you debugging a perfectly good proxy.
 
@@ -94,21 +110,23 @@ Create the account with a Gmail or Outlook address you control. Verify the email
 
 ![Original account setup image](media/account-setup.png)
 
-My usual TikTok routine is to leave the account for about a day, spend the next two or three days browsing the niche, and start posting around day four or five. I fill in the profile gradually during that time.
+My usual TikTok routine:
 
-Those are my timings. Treat the schedule as a starting point for your own routine.
+- **Day 1:** Leave the account for about a day.
+- **Next 2–3 days:** Browse the niche and fill in the profile gradually.
+- **Around day 4–5:** Start posting.
 
-Start with normal browsing, narrow your searches to the niche, then keep a short daily research session once you start posting. Watching relevant content helps shape the feed you see; it doesn't guarantee who sees your uploads.
+Those are my timings, so adjust them to your own routine.
 
-Search in the language your audience uses. For a fitness account, “how to gain abs,” “high protein meals,” or “gym tips for beginners” will give you more useful material than endlessly refreshing a random feed.
+Start with normal browsing, then search in your audience's language. For a fitness account, try “how to gain abs,” “high protein meals,” or “gym tips for beginners.” If the feed is in the wrong language, find English content first, then narrow down to the niche.
 
-Open a relevant video, watch it, save it if it's worth studying, and follow the creator if you want to see more. Read the comments too. They show the questions, objections, and vocabulary your own videos need to address.
+Watch relevant videos, save the ones worth studying, and follow creators you want to keep up with. Read the comments for questions and wording you can use in your own videos.
 
 ![Search the niche, study and save a video, follow the creator](media/niche-research-workflow.png)
 
-I can spend around an hour a day on this early research, then keep shorter sessions once I'm posting. You don't need a quota of likes, follows, or DMs. Liking everything turns your research into noise.
+I can spend around an hour a day on this early research, then keep shorter sessions once I'm posting. Engage with what interests you; there's no quota of likes, follows, or DMs to hit.
 
-If the feed is in the wrong language, start by finding English content, then narrow down to the niche. A relevant feed becomes a useful source of ideas. It tells you what the account is being shown; your upload analytics tell you who is watching you.
+Your feed becomes a library of references. **Check your upload analytics separately** to see whether the people watching you are in the US.
 
 ## Keep one setup record so you can find what changed
 
