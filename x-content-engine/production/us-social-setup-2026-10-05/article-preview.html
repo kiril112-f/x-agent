@@ -1,0 +1,101 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>US Audience Setup — Kirill Morozov</title><style>body{margin:0;background:#faf9f6;color:#20211e;font:19px/1.6 system-ui,sans-serif}main{max-width:780px;margin:64px auto;padding:0 28px 80px}h1{font-size:48px;line-height:1.06;letter-spacing:-1.9px;margin:36px 0}h2{font-size:29px;line-height:1.18;letter-spacing:-.6px;margin:54px 0 22px}h3{font-size:24px;line-height:1.22;margin:36px 0 18px}p{margin:0 0 24px}img{display:block;max-width:100%;max-height:760px;object-fit:contain;margin:30px auto}pre{font:15px/1.65 ui-monospace,monospace;background:#eeeae3;border-radius:12px;padding:28px;white-space:pre-wrap}a{color:#126fc4}.cover{width:100%;max-height:none}.author{font-size:14px;color:#72766e;letter-spacing:.08em}</style><main><p class="author">KIRILL MOROZOV · X ARTICLE DRAFT</p><img class="cover" src="../../assets/covers/us-social-setup/cover-5x2-v3.png"><h1>How to Reach US Viewers Without Living in the US</h1>
+<p>If you're trying to reach US viewers from abroad, you've probably run into conflicting advice about SIM cards, VPNs, and phone settings.</p>
+<p>I've grown medical content to roughly 1.7 million followers and earned from TikTok while living outside the US.</p>
+<p>Here's how I set up the phone, connect the proxy, and get a new account ready to post. You can follow the whole process without hunting for a US SIM card.</p>
+<p><img src="media/IMG_4666.jpg" alt="Author's original photo" /></p>
+<p>I'll use TikTok as the main example, then cover what changes for Instagram and YouTube.</p>
+<p>Use this setup at your own risk.</p>
+<p><em>make sure you save this article so you can read it later or prompt it with your agent</em></p>
+<h2>1. A separate iPhone makes the setup easier to control</h2>
+<p>I start with a separate iPhone. My personal accounts, contacts, and everyday browsing stay on my main phone.</p>
+<p>You don't need an expensive new phone. Buy a used model that can run a currently supported iOS version and the apps you need. Check compatibility before paying; the old “iPhone 8 or newer” advice is aging badly.</p>
+<p><img src="media/730895729222269935f59393f520f736.jpg" alt="Original device photo" /></p>
+<p>For this workflow, remove the physical SIM and disable any active eSIM. Back up anything you need, then factory-reset the dedicated phone and set it up as a new device. Restoring your personal backup brings the old setup right back.</p>
+<p>I use Wi-Fi with Airplane Mode on. Turn Wi-Fi back on after enabling it, and check Bluetooth separately if you want it off.</p>
+<p>A reset clears the local setup; existing account history stays with the platform.</p>
+<h2>2. Set the phone up for the market you work in</h2>
+<p>During onboarding, choose English and the United States as the device region. Use a dedicated Apple Account with an email you control, then update iOS before installing the social apps.</p>
+<p><img src="media/device-setup.png" alt="Original iPhone onboarding image" /></p>
+<p>In <strong>Settings → General → Language &amp; Region</strong>, check the language and region again. Set the clock to the US time zone you plan to work in; “US time” can mean several different things.</p>
+<p>In <strong>Settings → Privacy &amp; Security → Location Services</strong>, review location access. I keep location access off on this work device and skip contact syncing inside the social apps.</p>
+<p><img src="media/IMG_0024.png" alt="Original Location Services screenshot" /></p>
+<p>The phone region and the App Store country are separate settings. A US device region doesn't switch the store automatically. If you need a different storefront to download an app, change it through Apple's account settings and use billing information that is valid for that account.</p>
+<p>Skip optional analytics and ad-personalization prompts during onboarding if you don't need them.</p>
+<p><a href="https://support.tiktok.com/en/account-and-privacy/account-privacy-settings/location-services-on-tiktok">TikTok uses information</a> including SIM region, IP address, and system settings to estimate location. Location and language are also among its recommendation signals. Turning off GPS access doesn't remove the other signals.</p>
+<h2>3. Choose the connection by its IP, stability, and cost</h2>
+<p>VPN, VPS, and proxy get thrown around as if they were three quality levels. They're different things.</p>
+<p>A <strong>VPN</strong> routes traffic through a tunnel. The exit IP can be shared or dedicated; the word VPN alone doesn't tell you its reputation.</p>
+<p>A <strong>VPS</strong> is a rented virtual server. You can run a VPN or proxy on it, but its IP will usually belong to a hosting network.</p>
+<p>A <strong>proxy</strong> forwards traffic through another endpoint. It can use a datacenter, ISP, residential, or mobile IP. Buying something called a proxy doesn't automatically mean you're browsing through someone's home Wi-Fi.</p>
+<p><img src="media/vpn-vs-vps-vs-proxy-dark-v2.png" alt="Original network comparison" /></p>
+<p><em>Read this as a simplified buying guide. IP type and actual routing matter; a proxy label alone doesn't prove a home connection or low risk. The 90%+ target applies only to a positive anonymity rating, not a fraud score.</em></p>
+<p>For this setup, my pick is a <strong>dedicated US ISP proxy with a stable IP</strong> from <a href="https://iproyal.com/?r=863249">IPRoyal</a>. I want the same connection each time and a bill that doesn't climb while I'm watching videos.</p>
+<p><img src="media/BEF910F5-8603-4B05-B9A7-8EF27800E31B.png" alt="Original proxy dashboard screenshot" /></p>
+<p>ISP proxies use IPs registered with internet service providers, but they can still be hosted on servers. Residential proxies route through residential connections; plans billed by traffic can get expensive when you're watching and uploading video. Mobile proxies use cellular networks.</p>
+<p>A dedicated VPN can also fit. I skip free shared VPNs for this workflow because I have less control over the exit IP and who else uses it. Paying for a product, by itself, doesn't prove the IP is good.</p>
+<p>Before buying, check the US location, whether the IP is dedicated and static, the traffic allowance, and SOCKS5 support. Those details matter more than a “premium” badge.</p>
+<h3>Happ connects the proxy to the phone</h3>
+<p>Install <strong><a href="https://apps.apple.com/us/app/happ-proxy-utility/id6504287215">Happ – Proxy Utility</a></strong> from the App Store. This app is the client; your proxy provider supplies the connection.</p>
+<p><img src="media/IMG_0025.png" alt="Happ App Store listing" /></p>
+<p>In Happ, open <strong>+ → Manual Input → SOCKS</strong>. Enter the server address, SOCKS5 port, username, and password from your provider's dashboard, then save and connect.</p>
+<p>Use the port shown for SOCKS5. HTTP and SOCKS5 credentials can look almost identical while using different ports, so copying the wrong line can leave you debugging a perfectly good proxy.</p>
+<p>Allow Happ to add its VPN configuration when iOS asks. Seeing “VPN” in iOS is normal: that's how the client routes traffic through the connection. Check that your routing profile sends the social apps through the proxy rather than a direct-connection exception.</p>
+<p>Check the public IP from the phone with the connection active. Use <strong><a href="https://www.iplocation.net/">IPLocation</a></strong> to check the country and network, and <strong><a href="https://scamalytics.com/ip">Scamalytics</a></strong> or <strong><a href="https://www.ipqualityscore.com/free-ip-lookup-proxy-vpn-test">IPQualityScore</a></strong> to inspect the IP's reputation. If the result still shows your normal connection, fix the routing before creating accounts.</p>
+<p>If a checker gives a positive anonymity rating where higher is better, <strong>90%+ is my working target</strong>. Read the label first: on Scamalytics and IPQualityScore, a higher <strong>fraud score</strong> is worse. Use each site's good/low-risk verdict in its own context; these scores don't certify future reach on TikTok.</p>
+<p>Once the connection works, keep it active while installing and using the social apps. Recheck after a restart or a connection change instead of assuming the profile is still routing traffic.</p>
+<h2>4. Use the first few days to learn the niche</h2>
+<p>Create the account with a Gmail or Outlook address you control. Verify the email, enable two-factor authentication, and skip importing your contacts.</p>
+<p><img src="media/account-setup.png" alt="Original account setup image" /></p>
+<p>My usual TikTok routine is to leave the account for about a day, spend the next two or three days browsing the niche, and start posting around day four or five. I fill in the profile gradually during that time.</p>
+<p>Those are my timings. Treat the schedule as a starting point for your own routine.</p>
+<p><img src="media/1598F7C5-7158-4BAC-8939-AF89A6FD8A19.png" alt="Warm-up reference supplied with the draft" /></p>
+<p>The reference above follows a similar routine. Watching relevant content helps shape the feed you see; it doesn't guarantee who sees your uploads.</p>
+<p>Search in the language your audience uses. For a fitness account, “how to gain abs,” “high protein meals,” or “gym tips for beginners” will give you more useful material than endlessly refreshing a random feed.</p>
+<p>Open a relevant video, watch it, save it if it's worth studying, and follow the creator if you want to see more. Read the comments too. They show the questions, objections, and vocabulary your own videos need to address.</p>
+<p><img src="media/niche-research-workflow.png" alt="Search the niche, study and save a video, follow the creator" /></p>
+<p>I can spend around an hour a day on this early research, then keep shorter sessions once I'm posting. You don't need a quota of likes, follows, or DMs. Liking everything turns your research into noise.</p>
+<p>If the feed is in the wrong language, start by finding English content, then narrow down to the niche. A relevant feed becomes a useful source of ideas. It tells you what the account is being shown; your upload analytics tell you who is watching you.</p>
+<h2>Keep one setup record so you can find what changed</h2>
+<p>If you change the IP, niche, and posting routine at once, you won't know what helped. Write down the setup before you start changing it.</p>
+<p>Keep one record for each account. You can copy this into a note or give it to your agent:</p>
+<pre><code class="language-text">US AUDIENCE SETUP
+
+Platform + account:
+Target viewer and niche:
+Device + iOS version:
+Device language / region / time zone:
+SIM and location settings:
+Connection type + provider:
+Expected exit country / city:
+IP check date + result:
+Email verified + 2FA enabled:
+First upload date:
+
+AFTER PUBLISHING
+Video topic + opening hook:
+Top viewer countries:
+US viewer share, if available:
+Watch time / completion, if available:
+Account or recommendation notices:
+One change for the next upload:
+
+Leave missing analytics blank.
+Keep passwords and recovery codes in a password manager.
+</code></pre>
+<h2>Instagram and YouTube need their own decisions</h2>
+<p>For <strong>Instagram</strong>, I give myself roughly a week to research the niche and prepare the profile. Use a public account for reaching non-followers, and check Account Status for recommendation restrictions if distribution looks wrong.</p>
+<p>Study the creators your target audience follows and the content they send to friends. Upload a clean original export instead of a copy carrying another app's watermark. Keep the subject, spoken language, on-screen text, and profile promise aimed at the same viewer.</p>
+<p>For <strong>YouTube</strong>, don't spend a week treating the channel's country setting as a US targeting switch. <a href="https://support.google.com/youtube/answer/141805?hl=en">YouTube explicitly says</a> that setting isn't used to decide how videos are recommended.</p>
+<p>Write the title and captions for the viewer you want, then check viewer geography in YouTube Analytics. You can reuse an idea across TikTok, Reels, and Shorts; check the audience each platform actually sends you.</p>
+<p>For all three, English is a starting point. An American viewer still needs a reason to watch. The examples, problem, product, and wording should fit the person you're trying to reach.</p>
+<h2>The first uploads show what the setup is doing</h2>
+<p>Give the first video your best shot. Make the subject obvious early and deliver what the opening promises. Then check where the viewers came from and whether they stayed.</p>
+<p>If the country is wrong, review the connection and the account's regional settings, then look at whether the content itself attracts that market. A working US IP alone doesn't promise an all-US audience.</p>
+<p>If people arrive and leave immediately, work on the video. If there are no views, check visibility, processing, review status, and recommendation notices before wiping the phone again.</p>
+<p>A failed follow action also isn't enough to diagnose a shadowban. Repeating it over and over won't tell you why it failed.</p>
+<p>Treat the first uploads as a test of the whole workflow. Audience geography and monetization eligibility are separate; an IP change doesn't establish eligibility for a payout program.</p>
+<p><img src="media/camphoto_1144747756-2.jpg" alt="Author's original closing photo" /></p>
+<p>Once you're managing a larger group of accounts, document ownership, access, exports, and uploads before adding automation. Fix the workflow while you can still see where it breaks.</p>
+<p>And please, put some effort into what you post. A properly configured phone is still going to upload whatever AI slop you feed it.</p>
+<p>Follow me for more practical breakdowns on building apps and distributing them.</p>
+</main></html>

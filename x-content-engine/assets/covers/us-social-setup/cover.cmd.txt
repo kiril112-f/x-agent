@@ -1,0 +1,7 @@
+python x-content-engine/production/us-social-setup-2026-10-05/compose_cover_v3.py
+
+Final: cover-5x2-v3.png, 2500 x 1000.
+Typography: centered Inter Variable, weight 900, optical size 32.
+Hero: US traffic. Secondary: from abroad.
+Source: user's original device photo + original App Store icon assets.
+No new generated illustration is used in v3. V1 and v2 were rejected and remain only as recoverable prior files.

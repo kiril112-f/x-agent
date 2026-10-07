@@ -9,9 +9,13 @@ The user permits broad disclosure of real results, but several figures came from
 - Has built social-media automations, AI creative workflows and personal software tools.
 - Has worked across entertainment, medical/facts and AI-generated vertical content.
 
+## Confirmed by Kirill for public use
+
+- On 2026-10-05 Kirill explicitly confirmed approximately 1.7 million followers for the medical-content experience described in his article draft: «Это примерно 1.7 миллиона подписчиков. Оставь». Use approximate wording. The number of accounts, current/lifetime distinction, audience geography, and sole attribution remain unspecified; do not infer them.
+
 ## Needs confirmation before public use
 
-- `1.7M followers across two TikTok channels` — transcription sounded like “1 из 7 миллионов”; confirm exact total and whether it is current/lifetime.
+- `Across two TikTok channels` and the current/lifetime breakdown of the roughly 1.7M total — still unconfirmed. The approximate total itself was confirmed above on 2026-10-05.
 - `90K followers` on streamer/casino-life content — confirm platform, ownership and exact contribution.
 - `50K followers` on a film-clips channel — confirm platform and timeframe.
 - Another `90K` film/reupload channel may be the same project; disambiguate.

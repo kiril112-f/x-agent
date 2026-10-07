@@ -17,6 +17,7 @@
 - `knowledge/voice-feedback.md` — датированный журнал явных правок Кирилла, влияющих на voice.
 - `knowledge/context-storytelling.md` — pre-draft resource pack, attribution и честные storytelling structures.
 - `knowledge/post-formatting.md` — обязательные paragraph breaks, whitespace и copy-safe output для X.
+- `knowledge/article-cover-styles.md` — визуальные направления обложек из референсов Кирилла: minimal product, cinematic proof, luminous engraving, editorial banknote и Dan Koe.
 - `research/sources/x-article-virality-corpus-2026-09-12.md` — замеры и структура 19 статей (18 референсов двух когорт плюс своя неудачная статья), источник правил `$x-viral-article`.
 
 ## Рабочие процессы

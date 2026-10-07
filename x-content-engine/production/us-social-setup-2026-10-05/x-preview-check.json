@@ -1,0 +1,72 @@
+{
+  "url": "https://x.com/compose/articles/edit/2107366695111139329/preview",
+  "locations": [
+    {
+      "image": 1,
+      "before": "le living outside the US. Here's how I set up the phone, connect the proxy, and get a new account ready to post. You can follow the whole process without hunting for a US SIM card.",
+      "after": "38 text I'll use TikTok as the main example, then cover what changes for Instagram and YouTube. Use this setup at your own risk. make sure you save this article so you can read it "
+    },
+    {
+      "image": 2,
+      "before": " phone. Buy a used model that can run a currently supported iOS version and the apps you need. Check compatibility before paying; the old “iPhone 8 or newer” advice is aging badly.",
+      "after": "43 text For this workflow, remove the physical SIM and disable any active eSIM. Back up anything you need, then factory-reset the dedicated phone and set it up as a new device. Res"
+    },
+    {
+      "image": 3,
+      "before": "g onboarding, choose English and the United States as the device region. Use a dedicated Apple Account with an email you control, then update iOS before installing the social apps.",
+      "after": "48 text In  Settings → General → Language & Region , check the language and region again. Set the clock to the US time zone you plan to work in; “US time” can mean several differen"
+    },
+    {
+      "image": 4,
+      "before": "ngs. In  Settings → Privacy & Security → Location Services , review location access. I keep location access off on this work device and skip contact syncing inside the social apps.",
+      "after": "50 text The phone region and the App Store country are separate settings. A US device region doesn't switch the store automatically. If you need a different storefront to download "
+    },
+    {
+      "image": 5,
+      "before": " another endpoint. It can use a datacenter, ISP, residential, or mobile IP. Buying something called a proxy doesn't automatically mean you're browsing through someone's home Wi-Fi.",
+      "after": "57 text Read this as a simplified buying guide. IP type and actual routing matter; a proxy label alone doesn't prove a home connection or low risk. The 90%+ target applies only to "
+    },
+    {
+      "image": 6,
+      "before": "59 text . I want the same connection each time and a bill that doesn't climb while I'm watching videos.",
+      "after": "61 text ISP proxies use IPs registered with internet service providers, but they can still be hosted on servers. Residential proxies route through residential connections; plans bi"
+    },
+    {
+      "image": 7,
+      "before": "63 text  from the App Store. This app is the client; your proxy provider supplies the connection.",
+      "after": "65 text In Happ, open  + → Manual Input → SOCKS . Enter the server address, SOCKS5 port, username, and password from your provider's dashboard, then save and connect. Use the port "
+    },
+    {
+      "image": 8,
+      "before": "74 text Create the account with a Gmail or Outlook address you control. Verify the email, enable two-factor authentication, and skip importing your contacts.",
+      "after": "76 text My usual TikTok routine is to leave the account for about a day, spend the next two or three days browsing the niche, and start posting around day four or five. I fill in t"
+    },
+    {
+      "image": 9,
+      "before": "che, and start posting around day four or five. I fill in the profile gradually during that time. Those are my timings. Treat the schedule as a starting point for your own routine.",
+      "after": "78 text The reference above follows a similar routine. Watching relevant content helps shape the feed you see; it doesn't guarantee who sees your uploads. Search in the language yo"
+    },
+    {
+      "image": 10,
+      "before": " if it's worth studying, and follow the creator if you want to see more. Read the comments too. They show the questions, objections, and vocabulary your own videos need to address.",
+      "after": "80 text I can spend around an hour a day on this early research, then keep shorter sessions once I'm posting. You don't need a quota of likes, follows, or DMs. Liking everything tu"
+    },
+    {
+      "image": 11,
+      "before": "at the first uploads as a test of the whole workflow. Audience geography and monetization eligibility are separate; an IP change doesn't establish eligibility for a payout program.",
+      "after": "93 text Once you're managing a larger group of accounts, document ownership, access, exports, and uploads before adding automation. Fix the workflow while you can still see where i"
+    }
+  ],
+  "headings": [
+    "\t\t\t\t\t39 heading 1. A separate iPhone makes the setup easier to control, Value: 2",
+    "\t\t\t\t\t44 heading 2. Set the phone up for the market you work in, Value: 2",
+    "\t\t\t\t\t53 heading 3. Choose the connection by its IP, stability, and cost, Value: 2",
+    "\t\t\t\t\t72 heading 4. Use the first few days to learn the niche, Value: 2",
+    "\t\t\t\t\t81 heading Keep one setup record so you can find what changed, Value: 2",
+    "\t\t\t\t\t84 heading Instagram and YouTube need their own decisions, Value: 2",
+    "\t\t\t\t\t89 heading The first uploads show what the setup is doing, Value: 2"
+  ],
+  "ifOpening": true,
+  "savePhrase": true,
+  "ending": true
+}
