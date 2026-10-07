@@ -1,0 +1,72 @@
+{
+  "spec": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\round-2\\final\\04-cinematic.json",
+  "size": [
+    2000,
+    800
+  ],
+  "layers": [
+    {
+      "index": 0,
+      "type": "image",
+      "path": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\round-2\\assets\\dark-stage.png",
+      "sha256": "532b00e9bc602bbf4f02bf04e304773f7c09f6041a1beacd6734b3b67c50e985",
+      "bbox": [
+        0,
+        0,
+        2000,
+        800
+      ]
+    },
+    {
+      "index": 1,
+      "type": "text",
+      "text": "MAKE IT",
+      "font": "C:\\Windows\\Fonts\\impact.ttf",
+      "font_sha256": "d8bbdb72e3f930157824b2e59677d3a912d4512c14a948e6656a2e3fb0c935ad",
+      "weight": null,
+      "size": 260,
+      "bbox": [
+        90,
+        110,
+        867.0,
+        316
+      ],
+      "thumbnail_ink_height": 35.02
+    },
+    {
+      "index": 2,
+      "type": "text",
+      "text": "TRAVEL.",
+      "font": "C:\\Windows\\Fonts\\impact.ttf",
+      "font_sha256": "d8bbdb72e3f930157824b2e59677d3a912d4512c14a948e6656a2e3fb0c935ad",
+      "weight": null,
+      "size": 260,
+      "bbox": [
+        90,
+        365,
+        843.0,
+        571
+      ],
+      "thumbnail_ink_height": 35.02
+    },
+    {
+      "index": 3,
+      "type": "rect"
+    },
+    {
+      "index": 4,
+      "type": "image",
+      "path": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\round-2\\assets\\04-cinematic-v1.png",
+      "sha256": "806aaee15a24ed58e97e91dd78e850fae9620e20ba29ce716419664888bdc072",
+      "bbox": [
+        700,
+        15,
+        1720,
+        695
+      ]
+    }
+  ],
+  "automated_geometry_pass": true,
+  "visual_review": "required",
+  "output_sha256": "c7ddd014dfa1b70d4e730df65e52a49964522727131e8cf4e90c36292ff7dff1"
+}

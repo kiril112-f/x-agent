@@ -9,7 +9,7 @@ Coordinates are output pixels. Order is back to front. Paths resolve against the
 ]}
 ```
 
-This is a type-only baseline fixture, not the user's preferred depth treatment. For the latter use the lab's revised `05-glass.json`.
+This is a type-only baseline fixture, not the user's preferred depth treatment. For current glass use the lab's `round-2/final/01-glass.json`.
 
 | Type | Fields |
 |---|---|
@@ -25,7 +25,7 @@ One text layer is one explicit line; no auto-wrap. `sans`: Inter Variable; `seri
 
 `contain` preserves ratio without enlarging a small source. `cover` crops/resizes deliberately. Neither certifies source resolution. Opaque shape fills are the supported convention; alpha rectangles do not blend automatically with earlier layers.
 
-Working project-root examples: `x-content-engine/assets/covers/cover-lab-2026-10-07/final/01-monochrome.json` through `06-system.json`. Revised depth example is `05-glass.json`; rejected baseline stays in `iterations/05-glass-v1-rejected.json`.
+Current project-root examples: `x-content-engine/assets/covers/cover-lab-2026-10-07/round-2/final/01-glass.json` through `06-blueprint.json`. Historical round-1 specs remain in the parent `final/`; its glass v5 was superseded after material feedback.
 
 Rebuild saved specs: `python x-content-engine/assets/covers/cover-lab-2026-10-07/build_lab.py`. Rebuild the revised icon assets/spec: `python x-content-engine/assets/covers/cover-lab-2026-10-07/refine_depth.py`. Do not run `build_lab.py --init-specs` on revised output: that resets to the original baseline including the rejected blue cover.
 

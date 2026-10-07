@@ -6,7 +6,7 @@ Use the built-in image tool for illustration/object assets and `$x-cover-compose
 
 Do not silently start another local image service, install software, use an API model or assume credentials just because old experiments used it. An explicitly requested available tool can be used within the task's authorization. Keep prompts/results/provenance with the cover.
 
-For real brand identities, acquire/reuse real artwork. A generated casing is acceptable; paste the real mark into it separately. Example: `cover-lab-2026-10-07/refine_depth.py`. Inspect source dimensions and visible alpha bounds, not merely the file box. Glass/translucency needs genuine alpha; no automatic color-key fallback that destroys refraction.
+For real brand identities, use real reference artwork. Per Kirill's later correction, the model may generate the recognizable marks together with a transparent 3D object or complete scene. Compare to source identity after generation. Exact source insertion is still available, but inserting opaque app tiles into clear casings failed the glass direction. Current example: `cover-lab-2026-10-07/round-2/final/01-glass.json`. Inspect visible material transmission and refraction separately from outside-object alpha. A whole-scene image need not have alpha to depict transparent glass. Never color-key glass automatically in a way that destroys its optical appearance.
 
 Render the selected crop, then compare reference and candidate side by side at identical dimensions and at 340 px after each material revision. Check scale relationships, compact line spacing, readable overlap and contact shadows. Script geometry pass is not design approval.
 

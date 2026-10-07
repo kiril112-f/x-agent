@@ -1,0 +1,54 @@
+{
+  "background": "#f4ead5",
+  "layers": [
+    {
+      "type": "text",
+      "text": "build",
+      "box": [
+        95,
+        145,
+        920,
+        245
+      ],
+      "size": 300,
+      "min_size": 250,
+      "font": "serif",
+      "fill": "#321d14",
+      "tracking": -9
+    },
+    {
+      "type": "text",
+      "text": "once.",
+      "box": [
+        95,
+        445,
+        925,
+        260
+      ],
+      "size": 300,
+      "min_size": 250,
+      "font": "serif-italic",
+      "fill": "#8d391e",
+      "tracking": -8
+    },
+    {
+      "type": "image",
+      "path": "../assets/03-editorial-v1.png",
+      "box": [
+        710,
+        115,
+        1220,
+        650
+      ]
+    }
+  ],
+  "size": [
+    2000,
+    800
+  ],
+  "practice_only": true,
+  "style": "Warm editorial engraving",
+  "reference_id": 17,
+  "concept": "One repeatable mechanism converts an operator's input into repeated output.",
+  "approval": "unreviewed by user"
+}

@@ -5,7 +5,7 @@ description: "Верстает точный текст и настоящие л�
 
 # Compose a cover
 
-Generated art and deterministic typography are separate layers. Use code-native/vector shapes for exact diagrams; use actual source assets for brand marks and screenshots. Do not generate a replacement logo when the topic refers to a real product.
+Generated art and deterministic typography are separate layers. Use code-native/vector shapes for exact diagrams and actual evidence for screenshots. Brand marks may be exact source assets OR reference-guided stylized image-model renderings inside a coherent object/scene, per Kirill's later clarification. Inspect shape/identity afterward. Do not invent a generic substitute for a known platform.
 
 ## Tested compositor
 
@@ -23,7 +23,9 @@ Fonts come from `--font-dir` (Windows Fonts by default), or explicit paths relat
 
 For a type-led cover, place a meaningful dimensional object in front of part of the giant letters. Design the overlap deliberately; preserve word recognition and the font's counters. A detached small icon is not the requested depth effect. Keep shadows local to the object, not a blanket effect on all type.
 
-The tested `cover-lab-2026-10-07/refine_depth.py` composites genuine TikTok/Instagram App Store artwork into a generated blank glass casing, then rotates the completed objects and places them on a common surface with contact shadows. Logos remain source pixels, never model redrawing. Its face coordinates are specific to the inspected 1254×1254 casing; do not reuse them blindly on another asset. Generation dimensions are not guaranteed by a prompt.
+The historical `cover-lab-2026-10-07/refine_depth.py` demonstrates exact logo insertion, but Kirill rejected its opaque bodies as the glass direction. For current glass see `round-2/final/01-glass.json`: reference-guided symbols/material generated together. The earlier casing coordinates belong to that inspected 1254×1254 image, not a generic template. Generation dimensions are not guaranteed by a prompt.
+
+Distinguish **transparent outside the object** (alpha channel) from **transparent material** (the body transmits the field behind it, with refraction/thickness). A PNG with alpha and an opaque black/white face fails the latter. A coherent generated scene with icons can have an opaque image background and still depict proper transparent glass. Pick the route for the desired optical result; do not force flat app artwork into translucent glass.
 
 Generated alpha can contain near-invisible noise outside the silhouette. In this asset, `alpha>0` included almost the whole canvas, whereas `alpha>8` isolated the visible casing. That invisible margin caused a visible gap above the contact shadow. Inspect thresholds and add a small edge margin before cropping; never apply 8 as a universal threshold to translucent material. The cast shadow must touch the **visible** object, not its file box.
 

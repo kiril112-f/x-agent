@@ -1,0 +1,24 @@
+{
+  "layers": [
+    {
+      "type": "image",
+      "path": "../assets/02-monochrome-v1.png",
+      "box": [
+        0,
+        0,
+        2000,
+        800
+      ],
+      "fit": "cover"
+    }
+  ],
+  "size": [
+    2000,
+    800
+  ],
+  "practice_only": true,
+  "style": "Philosophical engraving",
+  "reference_id": 15,
+  "concept": "Visibility is a deliberate act: a person pulls back a curtain to reveal a horizon.",
+  "approval": "unreviewed by user"
+}

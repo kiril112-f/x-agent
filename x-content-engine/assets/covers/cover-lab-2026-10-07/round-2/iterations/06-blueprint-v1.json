@@ -1,0 +1,527 @@
+{
+  "background": "#102638",
+  "layers": [
+    {
+      "type": "line",
+      "points": [
+        0,
+        0,
+        0,
+        800
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        80,
+        0,
+        80,
+        800
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        160,
+        0,
+        160,
+        800
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        240,
+        0,
+        240,
+        800
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        320,
+        0,
+        320,
+        800
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        400,
+        0,
+        400,
+        800
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        480,
+        0,
+        480,
+        800
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        560,
+        0,
+        560,
+        800
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        640,
+        0,
+        640,
+        800
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        720,
+        0,
+        720,
+        800
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        800,
+        0,
+        800,
+        800
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        880,
+        0,
+        880,
+        800
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        960,
+        0,
+        960,
+        800
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        1040,
+        0,
+        1040,
+        800
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        1120,
+        0,
+        1120,
+        800
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        1200,
+        0,
+        1200,
+        800
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        1280,
+        0,
+        1280,
+        800
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        1360,
+        0,
+        1360,
+        800
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        1440,
+        0,
+        1440,
+        800
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        1520,
+        0,
+        1520,
+        800
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        1600,
+        0,
+        1600,
+        800
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        1680,
+        0,
+        1680,
+        800
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        1760,
+        0,
+        1760,
+        800
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        1840,
+        0,
+        1840,
+        800
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        1920,
+        0,
+        1920,
+        800
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        0,
+        0,
+        2000,
+        0
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        0,
+        80,
+        2000,
+        80
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        0,
+        160,
+        2000,
+        160
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        0,
+        240,
+        2000,
+        240
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        0,
+        320,
+        2000,
+        320
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        0,
+        400,
+        2000,
+        400
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        0,
+        480,
+        2000,
+        480
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        0,
+        560,
+        2000,
+        560
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        0,
+        640,
+        2000,
+        640
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "line",
+      "points": [
+        0,
+        720,
+        2000,
+        720
+      ],
+      "fill": "#163346",
+      "stroke": 1
+    },
+    {
+      "type": "text",
+      "text": "design",
+      "box": [
+        90,
+        105,
+        1030,
+        280
+      ],
+      "size": 310,
+      "min_size": 275,
+      "weight": 850,
+      "fill": "#f5f4e9",
+      "tracking": -10
+    },
+    {
+      "type": "text",
+      "text": "the route",
+      "box": [
+        90,
+        440,
+        1030,
+        210
+      ],
+      "size": 215,
+      "min_size": 185,
+      "weight": 700,
+      "fill": "#f5f4e9",
+      "tracking": -7
+    },
+    {
+      "type": "line",
+      "points": [
+        1190,
+        190,
+        1670,
+        190,
+        1780,
+        300,
+        1780,
+        410,
+        1460,
+        410,
+        1300,
+        570,
+        1300,
+        655,
+        1820,
+        655
+      ],
+      "fill": "#f26c3c",
+      "stroke": 13
+    },
+    {
+      "type": "ellipse",
+      "box": [
+        1218,
+        168,
+        44,
+        44
+      ],
+      "fill": "#102638",
+      "outline": "#f26c3c",
+      "stroke": 10
+    },
+    {
+      "type": "text",
+      "text": "IDEA",
+      "box": [
+        1145,
+        85,
+        420,
+        65
+      ],
+      "size": 58,
+      "font": "mono",
+      "fill": "#f5f4e9"
+    },
+    {
+      "type": "ellipse",
+      "box": [
+        1658,
+        388,
+        44,
+        44
+      ],
+      "fill": "#102638",
+      "outline": "#f26c3c",
+      "stroke": 10
+    },
+    {
+      "type": "text",
+      "text": "FORMAT",
+      "box": [
+        1585,
+        305,
+        420,
+        65
+      ],
+      "size": 58,
+      "font": "mono",
+      "fill": "#f5f4e9"
+    },
+    {
+      "type": "ellipse",
+      "box": [
+        1368,
+        633,
+        44,
+        44
+      ],
+      "fill": "#102638",
+      "outline": "#f26c3c",
+      "stroke": 10
+    },
+    {
+      "type": "text",
+      "text": "AUDIENCE",
+      "box": [
+        1295,
+        550,
+        420,
+        65
+      ],
+      "size": 58,
+      "font": "mono",
+      "fill": "#f5f4e9"
+    }
+  ],
+  "size": [
+    2000,
+    800
+  ],
+  "practice_only": true,
+  "style": "System / blueprint",
+  "reference_id": 20,
+  "concept": "Distribution is a designed route linking an idea, its form and an audience.",
+  "approval": "unreviewed by user"
+}

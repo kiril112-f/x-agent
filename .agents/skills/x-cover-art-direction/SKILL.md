@@ -21,13 +21,13 @@ These are candidates, not mandatory mappings. A monochrome scene can explain a c
 
 Record subject, type/object scale, anchor positions, light/dark masses, text role, font category, material, palette, depth and crop. Carry over grammar, not another author's artwork, claims or partnership cues.
 
-Use one visual sentence: «A person crosses a narrow bridge toward one opening»; not «AI, growth, productivity and success». Derive the metaphor from the article. Do not repeat vortices for every abstract subject.
+Use one visual sentence: «A person pulls back an enormous curtain to reveal a horizon»; not «AI, growth, productivity and success». Derive the metaphor from the article. Read [concept-design.md](references/concept-design.md) for philosophical/indirect imagery. Symbolic scale is allowed; unrelated cyberpunk is not a substitute for a concept. Do not repeat vortices for every abstract subject.
 
 ## Kirill's type-led preference
 
 Giant lettering and foreground objects should form one composition. Match the reference's relative scale and hierarchy before adjusting color. Design the depth in advance: background → typography → a meaningful foreground object → optional restrained highlights/shadow. Objects may sit behind one part of a lockup and in front of another when the compositor supports it.
 
-Avoid a small generic icon beside two equal-sized text lines. A play triangle is not a substitute for TikTok when the topic is TikTok. Use real brand assets for real entities; create an original setting, object treatment or metaphor around them. Save the source. If a generated casing is useful, composite the genuine mark onto its face separately.
+Avoid a small generic icon beside two equal-sized text lines. A play triangle is not a substitute for TikTok. Use actual identity references; the mark may be composited exactly OR rendered by the image model together with the object/scene, as explicitly allowed by Kirill. Inspect fidelity afterward and record that a stylized rendering is not the source artwork itself. For translucent glass, generate the coherent material; an opaque tile inserted into a clear frame was rejected.
 
 Occlusion must look intentional and keep the word instantly readable. Start with the bottom of a few central letters, not the opening letter/counter of the key word. The lab's v2 covered the `p` in playbook and was revised. Exact overlap percentages are useful only for the chosen font/object geometry, not universal quality scores.
 
@@ -42,7 +42,7 @@ Use actual installed/licensed fonts and save family/file/weight. No horizontal s
 
 ## Image brief
 
-Specify subject, medium, framing, palette, reserved copy zone, crop-sensitive edges and exclusions. Generate no exact text/numbers/UI. Request real alpha for cutouts. Do not ask a model to invent logos, metrics or proof.
+Specify subject, medium, framing, palette, reserved copy zone, crop-sensitive edges and exclusions. Generate no exact headline/numbers/UI. Request real alpha for cutouts; visible material translucency and transparent outside-background are separate requirements. Existing recognizable logos may be rendered from references; do not invent substitute symbols or metrics/proof.
 
 The lab tests a rust copperplate press with a quiet left copy zone, a monochrome bridge metaphor and a blank glass casing with separately inserted genuine app artwork. Prompts and original assets live in `cover-lab-2026-10-07/assets/`.
 

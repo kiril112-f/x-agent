@@ -1,0 +1,54 @@
+{
+  "background": "#101011",
+  "layers": [
+    {
+      "type": "text",
+      "text": "attention",
+      "box": [
+        95,
+        75,
+        1810,
+        330
+      ],
+      "size": 350,
+      "min_size": 300,
+      "font": "serif",
+      "fill": "#f4f0e5",
+      "tracking": -11
+    },
+    {
+      "type": "text",
+      "text": "is earned.",
+      "box": [
+        95,
+        535,
+        920,
+        185
+      ],
+      "size": 180,
+      "min_size": 150,
+      "font": "serif-italic",
+      "fill": "#f4f0e5",
+      "tracking": -5
+    },
+    {
+      "type": "image",
+      "path": "../assets/05-collage-v1.png",
+      "box": [
+        820,
+        250,
+        1120,
+        510
+      ]
+    }
+  ],
+  "size": [
+    2000,
+    800
+  ],
+  "practice_only": true,
+  "style": "Tactile monochrome collage",
+  "reference_id": 12,
+  "concept": "Attention comes from a human gaze; torn paper makes the visual editorial rather than technological.",
+  "approval": "unreviewed by user"
+}

@@ -1,0 +1,56 @@
+{
+  "spec": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\round-2\\final\\03-editorial.json",
+  "size": [
+    2000,
+    800
+  ],
+  "layers": [
+    {
+      "index": 0,
+      "type": "text",
+      "text": "build",
+      "font": "C:\\Windows\\Fonts\\georgia.ttf",
+      "font_sha256": "38dffcaf1fac89492f7c56c600a14daf36ae42f7c21985cd4134ae113124a58f",
+      "weight": null,
+      "size": 300,
+      "bbox": [
+        95,
+        145,
+        749.0,
+        379
+      ],
+      "thumbnail_ink_height": 39.78
+    },
+    {
+      "index": 1,
+      "type": "text",
+      "text": "once.",
+      "font": "C:\\Windows\\Fonts\\georgiai.ttf",
+      "font_sha256": "d3e4bad27651d120ac8f2cea42cf4b4f077264fb243f66b3caffcfd35465f49b",
+      "weight": null,
+      "size": 300,
+      "bbox": [
+        95,
+        445,
+        760.0,
+        597
+      ],
+      "thumbnail_ink_height": 25.84
+    },
+    {
+      "index": 2,
+      "type": "image",
+      "path": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\round-2\\assets\\03-editorial-v1.png",
+      "sha256": "e8dfab3d7d8520fd0a129ead4463ec934696d8e51327fdf9d9db525e1d20efbc",
+      "bbox": [
+        710,
+        135,
+        1930,
+        745
+      ]
+    }
+  ],
+  "automated_geometry_pass": true,
+  "visual_review": "required",
+  "output_sha256": "d54109bdf8121d161b90e3fc37bc674109037bf3e12f9fcc6c1e41dca075b867"
+}

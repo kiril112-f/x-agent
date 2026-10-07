@@ -2,6 +2,8 @@
 
 ## Current selection and feedback — 2026-10-07
 
+**Latest correction:** transparent 3D means transmission/refraction through the object body, not opaque app art inside a clear border. Kirill permits reference-guided icon generation together with objects or the entire scene. Preserve recognizable identity and inspect the rendered mark; exact source-pixel insertion is not mandatory. Philosophical/indirect metaphors are welcome if the relation to the thesis is clear and the scene is locally coherent. Current six-family practice and comparisons are in `../assets/covers/cover-lab-2026-10-07/round-2/`. Show the images inline, not only a gallery link. Read the designer checklist and six-style recipes in x-article-cover. Round-1 blue v5 is an intermediate rejected material treatment.
+
 Start from the topic and show 2–3 actual reference images; ask which direction Kirill wants before creating a new Article unless already chosen or exploration delegated. The current library is `../assets/cover-references/2026-10-07/`: **28 originals from 31 submitted links**, with 2 duplicates and 1 profile URL. See its manifest for exact paths/source identity. IDs in the following table are input numbers, not the old October-5 screenshot numbering.
 
 | Family | Current IDs | Design mechanism and adaptation limit |
@@ -23,7 +25,7 @@ The first blue practice cover was explicitly rejected. User feedback: huge text 
 
 After **every substantive iteration**, open original and candidate side by side at identical size, then both at 340 px. Compare typography, gaps, overlap, material, light and anchoring; revise again when a concrete defect remains. Automated geometry success is not a design pass. Generated cutouts may carry nearly invisible alpha margins; align shadows to visible footprint.
 
-Current practice: `../assets/covers/cover-lab-2026-10-07/index.html`, `review.md`, editable JSON and reference-comparison.jpg. Agent selections remain candidates until the user approves. The figures printed on source covers are not verified results for Kirill; this is a visual corpus, not evidence of cover-driven performance. All 28 originals are approximately 5:2, a corpus observation rather than a verified live X upload requirement.
+Current practice: `../assets/covers/cover-lab-2026-10-07/round-2/index.html`, `review.md`, six editable JSONs and comparisons/. The parent folder retains historical round 1. Agent selections remain candidates until user approval. Source-cover figures are not verified results for Kirill; this is a visual corpus, not evidence of cover-driven performance. All 28 originals are approximately 5:2, a corpus observation rather than a verified live X upload requirement.
 
 The following October-5 section remains a historical supplementary reference set. Current instructions above and explicit user choices take precedence over its old default wording.
 

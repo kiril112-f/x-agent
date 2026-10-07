@@ -12,6 +12,7 @@ After EVERY substantive iteration, open the exported PNG and chosen original **s
 1. Meaning: explain what the image communicates without reading the brief. Is it specific to the topic or generic decorative imagery?
 2. Feed: read intended words; identify the focal subject without zoom. No-text art must retain a recognizable silhouette/tension.
 3. Full size: spelling, glyph collisions/descenders, cutout halos/alpha, believable anatomy/geometry, repeated objects, generated writing, correct brand marks against source assets.
+   Glass review checks visible transmission THROUGH the body, internal refraction, thickness and lighting coherence, not just an alpha channel or a transparent border. A stylized brand rendering is permitted but must preserve its actual recognizable identity.
 4. Reference comparison: relative type scale, hierarchy, light/dark masses, material and depth. For Kirill's type-led preference, verify that actual foreground objects overlap the letters; a tiny detached icon is a failure even if spelling/contrast pass.
 5. Spatial coherence: small/large text must form one compact lockup. Compare gaps using visible letter ink rather than CSS boxes. Objects standing on a surface need a shared baseline and contact shadows touching their visible silhouette. An offset drop shadow can make them float. Check alpha noise/margins before placing shadows.
 6. Truth/crop: real data and screenshots, no fake proof; practice remains labeled in delivery. Inspect the target crop. A fallback 3:1 crop of 5:2 may require recomposition.
@@ -24,8 +25,10 @@ Save v1. Name a concrete defect and correct its layer. Type/spacing → spec. Ma
 
 Compare before/after at the same size. Stop when material defects are resolved and remaining differences are subjective; show the strongest candidates. If correction drifts or plateaus, change composition/tool or disclose the unresolved issue. Neither an arbitrary iteration count nor an agent's own score means perfection.
 
+Use the complete [designer checklist](../x-article-cover/references/designer-checklist.md) before handoff. There is no automatic 2–3-iteration stop. If a defect remains, continue targeted work; after repeated failure change the layer, method or composition. Keep full state snapshots (assets as well as JSON) before further edits. Do not spend 100 calls merely to satisfy a count; resolve the concrete gate.
+
 Save each material revision with brief, reference IDs, before/after paths, defect, intervention, observed result and uncertainty. Separate measured check, agent judgment and explicit user preference. A human rejection overrides a prior agent pass.
 
 Concrete failure to remember: the lab's first blue cover passed text bounds and mobile readability but Kirill rejected its generic icon, weak hierarchy and absent depth. The second revision introduced real icons but hid the p in playbook. The third moved the objects and text to restore the whole word while preserving foreground overlap with organic.
 
-Practice log: `x-content-engine/assets/covers/cover-lab-2026-10-07/review.md`. Durable lesson summary: `../x-article-cover/references/practice-lessons.md`. Do not present illustrative generated photography as documentation of Kirill's own life.
+Current practice log: `x-content-engine/assets/covers/cover-lab-2026-10-07/round-2/review.md`; parent review.md is historical round 1. Durable lesson summary: `../x-article-cover/references/practice-lessons.md`. Do not present illustrative generated photography as documentation of Kirill's own life.

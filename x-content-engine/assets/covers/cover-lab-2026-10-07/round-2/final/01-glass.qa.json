@@ -1,0 +1,84 @@
+{
+  "spec": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\round-2\\final\\01-glass.json",
+  "size": [
+    2000,
+    800
+  ],
+  "layers": [
+    {
+      "index": 0,
+      "type": "image",
+      "path": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\round-2\\assets\\blue-stage.png",
+      "sha256": "b08483aeb5a21c4e83ab3f1804359e5835e2982c955e7b20862359d378d9125f",
+      "bbox": [
+        0,
+        0,
+        2000,
+        800
+      ]
+    },
+    {
+      "index": 1,
+      "type": "text",
+      "text": "the",
+      "font": "C:\\Windows\\Fonts\\Inter-VariableFont_opszwght.ttf",
+      "font_sha256": "0be2399ea925f1f83ff974764761da9860ec50742ed29a5d4c1ffd0c5c7ac3a8",
+      "weight": 750,
+      "size": 132,
+      "bbox": [
+        165,
+        100,
+        362.0,
+        198
+      ],
+      "thumbnail_ink_height": 16.66
+    },
+    {
+      "index": 2,
+      "type": "text",
+      "text": "organic",
+      "font": "C:\\Windows\\Fonts\\Inter-VariableFont_opszwght.ttf",
+      "font_sha256": "0be2399ea925f1f83ff974764761da9860ec50742ed29a5d4c1ffd0c5c7ac3a8",
+      "weight": 850,
+      "size": 480,
+      "bbox": [
+        145,
+        130,
+        1813.0,
+        584
+      ],
+      "thumbnail_ink_height": 77.18
+    },
+    {
+      "index": 3,
+      "type": "text",
+      "text": "playbook",
+      "font": "C:\\Windows\\Fonts\\Inter-VariableFont_opszwght.ttf",
+      "font_sha256": "0be2399ea925f1f83ff974764761da9860ec50742ed29a5d4c1ffd0c5c7ac3a8",
+      "weight": 750,
+      "size": 179,
+      "bbox": [
+        1155,
+        500,
+        1895.0,
+        668
+      ],
+      "thumbnail_ink_height": 28.56
+    },
+    {
+      "index": 4,
+      "type": "image",
+      "path": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\round-2\\assets\\01-glass-v1.png",
+      "sha256": "057205008f9e6635eb431db3344605ef24b49d41bb53aa07c9b607d95b50a094",
+      "bbox": [
+        567,
+        367,
+        1197,
+        787
+      ]
+    }
+  ],
+  "automated_geometry_pass": true,
+  "visual_review": "required",
+  "output_sha256": "d11ace27d2fd5c1d20e337a74abbbf8938f9bfeba2ede2f1d5849f056ae4831f"
+}

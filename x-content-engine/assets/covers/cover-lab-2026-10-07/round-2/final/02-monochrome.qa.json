@@ -1,0 +1,24 @@
+{
+  "spec": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\round-2\\final\\02-monochrome.json",
+  "size": [
+    2000,
+    800
+  ],
+  "layers": [
+    {
+      "index": 0,
+      "type": "image",
+      "path": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\round-2\\assets\\02-monochrome-v1.png",
+      "sha256": "4da1aac76fb87fe96f06bf5a4470bd3d61fa76414ea8f2296df3419be6d12b5a",
+      "bbox": [
+        0,
+        0,
+        2000,
+        800
+      ]
+    }
+  ],
+  "automated_geometry_pass": true,
+  "visual_review": "required",
+  "output_sha256": "8d31c4d52ec2a32ce56db04ed46e47d4d4db504882ec2ef6569a6745afb94310"
+}

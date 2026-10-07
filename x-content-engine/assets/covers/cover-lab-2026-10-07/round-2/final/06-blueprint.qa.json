@@ -1,0 +1,248 @@
+{
+  "spec": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\round-2\\final\\06-blueprint.json",
+  "size": [
+    2000,
+    800
+  ],
+  "layers": [
+    {
+      "index": 0,
+      "type": "line"
+    },
+    {
+      "index": 1,
+      "type": "line"
+    },
+    {
+      "index": 2,
+      "type": "line"
+    },
+    {
+      "index": 3,
+      "type": "line"
+    },
+    {
+      "index": 4,
+      "type": "line"
+    },
+    {
+      "index": 5,
+      "type": "line"
+    },
+    {
+      "index": 6,
+      "type": "line"
+    },
+    {
+      "index": 7,
+      "type": "line"
+    },
+    {
+      "index": 8,
+      "type": "line"
+    },
+    {
+      "index": 9,
+      "type": "line"
+    },
+    {
+      "index": 10,
+      "type": "line"
+    },
+    {
+      "index": 11,
+      "type": "line"
+    },
+    {
+      "index": 12,
+      "type": "line"
+    },
+    {
+      "index": 13,
+      "type": "line"
+    },
+    {
+      "index": 14,
+      "type": "line"
+    },
+    {
+      "index": 15,
+      "type": "line"
+    },
+    {
+      "index": 16,
+      "type": "line"
+    },
+    {
+      "index": 17,
+      "type": "line"
+    },
+    {
+      "index": 18,
+      "type": "line"
+    },
+    {
+      "index": 19,
+      "type": "line"
+    },
+    {
+      "index": 20,
+      "type": "line"
+    },
+    {
+      "index": 21,
+      "type": "line"
+    },
+    {
+      "index": 22,
+      "type": "line"
+    },
+    {
+      "index": 23,
+      "type": "line"
+    },
+    {
+      "index": 24,
+      "type": "line"
+    },
+    {
+      "index": 25,
+      "type": "line"
+    },
+    {
+      "index": 26,
+      "type": "line"
+    },
+    {
+      "index": 27,
+      "type": "line"
+    },
+    {
+      "index": 28,
+      "type": "line"
+    },
+    {
+      "index": 29,
+      "type": "line"
+    },
+    {
+      "index": 30,
+      "type": "line"
+    },
+    {
+      "index": 31,
+      "type": "line"
+    },
+    {
+      "index": 32,
+      "type": "line"
+    },
+    {
+      "index": 33,
+      "type": "line"
+    },
+    {
+      "index": 34,
+      "type": "line"
+    },
+    {
+      "index": 35,
+      "type": "text",
+      "text": "design",
+      "font": "C:\\Windows\\Fonts\\Inter-VariableFont_opszwght.ttf",
+      "font_sha256": "0be2399ea925f1f83ff974764761da9860ec50742ed29a5d4c1ffd0c5c7ac3a8",
+      "weight": 850,
+      "size": 296,
+      "bbox": [
+        90,
+        105,
+        999.0,
+        385
+      ],
+      "thumbnail_ink_height": 47.6
+    },
+    {
+      "index": 36,
+      "type": "text",
+      "text": "the route",
+      "font": "C:\\Windows\\Fonts\\Inter-VariableFont_opszwght.ttf",
+      "font_sha256": "0be2399ea925f1f83ff974764761da9860ec50742ed29a5d4c1ffd0c5c7ac3a8",
+      "weight": 700,
+      "size": 215,
+      "bbox": [
+        90,
+        440,
+        937.0,
+        600
+      ],
+      "thumbnail_ink_height": 27.2
+    },
+    {
+      "index": 37,
+      "type": "line"
+    },
+    {
+      "index": 38,
+      "type": "ellipse"
+    },
+    {
+      "index": 39,
+      "type": "text",
+      "text": "IDEA",
+      "font": "C:\\Windows\\Fonts\\consola.ttf",
+      "font_sha256": "c6e6ce8119fdd47ec6a5449a08e2d2ad7f41ea03143aae193068ed9fa58eaebc",
+      "weight": null,
+      "size": 58,
+      "bbox": [
+        1145,
+        85,
+        1273,
+        122
+      ],
+      "thumbnail_ink_height": 6.29
+    },
+    {
+      "index": 40,
+      "type": "ellipse"
+    },
+    {
+      "index": 41,
+      "type": "text",
+      "text": "FORMAT",
+      "font": "C:\\Windows\\Fonts\\consola.ttf",
+      "font_sha256": "c6e6ce8119fdd47ec6a5449a08e2d2ad7f41ea03143aae193068ed9fa58eaebc",
+      "weight": null,
+      "size": 64,
+      "bbox": [
+        1470,
+        300,
+        1680,
+        343
+      ],
+      "thumbnail_ink_height": 7.31
+    },
+    {
+      "index": 42,
+      "type": "ellipse"
+    },
+    {
+      "index": 43,
+      "type": "text",
+      "text": "AUDIENCE",
+      "font": "C:\\Windows\\Fonts\\consola.ttf",
+      "font_sha256": "c6e6ce8119fdd47ec6a5449a08e2d2ad7f41ea03143aae193068ed9fa58eaebc",
+      "weight": null,
+      "size": 64,
+      "bbox": [
+        1400,
+        550,
+        1680,
+        593
+      ],
+      "thumbnail_ink_height": 7.31
+    }
+  ],
+  "automated_geometry_pass": true,
+  "visual_review": "required",
+  "output_sha256": "39f10d9e8a3b6140f392685d54d568a5f116895c08dfe1063ea8b6caf3877af6"
+}

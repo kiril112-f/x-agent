@@ -1,0 +1,78 @@
+{
+  "layers": [
+    {
+      "type": "image",
+      "path": "../assets/blue-stage.png",
+      "box": [
+        0,
+        0,
+        2000,
+        800
+      ],
+      "fit": "cover"
+    },
+    {
+      "type": "text",
+      "text": "the",
+      "box": [
+        165,
+        100,
+        300,
+        105
+      ],
+      "size": 132,
+      "weight": 750,
+      "fill": "white",
+      "tracking": -3
+    },
+    {
+      "type": "text",
+      "text": "organic",
+      "box": [
+        145,
+        130,
+        1710,
+        455
+      ],
+      "size": 485,
+      "min_size": 440,
+      "weight": 850,
+      "fill": "white",
+      "tracking": -14
+    },
+    {
+      "type": "text",
+      "text": "playbook",
+      "box": [
+        1155,
+        500,
+        745,
+        185
+      ],
+      "size": 182,
+      "min_size": 165,
+      "weight": 750,
+      "fill": "white",
+      "tracking": -5
+    },
+    {
+      "type": "image",
+      "path": "../assets/01-glass-v1.png",
+      "box": [
+        525,
+        367,
+        715,
+        420
+      ]
+    }
+  ],
+  "size": [
+    2000,
+    800
+  ],
+  "practice_only": true,
+  "style": "Transparent 3D glass",
+  "reference_id": 6,
+  "concept": "Real platform identity rendered as translucent material, not an opaque app tile.",
+  "approval": "unreviewed by user"
+}

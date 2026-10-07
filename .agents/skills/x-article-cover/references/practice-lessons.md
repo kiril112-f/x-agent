@@ -1,5 +1,13 @@
 # Lessons from actual practice — 2026-10-07
 
+## Later clarification and current practice
+
+Round-1 blue v5 was subsequently rejected for its **material**, despite improved spacing/shadows: opaque app tiles in transparent casings are not transparent glass bodies. Kirill explicitly allows image-model rendering of recognizable brand symbols together with 3D objects or the whole scene. Exact PNG insertion is an option, not a mandatory rule. Final typography still stays separately typeset by default.
+
+Current practice is `cover-lab-2026-10-07/round-2/`: six distinct families, six reference comparisons, five new generated assets, plus a deterministic blueprint. Current procedures are in designer-checklist.md, six-style-recipes.md and x-cover-art-direction/references/concept-design.md. Do not promote the old v5 to a final glass exemplar.
+
+Additional observed lessons: the collage's subordinate copy was too distant, so the lockup was compacted; diagram labels collided with route bends, so labels moved into clear space; the cinematic object needed a closer relationship to the title. The philosophical monochrome study derives its curtain action from deliberate visibility, rather than decorating an app article with random futuristic scenery.
+
 Source artifacts: `x-content-engine/assets/covers/cover-lab-2026-10-07/`. This records observed failures and explicit feedback, not a performance benchmark. None of these studies has measured CTR or user approval.
 
 | Observation | Intervention | Reusable decision |
@@ -13,11 +21,11 @@ Source artifacts: `x-content-engine/assets/covers/cover-lab-2026-10-07/`. This r
 | Text overflow for More signal. / organic / playbook despite apparently sufficient cap-height space | Renderer measured descenders and rejected render; boxes/min-size were consciously revised | Measure visible ink including g/y/p; never silently crop or squish |
 | A failed render left the old PNG on disk | Gate viewing on successful exit/hash | Inspect the new output, not a stale file |
 
-## Current blue candidate
+## Historical round-1 blue candidate — superseded
 
 `final/05-glass.png`, its JSON and `reference-comparison.jpg`. Different from v1: one huge word, linked secondary text, genuine sourced TikTok/Instagram artwork in generated casings, shared baseline/contact shadows, source and candidate shown both large and at 340 px. This is the agent's revised candidate, not human approval or an exact recreation.
 
-The original has more translucent colored glass and a greener atmospheric field; ours uses heavier clear casings and genuine App Store tile artwork. Retain this distinction rather than claiming identical material quality. If the user wants the precise source material next, improve the casing/object asset; do not redraw the official mark.
+The original has more translucent colored glass and a greener atmospheric field; round 1 used heavier clear casings and genuine App Store tile artwork. That material treatment was subsequently rejected. The newer reference-guided generation route in round 2 is permitted and preferred when it produces the intended transparent body. Inspect mark fidelity rather than imposing the old source-pixel-only rule.
 
 ## User preferences versus local design choices
 

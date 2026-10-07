@@ -1,0 +1,56 @@
+{
+  "spec": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\round-2\\final\\05-collage.json",
+  "size": [
+    2000,
+    800
+  ],
+  "layers": [
+    {
+      "index": 0,
+      "type": "text",
+      "text": "attention",
+      "font": "C:\\Windows\\Fonts\\georgia.ttf",
+      "font_sha256": "38dffcaf1fac89492f7c56c600a14daf36ae42f7c21985cd4134ae113124a58f",
+      "weight": null,
+      "size": 380,
+      "bbox": [
+        95,
+        75,
+        1541.0,
+        362
+      ],
+      "thumbnail_ink_height": 48.79
+    },
+    {
+      "index": 1,
+      "type": "text",
+      "text": "is earned.",
+      "font": "C:\\Windows\\Fonts\\georgiai.ttf",
+      "font_sha256": "d3e4bad27651d120ac8f2cea42cf4b4f077264fb243f66b3caffcfd35465f49b",
+      "weight": null,
+      "size": 160,
+      "bbox": [
+        95,
+        430,
+        751.0,
+        553
+      ],
+      "thumbnail_ink_height": 20.91
+    },
+    {
+      "index": 2,
+      "type": "image",
+      "path": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\round-2\\assets\\05-collage-v1.png",
+      "sha256": "169eaf1cfc39456da2af34cd47c7ae8a43a8cbd152e26d5fa875d9a45f648108",
+      "bbox": [
+        931,
+        310,
+        1919,
+        760
+      ]
+    }
+  ],
+  "automated_geometry_pass": true,
+  "visual_review": "required",
+  "output_sha256": "5778c3c0f412b3f1ffaf50830dfecc374d53b126b7bdf4fd2e7b2b547cc6a92b"
+}

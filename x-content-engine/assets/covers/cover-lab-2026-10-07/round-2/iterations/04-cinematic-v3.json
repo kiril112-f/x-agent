@@ -1,0 +1,75 @@
+{
+  "layers": [
+    {
+      "type": "image",
+      "path": "../assets/dark-stage.png",
+      "box": [
+        0,
+        0,
+        2000,
+        800
+      ],
+      "fit": "cover"
+    },
+    {
+      "type": "text",
+      "text": "MAKE IT",
+      "box": [
+        90,
+        110,
+        1040,
+        220
+      ],
+      "size": 260,
+      "min_size": 225,
+      "font": "condensed",
+      "fill": "#f7f0df",
+      "tracking": -5
+    },
+    {
+      "type": "text",
+      "text": "TRAVEL.",
+      "box": [
+        90,
+        365,
+        1040,
+        265
+      ],
+      "size": 290,
+      "min_size": 245,
+      "font": "condensed",
+      "fill": "#f7f0df",
+      "tracking": -5
+    },
+    {
+      "type": "rect",
+      "box": [
+        95,
+        690,
+        270,
+        16
+      ],
+      "fill": "#ff641c"
+    },
+    {
+      "type": "image",
+      "path": "../assets/04-cinematic-v1.png",
+      "box": [
+        700,
+        15,
+        1020,
+        680
+      ]
+    }
+  ],
+  "size": [
+    2000,
+    800
+  ],
+  "practice_only": true,
+  "style": "Cinematic object",
+  "reference_id": 19,
+  "concept": "A paper plane makes the idea of work reaching its audience tangible.",
+  "approval": "unreviewed by user",
+  "revision": "v3; foreground crosses the bottom of the final T in MAKE IT"
+}

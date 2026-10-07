@@ -1,0 +1,30 @@
+[
+  {
+    "slug": "01-glass",
+    "transparent": true,
+    "refs": [
+      "C:/Users/User/Desktop/X Agent/x-content-engine/assets/cover-references/2026-10-07/originals/06-aleksascales-2088259816296726744.jpg"
+    ],
+    "prompt": "Create ONLY the pair of 3D TikTok and Instagram glass objects, using the supplied cover as a MATERIAL and LOGO reference. No headline or background scene. Genuine see-through colored optical glass bodies, NOT solid app tiles surrounded by a clear border, NOT metal or chrome frames, NOT opaque white inserts, NOT black face behind TikTok. Light and the background must be visible through the central faces and thick beveled edges. Raised accurate recognizable TikTok musical note with white/cyan/red accents inside a clear teal-tinted block; accurate white Instagram camera glyph embedded within softly tinted magenta amber violet translucent glass, keeping the body optically transparent. Objects standing on the same implied ground level, almost touching with slight overlap, TikTok slightly tilted away and Instagram almost frontal, subtle depth perspective, realistic thickness and internal refraction. Compact horizontal pair, generous transparent margins, fully visible bases. Transparent background with preserved semi-transparent material. One coherent studio light, local contact shadows only. No words, letters, numerals or watermark. This is a product-style illustration of real recognizable brand symbols; preserve their identities."
+  },
+  {
+    "slug": "02-monochrome",
+    "transparent": false,
+    "prompt": "Original panoramic 5:2 black-and-white narrative wood engraving. Philosophical idea: visibility is a deliberate act, not a reward for hiding perfect work. One solitary human pulls back a monumental heavy black curtain on the LEFT, revealing a vast bright mountainous horizon and open sky on the RIGHT. Human around 15% of image height, anchored on a real stone ledge, clear silhouette, plausible one pair of arms and legs, pulling one thick fold of curtain. Curtain and stone large deep black masses with fine white crosshatching; horizon and opening brilliantly white, engraved cloud edges. A strong diagonal folds inward toward the human hand; the open landscape forms one huge light shape. Deliberate symbolic scale, coherent physical action, no unrelated icons, no planets, no circuitry, no vortex, no stairs to nowhere. Full-bleed expansive composition, person at roughly 43% horizontal position, no panel layout. Tactile dense nineteenth-century engraving, exquisitely controlled line weight; must still read as curtain + person + opening at 340 pixels wide. No text, letters, numbers, signature, border, logos or color."
+  },
+  {
+    "slug": "03-editorial",
+    "transparent": true,
+    "prompt": "A wide original editorial copperplate-engraved illustration cutout, dark terracotta/rust ink and opaque warm-ivory fills inside the objects, truly transparent OUTSIDE the silhouette. One craftsman operating a beautifully coherent old mechanical printing press by turning one large flywheel; blank paper sheets pass through its rollers and form one orderly stack. Large flywheel on the LEFT foreground, press body stretches toward RIGHT, person on right; visual metaphor one repeatable mechanism replaces endless manual work. Sparse clean upper silhouette, detailed mechanical engraving in the body, three levels of line weight, Victorian technical engraving rather than cartoon. Entire subject visible with margin, low wide arrangement around 2:1. Top of left flywheel rises above rest of machinery to allow it to overlap separately set headline. All paper and metal surfaces have warm cream fill; no rectangular background. No words, letters, numerals, labels, logos, monetary symbols, decorative border or watermark. Subject physically coherent, hands attached to handles, no extra fingers, no impossible belts or unrelated gear clutter."
+  },
+  {
+    "slug": "04-cinematic",
+    "transparent": true,
+    "prompt": "An original cinematic product-sculpture cutout: a single large perfectly folded paper airplane made from thick satin ivory paper, with a narrow orange-red painted stripe along one wing crease. It rests at a dynamic upward diagonal on a dark charcoal stone surface fragment, stable three-point contact, nose aimed upper-right. Camera low at three-quarter angle, visibly real crisp folds and paper thickness, bold triangular silhouette, sculptural scale. Warm amber directional studio light grazes its edge; deep cool shadows, one restrained accent, photoreal film still quality. Entire plane and small base visible, transparent background outside the object, soft minimal contact shadow attached to base, no background scenery. The idea is making useful work travel to an audience. No logos, no letters, no numbers, no text, no arrow icons, no blue neon, no science-fiction circuitry. The plane is one folded sheet with coherent continuous topology, no extra wings or fragments."
+  },
+  {
+    "slug": "05-collage",
+    "transparent": true,
+    "prompt": "One original black-and-white editorial collage cutout on transparent background: a single striking human eye rendered as a finely engraved antique anatomical illustration, clearly one ordinary eye with a dark round pupil, upper/lower eyelids and fine crosshatched surrounding skin. The eye sits on a wide irregular strip of thick ivory paper with naturally torn fibrous edges. Around and partly behind this strip are just two short layers of blank black/ivory torn paper, arranged diagonally for tactile depth. Horizontal subject ratio about 2.2:1. The single eye looks directly at viewer, no horror, no surreal extra eyes, no face, no robot, no money. Controlled grain and tactile photocopy contrast, dark pupil and bright sclera visible at small size, art-directed magazine photomontage. No text, glyphs, numerals, labels, stamps, photographs of actual identifiable people, signatures or watermarks. Outside irregular paper edges is truly transparent, no rectangular background."
+  }
+]
