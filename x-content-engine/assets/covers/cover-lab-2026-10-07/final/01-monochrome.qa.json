@@ -1,0 +1,24 @@
+{
+  "spec": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\final\\01-monochrome.json",
+  "size": [
+    2000,
+    800
+  ],
+  "layers": [
+    {
+      "index": 0,
+      "type": "image",
+      "path": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\assets\\engraving-v2.png",
+      "sha256": "27df89f0456ee526202a10dafe00988aab4c0989c1600781b5a3e1795632506a",
+      "bbox": [
+        0,
+        0,
+        2000,
+        800
+      ]
+    }
+  ],
+  "automated_geometry_pass": true,
+  "visual_review": "required",
+  "output_sha256": "afe8ca0a73d1f0d6bbf05342bac9728b5b575bb60ad607c4a40f15f1eaf7b106"
+}

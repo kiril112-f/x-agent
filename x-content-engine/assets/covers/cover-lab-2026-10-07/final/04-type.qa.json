@@ -1,0 +1,44 @@
+{
+  "spec": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\final\\04-type.json",
+  "size": [
+    2000,
+    800
+  ],
+  "layers": [
+    {
+      "index": 0,
+      "type": "text",
+      "text": "Less noise.",
+      "font": "C:\\Windows\\Fonts\\Inter-VariableFont_opszwght.ttf",
+      "font_sha256": "0be2399ea925f1f83ff974764761da9860ec50742ed29a5d4c1ffd0c5c7ac3a8",
+      "weight": 900,
+      "size": 325,
+      "bbox": [
+        90,
+        110,
+        1746.0,
+        354
+      ],
+      "thumbnail_ink_height": 41.48
+    },
+    {
+      "index": 1,
+      "type": "text",
+      "text": "More signal.",
+      "font": "C:\\Windows\\Fonts\\Inter-VariableFont_opszwght.ttf",
+      "font_sha256": "0be2399ea925f1f83ff974764761da9860ec50742ed29a5d4c1ffd0c5c7ac3a8",
+      "weight": 900,
+      "size": 311,
+      "bbox": [
+        90,
+        425,
+        1833.0,
+        720
+      ],
+      "thumbnail_ink_height": 50.15
+    }
+  ],
+  "automated_geometry_pass": true,
+  "visual_review": "required",
+  "output_sha256": "bfb8da2096d81ec1634b68dfedce3ee39fb3af3ea0aaced0b926aca9a7b08acd"
+}

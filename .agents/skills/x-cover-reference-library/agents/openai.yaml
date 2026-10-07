@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cover Reference Library"
+  short_description: "Download and classify article covers with provenance"
+  default_prompt: "Use $x-cover-reference-library to collect only the covers from these article links."

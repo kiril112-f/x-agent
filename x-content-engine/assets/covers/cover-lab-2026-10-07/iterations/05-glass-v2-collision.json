@@ -1,0 +1,86 @@
+{
+  "size": [
+    2000,
+    800
+  ],
+  "layers": [
+    {
+      "type": "gradient",
+      "start": "#2349d5",
+      "end": "#071861"
+    },
+    {
+      "type": "text",
+      "text": "the",
+      "box": [
+        102,
+        45,
+        300,
+        90
+      ],
+      "size": 112,
+      "weight": 750,
+      "fill": "#ffffff",
+      "tracking": -3
+    },
+    {
+      "type": "text",
+      "text": "organic",
+      "box": [
+        85,
+        135,
+        1830,
+        455
+      ],
+      "size": 510,
+      "min_size": 440,
+      "weight": 900,
+      "fill": "#ffffff",
+      "tracking": -16
+    },
+    {
+      "type": "text",
+      "text": "playbook",
+      "box": [
+        1110,
+        595,
+        805,
+        175
+      ],
+      "size": 188,
+      "min_size": 170,
+      "weight": 800,
+      "fill": "#ffffff",
+      "tracking": -6
+    },
+    {
+      "type": "image",
+      "path": "../assets/tiktok-glass.png",
+      "box": [
+        580,
+        400,
+        445,
+        395
+      ]
+    },
+    {
+      "type": "image",
+      "path": "../assets/instagram-glass.png",
+      "box": [
+        890,
+        430,
+        420,
+        370
+      ]
+    }
+  ],
+  "practice_only": true,
+  "status": "agent revision after explicit rejection of v1; awaiting user review",
+  "reference_ids": [
+    6,
+    11,
+    31
+  ],
+  "concept": "Two real distribution platforms in front of oversized lettering",
+  "logo_source": "Original App Store artwork; logos composited as source pixels into generated housings"
+}

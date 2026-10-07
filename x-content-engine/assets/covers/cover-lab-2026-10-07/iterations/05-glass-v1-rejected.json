@@ -1,0 +1,56 @@
+{
+  "layers": [
+    {
+      "type": "gradient",
+      "start": "#203bbe",
+      "end": "#081765"
+    },
+    {
+      "type": "text",
+      "text": "organic",
+      "box": [
+        95,
+        55,
+        1800,
+        360
+      ],
+      "size": 380,
+      "min_size": 340,
+      "weight": 900,
+      "fill": "#ffffff",
+      "tracking": -12
+    },
+    {
+      "type": "text",
+      "text": "installs",
+      "box": [
+        95,
+        435,
+        1580,
+        295
+      ],
+      "size": 380,
+      "min_size": 340,
+      "weight": 900,
+      "fill": "#ffffff",
+      "tracking": -12
+    },
+    {
+      "type": "image",
+      "path": "../assets/glass.png",
+      "box": [
+        1450,
+        255,
+        470,
+        470
+      ],
+      "trim_alpha": true
+    }
+  ],
+  "size": [
+    2000,
+    800
+  ],
+  "practice_only": true,
+  "note": "Fictional cover brief. No measured results or endorsement claimed."
+}

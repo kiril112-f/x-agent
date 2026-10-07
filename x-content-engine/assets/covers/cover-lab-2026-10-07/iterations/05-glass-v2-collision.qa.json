@@ -1,0 +1,88 @@
+{
+  "spec": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\iterations\\05-glass-v2-collision.json",
+  "size": [
+    2000,
+    800
+  ],
+  "layers": [
+    {
+      "index": 0,
+      "type": "gradient"
+    },
+    {
+      "index": 1,
+      "type": "text",
+      "text": "the",
+      "font": "C:\\Windows\\Fonts\\Inter-VariableFont_opszwght.ttf",
+      "font_sha256": "0be2399ea925f1f83ff974764761da9860ec50742ed29a5d4c1ffd0c5c7ac3a8",
+      "weight": 750,
+      "size": 112,
+      "bbox": [
+        102,
+        45,
+        269.0,
+        127
+      ],
+      "thumbnail_ink_height": 13.94
+    },
+    {
+      "index": 2,
+      "type": "text",
+      "text": "organic",
+      "font": "C:\\Windows\\Fonts\\Inter-VariableFont_opszwght.ttf",
+      "font_sha256": "0be2399ea925f1f83ff974764761da9860ec50742ed29a5d4c1ffd0c5c7ac3a8",
+      "weight": 900,
+      "size": 480,
+      "bbox": [
+        85,
+        135,
+        1772.0,
+        590
+      ],
+      "thumbnail_ink_height": 77.35
+    },
+    {
+      "index": 3,
+      "type": "text",
+      "text": "playbook",
+      "font": "C:\\Windows\\Fonts\\Inter-VariableFont_opszwght.ttf",
+      "font_sha256": "0be2399ea925f1f83ff974764761da9860ec50742ed29a5d4c1ffd0c5c7ac3a8",
+      "weight": 800,
+      "size": 188,
+      "bbox": [
+        1110,
+        595,
+        1895.0,
+        770
+      ],
+      "thumbnail_ink_height": 29.75
+    },
+    {
+      "index": 4,
+      "type": "image",
+      "path": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\assets\\tiktok-glass.png",
+      "sha256": "0eaaec30f3767e049ee386dfba4b56123d70d06808b12123532cdae8c675396a",
+      "bbox": [
+        600,
+        400,
+        1004,
+        795
+      ]
+    },
+    {
+      "index": 5,
+      "type": "image",
+      "path": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\assets\\instagram-glass.png",
+      "sha256": "d48ce0f6e37476dc51d60e235cf60685e23a65193b9dd62439a9526a1e113c2d",
+      "bbox": [
+        911,
+        430,
+        1288,
+        800
+      ]
+    }
+  ],
+  "automated_geometry_pass": true,
+  "visual_review": "required",
+  "output_sha256": "40462b2d73890e87d35dc0ee9972d9fbfb7ccc26addde05214a9a2bde3736842"
+}

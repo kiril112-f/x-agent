@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cover Visual QA"
+  short_description: "Compare cover and reference after every revision"
+  default_prompt: "Use $x-cover-qa to compare this cover with its reference and refine concrete defects."

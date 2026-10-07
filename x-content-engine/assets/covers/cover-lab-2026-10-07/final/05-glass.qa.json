@@ -1,0 +1,108 @@
+{
+  "spec": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\final\\05-glass.json",
+  "size": [
+    2000,
+    800
+  ],
+  "layers": [
+    {
+      "index": 0,
+      "type": "image",
+      "path": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\assets\\blue-stage.png",
+      "sha256": "ef3e0ab1368676235b018d2db056e4c1e60df0ede6034e57b2c2f3a24dbc6281",
+      "bbox": [
+        0,
+        0,
+        2000,
+        800
+      ]
+    },
+    {
+      "index": 1,
+      "type": "text",
+      "text": "the",
+      "font": "C:\\Windows\\Fonts\\Inter-VariableFont_opszwght.ttf",
+      "font_sha256": "0be2399ea925f1f83ff974764761da9860ec50742ed29a5d4c1ffd0c5c7ac3a8",
+      "weight": 750,
+      "size": 132,
+      "bbox": [
+        165,
+        100,
+        362.0,
+        198
+      ],
+      "thumbnail_ink_height": 16.66
+    },
+    {
+      "index": 2,
+      "type": "text",
+      "text": "organic",
+      "font": "C:\\Windows\\Fonts\\Inter-VariableFont_opszwght.ttf",
+      "font_sha256": "0be2399ea925f1f83ff974764761da9860ec50742ed29a5d4c1ffd0c5c7ac3a8",
+      "weight": 850,
+      "size": 480,
+      "bbox": [
+        145,
+        130,
+        1813.0,
+        584
+      ],
+      "thumbnail_ink_height": 77.18
+    },
+    {
+      "index": 3,
+      "type": "text",
+      "text": "playbook",
+      "font": "C:\\Windows\\Fonts\\Inter-VariableFont_opszwght.ttf",
+      "font_sha256": "0be2399ea925f1f83ff974764761da9860ec50742ed29a5d4c1ffd0c5c7ac3a8",
+      "weight": 750,
+      "size": 179,
+      "bbox": [
+        1160,
+        500,
+        1900.0,
+        668
+      ],
+      "thumbnail_ink_height": 28.56
+    },
+    {
+      "index": 4,
+      "type": "image",
+      "path": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\assets\\contact-shadows.png",
+      "sha256": "e6cc628c6738042d9d16e01d86870c5d92330a7882af019a6b8f86f0826a0ae4",
+      "bbox": [
+        0,
+        0,
+        2000,
+        800
+      ]
+    },
+    {
+      "index": 5,
+      "type": "image",
+      "path": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\assets\\tiktok-glass.png",
+      "sha256": "0eaaec30f3767e049ee386dfba4b56123d70d06808b12123532cdae8c675396a",
+      "bbox": [
+        620,
+        438,
+        920,
+        732
+      ]
+    },
+    {
+      "index": 6,
+      "type": "image",
+      "path": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\assets\\instagram-glass.png",
+      "sha256": "d48ce0f6e37476dc51d60e235cf60685e23a65193b9dd62439a9526a1e113c2d",
+      "bbox": [
+        870,
+        438,
+        1170,
+        732
+      ]
+    }
+  ],
+  "automated_geometry_pass": true,
+  "visual_review": "required",
+  "output_sha256": "f0ea97c0c7b88068561ad9cbc660ee273c665f84eae113bd118dbffb3ea52f8a"
+}

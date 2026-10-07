@@ -1,0 +1,103 @@
+{
+  "size": [
+    2000,
+    800
+  ],
+  "layers": [
+    {
+      "type": "image",
+      "path": "../assets/blue-stage.png",
+      "box": [
+        0,
+        0,
+        2000,
+        800
+      ],
+      "fit": "cover"
+    },
+    {
+      "type": "text",
+      "text": "the",
+      "box": [
+        165,
+        100,
+        300,
+        105
+      ],
+      "size": 132,
+      "weight": 750,
+      "fill": "#ffffff",
+      "tracking": -3
+    },
+    {
+      "type": "text",
+      "text": "organic",
+      "box": [
+        145,
+        130,
+        1710,
+        455
+      ],
+      "size": 485,
+      "min_size": 440,
+      "weight": 850,
+      "fill": "#ffffff",
+      "tracking": -14
+    },
+    {
+      "type": "text",
+      "text": "playbook",
+      "box": [
+        1115,
+        500,
+        775,
+        185
+      ],
+      "size": 182,
+      "min_size": 165,
+      "weight": 750,
+      "fill": "#ffffff",
+      "tracking": -5
+    },
+    {
+      "type": "image",
+      "path": "../assets/contact-shadows.png",
+      "box": [
+        0,
+        0,
+        2000,
+        800
+      ],
+      "fit": "cover"
+    },
+    {
+      "type": "image",
+      "path": "../assets/tiktok-glass.png",
+      "box": [
+        600,
+        425,
+        335,
+        325
+      ]
+    },
+    {
+      "type": "image",
+      "path": "../assets/instagram-glass.png",
+      "box": [
+        866,
+        425,
+        335,
+        325
+      ]
+    }
+  ],
+  "practice_only": true,
+  "status": "agent revision after explicit rejection of v1; awaiting user review",
+  "reference_ids": [
+    6,
+    11,
+    31
+  ],
+  "concept": "Two real distribution platforms in front of oversized lettering",
+  "logo_source": "Original App Store artwork; logos composited as source pixels into generated housings"
+}

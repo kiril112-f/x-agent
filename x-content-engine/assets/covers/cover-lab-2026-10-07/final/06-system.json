@@ -1,0 +1,164 @@
+{
+  "background": "#f9f8f4",
+  "layers": [
+    {
+      "type": "text",
+      "text": "Give every slide a job.",
+      "box": [
+        100,
+        95,
+        1800,
+        185
+      ],
+      "size": 171,
+      "min_size": 135,
+      "weight": 800,
+      "tracking": -4
+    },
+    {
+      "type": "rect",
+      "box": [
+        100,
+        370,
+        440,
+        265
+      ],
+      "outline": "#222222",
+      "stroke": 5,
+      "radius": 16
+    },
+    {
+      "type": "text",
+      "text": "Hook",
+      "box": [
+        120,
+        442,
+        400,
+        120
+      ],
+      "size": 105,
+      "min_size": 90,
+      "weight": 700,
+      "align": "center",
+      "valign": "center"
+    },
+    {
+      "type": "rect",
+      "box": [
+        780,
+        370,
+        440,
+        265
+      ],
+      "outline": "#222222",
+      "stroke": 5,
+      "radius": 16
+    },
+    {
+      "type": "text",
+      "text": "Value",
+      "box": [
+        800,
+        442,
+        400,
+        120
+      ],
+      "size": 105,
+      "min_size": 90,
+      "weight": 700,
+      "align": "center",
+      "valign": "center"
+    },
+    {
+      "type": "rect",
+      "box": [
+        1460,
+        370,
+        440,
+        265
+      ],
+      "outline": "#222222",
+      "stroke": 5,
+      "radius": 16
+    },
+    {
+      "type": "text",
+      "text": "Action",
+      "box": [
+        1480,
+        442,
+        400,
+        120
+      ],
+      "size": 105,
+      "min_size": 90,
+      "weight": 700,
+      "align": "center",
+      "valign": "center"
+    },
+    {
+      "type": "line",
+      "points": [
+        592,
+        502,
+        727,
+        502
+      ],
+      "stroke": 8,
+      "fill": "#d94320"
+    },
+    {
+      "type": "polygon",
+      "points": [
+        [
+          727,
+          502
+        ],
+        [
+          692,
+          479
+        ],
+        [
+          692,
+          525
+        ]
+      ],
+      "fill": "#d94320"
+    },
+    {
+      "type": "line",
+      "points": [
+        1272,
+        502,
+        1407,
+        502
+      ],
+      "stroke": 8,
+      "fill": "#d94320"
+    },
+    {
+      "type": "polygon",
+      "points": [
+        [
+          1407,
+          502
+        ],
+        [
+          1372,
+          479
+        ],
+        [
+          1372,
+          525
+        ]
+      ],
+      "fill": "#d94320"
+    }
+  ],
+  "size": [
+    2000,
+    800
+  ],
+  "practice_only": true,
+  "note": "Fictional cover brief. No measured results or endorsement claimed."
+}

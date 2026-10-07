@@ -14,6 +14,8 @@ description: 'Пишет и переписывает X Articles в голосе 
 Черновик → финал и разбор провала — [references/rewriter-playbook.md](references/rewriter-playbook.md).
 После черновика — [references/attention-pass.md](references/attention-pass.md): редакционная адаптация прямой методики fuckgrowth, отдельно от анализа корпуса.
 Визуалы (обложка + графики) — [references/visual-integration.md](references/visual-integration.md).
+
+Перед созданием новой статьи предложить 2–3 подходящих теме визуальных направления с реальными картинками из `$x-article-cover` и спросить, какой стиль нужен. Уже выбранный стиль или порученное самостоятельное исследование не требуют повторного вопроса. Выбор сохранить в cover brief; одну палитру всем темам не навязывать.
 Актуальный разбор каждой ссылки, покрытие и ограничения — `x-content-engine/research/sources/x-article-study-2026-10-07/analysis.md`. Корпус сентября — историческая заметка; его универсальные утверждения и пересказанные заголовки не использовать вместо нового разбора.
 Заголовки — соседний [x-article-headlines](../x-article-headlines/SKILL.md).
 

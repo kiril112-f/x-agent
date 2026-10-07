@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cover Compose"
+  short_description: "Exact type, genuine logos and editable cover layers"
+  default_prompt: "Use $x-cover-compose to compose this cover with exact typography and layered objects."

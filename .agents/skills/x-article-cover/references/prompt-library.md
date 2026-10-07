@@ -1,6 +1,6 @@
 # Промпт-библиотека
 
-Рабочая модель — **ChatGPT Images 2.5** (релиз 08.09.2026). В API: `gpt-image-2.5-flare` — быстрая генерация, `gpt-image-2.5-sunburst` — точное редактирование, дольше и детальнее.
+Historical prompt experiments for the giant-type family. Use the currently available image tool; old model IDs and release claims in this file are not a verified capability contract. Current prompts and their actual generated assets are in `x-content-engine/assets/covers/cover-lab-2026-10-07/assets/`. Final copy and real logos are composed separately. See SKILL.md and practice-lessons.md for current requirements.
 
 Промпты на английском. Плейсхолдеры в `{{ }}` заменять до отправки, ничего не оставлять незаполненным.
 

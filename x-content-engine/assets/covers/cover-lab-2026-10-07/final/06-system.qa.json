@@ -1,0 +1,104 @@
+{
+  "spec": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\final\\06-system.json",
+  "size": [
+    2000,
+    800
+  ],
+  "layers": [
+    {
+      "index": 0,
+      "type": "text",
+      "text": "Give every slide a job.",
+      "font": "C:\\Windows\\Fonts\\Inter-VariableFont_opszwght.ttf",
+      "font_sha256": "0be2399ea925f1f83ff974764761da9860ec50742ed29a5d4c1ffd0c5c7ac3a8",
+      "weight": 800,
+      "size": 171,
+      "bbox": [
+        100,
+        95,
+        1750.0,
+        256
+      ],
+      "thumbnail_ink_height": 27.37
+    },
+    {
+      "index": 1,
+      "type": "rect"
+    },
+    {
+      "index": 2,
+      "type": "text",
+      "text": "Hook",
+      "font": "C:\\Windows\\Fonts\\Inter-VariableFont_opszwght.ttf",
+      "font_sha256": "0be2399ea925f1f83ff974764761da9860ec50742ed29a5d4c1ffd0c5c7ac3a8",
+      "weight": 700,
+      "size": 105,
+      "bbox": [
+        191.5,
+        463.0,
+        448.5,
+        541.0
+      ],
+      "thumbnail_ink_height": 13.26
+    },
+    {
+      "index": 3,
+      "type": "rect"
+    },
+    {
+      "index": 4,
+      "type": "text",
+      "text": "Value",
+      "font": "C:\\Windows\\Fonts\\Inter-VariableFont_opszwght.ttf",
+      "font_sha256": "0be2399ea925f1f83ff974764761da9860ec50742ed29a5d4c1ffd0c5c7ac3a8",
+      "weight": 700,
+      "size": 105,
+      "bbox": [
+        861.5,
+        463.0,
+        1138.5,
+        541.0
+      ],
+      "thumbnail_ink_height": 13.26
+    },
+    {
+      "index": 5,
+      "type": "rect"
+    },
+    {
+      "index": 6,
+      "type": "text",
+      "text": "Action",
+      "font": "C:\\Windows\\Fonts\\Inter-VariableFont_opszwght.ttf",
+      "font_sha256": "0be2399ea925f1f83ff974764761da9860ec50742ed29a5d4c1ffd0c5c7ac3a8",
+      "weight": 700,
+      "size": 105,
+      "bbox": [
+        1521.0,
+        462.5,
+        1839.0,
+        541.5
+      ],
+      "thumbnail_ink_height": 13.43
+    },
+    {
+      "index": 7,
+      "type": "line"
+    },
+    {
+      "index": 8,
+      "type": "polygon"
+    },
+    {
+      "index": 9,
+      "type": "line"
+    },
+    {
+      "index": 10,
+      "type": "polygon"
+    }
+  ],
+  "automated_geometry_pass": true,
+  "visual_review": "required",
+  "output_sha256": "dd269d78c1ccd20ca19087857639c8089add620cfea1efa82d9ca53870818b51"
+}

@@ -1,0 +1,47 @@
+{
+  "layers": [
+    {
+      "type": "image",
+      "path": "../assets/editorial.png",
+      "box": [
+        0,
+        0,
+        2000,
+        800
+      ],
+      "fit": "cover"
+    },
+    {
+      "type": "text",
+      "text": "Build once.",
+      "box": [
+        85,
+        140,
+        950,
+        160
+      ],
+      "size": 145,
+      "weight": 850,
+      "fill": "#381c10"
+    },
+    {
+      "type": "text",
+      "text": "Publish often.",
+      "box": [
+        85,
+        320,
+        1040,
+        150
+      ],
+      "size": 140,
+      "weight": 850,
+      "fill": "#381c10"
+    }
+  ],
+  "size": [
+    2000,
+    800
+  ],
+  "practice_only": true,
+  "note": "Fictional cover brief. No measured results or endorsement claimed."
+}

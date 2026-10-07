@@ -1,5 +1,32 @@
 # X Article cover directions
 
+## Current selection and feedback — 2026-10-07
+
+Start from the topic and show 2–3 actual reference images; ask which direction Kirill wants before creating a new Article unless already chosen or exploration delegated. The current library is `../assets/cover-references/2026-10-07/`: **28 originals from 31 submitted links**, with 2 duplicates and 1 profile URL. See its manifest for exact paths/source identity. IDs in the following table are input numbers, not the old October-5 screenshot numbering.
+
+| Family | Current IDs | Design mechanism and adaptation limit |
+|---|---|---|
+| Monochrome narrative engraving | 03, 09, 15, 16, 22 | Ink, large light/dark masses, human scale/event; little or no copy. One specific metaphor, recognizable at 340 px |
+| Giant type + physical foreground | 04, 06, 10, 11, 23, 31 | Unequal type scales, giant key word, deliberate object overlap, coherent shadow/light. Real marks for real entities |
+| Currency/material collage | 02, 12 | Serif + tactile surface/cut edges. Do not invent money/results as proof |
+| Minimal symbol equation | 07, 08 | A few recognizable real symbols; only when the conceptual equation is honest |
+| Minimal proof panel / metric | 14, 25 | Dark metric chart or sparse light panel; requires verified evidence, not invented data |
+| Documentary screenshot | 28 | Real screen as focal proof; no synthetic UI/results |
+| Hand-drawn explainer | 26 | White field, controlled black/red strokes, true short sequence |
+| Systems map | 20, 27 | Precise nodes/connectors; reduce density for the feed |
+| Cinematic / character subject | 01, 05, 19 | One dominant subject, coherent world and expressive headline; 01 is the illustrated character variant |
+| Warm editorial engraving | 17 | Cream/rust, coherent production/economic scene, serif type |
+| Evidence + example cards | 18 | Headline and a small set of real cards/screens; no unreadable proof badges |
+| Halftone / convergence | 13, 21 | One gesture/vanishing point, deliberate texture; avoid random beams and noise |
+
+The first blue practice cover was explicitly rejected. User feedback: huge text must interact with foreground elements to create depth; a tiny generic icon beside it is insufficient. Use genuine social/product marks, design a relevant original setting around them. Match reference **scale relationships and spacing**, not just colors. Small the/playbook-type lines must stay close to the dominant word. Objects should meet their surface through correctly positioned contact shadows instead of floating.
+
+After **every substantive iteration**, open original and candidate side by side at identical size, then both at 340 px. Compare typography, gaps, overlap, material, light and anchoring; revise again when a concrete defect remains. Automated geometry success is not a design pass. Generated cutouts may carry nearly invisible alpha margins; align shadows to visible footprint.
+
+Current practice: `../assets/covers/cover-lab-2026-10-07/index.html`, `review.md`, editable JSON and reference-comparison.jpg. Agent selections remain candidates until the user approves. The figures printed on source covers are not verified results for Kirill; this is a visual corpus, not evidence of cover-driven performance. All 28 originals are approximately 5:2, a corpus observation rather than a verified live X upload requirement.
+
+The following October-5 section remains a historical supplementary reference set. Current instructions above and explicit user choices take precedence over its old default wording.
+
 Added 2026-10-05 from eight visual references supplied by Kirill. The screenshots are private visual references, not assets to republish. Source files: `../assets/cover-references/2026-10-05/`.
 
 The existing cobalt/glass/oversized-type house style remains available. A user's selected direction overrides that default. Choose the style from the article's promise; do not force every topic into a single layout. Keep recognizable brand marks sourced from real assets, separate from generated illustration. Never invent metrics to fill a reference layout.

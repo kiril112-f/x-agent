@@ -1,0 +1,19 @@
+{
+  "size": [
+    2000,
+    800
+  ],
+  "layers": [
+    {
+      "type": "image",
+      "path": "../assets/engraving.png",
+      "box": [
+        0,
+        0,
+        2000,
+        800
+      ],
+      "fit": "cover"
+    }
+  ]
+}

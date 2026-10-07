@@ -1,0 +1,40 @@
+{
+  "background": "#f4f0e7",
+  "layers": [
+    {
+      "type": "text",
+      "text": "Less noise.",
+      "box": [
+        90,
+        110,
+        1820,
+        265
+      ],
+      "size": 325,
+      "min_size": 290,
+      "weight": 900,
+      "tracking": -9
+    },
+    {
+      "type": "text",
+      "text": "More signal.",
+      "box": [
+        90,
+        425,
+        1820,
+        295
+      ],
+      "size": 320,
+      "min_size": 260,
+      "weight": 900,
+      "fill": "#d94320",
+      "tracking": -9
+    }
+  ],
+  "size": [
+    2000,
+    800
+  ],
+  "practice_only": true,
+  "note": "Fictional cover brief. No measured results or endorsement claimed."
+}

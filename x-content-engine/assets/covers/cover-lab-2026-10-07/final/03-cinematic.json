@@ -1,0 +1,53 @@
+{
+  "layers": [
+    {
+      "type": "image",
+      "path": "../assets/cinematic.png",
+      "box": [
+        0,
+        0,
+        2000,
+        800
+      ],
+      "fit": "cover"
+    },
+    {
+      "type": "text",
+      "text": "Make content",
+      "box": [
+        110,
+        210,
+        1780,
+        195
+      ],
+      "size": 218,
+      "min_size": 195,
+      "weight": 900,
+      "fill": "#ffffff",
+      "align": "center",
+      "tracking": -5
+    },
+    {
+      "type": "text",
+      "text": "worth watching.",
+      "box": [
+        110,
+        425,
+        1780,
+        180
+      ],
+      "size": 200,
+      "min_size": 175,
+      "weight": 900,
+      "fill": "#ffffff",
+      "align": "center",
+      "tracking": -5
+    }
+  ],
+  "size": [
+    2000,
+    800
+  ],
+  "practice_only": true,
+  "note": "Fictional cover brief. No measured results or endorsement claimed."
+}

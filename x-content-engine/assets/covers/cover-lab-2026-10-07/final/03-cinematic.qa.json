@@ -1,0 +1,56 @@
+{
+  "spec": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\final\\03-cinematic.json",
+  "size": [
+    2000,
+    800
+  ],
+  "layers": [
+    {
+      "index": 0,
+      "type": "image",
+      "path": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\assets\\cinematic.png",
+      "sha256": "33e810ab43d2ae934f5e85661bf882eb3823ce5d42a940873f27dd71108fda32",
+      "bbox": [
+        0,
+        0,
+        2000,
+        800
+      ]
+    },
+    {
+      "index": 1,
+      "type": "text",
+      "text": "Make content",
+      "font": "C:\\Windows\\Fonts\\Inter-VariableFont_opszwght.ttf",
+      "font_sha256": "0be2399ea925f1f83ff974764761da9860ec50742ed29a5d4c1ffd0c5c7ac3a8",
+      "weight": 900,
+      "size": 218,
+      "bbox": [
+        296.0,
+        210,
+        1704.0,
+        372
+      ],
+      "thumbnail_ink_height": 27.54
+    },
+    {
+      "index": 2,
+      "type": "text",
+      "text": "worth watching.",
+      "font": "C:\\Windows\\Fonts\\Inter-VariableFont_opszwght.ttf",
+      "font_sha256": "0be2399ea925f1f83ff974764761da9860ec50742ed29a5d4c1ffd0c5c7ac3a8",
+      "weight": 900,
+      "size": 190,
+      "bbox": [
+        277.0,
+        425,
+        1723.0,
+        605
+      ],
+      "thumbnail_ink_height": 30.6
+    }
+  ],
+  "automated_geometry_pass": true,
+  "visual_review": "required",
+  "output_sha256": "741362463f5183de1aacfea7db111479ed1447c0ddd1adbcf5e98c69ac5d0940"
+}

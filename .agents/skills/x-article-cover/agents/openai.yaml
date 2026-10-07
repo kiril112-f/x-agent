@@ -1,6 +1,6 @@
 interface:
   display_name: "X Article Cover"
-  short_description: "Cover image for an X Article in Kirill's house style"
-  default_prompt: "Use $x-article-cover to design and render the cover for this article."
+  short_description: "Reference-led article covers with type and depth"
+  default_prompt: "Use $x-article-cover to propose styles with references, then compose and compare the chosen article cover."
 policy:
   allow_implicit_invocation: true

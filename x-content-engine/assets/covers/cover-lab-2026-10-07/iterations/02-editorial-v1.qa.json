@@ -1,0 +1,56 @@
+{
+  "spec": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\iterations\\02-editorial-v1.json",
+  "size": [
+    2000,
+    800
+  ],
+  "layers": [
+    {
+      "index": 0,
+      "type": "image",
+      "path": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\assets\\editorial.png",
+      "sha256": "d395d6c2acd4780a12c3e7ba51f2466429ace28a85aac216f0e88b8235a9dcb3",
+      "bbox": [
+        0,
+        0,
+        2000,
+        800
+      ]
+    },
+    {
+      "index": 1,
+      "type": "text",
+      "text": "Build once.",
+      "font": "C:\\Windows\\Fonts\\Inter-VariableFont_opszwght.ttf",
+      "font_sha256": "0be2399ea925f1f83ff974764761da9860ec50742ed29a5d4c1ffd0c5c7ac3a8",
+      "weight": 850,
+      "size": 145,
+      "bbox": [
+        85,
+        140,
+        841,
+        249
+      ],
+      "thumbnail_ink_height": 18.53
+    },
+    {
+      "index": 2,
+      "type": "text",
+      "text": "Publish often.",
+      "font": "C:\\Windows\\Fonts\\Inter-VariableFont_opszwght.ttf",
+      "font_sha256": "0be2399ea925f1f83ff974764761da9860ec50742ed29a5d4c1ffd0c5c7ac3a8",
+      "weight": 850,
+      "size": 140,
+      "bbox": [
+        85,
+        320,
+        1010,
+        426
+      ],
+      "thumbnail_ink_height": 18.02
+    }
+  ],
+  "automated_geometry_pass": true,
+  "visual_review": "required",
+  "output_sha256": "a904d75b72b1d00ef3065cc44681059025e00c1f34a7035ce9d79aab27f88055"
+}

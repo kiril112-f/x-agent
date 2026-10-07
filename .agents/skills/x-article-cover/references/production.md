@@ -1,148 +1,27 @@
-# Производство
+# Cover production — current routes
 
-Три маршрута. По умолчанию для публикации — **R3**.
+## General production
 
----
+Use the built-in image tool for illustration/object assets and `$x-cover-compose` for exact type, actual logo assets and layer placement. Select style first; there is no mandatory global cobalt palette. Discover actual available tool capabilities instead of copying historical model IDs.
 
-## R3 — Гибрид: объект генерим, текст собираем (продакшн)
+Do not silently start another local image service, install software, use an API model or assume credentials just because old experiments used it. An explicitly requested available tool can be used within the task's authorization. Keep prompts/results/provenance with the cover.
 
-Image-модели ломают типографику молча: съедают букву, меняют трекинг между генерациями, не держат один и тот же оттенок фона. Для серии обложек это смерть. Поэтому модель рисует только объект, а макет собирает локальный композитор.
+For real brand identities, acquire/reuse real artwork. A generated casing is acceptable; paste the real mark into it separately. Example: `cover-lab-2026-10-07/refine_depth.py`. Inspect source dimensions and visible alpha bounds, not merely the file box. Glass/translucency needs genuine alpha; no automatic color-key fallback that destroys refraction.
 
-### Шаг 1 — иконки
+Render the selected crop, then compare reference and candidate side by side at identical dimensions and at 340 px after each material revision. Check scale relationships, compact line spacing, readable overlap and contact shadows. Script geometry pass is not design approval.
 
-Сначала посмотреть в `assets/icons/`: если нужная иконка уже есть, шаги 1–2 пропускаются целиком. В этом весь смысл библиотеки.
+## Special legacy l5 compositor
 
-Недостающие сгенерировать по [assets/icon-asset.prompt.txt](../assets/icon-asset.prompt.txt): модель `gpt-image-2.5-flare`, `1024x1024`, quality `xhigh`, прозрачный фон. Первая иконка задаёт материал, каждая следующая делается с ней как `Image 1`.
-
-### Шаг 2 — альфа
-
-**Через API шаг не нужен:** `background="transparent"` и `output_format="png"` — альфа приезжает сразу. Это единственный надёжный способ получить чистую кромку у полупрозрачного стекла.
-
-Если генерили в чате и фон приехал сплошным — вырезать локально. Для стекла на известном ровном цвете unmultiply по этому цвету даёт лучший результат, чем автоматические резалки: они съедают внутреннюю рефракцию вместе с фоном. `numpy` и `PIL` установлены, `rembg` нет.
-
-Готовую иконку класть в `assets/icons/icon-<name>.png`, а не в папку конкретной статьи.
-
-### Шаг 3 — сборка
+Only for the selected giant-type/occlusion direction. `assets/render.ps1` renders 1536×512 at scale 1, defaults to scale 2 and l5. l5 requires 1–3 `-Plate` objects. That is a local implementation constraint, not a universal rule for every style.
 
 ```powershell
-.\render.ps1 -Kicker "THE UNDER-18 PLAYBOOK" `
-             -Hero   '*$70K*|Before 18' `
-             -Obj    ".\covers\under18\object.png" `
-             -Out    ".\covers\under18\cover.png"
+.agents/skills/x-article-cover/assets/render.ps1 -Hero 'organic|installs' -Plate '<actual-plate.png>' -Field cobalt -Layout l5 -Out '<article-folder>/cover.png'
 ```
 
-| Параметр | Значение |
-|---|---|
-| `-Hero` | Текст и вся разметка локапа — см. таблицу ниже |
-| `-Kicker` | Верхняя строка капсом. Пусто = без kicker |
-| `-Field` | `cobalt` (умолчание), `graphite`, `violet`, `teal` |
-| `-Layout` | `l1` (умолчание), `l2`, `l3`, `l4` |
-| `-Obj` | PNG/SVG объекта. Без него — чисто типографская обложка |
-| `-ObjW` | Ширина объекта в % холста. Умолчание 32 (42 для l4) |
-| `-ObjY` | Сдвиг объекта по вертикали, px от канона 1500 |
-| `-HeroPx` | Зафиксировать кегль hero вручную (иначе автоподбор) |
-| `-Mark` | Подпись. `off` — убрать |
-| `-Out` | Путь PNG |
-| `-Scale` | Множитель. 2 = 3072×1024 |
+Actual flags live in the script. Useful l5 controls: `-Cover` overlap percentage, `-BandMin/-BandMax`, `-Gap`, `-ClusterMax`, `-Tilt`, `-Fill`, `-Scale`. `-Hero`: `|` explicit line break. For other layouts, `~small words~`, `*accent*`, `@` icon slot are supported by the historical HTML compositor. Inspect current script before reusing commands from older docs.
 
-### Разметка внутри `-Hero`
+Old defaults and numeric geometry guards are starting points for this font/layout. Open the rendered image and compare to the intended reference; do not assume a no-warning console result is adequate. Preserve `cover.cmd.txt` or editable source so it can be rebuilt.
 
-| Знак | Что делает |
-|---|---|
-| `\|` | Перенос строки. Строка целиком в `~ ~` получает собственный интерлиньяж |
-| `~слова~` | Мелкая шкала: 0.28 от кегля, **тот же вес** |
-| `*слова*` | Акцентный amber |
-| `@` | Слот под иконку. Один `@` — одна иконка, по порядку из `-Obj` |
+## Delivery
 
-Схема B из `style-system.md` набирается так:
-
-```powershell
--Hero '~where~|installs @@ ~come from~' -Obj icon-appstore.png, icon-tiktok.png
-```
-
-Переносы строк задаёт автор через `|`. Автоперенос выключен намеренно: иначе автоподбор кегля не срабатывает — строка молча заворачивается на максимальном размере вместо того, чтобы ужаться.
-
-### Шаг 4 — приёмка
-
-Чек-лист в `style-system.md` §8. Отдельно: открыть PNG, уменьшить до 340 px ширины и посмотреть, читается ли hero.
-
----
-
-## R2 — Zubbix Studio (локальные бэкенды)
-
-Приложение на `C:\Users\User\Desktop\Zubbix Studio`. Три независимых генератора, каждый поднимается отдельно.
-
-| Генератор | Порт | Запуск |
-|---|---|---|
-| Flow (Veo / Nano-Banana-класс) | `8003` | `python -m uvicorn core.zubbix_flow.main:app --host 127.0.0.1 --port 8003` |
-| Grok (X.AI) | `8000` | `python -m uvicorn core.grok_server.main:app --host 127.0.0.1 --port 8000` |
-| ChatGPT-прокси | `3101` | `external/AIClient-2-API` → `install-and-run.bat` |
-
-Flow:
-
-- Проверка живости и списка моделей: `GET http://127.0.0.1:8003/v1/models`, заголовок `Authorization: Bearer han1234`.
-- Генерация: `POST http://127.0.0.1:8003/v1/chat/completions`.
-- Модель брать из живого `/v1/models`, а не хардкодить устаревшее имя.
-- Если `/v1/models` молчит — сервер не поднят. Поднять и, если нет активных токенов, авторизовать Google-аккаунт на `http://127.0.0.1:8003/manage`.
-
-Grok умеет генерацию по референсу: `/v1/images/generations` и `/v1/images/edits`. Второй вход полезен, чтобы держать один и тот же объект в серии обложек.
-
-R2 удобен для батча: 4–6 вариантов объекта за раз, дальше лучший уходит в R3.
-
----
-
-## R1 — One-shot в ChatGPT вручную
-
-Копипаст промпта из [prompt-library.md](prompt-library.md) в чат. Модель — ChatGPT Images 2.5, размер задавать прямо в промпте: `1536 x 512`.
-
-Быстрая разведка направления: подходит ли объект, читается ли идея, тот ли масштаб. Финальную обложку из R1 не публиковать — гайд OpenAI прямо признаёт, что модель до сих пор промахивается с точным размещением и чёткостью текста, а цвет поля не воспроизводится между генерациями. Серия из таких обложек расползётся.
-
-Исключение: если R1 с первого раза дал безупречный текст и композицию — прочитать обе строки по буквам и только тогда брать.
-
----
-
-## Куда класть файлы
-
-Иконки — общие, живут в скилле и переиспользуются всеми обложками:
-
-```
-.agents/skills/x-article-cover/assets/icons/
-  icon-appstore.png      прозрачный PNG, 1024×1024
-  icon-tiktok.png
-  icon-youtube.png
-  ...
-```
-
-Готовая обложка — рядом со статьёй:
-
-```
-x-content-engine/assets/covers/<slug>/
-  cover.png       финал 3072×1024
-  cover.cmd.txt   строка вызова render.ps1, которой она собрана
-```
-
-`cover.cmd.txt` хранить обязательно: обложку нужно уметь пересобрать через месяц, когда правится заголовок. Промпт иконки хранить не нужно — иконка уже лежит в библиотеке.
-
-## Перекрытие (l5) в производстве
-
-Флаги `render.ps1`:
-
-| Флаг | Дефолт | Что делает |
-| --- | --- | --- |
-| `-Layout` | `l5` | маршрут по умолчанию — перекрытие |
-| `-Plate` | — | 1–3 ассета; имена ищутся в `assets/plates/`, затем `assets/icons/` |
-| `-PlateStyle` | `card` | `card` — карточка с хайрлайном и тенью; `bare` — PNG без рамки |
-| `-Cover` | 16 | заход плашки на буквы, % высоты капители |
-| `-BandMin` / `-BandMax` | 13 / 46 | минимум воздуха под плашку и предел её высоты, % высоты кадра |
-| `-Gap` | 3.2 | зазор между плашками, % ширины |
-| `-Arrow` | `auto` | тонкая стрелка между двумя плашками |
-| `-Tilt` / `-Bleed` | 0 / 0 | наклон кластера и вылет строки за кадр |
-| `-Fill` / `-ClusterMax` | 96 / 68 | доля ширины под строку и предел ширины кластера |
-| `-Mark` | `off` в l5 | марка в l5 ставится в саму полосу перекрытия |
-
-- `-Layout l5` без `-Plate` падает с ошибкой: без перекрытия обложка не в доме.
-- Скрипт печатает `ГЕОМЕТРИЯ`/`ПРИЁМКА` из композитора и сам пишет `cover.cmd.txt` рядом с обложкой.
-- Пайплайн плашек: модель делает объект → кадрируем по объекту → `assets/plates/` → `-Plate`.
-  Библиотека: `plate-ugc-screen.png` (вертикальный скринкаст), `plate-app-panel.png` (горизонтальная панель).
-- Шрифт: Inter Variable из `C:/Windows/Fonts`. На машине без Inter композитор падает на Arial Black:
-  пропорции чуть шире, приёмочные цифры те же, но финал рендерим там, где Inter есть.
+Use `x-content-engine/assets/covers/<slug>/`. Save brief/choice, prompts, assets, exact font identity, editable source, final PNG, thumbnail and review. Keep source reference originals in the library. Practice studies are labeled practice outside the public image. No automatic publishing or external Notion write is implied by making a cover.

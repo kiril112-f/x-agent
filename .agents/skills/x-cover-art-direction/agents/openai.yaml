@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cover Art Direction"
+  short_description: "Choose references, composition and meaningful depth"
+  default_prompt: "Use $x-cover-art-direction to propose article cover styles with actual reference images."

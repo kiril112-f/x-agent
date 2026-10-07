@@ -1,5 +1,7 @@
 # Визуальная система обложек X Article
 
+> Scope updated 2026-10-07: this is the historical giant-type/occlusion family, not the universal style for every topic. Choose a direction through SKILL.md first. Its ratio, palette and l5 defaults apply only to this compositor. New practice/feedback in practice-lessons.md takes precedence. Type-led covers still require meaningful depth; art-led monochrome may have no text.
+
 Разобрано с четырёх референсов (ChatGPT Astra / the organic playbook / The Distribution Game / Content Rewards GLP-1). Из них взята **грамматика композиции**. Палитра, акцент, подпись, правила объекта и способ сборки — наши.
 
 ---

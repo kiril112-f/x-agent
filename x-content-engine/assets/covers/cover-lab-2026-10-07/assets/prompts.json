@@ -1,0 +1,14 @@
+[
+  {
+    "slug": "engraving",
+    "prompt": "Create an original panoramic black and white editorial engraving for an essay about focus: one small solitary person standing at the left end of a long narrow stone bridge which crosses an enormous dark canyon toward one bright rectangular opening on the right. Extreme difference in scale between person and architecture. Human silhouette small but instantly recognizable; coherent bridge geometry and one clear path. Antique wood engraving, dense beautiful crosshatching in stone, crisp ink, deep black negative space, white opening, tactile paper detail. Wide horizontal composition approximately 5:2, scene spans frame, no collage. Main bridge and person safely in middle 65% of image height so it also works at 3:1 crop. No text, letters, numerals, charts, logos, borders or watermark. Avoid fantasy castles, glowing neon, AI circuitry and overcomplicated scenery. Artwork only, professional editorial art direction."
+  },
+  {
+    "slug": "editorial",
+    "prompt": "Original editorial illustration as fine copperplate banknote engraving printed in terracotta rust ink on warm pale ivory paper. The theme is a solo creator building a repeatable content production system. Depict a beautiful large mechanical printing press on the right half, a small human operating it; a single orderly ribbon of completely BLANK paper cards travels leftward from the machine. Coherent mechanical structure with clean cylinders; no impossible tangles. Composition very wide panoramic 5:2. Reserve the left upper half as pale empty paper for separately typeset headline. All illustration concentrated bottom third and right 45%, elegant lineweight hierarchy, ample breathing room, no frame. No letters, numbers, writing, signatures, logos, graphs, banknotes or actual money. Limited palette strictly warm ivory and dark terracotta, no gradients or 3D glossy rendering. Crisp high-end magazine illustration, purposeful visual metaphor, calm and tactile."
+  },
+  {
+    "slug": "cinematic",
+    "prompt": "Photorealistic editorial still life for an article about making short-form video. A real creator's compact desk beside a huge loft window at dusk, a professional compact video camera lens and one blank matte black smartphone on stand on right and left foreground edges. Center 60% of the frame intentionally visually quiet, dark blue/charcoal defocused studio space for enormous separately typeset white headline. Recognizable physical objects with coherent lenses and phone edges, subtle warm practical light, deep but detailed shadows, restrained amber and muted blue tones. Horizontal panoramic composition approximately 5:2, cinematic yet natural, shallow depth of field; not a futuristic computer setup. No people, no text, no letters, no logos, no screen interfaces, no charts, no border or watermark. Avoid floating objects, repetitive UI panels, oversaturated cyan magenta cyberpunk."
+  }
+]

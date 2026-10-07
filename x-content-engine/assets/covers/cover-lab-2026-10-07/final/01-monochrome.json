@@ -1,0 +1,22 @@
+{
+  "background": "#101010",
+  "layers": [
+    {
+      "type": "image",
+      "path": "../assets/engraving-v2.png",
+      "box": [
+        0,
+        0,
+        2000,
+        800
+      ],
+      "fit": "cover"
+    }
+  ],
+  "size": [
+    2000,
+    800
+  ],
+  "practice_only": true,
+  "note": "Fictional cover brief. No measured results or endorsement claimed."
+}

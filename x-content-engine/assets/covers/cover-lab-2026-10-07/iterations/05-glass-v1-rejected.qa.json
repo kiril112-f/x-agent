@@ -1,0 +1,60 @@
+{
+  "spec": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\iterations\\05-glass-v1-rejected.json",
+  "size": [
+    2000,
+    800
+  ],
+  "layers": [
+    {
+      "index": 0,
+      "type": "gradient"
+    },
+    {
+      "index": 1,
+      "type": "text",
+      "text": "organic",
+      "font": "C:\\Windows\\Fonts\\Inter-VariableFont_opszwght.ttf",
+      "font_sha256": "0be2399ea925f1f83ff974764761da9860ec50742ed29a5d4c1ffd0c5c7ac3a8",
+      "weight": 900,
+      "size": 379,
+      "bbox": [
+        95,
+        55,
+        1432.0,
+        415
+      ],
+      "thumbnail_ink_height": 61.2
+    },
+    {
+      "index": 2,
+      "type": "text",
+      "text": "installs",
+      "font": "C:\\Windows\\Fonts\\Inter-VariableFont_opszwght.ttf",
+      "font_sha256": "0be2399ea925f1f83ff974764761da9860ec50742ed29a5d4c1ffd0c5c7ac3a8",
+      "weight": 900,
+      "size": 380,
+      "bbox": [
+        95,
+        435,
+        1368.0,
+        721
+      ],
+      "thumbnail_ink_height": 48.62
+    },
+    {
+      "index": 3,
+      "type": "image",
+      "path": "C:\\Users\\User\\Desktop\\X Agent\\x-content-engine\\assets\\covers\\cover-lab-2026-10-07\\assets\\glass.png",
+      "sha256": "c3b7086f5f85f557a66d0f480d7dab25db2fcc3ea390747c9cbcf94b02c57688",
+      "bbox": [
+        1459,
+        255,
+        1911,
+        725
+      ]
+    }
+  ],
+  "automated_geometry_pass": true,
+  "visual_review": "required",
+  "output_sha256": "3360265e4a88b8ab4d1d189df344d1b73858ae894da49298a673f7969c47e17d"
+}
