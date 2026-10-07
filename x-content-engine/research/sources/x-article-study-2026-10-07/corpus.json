@@ -1,0 +1,1715 @@
+{
+  "study_date": "2026-10-07",
+  "requested_occurrences": 31,
+  "unique_statuses": 28,
+  "unique_profiles": 1,
+  "source_method": "One exact-ID article scrape, profile sample and two bounded searches, own article retrieval",
+  "delivered_rows": 40,
+  "media_review": "Media entries counted from contents; no pixel/OCR verification. Full-text reading is not full visual verification.",
+  "inputs": [
+    {
+      "position": 1,
+      "url": "https://x.com/adamtwtz/status/2038595868778233949",
+      "id": "2038595868778233949",
+      "type": "status",
+      "duplicate_of_position": null
+    },
+    {
+      "position": 2,
+      "url": "https://x.com/adamtwtz/status/2047050264193179804",
+      "id": "2047050264193179804",
+      "type": "status",
+      "duplicate_of_position": null
+    },
+    {
+      "position": 3,
+      "url": "https://x.com/adamtwtz/status/2053172056896737759",
+      "id": "2053172056896737759",
+      "type": "status",
+      "duplicate_of_position": null
+    },
+    {
+      "position": 4,
+      "url": "https://x.com/aleksascales/status/2100966961345655200",
+      "id": "2100966961345655200",
+      "type": "status",
+      "duplicate_of_position": null
+    },
+    {
+      "position": 5,
+      "url": "https://x.com/adamtwtz/status/2097073557868056925",
+      "id": "2097073557868056925",
+      "type": "status",
+      "duplicate_of_position": null
+    },
+    {
+      "position": 6,
+      "url": "https://x.com/aleksascales/status/2088259816296726744",
+      "id": "2088259816296726744",
+      "type": "status",
+      "duplicate_of_position": null
+    },
+    {
+      "position": 7,
+      "url": "https://x.com/PaulSolt/status/2042716870512353294",
+      "id": "2042716870512353294",
+      "type": "status",
+      "duplicate_of_position": null
+    },
+    {
+      "position": 8,
+      "url": "https://x.com/aureliuscajigas/status/2088304647014641893",
+      "id": "2088304647014641893",
+      "type": "status",
+      "duplicate_of_position": null
+    },
+    {
+      "position": 9,
+      "url": "https://x.com/PerezHatesAI/status/2098064168058241089",
+      "id": "2098064168058241089",
+      "type": "status",
+      "duplicate_of_position": null
+    },
+    {
+      "position": 10,
+      "url": "https://x.com/sleepclip/status/2095544458679026094",
+      "id": "2095544458679026094",
+      "type": "status",
+      "duplicate_of_position": null
+    },
+    {
+      "position": 11,
+      "url": "https://x.com/jasonzhou1993/status/2099837130927427989",
+      "id": "2099837130927427989",
+      "type": "status",
+      "duplicate_of_position": null
+    },
+    {
+      "position": 12,
+      "url": "https://x.com/jammer3k/status/2100632361759305949",
+      "id": "2100632361759305949",
+      "type": "status",
+      "duplicate_of_position": null
+    },
+    {
+      "position": 13,
+      "url": "https://x.com/chddaniel/status/2100925069765534024",
+      "id": "2100925069765534024",
+      "type": "status",
+      "duplicate_of_position": null
+    },
+    {
+      "position": 14,
+      "url": "https://x.com/PaulSolt/status/2045580498232373433",
+      "id": "2045580498232373433",
+      "type": "status",
+      "duplicate_of_position": null
+    },
+    {
+      "position": 15,
+      "url": "https://x.com/thedankoe/status/2010751592346030461",
+      "id": "2010751592346030461",
+      "type": "status",
+      "duplicate_of_position": null
+    },
+    {
+      "position": 16,
+      "url": "https://x.com/thedankoe/status/2101361833940791607",
+      "id": "2101361833940791607",
+      "type": "status",
+      "duplicate_of_position": null
+    },
+    {
+      "position": 17,
+      "url": "https://x.com/Zephyr_hg/status/2070171729373118742",
+      "id": "2070171729373118742",
+      "type": "status",
+      "duplicate_of_position": null
+    },
+    {
+      "position": 18,
+      "url": "https://x.com/jonnyscales/status/2102879882153730442",
+      "id": "2102879882153730442",
+      "type": "status",
+      "duplicate_of_position": null
+    },
+    {
+      "position": 19,
+      "url": "https://x.com/meetshukla_/status/2103014988956799196",
+      "id": "2103014988956799196",
+      "type": "status",
+      "duplicate_of_position": null
+    },
+    {
+      "position": 20,
+      "url": "https://x.com/EXM7777/status/2088992368695628159",
+      "id": "2088992368695628159",
+      "type": "status",
+      "duplicate_of_position": null
+    },
+    {
+      "position": 21,
+      "url": "https://x.com/NicholasDulait/status/2106387243803824504",
+      "id": "2106387243803824504",
+      "type": "status",
+      "duplicate_of_position": null
+    },
+    {
+      "position": 22,
+      "url": "https://x.com/devoncnp/status/2105345806870126935",
+      "id": "2105345806870126935",
+      "type": "status",
+      "duplicate_of_position": null
+    },
+    {
+      "position": 23,
+      "url": "https://x.com/fuckgrowth/status/2041580077826371733",
+      "id": "2041580077826371733",
+      "type": "status",
+      "duplicate_of_position": null
+    },
+    {
+      "position": 24,
+      "url": "https://x.com/jesseabed_",
+      "id": "profile:jesseabed_",
+      "type": "profile",
+      "duplicate_of_position": null
+    },
+    {
+      "position": 25,
+      "url": "https://x.com/eglitisX/status/2103067359938527253",
+      "id": "2103067359938527253",
+      "type": "status",
+      "duplicate_of_position": null
+    },
+    {
+      "position": 26,
+      "url": "https://x.com/linoleighton/status/2089068010107539613",
+      "id": "2089068010107539613",
+      "type": "status",
+      "duplicate_of_position": null
+    },
+    {
+      "position": 27,
+      "url": "https://x.com/andrewyng/status/2088302050706686198",
+      "id": "2088302050706686198",
+      "type": "status",
+      "duplicate_of_position": null
+    },
+    {
+      "position": 28,
+      "url": "https://x.com/ErnestoSOFTWARE/status/2014110519913857122",
+      "id": "2014110519913857122",
+      "type": "status",
+      "duplicate_of_position": null
+    },
+    {
+      "position": 29,
+      "url": "https://x.com/aureliuscajigas/status/2088304647014641893",
+      "id": "2088304647014641893",
+      "type": "status",
+      "duplicate_of_position": 8
+    },
+    {
+      "position": 30,
+      "url": "https://x.com/aleksascales/status/2088259816296726744",
+      "id": "2088259816296726744",
+      "type": "status",
+      "duplicate_of_position": 6
+    },
+    {
+      "position": 31,
+      "url": "https://x.com/wickedguro/status/2086788813301661865",
+      "id": "2086788813301661865",
+      "type": "status",
+      "duplicate_of_position": null
+    }
+  ],
+  "articles": [
+    {
+      "id": "2103014988956799196",
+      "source_url": "https://x.com/meetshukla_/status/2103014988956799196",
+      "author": "meetshukla_",
+      "title_exact": "Over 2 million apps on the App Store in 2025. How do you get people to download yours?",
+      "title_word_count": 18,
+      "type": "x_article",
+      "availability": "full_extracted_text",
+      "read_status": "entire bodyText read",
+      "body_source_status": "nonempty article.bodyText and structured article.contents; distinct from previewText; media pixels and embedded post bodies not audited",
+      "body_words": 1685,
+      "body_characters": 9449,
+      "body_source": {
+        "provider": "Apify xquik/x-tweet-scraper",
+        "run_id": "ue81dbqr2ZZKPgZjc",
+        "dataset_id": "jLe5xwRYwy0kCJ2TE",
+        "dataset_offset": 0,
+        "field": "article.bodyText"
+      },
+      "created_at": "Thu Sep 24 06:53:40 +0000 2026",
+      "modified_at_utc": "2026-09-24T06:53:40.000Z",
+      "metrics": {
+        "captured_at_utc": "2026-10-07T11:22:21.020Z",
+        "views": 51971,
+        "likes": 39,
+        "replies": 3,
+        "reposts": 2,
+        "quotes": 1,
+        "bookmarks": 141,
+        "current_followers": 1481
+      },
+      "structure_counts": {
+        "paragraph": 83,
+        "tweet": 3,
+        "header-two": 4,
+        "unordered-list-item": 2,
+        "media": 2
+      },
+      "analysis": {
+        "family": "market-crowding question",
+        "opening": "contrarian action: postpone building",
+        "promise": "A crowded app market becomes a distribution-before-build sequence.",
+        "progression": "Audience research → five accounts → two demonstrable formats → validate interest → build a small app.",
+        "evidence": "Author reports managing 28–30 accounts and doubling a client's MRR; two named inactive AI accounts and embedded examples. Outcome claims not independently verified.",
+        "useful_object": "Sequence and two video formats, distributed across the article; no single isolated copy block.",
+        "cta": "Start with five accounts and make the first video; Ghostfeed appears within the workflow.",
+        "caveat": "Long 18-word title still received 51,971 views; article explicitly says five viral videos do not guarantee app success. Advice about quantities is a personal rule, not demonstrated threshold.",
+        "promise_fit": "Clear practical answer to the question, with scope and prototype caveats."
+      },
+      "popularity_rank": 24
+    },
+    {
+      "id": "2070171729373118742",
+      "source_url": "https://x.com/Zephyr_hg/status/2070171729373118742",
+      "author": "Zephyr_hg",
+      "title_exact": "The Skill Quietly Minting The First Solo Millionaires Of The AI Era",
+      "title_word_count": 12,
+      "type": "x_article",
+      "availability": "full_extracted_text",
+      "read_status": "entire bodyText read",
+      "body_source_status": "nonempty article.bodyText and structured article.contents; distinct from previewText; media pixels and embedded post bodies not audited",
+      "body_words": 683,
+      "body_characters": 3722,
+      "body_source": {
+        "provider": "Apify xquik/x-tweet-scraper",
+        "run_id": "ue81dbqr2ZZKPgZjc",
+        "dataset_id": "jLe5xwRYwy0kCJ2TE",
+        "dataset_offset": 1,
+        "field": "article.bodyText"
+      },
+      "created_at": "Thu Jun 25 15:46:16 +0000 2026",
+      "modified_at_utc": "2026-09-15T12:57:00.000Z",
+      "metrics": {
+        "captured_at_utc": "2026-10-07T11:22:21.020Z",
+        "views": 7636855,
+        "likes": 1692,
+        "replies": 45,
+        "reposts": 184,
+        "quotes": 32,
+        "bookmarks": 6907,
+        "current_followers": 55981
+      },
+      "structure_counts": {
+        "paragraph": 36,
+        "header-two": 6
+      },
+      "analysis": {
+        "family": "hidden skill + wealth aspiration",
+        "opening": "compressed promise of solo fortunes",
+        "promise": "Name the skill supposedly creating solo millionaires.",
+        "progression": "Repeat opportunity → reveal AI systems management → explain why now → sell ready-made playbook.",
+        "evidence": "No named millionaire, financial artifact or documented causal case in extracted body. Broad capability and earnings assertions.",
+        "useful_object": "A high-level folder/context/connectors/schedules concept; finished setup is outside article in paid offer.",
+        "cta": "Buy the One-Person Company Playbook.",
+        "caveat": "7.64M views coexist with a 683-word promotional body and weak substantiation. This is a reach example, not a model of evidence or depth. Modified September 15 after June publication.",
+        "promise_fit": "Skill is eventually named; title's wealth proposition is not established by the body."
+      },
+      "popularity_rank": 2
+    },
+    {
+      "id": "2097073557868056925",
+      "source_url": "https://x.com/adamtwtz/status/2097073557868056925",
+      "author": "adamtwtz",
+      "title_exact": "How this GLP-1 app generated 20m+ views",
+      "title_word_count": 7,
+      "type": "x_article",
+      "availability": "full_extracted_text",
+      "read_status": "entire bodyText read",
+      "body_source_status": "nonempty article.bodyText and structured article.contents; distinct from previewText; media pixels and embedded post bodies not audited",
+      "body_words": 824,
+      "body_characters": 4630,
+      "body_source": {
+        "provider": "Apify xquik/x-tweet-scraper",
+        "run_id": "ue81dbqr2ZZKPgZjc",
+        "dataset_id": "jLe5xwRYwy0kCJ2TE",
+        "dataset_offset": 2,
+        "field": "article.bodyText"
+      },
+      "created_at": "Mon Sep 07 21:24:32 +0000 2026",
+      "modified_at_utc": "2026-09-07T21:25:03.000Z",
+      "metrics": {
+        "captured_at_utc": "2026-10-07T11:22:21.020Z",
+        "views": 117828,
+        "likes": 131,
+        "replies": 8,
+        "reposts": 5,
+        "quotes": 12,
+        "bookmarks": 534,
+        "current_followers": 2122
+      },
+      "structure_counts": {
+        "paragraph": 53,
+        "divider": 6,
+        "header-two": 6,
+        "media": 5,
+        "blockquote": 1
+      },
+      "analysis": {
+        "family": "specific third-party case + outcome",
+        "opening": "spend, views, MRR delta and timeframe",
+        "promise": "Explain how a GLP-1 app generated more than 20M views.",
+        "progression": "Niche constraint → campaign terms → content vault → concentrated creator output → incremental funding → totals.",
+        "evidence": "Reported spend $21,418, 23.1M views, 139 contributors, top-creator concentration and payout terms; five media objects not visually verified.",
+        "useful_object": "Campaign rates, content-bank requirements and funding sequence; several reusable fragments.",
+        "cta": "Book a campaign call.",
+        "caveat": "Meta-policy interpretation and broad organic superiority claims are not verified. No explicit save request; no single mandatory copy block. Funding top-ups and campaign totals represent different quantities.",
+        "promise_fit": "Specific operational explanation fits the title; causal confidence exceeds what this single case demonstrates."
+      },
+      "popularity_rank": 19
+    },
+    {
+      "id": "2088259816296726744",
+      "source_url": "https://x.com/aleksascales/status/2088259816296726744",
+      "author": "aleksascales",
+      "title_exact": "How to scale an app to six figures MRR with organic distribution ",
+      "title_word_count": 12,
+      "type": "x_article",
+      "availability": "full_extracted_text",
+      "read_status": "entire bodyText read",
+      "body_source_status": "nonempty article.bodyText and structured article.contents; distinct from previewText; media pixels and embedded post bodies not audited",
+      "body_words": 2328,
+      "body_characters": 13903,
+      "body_source": {
+        "provider": "Apify xquik/x-tweet-scraper",
+        "run_id": "ue81dbqr2ZZKPgZjc",
+        "dataset_id": "jLe5xwRYwy0kCJ2TE",
+        "dataset_offset": 3,
+        "field": "article.bodyText"
+      },
+      "created_at": "Fri Aug 14 13:41:52 +0000 2026",
+      "modified_at_utc": "2026-08-14T13:41:52.000Z",
+      "metrics": {
+        "captured_at_utc": "2026-10-07T11:22:21.020Z",
+        "views": 338964,
+        "likes": 441,
+        "replies": 17,
+        "reposts": 28,
+        "quotes": 15,
+        "bookmarks": 1733,
+        "current_followers": 1256
+      },
+      "structure_counts": {
+        "paragraph": 126,
+        "media": 9,
+        "divider": 12,
+        "blockquote": 1
+      },
+      "analysis": {
+        "family": "outcome + named mechanism",
+        "opening": "observed client growth and operator scale",
+        "promise": "Reach six-figure MRR through organic distribution.",
+        "progression": "Product demonstration moment → validate formats → select formats → replicate → build operations → agency decision → layer paid.",
+        "evidence": "Author-reported creator network, views, payouts and conversion examples; nine media objects. Revenue end-state partly illustrated by arithmetic assumptions.",
+        "useful_object": "Format-validation checklist, content-bank specification, payout rules and decision thresholds.",
+        "cta": "Message author or book a call.",
+        "caveat": "Conversion arithmetic is scenario, not verified result. Many platform-algorithm and warm-up assertions remain author claims. No explicit save request. Strongly commercial context.",
+        "promise_fit": "Detailed playbook; cannot justify six-figure outcome for all readers."
+      },
+      "popularity_rank": 13
+    },
+    {
+      "id": "2047050264193179804",
+      "source_url": "https://x.com/adamtwtz/status/2047050264193179804",
+      "author": "adamtwtz",
+      "title_exact": "How Brands Are Scaling with Organic Content… ",
+      "title_word_count": 7,
+      "type": "x_article",
+      "availability": "full_extracted_text",
+      "read_status": "entire bodyText read",
+      "body_source_status": "nonempty article.bodyText and structured article.contents; distinct from previewText; media pixels and embedded post bodies not audited",
+      "body_words": 1934,
+      "body_characters": 12078,
+      "body_source": {
+        "provider": "Apify xquik/x-tweet-scraper",
+        "run_id": "ue81dbqr2ZZKPgZjc",
+        "dataset_id": "jLe5xwRYwy0kCJ2TE",
+        "dataset_offset": 4,
+        "field": "article.bodyText"
+      },
+      "created_at": "Wed Apr 22 20:29:49 +0000 2026",
+      "modified_at_utc": "2026-04-22T20:29:49.000Z",
+      "metrics": {
+        "captured_at_utc": "2026-10-07T11:22:21.020Z",
+        "views": 37438,
+        "likes": 75,
+        "replies": 0,
+        "reposts": 6,
+        "quotes": 10,
+        "bookmarks": 206,
+        "current_followers": 2122
+      },
+      "structure_counts": {
+        "paragraph": 50,
+        "media": 14
+      },
+      "analysis": {
+        "family": "broad trend + implied insider explanation",
+        "opening": "opinionated organic-versus-paid thesis",
+        "promise": "Explain how brands scale organic content.",
+        "progression": "Diagnose weak marketing → research formats → map niche → find competitor gaps → brief → recruit → feedback loop.",
+        "evidence": "Mostly generalized mechanism assertions and Adaptive examples; 14 media objects, no clean incremental campaign experiment in text.",
+        "useful_object": "Five-stage pre-campaign workflow; no complete ready-to-copy implementation.",
+        "cta": "DM for a brand campaign.",
+        "caveat": "Strong claims about paid ads, compounding and predictive tool capabilities unverified. At 37,438 views lower than Adam's specific GLP-1 case; uncontrolled comparison only.",
+        "promise_fit": "Explains a proposed process, with promotional and unsupported generalizations."
+      },
+      "popularity_rank": 25
+    },
+    {
+      "id": "2088302050706686198",
+      "source_url": "https://x.com/AndrewYNg/status/2088302050706686198",
+      "author": "AndrewYNg",
+      "title_exact": "The AI Engineering Skills Map",
+      "title_word_count": 5,
+      "type": "x_article",
+      "availability": "full_extracted_text",
+      "read_status": "entire bodyText read",
+      "body_source_status": "nonempty article.bodyText and structured article.contents; distinct from previewText; media pixels and embedded post bodies not audited",
+      "body_words": 930,
+      "body_characters": 5819,
+      "body_source": {
+        "provider": "Apify xquik/x-tweet-scraper",
+        "run_id": "ue81dbqr2ZZKPgZjc",
+        "dataset_id": "jLe5xwRYwy0kCJ2TE",
+        "dataset_offset": 5,
+        "field": "article.bodyText"
+      },
+      "created_at": "Fri Aug 14 16:29:42 +0000 2026",
+      "modified_at_utc": "2026-08-14T16:29:42.000Z",
+      "metrics": {
+        "captured_at_utc": "2026-10-07T11:22:21.020Z",
+        "views": 6910577,
+        "likes": 24441,
+        "replies": 527,
+        "reposts": 4115,
+        "quotes": 484,
+        "bookmarks": 52565,
+        "current_followers": 1917495
+      },
+      "structure_counts": {
+        "paragraph": 14,
+        "unordered-list-item": 4
+      },
+      "analysis": {
+        "family": "named useful artifact",
+        "opening": "why developers and employers need a skills map",
+        "promise": "Provide an AI-engineering skills taxonomy.",
+        "progression": "Research basis → four categories → explanation and examples per category → continuous learning.",
+        "evidence": "Author describes analysis of 10,000 job postings, interviews and surveys; methodology is claimed in source, not audited here.",
+        "useful_object": "Four-part skills taxonomy and category-level decisions.",
+        "cta": "Soft invitation to participate and follow future detailed work; no hard CTA or save command.",
+        "caveat": "Five-word descriptive title, 930 words, zero inline media objects and 6.91M views disprove universal need for a loud numeric title, long body or many media slots. Large established audience is a confounder.",
+        "promise_fit": "Very close: title names exactly the artifact supplied."
+      },
+      "popularity_rank": 4
+    },
+    {
+      "id": "2014110519913857122",
+      "source_url": "https://x.com/ErnestoSOFTWARE/status/2014110519913857122",
+      "author": "ErnestoSOFTWARE",
+      "title_exact": "I built 10 apps in 10 months and make $800,000/yr ( full guide )",
+      "title_word_count": 14,
+      "type": "x_article",
+      "availability": "full_extracted_text",
+      "read_status": "entire bodyText read",
+      "body_source_status": "nonempty article.bodyText and structured article.contents; distinct from previewText; media pixels and embedded post bodies not audited",
+      "body_words": 2039,
+      "body_characters": 11382,
+      "body_source": {
+        "provider": "Apify xquik/x-tweet-scraper",
+        "run_id": "ue81dbqr2ZZKPgZjc",
+        "dataset_id": "jLe5xwRYwy0kCJ2TE",
+        "dataset_offset": 6,
+        "field": "article.bodyText"
+      },
+      "created_at": "Wed Jan 21 22:59:02 +0000 2026",
+      "modified_at_utc": "2026-01-21T22:59:02.000Z",
+      "metrics": {
+        "captured_at_utc": "2026-10-07T11:22:21.020Z",
+        "views": 7270565,
+        "likes": 12062,
+        "replies": 437,
+        "reposts": 961,
+        "quotes": 175,
+        "bookmarks": 44374,
+        "current_followers": 62731
+      },
+      "structure_counts": {
+        "paragraph": 53,
+        "header-two": 5,
+        "media": 16,
+        "blockquote": 1
+      },
+      "analysis": {
+        "family": "personal result + speed + complete guide",
+        "opening": "first-app revenue and personal transformation",
+        "promise": "Explain the author's app-building and monetization process.",
+        "progression": "Validation → stack and build → onboarding → launch → five marketing channels → portfolio analogy.",
+        "evidence": "Personal revenue claims, named apps and reported campaign economics; 16 media objects. External verification absent.",
+        "useful_object": "Tool stack, onboarding guidance, creator payment schedule and channel selection examples.",
+        "cta": "Ask questions and browse account.",
+        "caveat": "Title contains 14 whitespace tokens, despite high reach. Claims eight steps but visible hierarchy is not cleanly eight. Scarcity and passive-income certainty should not transfer to Kirill.",
+        "promise_fit": "Supplies substantial guide; aggregate revenue and universal success implications remain claims."
+      },
+      "popularity_rank": 3
+    },
+    {
+      "id": "2100966961345655200",
+      "source_url": "https://x.com/aleksascales/status/2100966961345655200",
+      "author": "aleksascales",
+      "title_exact": "How to get 100M views for your game with just $10,000  ",
+      "title_word_count": 11,
+      "type": "x_article",
+      "availability": "full_extracted_text",
+      "read_status": "entire bodyText read",
+      "body_source_status": "nonempty article.bodyText and structured article.contents; distinct from previewText; media pixels and embedded post bodies not audited",
+      "body_words": 1294,
+      "body_characters": 7405,
+      "body_source": {
+        "provider": "Apify xquik/x-tweet-scraper",
+        "run_id": "ue81dbqr2ZZKPgZjc",
+        "dataset_id": "jLe5xwRYwy0kCJ2TE",
+        "dataset_offset": 7,
+        "field": "article.bodyText"
+      },
+      "created_at": "Fri Sep 18 15:15:32 +0000 2026",
+      "modified_at_utc": "2026-09-18T15:15:32.000Z",
+      "metrics": {
+        "captured_at_utc": "2026-10-07T11:22:21.020Z",
+        "views": 171703,
+        "likes": 189,
+        "replies": 10,
+        "reposts": 11,
+        "quotes": 15,
+        "bookmarks": 615,
+        "current_followers": 1256
+      },
+      "structure_counts": {
+        "paragraph": 73,
+        "media": 10,
+        "divider": 8
+      },
+      "analysis": {
+        "family": "large outcome + small budget",
+        "opening": "actual smaller campaign and projected larger result",
+        "promise": "Get 100M gaming views for $10K.",
+        "progression": "Gameplay is inherently shareable → distribution history → two prerequisites → CPM arithmetic → comments → operating choices.",
+        "evidence": "Opening reports 18M views below $0.40 CPM; 100M at $0.10 CPM is a future target. Ten media objects.",
+        "useful_object": "Two prerequisites plus DIY-versus-agency operating outline.",
+        "cta": "Message or book a call.",
+        "caveat": "Critical mismatch: headline outcome/budget has not yet happened in the body. A future CPM target cannot be packaged as an achieved campaign.",
+        "promise_fit": "Partial: explains approach but title overstates demonstrated result."
+      },
+      "popularity_rank": 17
+    },
+    {
+      "id": "2101361833940791607",
+      "source_url": "https://x.com/thedankoe/status/2101361833940791607",
+      "author": "thedankoe",
+      "title_exact": "How to become disgustingly self-disciplined",
+      "title_word_count": 5,
+      "type": "x_article",
+      "availability": "full_extracted_text",
+      "read_status": "entire bodyText read",
+      "body_source_status": "nonempty article.bodyText and structured article.contents; distinct from previewText; media pixels and embedded post bodies not audited",
+      "body_words": 2885,
+      "body_characters": 16051,
+      "body_source": {
+        "provider": "Apify xquik/x-tweet-scraper",
+        "run_id": "ue81dbqr2ZZKPgZjc",
+        "dataset_id": "jLe5xwRYwy0kCJ2TE",
+        "dataset_offset": 8,
+        "field": "article.bodyText"
+      },
+      "created_at": "Sat Sep 19 17:24:37 +0000 2026",
+      "modified_at_utc": "2026-09-20T15:54:27.000Z",
+      "metrics": {
+        "captured_at_utc": "2026-10-07T11:22:21.020Z",
+        "views": 3435202,
+        "likes": 11601,
+        "replies": 255,
+        "reposts": 1448,
+        "quotes": 264,
+        "bookmarks": 26781,
+        "current_followers": 1036150
+      },
+      "structure_counts": {
+        "paragraph": 110,
+        "header-two": 4,
+        "media": 2,
+        "blockquote": 2
+      },
+      "analysis": {
+        "family": "identity transformation + emotional intensifier",
+        "opening": "reader mirrors repeated failed attempts",
+        "promise": "Become highly self-disciplined.",
+        "progression": "Disgust/motivation as launch → identity → curate inputs → habit loop → two worked goals.",
+        "evidence": "Personal stories, analogies and named behavioral concepts; two media objects. No controlled evidence of promised transformation.",
+        "useful_object": "Four-part environment/signal/behavior/reward loop, worked twice.",
+        "cta": "Product promotion for Eden plus a custom AI resource near the end.",
+        "caveat": "No early numerical business proof; five-word title, multiple product paths. Extreme lifestyle examples are author experience, not universal prescriptions.",
+        "promise_fit": "Mechanism and worked application address discipline; outcomes are not guaranteed."
+      },
+      "popularity_rank": 5
+    },
+    {
+      "id": "2103067359938527253",
+      "source_url": "https://x.com/eglitisX/status/2103067359938527253",
+      "author": "eglitisX",
+      "title_exact": "How I reached +1.4M views with an 85% US audience on Instagram in 3 days",
+      "title_word_count": 15,
+      "type": "x_article",
+      "availability": "full_extracted_text",
+      "read_status": "entire bodyText read",
+      "body_source_status": "nonempty article.bodyText and structured article.contents; distinct from previewText; media pixels and embedded post bodies not audited",
+      "body_words": 620,
+      "body_characters": 3591,
+      "body_source": {
+        "provider": "Apify xquik/x-tweet-scraper",
+        "run_id": "ue81dbqr2ZZKPgZjc",
+        "dataset_id": "jLe5xwRYwy0kCJ2TE",
+        "dataset_offset": 9,
+        "field": "article.bodyText"
+      },
+      "created_at": "Thu Sep 24 10:21:46 +0000 2026",
+      "modified_at_utc": "2026-09-24T10:21:46.000Z",
+      "metrics": {
+        "captured_at_utc": "2026-10-07T11:22:21.020Z",
+        "views": 29761,
+        "likes": 167,
+        "replies": 10,
+        "reposts": 11,
+        "quotes": 5,
+        "bookmarks": 412,
+        "current_followers": 3268
+      },
+      "structure_counts": {
+        "paragraph": 54,
+        "media": 9,
+        "divider": 4,
+        "header-one": 4,
+        "unordered-list-item": 4
+      },
+      "analysis": {
+        "family": "personal result + qualified audience + timeframe",
+        "opening": "short promise and TikTok/Instagram contrast",
+        "promise": "Show how author reached 1.4M views with an 85% US audience in three days.",
+        "progression": "Reported downloads → feed training → followed accounts → DMs → VPN note.",
+        "evidence": "Reported audience geography and downloads; nine media objects. No controlled account comparison.",
+        "useful_object": "Three actions plus geo-setup suggestions.",
+        "cta": "Ask questions and train account.",
+        "caveat": "Specificity is high but evidence does not establish causal geography mechanism. Some recommendations and stereotypes should not be adopted. No save command.",
+        "promise_fit": "Concrete procedure but causal claim remains anecdotal."
+      },
+      "popularity_rank": 26
+    },
+    {
+      "id": "2098064168058241089",
+      "source_url": "https://x.com/PerezHatesAI/status/2098064168058241089",
+      "author": "PerezHatesAI",
+      "title_exact": "How I Create AI UGC Slideshows That Got +26.4M views/week Using GPT-6",
+      "title_word_count": 12,
+      "type": "x_article",
+      "availability": "full_extracted_text",
+      "read_status": "entire bodyText read",
+      "body_source_status": "nonempty article.bodyText and structured article.contents; distinct from previewText; media pixels and embedded post bodies not audited",
+      "body_words": 2851,
+      "body_characters": 16518,
+      "body_source": {
+        "provider": "Apify xquik/x-tweet-scraper",
+        "run_id": "ue81dbqr2ZZKPgZjc",
+        "dataset_id": "jLe5xwRYwy0kCJ2TE",
+        "dataset_offset": 10,
+        "field": "article.bodyText"
+      },
+      "created_at": "Thu Sep 10 15:00:52 +0000 2026",
+      "modified_at_utc": "2026-09-10T15:00:52.000Z",
+      "metrics": {
+        "captured_at_utc": "2026-10-07T11:22:21.020Z",
+        "views": 421822,
+        "likes": 488,
+        "replies": 45,
+        "reposts": 40,
+        "quotes": 42,
+        "bookmarks": 1696,
+        "current_followers": 1747
+      },
+      "structure_counts": {
+        "header-two": 12,
+        "paragraph": 135,
+        "media": 9,
+        "unordered-list-item": 11
+      },
+      "analysis": {
+        "family": "personal result + AI tool + recurring rate",
+        "opening": "announces result-first visual then workflow",
+        "promise": "Explain AI UGC slideshows generating 26.4M views/week.",
+        "progression": "Find recurring format → analyze → recreate assets → use examples to prompt → batch → schedule → repeat winners.",
+        "evidence": "Images and a reported proof screen recording; nine media objects not viewed. Text references repeated performance but does not independently substantiate the weekly title number.",
+        "useful_object": "Multiple prompt structures, format criteria and production loop.",
+        "cta": "Community membership and consulting; repeated Postiz product integration.",
+        "caveat": "Several copyable objects and several CTAs, not one. Opens with editorial roadmap, disproving old zero-preamble claim. Tool capabilities and earnings require separate fact-checking.",
+        "promise_fit": "Substantial workflow matches subject; number is source claim rather than verified study result."
+      },
+      "popularity_rank": 10
+    },
+    {
+      "id": "2095544458679026094",
+      "source_url": "https://x.com/sleepclip/status/2095544458679026094",
+      "author": "sleepclip",
+      "title_exact": "This is how to get 100M views to your app with TikTok UGC",
+      "title_word_count": 13,
+      "type": "x_article",
+      "availability": "full_extracted_text",
+      "read_status": "entire bodyText read",
+      "body_source_status": "nonempty article.bodyText and structured article.contents; distinct from previewText; media pixels and embedded post bodies not audited",
+      "body_words": 1622,
+      "body_characters": 9240,
+      "body_source": {
+        "provider": "Apify xquik/x-tweet-scraper",
+        "run_id": "ue81dbqr2ZZKPgZjc",
+        "dataset_id": "jLe5xwRYwy0kCJ2TE",
+        "dataset_offset": 11,
+        "field": "article.bodyText"
+      },
+      "created_at": "Thu Sep 03 16:08:26 +0000 2026",
+      "modified_at_utc": "2026-09-03T16:08:26.000Z",
+      "metrics": {
+        "captured_at_utc": "2026-10-07T11:22:21.020Z",
+        "views": 7558,
+        "likes": 66,
+        "replies": 3,
+        "reposts": 4,
+        "quotes": 1,
+        "bookmarks": 134,
+        "current_followers": 835
+      },
+      "structure_counts": {
+        "paragraph": 62,
+        "media": 6,
+        "header-two": 9,
+        "blockquote": 3,
+        "unordered-list-item": 4
+      },
+      "analysis": {
+        "family": "large outcome + channel",
+        "opening": "users/revenue change, elapsed time and spend",
+        "promise": "Explain a 100M-view app UGC campaign.",
+        "progression": "Demonstrable moment → client qualification → format → detailed brief → early failure and revision → incentives → operations.",
+        "evidence": "Reported $34K spend, 60-day campaign, week-by-week milestones, rejected submissions and operations.",
+        "useful_object": "Brief architecture, payout model and operational readiness checks.",
+        "cta": "Launch a campaign at AffiliateNetwork.",
+        "caveat": "7,558 views despite a strong number-led title and operational specificity. Views and headline alone do not ensure distribution. Strong platform promotion.",
+        "promise_fit": "Detailed case fits headline; commercial guarantees not independently validated."
+      },
+      "popularity_rank": 27
+    },
+    {
+      "id": "2106387243803824504",
+      "source_url": "https://x.com/NicholasDulait/status/2106387243803824504",
+      "author": "NicholasDulait",
+      "title_exact": "How I cracked organic marketing (11.5M views solo)",
+      "title_word_count": 8,
+      "type": "x_article",
+      "availability": "full_extracted_text",
+      "read_status": "entire bodyText read",
+      "body_source_status": "nonempty article.bodyText and structured article.contents; distinct from previewText; media pixels and embedded post bodies not audited",
+      "body_words": 3481,
+      "body_characters": 20027,
+      "body_source": {
+        "provider": "Apify xquik/x-tweet-scraper",
+        "run_id": "ue81dbqr2ZZKPgZjc",
+        "dataset_id": "jLe5xwRYwy0kCJ2TE",
+        "dataset_offset": 12,
+        "field": "article.bodyText"
+      },
+      "created_at": "Sat Oct 03 14:13:48 +0000 2026",
+      "modified_at_utc": "2026-10-03T14:13:48.000Z",
+      "metrics": {
+        "captured_at_utc": "2026-10-07T11:22:21.020Z",
+        "views": 73080,
+        "likes": 336,
+        "replies": 9,
+        "reposts": 27,
+        "quotes": 5,
+        "bookmarks": 1299,
+        "current_followers": 3465
+      },
+      "structure_counts": {
+        "paragraph": 195,
+        "media": 25,
+        "header-two": 31,
+        "unordered-list-item": 90,
+        "header-one": 5,
+        "ordered-list-item": 21,
+        "markdown": 1
+      },
+      "analysis": {
+        "family": "personal breakthrough + quantified solo result",
+        "opening": "exclusive-sounding playbook, result and proof inventory",
+        "promise": "Give the organic growth process behind 11.5M aggregate views.",
+        "progression": "Four platforms with screenshots and templates → X distribution tactics → explicit limitations → fresh-account sequence.",
+        "evidence": "Author-reported dashboards; explicitly mixes impressions/views, older product results, cofounder distribution and differing durations.",
+        "useful_object": "Many templates, competitor-sheet columns, prompts and channel checklists.",
+        "cta": "Save early; free AI SEO employee/product link at end.",
+        "caveat": "Excellent source of honest confound disclosure, yet opening solo/MRR impression needs qualification. Multiple objects across four channels; 3,481 words. Claims about ranking remain hypotheses.",
+        "promise_fit": "Strong operational delivery, with material limitations disclosed near end rather than near first composite metric."
+      },
+      "popularity_rank": 21
+    },
+    {
+      "id": "2088992368695628159",
+      "source_url": "https://x.com/EXM7777/status/2088992368695628159",
+      "author": "EXM7777",
+      "title_exact": "How to build a $2M video production pipeline",
+      "title_word_count": 8,
+      "type": "x_article",
+      "availability": "full_extracted_text",
+      "read_status": "entire bodyText read",
+      "body_source_status": "nonempty article.bodyText and structured article.contents; distinct from previewText; media pixels and embedded post bodies not audited",
+      "body_words": 2981,
+      "body_characters": 17850,
+      "body_source": {
+        "provider": "Apify xquik/x-tweet-scraper",
+        "run_id": "ue81dbqr2ZZKPgZjc",
+        "dataset_id": "jLe5xwRYwy0kCJ2TE",
+        "dataset_offset": 13,
+        "field": "article.bodyText"
+      },
+      "created_at": "Sun Aug 16 14:12:46 +0000 2026",
+      "modified_at_utc": "2026-08-16T14:12:46.000Z",
+      "metrics": {
+        "captured_at_utc": "2026-10-07T11:22:21.020Z",
+        "views": 409943,
+        "likes": 755,
+        "replies": 27,
+        "reposts": 62,
+        "quotes": 6,
+        "bookmarks": 2134,
+        "current_followers": 149104
+      },
+      "structure_counts": {
+        "paragraph": 118,
+        "media": 12,
+        "unordered-list-item": 42,
+        "header-two": 11,
+        "ordered-list-item": 7
+      },
+      "analysis": {
+        "family": "valuable production capability + pipeline",
+        "opening": "free skills and step-by-step production system",
+        "promise": "Build a pipeline of the kind used for $2M video productions.",
+        "progression": "Continuity problem → four rules → eleven stages → per-stage skills → human finishing → compressed playbook.",
+        "evidence": "Detailed specifications and operational constraints, 12 media objects; no audited $2M production ledger in text. Explicit Higgsfield sponsorship.",
+        "useful_object": "Shot-card fields, asset passports, folder tree, prompt blocks and final checklist; multiple objects.",
+        "cta": "Repeated Telegram links, AI ops community, sponsor integration.",
+        "caveat": "Budget figure signals production class; cannot reinterpret as reader revenue or savings. Clearly sponsored. Capability snapshot can age.",
+        "promise_fit": "Substantial pipeline delivery; monetary framing has thinner evidence than operational content."
+      },
+      "popularity_rank": 11
+    },
+    {
+      "id": "2053172056896737759",
+      "source_url": "https://x.com/adamtwtz/status/2053172056896737759",
+      "author": "adamtwtz",
+      "title_exact": "how we ACTUALLY put your favorite brands on everyone's fyp...",
+      "title_word_count": 10,
+      "type": "x_article",
+      "availability": "full_extracted_text",
+      "read_status": "entire bodyText read",
+      "body_source_status": "nonempty article.bodyText and structured article.contents; distinct from previewText; media pixels and embedded post bodies not audited",
+      "body_words": 1025,
+      "body_characters": 6057,
+      "body_source": {
+        "provider": "Apify xquik/x-tweet-scraper",
+        "run_id": "ue81dbqr2ZZKPgZjc",
+        "dataset_id": "jLe5xwRYwy0kCJ2TE",
+        "dataset_offset": 14,
+        "field": "article.bodyText"
+      },
+      "created_at": "Sat May 09 17:55:39 +0000 2026",
+      "modified_at_utc": "2026-05-09T18:54:34.000Z",
+      "metrics": {
+        "captured_at_utc": "2026-10-07T11:22:21.020Z",
+        "views": 53069,
+        "likes": 154,
+        "replies": 9,
+        "reposts": 16,
+        "quotes": 7,
+        "bookmarks": 251,
+        "current_followers": 2122
+      },
+      "structure_counts": {
+        "paragraph": 53,
+        "media": 12,
+        "header-two": 7
+      },
+      "analysis": {
+        "family": "insider correction + desirable distribution",
+        "opening": "brands using costly wrong workflow",
+        "promise": "Show how brands get onto viewers' feeds.",
+        "progression": "Two current formats → AI interview tutorial → slideshow generator prompt → creator distribution → analysis agent.",
+        "evidence": "Tools and procedural examples, 12 media objects; no specific tracked brand result.",
+        "useful_object": "Generator-building prompt and interview-generation sequence.",
+        "cta": "Urgency and tool list.",
+        "caveat": "Claims of universal format/CPM superiority unverified. Contains in-this-article preamble. Some production tactics should not be imported as instruction.",
+        "promise_fit": "Explains a pipeline; everyone-on-FYP phrasing is hyperbole rather than evidenced reach."
+      },
+      "popularity_rank": 23
+    },
+    {
+      "id": "2100632361759305949",
+      "source_url": "https://x.com/jammer3k/status/2100632361759305949",
+      "author": "jammer3k",
+      "title_exact": "how to get unlimited organic sales (CPA-model clipping) ",
+      "title_word_count": 8,
+      "type": "x_article",
+      "availability": "full_extracted_text",
+      "read_status": "entire bodyText read",
+      "body_source_status": "nonempty article.bodyText and structured article.contents; distinct from previewText; media pixels and embedded post bodies not audited",
+      "body_words": 1259,
+      "body_characters": 7476,
+      "body_source": {
+        "provider": "Apify xquik/x-tweet-scraper",
+        "run_id": "ue81dbqr2ZZKPgZjc",
+        "dataset_id": "jLe5xwRYwy0kCJ2TE",
+        "dataset_offset": 15,
+        "field": "article.bodyText"
+      },
+      "created_at": "Thu Sep 17 17:05:57 +0000 2026",
+      "modified_at_utc": "2026-09-17T17:05:57.000Z",
+      "metrics": {
+        "captured_at_utc": "2026-10-07T11:22:21.020Z",
+        "views": 54458,
+        "likes": 143,
+        "replies": 11,
+        "reposts": 10,
+        "quotes": 19,
+        "bookmarks": 348,
+        "current_followers": 2123
+      },
+      "structure_counts": {
+        "paragraph": 64,
+        "media": 11,
+        "header-two": 7,
+        "unordered-list-item": 13,
+        "blockquote": 1
+      },
+      "analysis": {
+        "family": "desired outcome + named unfamiliar mechanism",
+        "opening": "founders' revenue framed as incentive design",
+        "promise": "Build a CPA-based creator network producing sales.",
+        "progression": "Origin anecdote → pilot → failed initial payout → three compensation stages → creator school → attribution/coaching.",
+        "evidence": "Reported early zero earnings and later output improvements; friend and client revenue claims.",
+        "useful_object": "Stage-dependent payout decision framework and five-part creator school.",
+        "cta": "Book a CPA-network launch call.",
+        "caveat": "Unlimited is unsupported. Claimed 40x improvement is not a matched controlled estimate across the stated ranges. Good useful specificity lives in the transition criteria.",
+        "promise_fit": "Practical model delivered; absolute scale claim is not supported."
+      },
+      "popularity_rank": 22
+    },
+    {
+      "id": "2042716870512353294",
+      "source_url": "https://x.com/PaulSolt/status/2042716870512353294",
+      "author": "PaulSolt",
+      "title_exact": "Install These Skills Before Codex Touches Your Xcode Project",
+      "title_word_count": 9,
+      "type": "x_article",
+      "availability": "full_extracted_text",
+      "read_status": "entire bodyText read",
+      "body_source_status": "nonempty article.bodyText and structured article.contents; distinct from previewText; media pixels and embedded post bodies not audited",
+      "body_words": 974,
+      "body_characters": 6396,
+      "body_source": {
+        "provider": "Apify xquik/x-tweet-scraper",
+        "run_id": "ue81dbqr2ZZKPgZjc",
+        "dataset_id": "jLe5xwRYwy0kCJ2TE",
+        "dataset_offset": 16,
+        "field": "article.bodyText"
+      },
+      "created_at": "Fri Apr 10 21:30:28 +0000 2026",
+      "modified_at_utc": "2026-04-11T11:57:35.000Z",
+      "metrics": {
+        "captured_at_utc": "2026-10-07T11:22:21.020Z",
+        "views": 1717321,
+        "likes": 2551,
+        "replies": 41,
+        "reposts": 187,
+        "quotes": 29,
+        "bookmarks": 8407,
+        "current_followers": 23895
+      },
+      "structure_counts": {
+        "paragraph": 28,
+        "header-two": 5,
+        "media": 5,
+        "unordered-list-item": 26
+      },
+      "analysis": {
+        "family": "prevention + audience/tool specificity",
+        "opening": "personal experience and common costly agent failures",
+        "promise": "Give skills to install before coding in Xcode.",
+        "progression": "Four curated developer resource groups → author's build tool → selection and installation next step.",
+        "evidence": "Named maintainers, repositories/plugins and technical use-cases; five media objects. Links/resources should be rechecked before use.",
+        "useful_object": "Curated skill inventory and purposes; utility is distributed from the first section.",
+        "cta": "Install, reply with skills, follow, YouTube and download AppCreator.",
+        "caveat": "No fixed 60–75% artifact; multiple CTAs. Useful prevention title fits exact developer audience. 974 words and 1.72M views.",
+        "promise_fit": "Close match between promised selection and supplied resources."
+      },
+      "popularity_rank": 7
+    },
+    {
+      "id": "2102879882153730442",
+      "source_url": "https://x.com/jonnyscales/status/2102879882153730442",
+      "author": "jonnyscales",
+      "title_exact": "10 UGC Hooks That Always Work (App Marketing)",
+      "title_word_count": 8,
+      "type": "x_article",
+      "availability": "full_extracted_text",
+      "read_status": "entire bodyText read",
+      "body_source_status": "nonempty article.bodyText and structured article.contents; distinct from previewText; media pixels and embedded post bodies not audited",
+      "body_words": 1287,
+      "body_characters": 8279,
+      "body_source": {
+        "provider": "Apify xquik/x-tweet-scraper",
+        "run_id": "ue81dbqr2ZZKPgZjc",
+        "dataset_id": "jLe5xwRYwy0kCJ2TE",
+        "dataset_offset": 17,
+        "field": "article.bodyText"
+      },
+      "created_at": "Wed Sep 23 21:56:48 +0000 2026",
+      "modified_at_utc": "2026-09-23T21:56:48.000Z",
+      "metrics": {
+        "captured_at_utc": "2026-10-07T11:22:21.020Z",
+        "views": 6689,
+        "likes": 65,
+        "replies": 4,
+        "reposts": 2,
+        "quotes": 1,
+        "bookmarks": 154,
+        "current_followers": 1278
+      },
+      "structure_counts": {
+        "paragraph": 105,
+        "header-two": 11,
+        "unordered-list-item": 30,
+        "media": 7,
+        "header-one": 1
+      },
+      "analysis": {
+        "family": "bounded list + absolute reliability",
+        "opening": "same idea needs different hooks",
+        "promise": "Ten UGC hooks that always work.",
+        "progression": "Each hook gets formula → rationale → examples → application.",
+        "evidence": "Author claims 600M campaign views; examples are instructive rather than comparative hook experiments.",
+        "useful_object": "Ten reusable hook families throughout body.",
+        "cta": "Book agency call.",
+        "caveat": "Only 6,689 views. Always-work absolute exceeds evidence, while body itself advises defensible claims and authentic demos. Useful taxonomy does not prove article virality.",
+        "promise_fit": "Ten frameworks delivered; absolute success promise not established."
+      },
+      "popularity_rank": 28
+    },
+    {
+      "id": "2100925069765534024",
+      "source_url": "https://x.com/chddaniel/status/2100925069765534024",
+      "author": "chddaniel",
+      "title_exact": "How to master Jev (Full Guide) ",
+      "title_word_count": 6,
+      "type": "x_article",
+      "availability": "full_extracted_text",
+      "read_status": "entire bodyText read",
+      "body_source_status": "nonempty article.bodyText and structured article.contents; distinct from previewText; media pixels and embedded post bodies not audited",
+      "body_words": 2378,
+      "body_characters": 14790,
+      "body_source": {
+        "provider": "Apify xquik/x-tweet-scraper",
+        "run_id": "ue81dbqr2ZZKPgZjc",
+        "dataset_id": "jLe5xwRYwy0kCJ2TE",
+        "dataset_offset": 18,
+        "field": "article.bodyText"
+      },
+      "created_at": "Fri Sep 18 12:29:04 +0000 2026",
+      "modified_at_utc": "2026-09-18T12:29:04.000Z",
+      "metrics": {
+        "captured_at_utc": "2026-10-07T11:22:21.020Z",
+        "views": 437448,
+        "likes": 1105,
+        "replies": 9,
+        "reposts": 72,
+        "quotes": 16,
+        "bookmarks": 3560,
+        "current_followers": 28275
+      },
+      "structure_counts": {
+        "paragraph": 131,
+        "media": 3,
+        "header-one": 10,
+        "header-two": 10
+      },
+      "analysis": {
+        "family": "timely tool mastery + guide",
+        "opening": "new model framed by distinct role",
+        "promise": "Teach Jev's useful capabilities and architecture.",
+        "progression": "Capabilities → controls → judge architecture → example request → prompting principles → confidence routing → workflows → recap.",
+        "evidence": "Attributes price/performance to vendor, names version, caveats early access; three media objects.",
+        "useful_object": "JSON request, question design rules, confidence architecture and recap.",
+        "cta": "Ends on role in model stack; no hard promotion or save command.",
+        "caveat": "Benchmark claims are vendor-reported, not verified here. Threshold examples explicitly require own tests. Valuable technical caveats are near claims.",
+        "promise_fit": "Broad guide substantively addresses title."
+      },
+      "popularity_rank": 9
+    },
+    {
+      "id": "2041580077826371733",
+      "source_url": "https://x.com/fuckgrowth/status/2041580077826371733",
+      "author": "fuckgrowth",
+      "title_exact": "how to predict v*rality",
+      "title_word_count": 4,
+      "type": "x_article",
+      "availability": "full_extracted_text",
+      "read_status": "entire bodyText read",
+      "body_source_status": "nonempty article.bodyText and structured article.contents; distinct from previewText; media pixels and embedded post bodies not audited",
+      "body_words": 890,
+      "body_characters": 5512,
+      "body_source": {
+        "provider": "Apify xquik/x-tweet-scraper",
+        "run_id": "ue81dbqr2ZZKPgZjc",
+        "dataset_id": "jLe5xwRYwy0kCJ2TE",
+        "dataset_offset": 19,
+        "field": "article.bodyText"
+      },
+      "created_at": "Tue Apr 07 18:13:15 +0000 2026",
+      "modified_at_utc": "2026-04-07T18:13:15.000Z",
+      "metrics": {
+        "captured_at_utc": "2026-10-07T11:22:21.020Z",
+        "views": 1632898,
+        "likes": 3161,
+        "replies": 69,
+        "reposts": 258,
+        "quotes": 96,
+        "bookmarks": 12033,
+        "current_followers": 3361
+      },
+      "structure_counts": {
+        "paragraph": 51,
+        "media": 9,
+        "header-two": 7,
+        "ordered-list-item": 3,
+        "tweet": 1
+      },
+      "analysis": {
+        "family": "impossible-seeming capability + curiosity",
+        "opening": "new research and a specific video result",
+        "promise": "Predict virality.",
+        "progression": "Neuroscience model → no-code setup → one edited video → monetization → automation → sources.",
+        "evidence": "One reported video with 221,100 views and research links. No randomized comparison or validated prediction of platform reach.",
+        "useful_object": "Colab setup and proposed evaluation workflow.",
+        "cta": "AffiliateNetwork, follow another creator, paper/demo/model links.",
+        "caveat": "Predicted neural responses are a proxy, not established predictor of virality. Model setup detail and scientific authority must not launder unsupported causal claim.",
+        "promise_fit": "Mismatch: shows proposed proxy and anecdote, not reliable virality prediction."
+      },
+      "popularity_rank": 8
+    },
+    {
+      "id": "2099837130927427989",
+      "source_url": "https://x.com/jasonzhou1993/status/2099837130927427989",
+      "author": "jasonzhou1993",
+      "title_exact": "How to run your first AI UGC campaign (step-by-step guide)",
+      "title_word_count": 10,
+      "type": "x_article",
+      "availability": "full_extracted_text",
+      "read_status": "entire bodyText read",
+      "body_source_status": "nonempty article.bodyText and structured article.contents; distinct from previewText; media pixels and embedded post bodies not audited",
+      "body_words": 1308,
+      "body_characters": 7796,
+      "body_source": {
+        "provider": "Apify xquik/x-tweet-scraper",
+        "run_id": "ue81dbqr2ZZKPgZjc",
+        "dataset_id": "jLe5xwRYwy0kCJ2TE",
+        "dataset_offset": 20,
+        "field": "article.bodyText"
+      },
+      "created_at": "Tue Sep 15 12:25:59 +0000 2026",
+      "modified_at_utc": "2026-09-15T13:03:21.000Z",
+      "metrics": {
+        "captured_at_utc": "2026-10-07T11:22:21.020Z",
+        "views": 177363,
+        "likes": 309,
+        "replies": 25,
+        "reposts": 32,
+        "quotes": 15,
+        "bookmarks": 953,
+        "current_followers": 38586
+      },
+      "structure_counts": {
+        "paragraph": 46,
+        "media": 13,
+        "header-two": 7,
+        "ordered-list-item": 7,
+        "blockquote": 3,
+        "unordered-list-item": 5
+      },
+      "analysis": {
+        "family": "beginner milestone + explicit sequence",
+        "opening": "recognizable UGC format and cost pain",
+        "promise": "Run a first AI UGC campaign.",
+        "progression": "Research → new character → talking video → reusable demo → hook variants → harder-case caveat → recap.",
+        "evidence": "Reports two-day exploration, failed model attempts, model comparison and generation cost; 13 media objects.",
+        "useful_object": "Linked skills, comparative model workflow and five-step loop.",
+        "cta": "Resource links and author's treg tool.",
+        "caveat": "Demonstrates asset production, not verified profitable campaign acquisition. Example revenue/meeting hook appears brainstormed and must not become Kirill's experience. Rights/endorsement assumptions not imported.",
+        "promise_fit": "Good production tutorial, narrower than full campaign performance."
+      },
+      "popularity_rank": 16
+    },
+    {
+      "id": "2088304647014641893",
+      "source_url": "https://x.com/aureliuscajigas/status/2088304647014641893",
+      "author": "aureliuscajigas",
+      "title_exact": "How I scaled two apps to $240,000/yr with paid ads ",
+      "title_word_count": 10,
+      "type": "x_article",
+      "availability": "full_extracted_text",
+      "read_status": "entire bodyText read",
+      "body_source_status": "nonempty article.bodyText and structured article.contents; distinct from previewText; media pixels and embedded post bodies not audited",
+      "body_words": 4547,
+      "body_characters": 27514,
+      "body_source": {
+        "provider": "Apify xquik/x-tweet-scraper",
+        "run_id": "ue81dbqr2ZZKPgZjc",
+        "dataset_id": "jLe5xwRYwy0kCJ2TE",
+        "dataset_offset": 21,
+        "field": "article.bodyText"
+      },
+      "created_at": "Fri Aug 14 16:40:01 +0000 2026",
+      "modified_at_utc": "2026-08-14T16:40:01.000Z",
+      "metrics": {
+        "captured_at_utc": "2026-10-07T11:22:21.020Z",
+        "views": 253431,
+        "likes": 669,
+        "replies": 46,
+        "reposts": 51,
+        "quotes": 11,
+        "bookmarks": 2574,
+        "current_followers": 3357
+      },
+      "structure_counts": {
+        "paragraph": 328,
+        "media": 17,
+        "divider": 13,
+        "header-one": 5,
+        "header-two": 7
+      },
+      "analysis": {
+        "family": "personal financial result + channel",
+        "opening": "one revenue result followed by mistakes",
+        "promise": "Explain paid acquisition behind two apps' growth.",
+        "progression": "Market validation → fast build → ads mechanics/attribution → creative testing → scaling → fatigue → execution habits.",
+        "evidence": "Author-reported revenue, failures, spend and campaign heuristics; 17 media objects.",
+        "useful_object": "ABO/CBO decision sequence, diagnostic metrics, vertical/horizontal scaling rules.",
+        "cta": "Run ads and book consultation.",
+        "caveat": "4,547 words, many reusable decisions and long motivation tail. Paid recommendation contradicts organic sellers elsewhere; both are contextual promotional perspectives. Platform rules not fact-checked.",
+        "promise_fit": "Detailed guide; revenue basis and applicability require source qualification."
+      },
+      "popularity_rank": 14
+    },
+    {
+      "id": "2089068010107539613",
+      "source_url": "https://x.com/LinoLeighton/status/2089068010107539613",
+      "author": "LinoLeighton",
+      "title_exact": "How To Make Highly Converting  TikTok Slideshows For Your App ( EASY MODE)",
+      "title_word_count": 13,
+      "type": "x_article",
+      "availability": "full_extracted_text",
+      "read_status": "entire bodyText read",
+      "body_source_status": "nonempty article.bodyText and structured article.contents; distinct from previewText; media pixels and embedded post bodies not audited",
+      "body_words": 1510,
+      "body_characters": 8877,
+      "body_source": {
+        "provider": "Apify xquik/x-tweet-scraper",
+        "run_id": "ue81dbqr2ZZKPgZjc",
+        "dataset_id": "jLe5xwRYwy0kCJ2TE",
+        "dataset_offset": 22,
+        "field": "article.bodyText"
+      },
+      "created_at": "Sun Aug 16 19:13:21 +0000 2026",
+      "modified_at_utc": "2026-08-16T19:16:55.000Z",
+      "metrics": {
+        "captured_at_utc": "2026-10-07T11:22:21.020Z",
+        "views": 166128,
+        "likes": 586,
+        "replies": 23,
+        "reposts": 42,
+        "quotes": 12,
+        "bookmarks": 2013,
+        "current_followers": 6076
+      },
+      "structure_counts": {
+        "paragraph": 61,
+        "media": 7,
+        "header-two": 13,
+        "unordered-list-item": 22,
+        "blockquote": 2,
+        "ordered-list-item": 10
+      },
+      "analysis": {
+        "family": "specific output + low-friction qualifier",
+        "opening": "no-face/no-editing/no-cost barrier removal",
+        "promise": "Create converting app TikTok slideshows easily.",
+        "progression": "Niche account → research → text → images → length → CTA → sound → metadata → volume → conversion check.",
+        "evidence": "Author experience and seven media examples; no controlled conversion comparison.",
+        "useful_object": "Slide-writing prompt, examples and final ten-step checklist.",
+        "cta": "Consulting offer before final recap.",
+        "caveat": "13-word title. $0/10-minute claims omit unmeasured setup effort. Body usefully admits lower-intent traffic; cannot infer paying conversion from comments alone.",
+        "promise_fit": "Clear process delivered; broad ease and performance claims need scope."
+      },
+      "popularity_rank": 18
+    },
+    {
+      "id": "2086788813301661865",
+      "source_url": "https://x.com/wickedguro/status/2086788813301661865",
+      "author": "wickedguro",
+      "title_exact": "Postiz crossed $2M ARR while everybody says SaaS is dead (Step-by-Step to replicate) 💰",
+      "title_word_count": 14,
+      "type": "x_article",
+      "availability": "full_extracted_text",
+      "read_status": "entire bodyText read",
+      "body_source_status": "nonempty article.bodyText and structured article.contents; distinct from previewText; media pixels and embedded post bodies not audited",
+      "body_words": 2490,
+      "body_characters": 13626,
+      "body_source": {
+        "provider": "Apify xquik/x-tweet-scraper",
+        "run_id": "ue81dbqr2ZZKPgZjc",
+        "dataset_id": "jLe5xwRYwy0kCJ2TE",
+        "dataset_offset": 23,
+        "field": "article.bodyText"
+      },
+      "created_at": "Mon Aug 10 12:16:38 +0000 2026",
+      "modified_at_utc": "2026-08-10T12:16:38.000Z",
+      "metrics": {
+        "captured_at_utc": "2026-10-07T11:22:21.020Z",
+        "views": 206883,
+        "likes": 663,
+        "replies": 59,
+        "reposts": 42,
+        "quotes": 34,
+        "bookmarks": 2214,
+        "current_followers": 22943
+      },
+      "structure_counts": {
+        "paragraph": 51,
+        "media": 1,
+        "divider": 6,
+        "unordered-list-item": 24,
+        "tweet": 3,
+        "header-two": 10,
+        "header-one": 1
+      },
+      "analysis": {
+        "family": "credible result + contested belief + replication",
+        "opening": "result-oriented thesis and growth target",
+        "promise": "Explain how Postiz grew despite SaaS pessimism.",
+        "progression": "Proof and audience → positioning → old channels → new channels → next actions → author's future plan.",
+        "evidence": "Links a Stripe profile and discusses own channel experience; one inline media object plus three tweet embeds. Paid amplification explicitly disclosed.",
+        "useful_object": "Authority/channel decision map and action list, distributed across article.",
+        "cta": "Save early; tool trial/CLI and collaboration contact later.",
+        "caveat": "Growth to $3M is future plan, not completed case. Explicit paid quote-repost strategy and audience confound headline/reach inference. Ranking claims unverified.",
+        "promise_fit": "Useful candid operator view; title's replicate framing should not imply guaranteed financial replication."
+      },
+      "popularity_rank": 15
+    },
+    {
+      "id": "2105345806870126935",
+      "source_url": "https://x.com/devoncnp/status/2105345806870126935",
+      "author": "devoncnp",
+      "title_exact": "Your Entire Life Changes When You Realize Getting Rich Is A Skill Issue",
+      "title_word_count": 13,
+      "type": "x_article",
+      "availability": "full_extracted_text",
+      "read_status": "entire bodyText read",
+      "body_source_status": "nonempty article.bodyText and structured article.contents; distinct from previewText; media pixels and embedded post bodies not audited",
+      "body_words": 5666,
+      "body_characters": 30470,
+      "body_source": {
+        "provider": "Apify xquik/x-tweet-scraper",
+        "run_id": "ue81dbqr2ZZKPgZjc",
+        "dataset_id": "jLe5xwRYwy0kCJ2TE",
+        "dataset_offset": 24,
+        "field": "article.bodyText"
+      },
+      "created_at": "Wed Sep 30 17:15:30 +0000 2026",
+      "modified_at_utc": "2026-09-30T17:15:30.000Z",
+      "metrics": {
+        "captured_at_utc": "2026-10-07T11:22:21.020Z",
+        "views": 1806097,
+        "likes": 4989,
+        "replies": 97,
+        "reposts": 636,
+        "quotes": 101,
+        "bookmarks": 16564,
+        "current_followers": 53111
+      },
+      "structure_counts": {
+        "paragraph": 123,
+        "blockquote": 10,
+        "unordered-list-item": 3,
+        "media": 10,
+        "header-two": 7
+      },
+      "analysis": {
+        "family": "identity reframe + high-stakes life outcome",
+        "opening": "reader's comparison with wealthy peers",
+        "promise": "Change understanding of wealth by treating it as skill.",
+        "progression": "Reject default path → feedback/reps → competence stages → identity roleplay → environment → desired day → reframe.",
+        "evidence": "Author-reported $10M experience, quotes and cited psychological concepts; ten media objects. No controlled wealth causal evidence.",
+        "useful_object": "Competence model, observation exercise and desired-day questions; multiple dispersed exercises.",
+        "cta": "Newsletter mid-body and end, comment request, free training postscript.",
+        "caveat": "5,666 words. Identity thesis does not establish wealth guarantee; some claims overextend psychological analogies. Do not transfer author's wealth/personality or isolation advice.",
+        "promise_fit": "Explains a worldview and practices, not a reliable universal wealth outcome."
+      },
+      "popularity_rank": 6
+    },
+    {
+      "id": "2045580498232373433",
+      "source_url": "https://x.com/PaulSolt/status/2045580498232373433",
+      "author": "PaulSolt",
+      "title_exact": "$250 to $5K MRR: 5 App Store Packaging Rules That Actually Work",
+      "title_word_count": 12,
+      "type": "x_article",
+      "availability": "full_extracted_text",
+      "read_status": "entire bodyText read",
+      "body_source_status": "nonempty article.bodyText and structured article.contents; distinct from previewText; media pixels and embedded post bodies not audited",
+      "body_words": 1289,
+      "body_characters": 7322,
+      "body_source": {
+        "provider": "Apify xquik/x-tweet-scraper",
+        "run_id": "ue81dbqr2ZZKPgZjc",
+        "dataset_id": "jLe5xwRYwy0kCJ2TE",
+        "dataset_offset": 25,
+        "field": "article.bodyText"
+      },
+      "created_at": "Sat Apr 18 19:09:30 +0000 2026",
+      "modified_at_utc": "2026-04-19T14:50:43.000Z",
+      "metrics": {
+        "captured_at_utc": "2026-10-07T11:22:21.020Z",
+        "views": 374294,
+        "likes": 755,
+        "replies": 13,
+        "reposts": 51,
+        "quotes": 12,
+        "bookmarks": 2917,
+        "current_followers": 23895
+      },
+      "structure_counts": {
+        "paragraph": 51,
+        "header-two": 7,
+        "blockquote": 4,
+        "media": 9,
+        "unordered-list-item": 13,
+        "tweet": 1,
+        "ordered-list-item": 10
+      },
+      "analysis": {
+        "family": "before/after + bounded rules",
+        "opening": "diagnostic reversal of traffic versus packaging",
+        "promise": "Five App Store packaging changes connected to $250→$5K MRR.",
+        "progression": "Attributed third-party case → icon → screenshots → onboarding → paywall → flow → recap.",
+        "evidence": "Explicit attribution to Viktor's follower, app examples and nine media objects plus tweet. Does not present result as Paul's.",
+        "useful_object": "Five-rule review map, icon prompt and linked twelve experiments.",
+        "cta": "Repeated experiment download, replies, follow, related reading.",
+        "caveat": "Revenue improvement cannot isolate packaging from other changes. Title and body have five rules; several additional objects/CTAs exist. Useful example of preserving case ownership.",
+        "promise_fit": "Five rules delivered and source ownership clear; causal attribution still limited."
+      },
+      "popularity_rank": 12
+    },
+    {
+      "id": "2010751592346030461",
+      "source_url": "https://x.com/thedankoe/status/2010751592346030461",
+      "author": "thedankoe",
+      "title_exact": "How to fix your entire life in 1 day",
+      "title_word_count": 9,
+      "type": "x_article",
+      "availability": "full_extracted_text",
+      "read_status": "entire bodyText read",
+      "body_source_status": "nonempty article.bodyText and structured article.contents; distinct from previewText; media pixels and embedded post bodies not audited",
+      "body_words": 5501,
+      "body_characters": 31029,
+      "body_source": {
+        "provider": "Apify xquik/x-tweet-scraper",
+        "run_id": "ue81dbqr2ZZKPgZjc",
+        "dataset_id": "jLe5xwRYwy0kCJ2TE",
+        "dataset_offset": 26,
+        "field": "article.bodyText"
+      },
+      "created_at": "Mon Jan 12 16:31:52 +0000 2026",
+      "modified_at_utc": "2026-01-13T00:28:42.000Z",
+      "metrics": {
+        "captured_at_utc": "2026-10-07T11:22:21.020Z",
+        "views": 246322691,
+        "likes": 358007,
+        "replies": 9318,
+        "reposts": 57507,
+        "quotes": 15955,
+        "bookmarks": 940842,
+        "current_followers": 1036150
+      },
+      "structure_counts": {
+        "paragraph": 132,
+        "header-two": 7,
+        "ordered-list-item": 43,
+        "blockquote": 6,
+        "divider": 2,
+        "media": 2,
+        "unordered-list-item": 26
+      },
+      "analysis": {
+        "family": "large transformation + bounded time",
+        "opening": "seasonal belief reversal and reader identification",
+        "promise": "Fix life in one day.",
+        "progression": "Identity → hidden goals → fear → development → feedback → one-day protocol → game-like plan.",
+        "evidence": "Personal experience, philosophical/psychological models and quotes; two media objects, no early numerical outcome artifact.",
+        "useful_object": "Morning/day/evening protocol plus final six-part plan and earlier frameworks.",
+        "cta": "Bookmark near opening; newsletter mid-body; final sign-off.",
+        "caveat": "5,501 words, 246.3M views. One day describes exercise duration, not completed transformation. Strongest reusable protocol arrives late; several artifacts exist. Established audience/seasonality not controlled.",
+        "promise_fit": "A real one-day protocol pays off the time claim narrowly; whole-life transformation is aspirational."
+      },
+      "popularity_rank": 1
+    },
+    {
+      "id": "2038595868778233949",
+      "source_url": "https://x.com/adamtwtz/status/2038595868778233949",
+      "author": "adamtwtz",
+      "title_exact": "How To ACTUALLY Scale Your App With TikTok Slideshows...",
+      "title_word_count": 9,
+      "type": "x_article",
+      "availability": "full_extracted_text",
+      "read_status": "entire bodyText read",
+      "body_source_status": "nonempty article.bodyText and structured article.contents; distinct from previewText; media pixels and embedded post bodies not audited",
+      "body_words": 1531,
+      "body_characters": 9176,
+      "body_source": {
+        "provider": "Apify xquik/x-tweet-scraper",
+        "run_id": "ue81dbqr2ZZKPgZjc",
+        "dataset_id": "jLe5xwRYwy0kCJ2TE",
+        "dataset_offset": 27,
+        "field": "article.bodyText"
+      },
+      "created_at": "Mon Mar 30 12:35:05 +0000 2026",
+      "modified_at_utc": "2026-03-31T10:06:48.000Z",
+      "metrics": {
+        "captured_at_utc": "2026-10-07T11:22:21.020Z",
+        "views": 114829,
+        "likes": 241,
+        "replies": 7,
+        "reposts": 16,
+        "quotes": 10,
+        "bookmarks": 953,
+        "current_followers": 2122
+      },
+      "structure_counts": {
+        "media": 15,
+        "header-two": 7,
+        "paragraph": 36
+      },
+      "analysis": {
+        "family": "correction + channel-specific outcome",
+        "opening": "rejected format framed as edge",
+        "promise": "Scale app acquisition through TikTok slideshows.",
+        "progression": "Format selection → natural product integration → AI production → campaign economics → operation → scaling.",
+        "evidence": "Reported campaign views/MRR and creator counts; 15 media objects. Some filters and economic proof live in uninspected media.",
+        "useful_object": "Four-step production sequence and small-test-to-scale operating model.",
+        "cta": "DM/reply to start a Content Rewards campaign.",
+        "caveat": "Zero ad spend wording can conceal paid creator distribution. Platform typing/metadata/algorithm assertions unverified. No save request.",
+        "promise_fit": "Explains production and operations, but outcome/cost language needs qualification."
+      },
+      "popularity_rank": 20
+    }
+  ],
+  "supplementary_control": {
+    "id": "2095598060126470485",
+    "source_url": "https://x.com/KirillMorozovop/status/2095598060126470485",
+    "title_exact": "I'm 16 and I've Made $70k Online. If You're Under 18, Read This.",
+    "type": "x_article",
+    "availability": "full_extracted_text",
+    "read_status": "entire bodyText read",
+    "body_words": 2475,
+    "body_source": {
+      "provider": "Apify xquik/x-tweet-scraper",
+      "run_id": "eIkzHlxezqm3WVwga",
+      "dataset_id": "IFjfkiny9Q0wrwfnJ",
+      "dataset_offset": 0,
+      "field": "article.bodyText"
+    },
+    "metrics": {
+      "captured_on": "2026-10-07",
+      "views": 2149,
+      "likes": 4,
+      "bookmarks": 2,
+      "current_followers": 21
+    },
+    "analysis": {
+      "role": "supplementary own-account contrast, lower analytical weight per user's emphasis",
+      "headline": "Personal authority + age-defined audience; delayed precise practical payoff.",
+      "opening": "Recognizable age restriction followed by opportunity overload and biography.",
+      "progression": "Five life rules → multiple business routes/platform lists → delayed age/payment answer.",
+      "evidence": "Personal experience claims require existing proof-and-claims verification; published copy is not automatic validation.",
+      "useful_object": "Platform/resource directory and parent/payment guidance dispersed across broad opportunities.",
+      "cta": "Follow and save.",
+      "caveat": "Small current audience and unmatched topics/distribution prevent causal diagnosis from 2,149 views. Main actionable editorial issue is competing promises and the delayed answer to the opening age problem.",
+      "date_issue": "Article metadata September 3, 2026; body describes an alleged September 7, 2026 X program change in the past tense. Claim and date require independent verification; do not inherit as fact."
+    }
+  },
+  "profile": {
+    "url": "https://x.com/jesseabed_",
+    "type": "profile",
+    "availability": "profile posts accessible; no article found in bounded sample",
+    "recent_posts_read": 10,
+    "sample_dataset": "rxbCkx6isdGIblzjk",
+    "sample_run": "Wdq33mKe3U7VzYdZK",
+    "searches": [
+      {
+        "query": "from:jesseabed_ filter:article",
+        "dataset": "ntbKanyswQtP49tcT",
+        "results": 0
+      },
+      {
+        "query": "from:jesseabed_ url:x.com/i/article",
+        "dataset": "XuNQw6jPime0hAego",
+        "results": 0
+      }
+    ],
+    "limitation": "Does not establish that account has never published Articles."
+  },
+  "old_corpus": {
+    "path": "x-content-engine/research/sources/x-article-virality-corpus-2026-09-12.md",
+    "dataset": "Px7W9YElDyeKa0Tn2",
+    "availability": "Dataset not found on 2026-10-07; old prose report available but not independent full-body evidence."
+  },
+  "analysis_limits": [
+    "User bookmarks are a convenience sample, not all X Articles.",
+    "Raw views are not completed reads, CTR, attributable revenue or causal title effect.",
+    "Current followers are not publication-time followers.",
+    "Article revisions may postdate original reach.",
+    "Repeated authors and commercial creator-network ties reduce independence.",
+    "Source body outcome claims are author claims unless separately verified."
+  ]
+}

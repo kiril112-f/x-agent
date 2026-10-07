@@ -1,0 +1,6 @@
+interface:
+  display_name: "X Article Headlines"
+  short_description: "Five article headlines grounded in the actual draft"
+  default_prompt: "Use $x-article-headlines to give me five ranked headlines for this X Article in Kirill's voice."
+policy:
+  allow_implicit_invocation: true

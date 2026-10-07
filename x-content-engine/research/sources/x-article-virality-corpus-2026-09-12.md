@@ -1,5 +1,7 @@
 # X Article virality corpus — 2026-09-12
 
+**Исторический snapshot.** Актуальная проверка присланных ссылок — [исследование 2026-10-07](x-article-study-2026-10-07/analysis.md). Заголовки в таблицах ниже местами пересказаны; утверждения «18 из 18», «у всех», общие длины и причинные редакционные выводы не использовать как верифицированную базу новых правил. Новый разбор хранит точные source titles и различает наблюдения, гипотезы и house rules.
+
 Источник: Apify actor `xquik/x-tweet-scraper` (id `wAusCMrm284Voaw86`), run `AD5zU4QJ0KgevhdDm`, dataset `Px7W9YElDyeKa0Tn2`.
 Вход: `{ mode: "article", outputVariant: "rich", fieldStyle: "camelCase", outputPreset: "nested", articleTweetIds: [19 ids], maxItems: 40 }`.
 Прочитано полное тело всех 19 статей через `article.bodyText` (offset 0–18). 18 референсов Кирилла + 1 его собственная статья.

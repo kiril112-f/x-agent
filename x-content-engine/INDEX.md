@@ -18,14 +18,16 @@
 - `knowledge/context-storytelling.md` — pre-draft resource pack, attribution и честные storytelling structures.
 - `knowledge/post-formatting.md` — обязательные paragraph breaks, whitespace и copy-safe output для X.
 - `knowledge/article-cover-styles.md` — визуальные направления обложек из референсов Кирилла: minimal product, cinematic proof, luminous engraving, editorial banknote и Dan Koe.
-- `research/sources/x-article-virality-corpus-2026-09-12.md` — замеры и структура 19 статей (18 референсов двух когорт плюс своя неудачная статья), источник правил `$x-viral-article`.
+- `research/sources/x-article-study-2026-10-07/analysis.md` — актуальный разбор референсов статей, заголовков, контрпримеров и ограничений; рядом покрытие каждой ссылки и аналитические карточки.
+- `research/sources/x-article-virality-corpus-2026-09-12.md` — исторические замеры 19 статей; не источник универсальных правил или точных текущих заголовков.
 
 ## Рабочие процессы
 
 - `operations/algorithm-review-loop.md` — перепроверка версии алгоритма и обучение на результатах ручных публикаций, без фонового мониторинга.
 
 - `$x-draft-to-post` — черновик или тезис в готовый пост (короткий формат, треды, реплаи).
-- `$x-viral-article` — X Article от идеи или рукописного черновика до готового длинного текста: виральные паттерны корпуса плюс brand voice, шесть скелетов, визуальный план и рерайт-пайплайн.
+- `$x-viral-article` — X Article от идеи или рукописного черновика до готового длинного текста: механики корпуса плюс brand voice, пять заголовков с проверкой обещания, шесть скелетов и рерайт-пайплайн.
+- `$x-article-headlines` — отдельный топ-5 заголовков под конкретное содержание, ранжирование и рекомендация; автоматически используется в статье. Обложки не затрагивает.
 - `$x-content-research` — свежий ресерч и evidence ledger.
 - `$x-brand-voice` — применение и обновление голоса.
 - `$x-visuals` — решение о визуале и работа с Zubbix Studio.
