@@ -5,7 +5,7 @@ import {fileURLToPath} from 'node:url';
 import {spawnSync} from 'node:child_process';
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
 const base='x-content-engine/operations/trend-radar';
-const files=['RESTORE-SPARK.md','verification-2026-10-03.md','setup-state.json','spark-skills/x-radar-analysis.md','spark-skills/x-radar-feed.md','spark-skills/x-linkedin-adapt.md','spark-skills/analysis-schedule.txt','assets/linkedin-app-km.png'].map(p=>({from:`${base}/${p}`,to:p}));
+const files=['RESTORE-SPARK.md','verification-2026-10-03.md','verification-2026-10-07-linkedin.md','setup-state.json','spark-skills/x-radar-analysis.md','spark-skills/x-radar-feed.md','spark-skills/x-linkedin-adapt.md','spark-skills/analysis-schedule.txt','assets/linkedin-app-km.png'].map(p=>({from:`${base}/${p}`,to:p}));
 for(const n of ['creator-profile','audience-and-goals','brand-voice','content-strategy','privacy-and-approval','proof-and-claims','context-storytelling','post-formatting'])files.push({from:`x-content-engine/knowledge/${n}.md`,to:`knowledge/${n}.md`});
 files.push({from:'x-content-engine/operations/notion-schema.md',to:'knowledge/notion-schema.md'});
 files.push({from:'x-content-engine/operations/dots/feed-calibration-2026-10-03.md',to:'feed-calibration-2026-10-03.md'});

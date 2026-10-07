@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-03T16:05:40.791734+00:00",
-  "phase": "spark-active-linkedin-oauth-pending",
+  "updatedAt": "2026-10-07",
+  "phase": "linkedin-connected-faithful-copy",
   "userApproved": {
     "dailyDigestMoscow": "12:00",
     "importantAlerts": true,
@@ -93,7 +93,7 @@
     "worktree": "C:/Users/User/Desktop/tg-notes-x-radar",
     "branch": "codex/x-trend-radar",
     "productionBranch": "fix/category-page",
-    "deployedCommit": "a2c9eea",
+    "deployedCommit": "089a15b",
     "hostProject": "tg-notes",
     "productionUrl": "https://tg-notes-two.vercel.app",
     "supabaseProjectRef": "agvpcgmjknfuoehhuleh",
@@ -145,20 +145,20 @@
       "repeatCreates": 0,
       "repeatChanges": 0,
       "duplicateUrls": 0,
-      "lastOkUtc": "2026-10-03T14:35:40.307Z"
+      "lastOkUtc": "2026-10-07T07:31:45.487+00:00"
     },
     "followingSync": {
-      "lastOkUtc": "2026-10-02T07:30:18.619Z",
+      "lastOkUtc": "2026-10-05T07:35:21.466+00:00",
       "duplicateProfileUrls": 0
     },
-    "linkedin": "Spark adapter configured; API app created; client secret and OAuth pending; no publication",
+    "linkedin": "Connected; automatic faithful original copy; Spark only for quotes/reshares; no X/Notion URLs in public copy.",
     "historicalReplay": {
       "gptMessageId": 10,
       "elevenMessageId": 11,
       "repeatMessageIdsUnchanged": true,
       "ownerDecisionTest": "Eleven replay rejected by owner; verified 2026-09-30T07:41:25Z. GPT replay remains pending."
     },
-    "testsPassed": 916,
+    "testsPassed": 979,
     "feedFaultTests": {
       "emptyAccepted": 0,
       "staleAccepted": 0,
@@ -181,13 +181,14 @@
         "Sign In with LinkedIn using OpenID Connect"
       ],
       "callback": "https://tg-notes-two.vercel.app/linkedin/callback",
-      "clientSecretPresent": false,
-      "connected": false,
-      "autoPublish": false,
+      "clientSecretPresent": true,
+      "connected": true,
+      "autoPublish": true,
       "ownerRequestedAutoPublish": true,
       "pilotRequestId": "87e709b365aab94151ac249027f3f11eaf7f49871a7617b911805c2960072e32",
       "pilotPostId": "2104635121198608809",
-      "pilotValidated": true
+      "pilotValidated": true,
+      "tokenExpiresAt": "2026-12-02T16:21:49.241Z"
     },
     "editorialTest20261003": {
       "runId": "71cfb04c-70d4-4e18-ae60-3770febc434d",
@@ -198,6 +199,23 @@
       "telegramMessageId": 41,
       "repeatAlreadyReviewed": true,
       "ownerDecisions": "pending"
+    },
+    "linkedinPolling": {
+      "fastMinutes": 15,
+      "fastRows": 5,
+      "fullHours": 3,
+      "lastFullAt": "2026-10-07T07:31:45.487+00:00"
+    },
+    "linkedinFix20261007": {
+      "serverCommit": "089a15b",
+      "targetLatencyMinutes": "15–20, not an SLA",
+      "newPublicPostVerified": false,
+      "liveFiveRowSync": "4 originals unchanged, known reshare duplicate ignored, no Notion writes",
+      "publishedPostFootersRemoved": [
+        "urn:li:share:7513262008536965120",
+        "urn:li:share:7513262013654138880"
+      ],
+      "nativeSparkSkillUpdate": "blocked by Google CAPTCHA; new policy enforced in server input and final payload"
     }
   },
   "requestedMigration": {
