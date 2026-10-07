@@ -34,3 +34,10 @@ Chrome AI Universe доступен. Обновление нативного н�
 Все8 существующих LinkedIn-расписаний обновлены и перечитаны после reload:02:45/05:45/08:45/11:45/14:45/17:45/20:45/23:45. Инструкция в spark-skills/linkedin-schedule.txt; точное сравнение подтверждено для каждого. Частота не повышалась, другие проекты/расписания не менялись.
 
 Реальная сверка20 строк вернула19 постов;0 новых/изменённых карточек Notion. Подтверждено получение исходного video для ClaudeDevs, Hewad, Zain, Higgsfield, photo для цитируемых постов и4photo для репоста GoogleAIStudio. Старые неизменённые варианты пересобираются; после запуска9pending и3awaiting. Evidence: standalone-source-refresh.json, standalone-live-status.json, standalone-live-input-summary.json, spark-schedules-verified.json в tmp/linkedin-fix-2026-10-07. Новая публичная публикация с source video ещё не подтверждена.
+
+
+## Полностью без подтверждения — последняя инструкция владельца
+
+Сервер7800105, production https://tg-notes-5k8mzfgcn-kirill17.vercel.app. Typecheck, build,1030 тестов (169 целевых). Оценка Spark fit weak/poor больше не отправляет карточку на одобрение: все пригодные варианты публикуются автоматически. Объективные ошибки текста/медиа/API сообщаются без кнопок одобрения; неизвестный исход не повторяется вслепую. Прежние awaiting возвращены в pending с удалением клавиатур. Ручные тексты сохранены, skipped/done не сброшены. X по-прежнему не публикуется агентом.
+
+Реальная проверка07.10.2026 в19:37 МСК: sync-status возвращает approvalRequired=false, publicationPolicy=automatic-no-approval-v1. Было4awaiting+7pending; LinkedIn tick без Telegram callback опубликовал1 настоящий пост из очереди; после0awaiting+10pending. Ошибок jobs0. Счётчик published увеличивается только после подтверждённого done. Ссылки из recentCrossposts в этом ответе относятся к предыдущим публикациям, новый старый по дате очереди пост не попал в последние10 по createdAt; не выдавать их за ссылку на этот тест. Доказательство: tmp/linkedin-fix-2026-10-07/automatic-no-approval-live.json.

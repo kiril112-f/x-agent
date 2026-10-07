@@ -93,7 +93,7 @@
     "worktree": "C:/Users/User/Desktop/tg-notes-x-radar",
     "branch": "codex/x-trend-radar",
     "productionBranch": "fix/category-page",
-    "deployedCommit": "7a2671f",
+    "deployedCommit": "7800105",
     "hostProject": "tg-notes",
     "productionUrl": "https://tg-notes-two.vercel.app",
     "supabaseProjectRef": "agvpcgmjknfuoehhuleh",
@@ -158,7 +158,7 @@
       "repeatMessageIdsUnchanged": true,
       "ownerDecisionTest": "Eleven replay rejected by owner; verified 2026-09-30T07:41:25Z. GPT replay remains pending."
     },
-    "testsPassed": 1011,
+    "testsPassed": 1030,
     "feedFaultTests": {
       "emptyAccepted": 0,
       "staleAccepted": 0,
@@ -188,7 +188,9 @@
       "pilotRequestId": "87e709b365aab94151ac249027f3f11eaf7f49871a7617b911805c2960072e32",
       "pilotPostId": "2104635121198608809",
       "pilotValidated": true,
-      "tokenExpiresAt": "2026-12-02T16:21:49.241Z"
+      "tokenExpiresAt": "2026-12-02T16:21:49.241Z",
+      "approvalRequired": false,
+      "publicationPolicy": "automatic-no-approval-v1"
     },
     "editorialTest20261003": {
       "runId": "71cfb04c-70d4-4e18-ae60-3770febc434d",
@@ -228,6 +230,13 @@
       "activeInputPolicyVerified": "standalone-source-media-v3",
       "activeInputPostId": "2107762574489948493",
       "liveSourceRefresh": "19 observed posts, quoted images/videos extracted, zero Notion create/update"
+    },
+    "linkedinNoApproval": {
+      "verifiedAt": "2026-10-07T16:37:27.579Z",
+      "publishedWithoutCallback": 1,
+      "awaitingAfter": 0,
+      "pendingAfter": 10,
+      "targetedTests": 169
     }
   },
   "requestedMigration": {
