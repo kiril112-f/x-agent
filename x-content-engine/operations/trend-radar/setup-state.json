@@ -93,7 +93,7 @@
     "worktree": "C:/Users/User/Desktop/tg-notes-x-radar",
     "branch": "codex/x-trend-radar",
     "productionBranch": "fix/category-page",
-    "deployedCommit": "089a15b",
+    "deployedCommit": "5c347d6",
     "hostProject": "tg-notes",
     "productionUrl": "https://tg-notes-two.vercel.app",
     "supabaseProjectRef": "agvpcgmjknfuoehhuleh",
@@ -158,7 +158,7 @@
       "repeatMessageIdsUnchanged": true,
       "ownerDecisionTest": "Eleven replay rejected by owner; verified 2026-09-30T07:41:25Z. GPT replay remains pending."
     },
-    "testsPassed": 979,
+    "testsPassed": 1010,
     "feedFaultTests": {
       "emptyAccepted": 0,
       "staleAccepted": 0,
@@ -215,7 +215,15 @@
         "urn:li:share:7513262008536965120",
         "urn:li:share:7513262013654138880"
       ],
-      "nativeSparkSkillUpdate": "blocked by Google CAPTCHA; new policy enforced in server input and final payload"
+      "nativeSparkSkillUpdate": "standalone-source-media-v3 saved in native Spark and exactly verified after reload"
+    },
+    "linkedinStandaloneReshares": {
+      "policy": "standalone-source-media-v3",
+      "nativeSkillVerified": true,
+      "sourceMediaTransfer": "original attachments are retained and uploaded natively with the combined post",
+      "qualityGate": "no usernames/source wrapper; no invented owner experience; unavailable or unsupported complete media set requires review",
+      "tests": 149,
+      "livePublicReshareWithMediaVerified": false
     }
   },
   "requestedMigration": {
